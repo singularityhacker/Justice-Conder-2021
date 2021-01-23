@@ -1358,6 +1358,9 @@ body a:hover {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
 }
+#contact textarea {
+  resize: none;
+}
 #contact .section-title {
   text-transform: uppercase;
   color: #2f3742;
