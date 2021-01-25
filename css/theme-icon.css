@@ -9,6 +9,7 @@
   src: url("../fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("../fonts/themify.woff?-fvbane") format("woff"), url("../fonts/themify.ttf?-fvbane") format("truetype"), url("../fonts/themify.svg?-fvbane#themify") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "FontAwesome";
@@ -16,6 +17,7 @@
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 [class^=ti-],
 [class*=" ti-"] {
@@ -31,47 +33,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ti-user:before {
+.ti-user::before {
   content: "";
 }
 
-.ti-email:before {
+.ti-email::before {
   content: "";
 }
 
-.ti-mobile:before {
+.ti-mobile::before {
   content: "";
 }
 
-.ti-bookmark-alt:before {
+.ti-bookmark-alt::before {
   content: "";
 }
 
-.ti-crown:before {
+.ti-crown::before {
   content: "";
 }
 
-.ti-book:before {
+.ti-book::before {
   content: "";
 }
 
-.ti-plus:before {
+.ti-plus::before {
   content: "";
 }
 
-.ti-link:before {
+.ti-link::before {
   content: "";
 }
 
-.ti-hand-point-right:before {
+.ti-hand-point-right::before {
   content: "";
 }
 
-.ti-marker-alt:before {
+.ti-marker-alt::before {
   content: "";
 }
 
-.ti-comments:before {
+.ti-comments::before {
   content: "";
 }
 
@@ -84,23 +86,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.fa-twitter:before {
+.fa-twitter::before {
   content: "";
 }
 
-.fa-pinterest:before {
+.fa-pinterest::before {
   content: "";
 }
 
-.fa-linkedin:before {
+.fa-linkedin::before {
   content: "";
 }
 
-.fa-facebook:before {
+.fa-facebook::before {
   content: "";
 }
 
-.fa-paper-plane:before {
+.fa-paper-plane::before {
   content: "";
 }
 

@@ -249,6 +249,7 @@ body a:hover {
   z-index: -1;
 }
 .subject-header .bg-text * {
+  white-space: nowrap;
   color: inherit;
 }
 
