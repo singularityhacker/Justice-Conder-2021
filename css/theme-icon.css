@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*
+ * This is a manually generated file that combined themify and font awesome together.
+ * It only includes the minimum character to get the page running to reduce file size.
+*/
+@font-face {
+  font-family: "themify";
+  src: url("../fonts/themify.eot?-fvbane");
+  src: url("../fonts/themify.eot?#iefix-fvbane") format("embedded-opentype"), url("../fonts/themify.woff?-fvbane") format("woff"), url("../fonts/themify.ttf?-fvbane") format("truetype"), url("../fonts/themify.svg?-fvbane#themify") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+[class^=ti-],
+[class*=" ti-"] {
+  font-family: "themify";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-user::before {
+  content: "";
+}
+
+.ti-email::before {
+  content: "";
+}
+
+.ti-mobile::before {
+  content: "";
+}
+
+.ti-bookmark-alt::before {
+  content: "";
+}
+
+.ti-crown::before {
+  content: "";
+}
+
+.ti-book::before {
+  content: "";
+}
+
+.ti-plus::before {
+  content: "";
+}
+
+.ti-link::before {
+  content: "";
+}
+
+.ti-hand-point-right::before {
+  content: "";
+}
+
+.ti-marker-alt::before {
+  content: "";
+}
+
+.ti-comments::before {
+  content: "";
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-twitter::before {
+  content: "";
+}
+
+.fa-pinterest::before {
+  content: "";
+}
+
+.fa-linkedin::before {
+  content: "";
+}
+
+.fa-facebook::before {
+  content: "";
+}
+
+.fa-paper-plane::before {
+  content: "";
+}
+
+/*# sourceMappingURL=theme-icon.css.map */
