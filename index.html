@@ -13,32 +13,28 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="images/icon/favicon.ico" />
 
+	<link rel="preload" href="fonts/themify.eot?-fvbane" as="font" type="font/eot">
+	<link rel="preload" href="fonts/themify.eot?#iefix-fvbane" as="font" type="font/eot">
+	<link rel="preload" href="fonts/themify.woff?-fvbane" as="font" type="font/woff">
+
+	<link rel="preload" href="fonts/fontawesome-webfont.eot?v=4.5.0" as="font" type="font/eot">
+	<link rel="preload" href="fonts/fontawesome-webfont.eot?#iefix&v=4.5.0" as="font" type="font/eot">
+	<link rel="preload" href="fonts/fontawesome-webfont.woff2?v=4.5.0" as="font" type="font/woff2">
+	<link rel="preload" href="fonts/fontawesome-webfont.woff?v=4.5.0" as="font" type="font/woff">
+	<link rel="preload" href="fonts/fontawesome-webfont.ttf?v=4.5.0" as="font" type="font/ttf">
+
 	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-
-	<!-- Unimportant CSS can be load at a later time -->
-	<link rel="preload" href="css/theme-icon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-	<noscript>
-		<link rel="stylesheet" href="css/theme-icon.css">
-	</noscript>
+	<link rel="stylesheet" href="css/theme-icon.css" as="style" />
 
 	<!-- google font -->
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic"
-		as="style" onload="this.onload=null;this.rel='stylesheet'" />
-	<noscript>
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic">
-	</noscript>
+		as="font" crossorigin />
 
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic"
-		as="style" onload="this.onload=null;this.rel='stylesheet'" />
-	<noscript>
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic">
-	</noscript>
-
+		as="font" crossorigin />
 </head>
 
 <body>
@@ -46,37 +42,70 @@
 	<header class="header" id="home"></header>
 
 	<!-- navbar -->
-	<nav id="menu" class="navbar navbar-default">
+	<nav id="menu" class="navbar navbar-default desktop-only">
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="index.html">
-				<img id="logo_img" src="images/logo.webp" alt="" height="40px" loading="lazy">
+				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
 				<p id="nav-name">Justice Conder</p>
 			</a>
 		</div>
-		<ul class="nav-link title-text">
+		<ul class="nav-link title-text flex-container">
 
-			<li><a rel="noopener" href="#home" class="page-scroll">Home</a></li>
-			<li><a rel="noopener" href="#about" class="page-scroll">About</a></li>
-			<li><a rel="noopener" href="#resume" class="page-scroll">Resume</a></li>
-			<li><a rel="noopener" href="#portfolio" class="page-scroll">Portfolio</a></li>
-			<li><a rel="noopener" href="#skill" class="page-scroll">Strengths</a></li>
-			<li><a rel="noopener" href="#experience" class="page-scroll">Experience</a></li>
-			<li><a rel="noopener" href="#testimonials" class="page-scroll">Testimonials</a></li>
-			<li><a rel="noopener" href="#contact" class="page-scroll">Contact</a></li>
+			<li><a href="#home" class="page-scroll">Home</a></li>
+			<li><a href="#about" class="page-scroll">About</a></li>
+			<li><a href="#resume" class="page-scroll">Resume</a></li>
+			<li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+			<li><a href="#skill" class="page-scroll">Strengths</a></li>
+			<li><a href="#experience" class="page-scroll">Experience</a></li>
+			<li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
+			<li><a href="#contact" class="page-scroll">Contact</a></li>
 
 		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="index.html">
+				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<p id="nav-name">Justice Conder</p>
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+				<li><a href="#home" class="page-scroll">Home</a></li>
+				<li><a href="#about" class="page-scroll">About</a></li>
+				<li><a href="#resume" class="page-scroll">Resume</a></li>
+				<li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+				<li><a href="#skill" class="page-scroll">Strengths</a></li>
+				<li><a href="#experience" class="page-scroll">Experience</a></li>
+				<li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
+				<li><a href="#contact" class="page-scroll">Contact</a></li>
+			</ul>
+		</div>
 	</nav>
 	<!-- navbar -->
 
 	<!-- intro -->
-	<div id="intro" class="intro title-text" style="background: url('images/header-background.webp');">
+	<div id="intro" class="intro title-text"
+		style="background: linear-gradient(#0000000F, #00000080), url('images/header-background.webp');">
 		<h1 class="is-size-2">Justice Gödel Conder</h1>
-		<div id="typer"></div>
+		<div id="typer" class="is-size-3">
+			<ul>
+				<li class="typer-effect role-agile">Agile Practioner</li>
+				<li class="typer-effect role-scrum">Professional Scrum Master</li>
+				<li class="typer-effect role-software">Software Project Manager</li>
+			</ul>
+		</div>
 		<a rel="noopener" href="files/cv.pdf" target="_blank" class="link-btn">
-			Download CV as <img src="images/icon/pdf.webp" alt="" style="height: 30px;" loading="lazy">
+			Download CV as <img src="images/icon/pdf.webp" alt="" width="30px" height="30px" loading="lazy">
 		</a>
 		<a rel="noopener" href="files/cv.docx" target="_blank" class="link-btn">
-			Download CV as <img src="images/icon/docx.webp" alt="" style="height: 30px;" loading="lazy">
+			Download CV as <img src="images/icon/docx.webp" alt="" width="25px" height="30px" loading="lazy">
 		</a>
 	</div>
 	<!-- intro -->
@@ -84,19 +113,31 @@
 	<div class="container">
 
 		<!-- about -->
-		<div id="about">
+		<div id="about" class="flex-container">
 			<div class="profile">
 				<figure>
-					<img loading="lazy" src="images/me.webp" alt="" class="me">
+					<img loading="lazy" src="images/me.webp" alt="" width="300" height="329">
 
 					<ul class="social-badge">
-						<li class="social-item"><a rel="noopener" href="https://twitter.com/singularityhack"
-								target="_blank"><i class="fa fa-twitter"></i></a></li>
-						<li class="social-item"><a rel="noopener"
-								href="https://www.pinterest.com/decimal/singularity-hacker/" target="_blank"><i
-									class="fa fa-pinterest"></i></a></li>
-						<li class="social-item"><a rel="noopener" href="https://www.linkedin.com/in/justiceconder"
-								target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li class="social-item">
+							<a rel="noopener" href="https://twitter.com/singularityhack" target="_blank">
+								<i class="fa fa-twitter"></i>
+								<span>twitter</span>
+							</a>
+						</li>
+						<li class="social-item">
+							<a rel="noopener" href="https://www.pinterest.com/decimal/singularity-hacker/"
+								target="_blank">
+								<i class="fa fa-pinterest"></i>
+								<span>pinterest</span>
+							</a>
+						</li>
+						<li class="social-item">
+							<a rel="noopener" href="https://www.linkedin.com/in/justiceconder" target="_blank">
+								<i class="fa fa-linkedin"></i>
+								<span>linkedin</span>
+							</a>
+						</li>
 					</ul>
 				</figure>
 			</div>
@@ -121,7 +162,7 @@
 					identification,
 					resource allocation, change management, and verification.
 				</section>
-				<footer>
+				<footer class="flex-container">
 					<div class="info-badge">
 						<i class="ti ti-user"></i>
 						<header>Name:</header>
@@ -423,9 +464,10 @@
 				</div>
 			</div>
 
-			<div class="portfolio-container">
+			<div class="portfolio-container grid-container">
 				<div class="portfolio-item">
-					<img src="images/portfolio/01.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/01.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>33 Reviews</header>
 						<section>
@@ -437,7 +479,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/02.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/02.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Christian Contractors</header>
 						<section>
@@ -449,7 +492,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/03.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/03.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>The Bitbay</header>
 						<section>
@@ -462,7 +506,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/04.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/04.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Linkbase</header>
 						<section>
@@ -474,7 +519,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/05.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/05.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Pathway to Wisdom</header>
 						<section>
@@ -487,7 +533,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/06.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/06.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>New Horizon Partners</header>
 						<section>
@@ -500,7 +547,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/07.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/07.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Interweb Staffing</header>
 						<section>
@@ -511,7 +559,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/09.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/09.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Designr Pro</header>
 						<section>
@@ -522,7 +571,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/10.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/10.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Easel for iPad</header>
 						<section>
@@ -533,7 +583,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/11.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/11.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Haps Quality Woodwork</header>
 						<section>
@@ -544,7 +595,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/12.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/12.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Venture Chip</header>
 						<section>
@@ -555,7 +607,8 @@
 					</div>
 				</div>
 				<div class="portfolio-item">
-					<img src="images/portfolio/08.webp" loading="lazy" alt="" class="preview">
+					<img src="images/portfolio/08.webp" loading="lazy" alt="" width="300px" height="300px"
+						class="preview">
 					<div class="info">
 						<header>Evolution Evolves</header>
 						<section>
@@ -580,7 +633,7 @@
 				</div>
 			</div>
 
-			<ul>
+			<ul class="grid-container">
 				<li><i class="ti-hand-point-right"></i><span> IT Instrastructure / Design</span></li>
 				<li><i class="ti-hand-point-right"></i><span> Product Owner</span></li>
 				<li><i class="ti-hand-point-right"></i><span> Scrum Maturity</span></li>
@@ -656,12 +709,12 @@
 				</div>
 			</div>
 
-			<div class="recommendation-container">
+			<div class="recommendation-container grid-container">
 				<div class="rec-row">
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/10.webp" alt="" loading="lazy">
+								<img src="images/testimonials/10.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p>You will rarely find a manager with both technical and management skills. Justice has
 								both. I
@@ -689,7 +742,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/11.webp" alt="" loading="lazy">
+								<img src="images/testimonials/11.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> Justice’s enthusiasm and positive attitude is contagious. All of his teammates fed off
 								of
@@ -718,7 +771,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/12.webp" alt="" loading="lazy">
+								<img src="images/testimonials/12.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> I really enjoyed working with Justice as he was one of few managers I've had who looked
 								after the well being of his team. He was one of the most energetic leaders within the
@@ -746,7 +799,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/01.webp" alt="" loading="lazy">
+								<img src="images/testimonials/01.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> They say that you meet a few people in your life that make an memorable impact on your
 								life.
@@ -771,7 +824,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/02.webp" alt="" loading="lazy">
+								<img src="images/testimonials/02.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p>Justice GETS IT. He is a hard worker and enjoys solving problems and finding ways to work
 								better and more efficiently. Justice is also one of the most passionate people I have
@@ -795,7 +848,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/09.webp" alt="" loading="lazy">
+								<img src="images/testimonials/09.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> Justice's passion for all things tech is truly inspiring. He is dedicated to exploring
 								any
@@ -817,7 +870,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/03.webp" alt="" loading="lazy">
+								<img src="images/testimonials/03.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> You won't find many developers around like Justice, and he'd make a great addition to
 								any
@@ -840,7 +893,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/04.webp" alt="" loading="lazy">
+								<img src="images/testimonials/04.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> Hands down, Justice is probably the most EPIC bro nerd I know. He is incredibly
 								passionate
@@ -862,7 +915,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/08.webp" alt="" loading="lazy">
+								<img src="images/testimonials/08.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> Justice is one of the most knowledgeable people in his industry. His strategic and
 								creative
@@ -887,7 +940,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/05.webp" alt="" loading="lazy">
+								<img src="images/testimonials/05.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> Justice is the kind of programmer who is obviously passionate and devoted to his career.
 								It
@@ -906,7 +959,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/06.webp" alt="" loading="lazy">
+								<img src="images/testimonials/06.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> Justice has been simply the best CIO, the best project manager I ever met. He was a
 								source
@@ -926,7 +979,7 @@
 					<div class="item">
 						<section>
 							<figure>
-								<img src="images/testimonials/07.webp" alt="" loading="lazy">
+								<img src="images/testimonials/07.webp" alt="" loading="lazy" width="60px" height="60px">
 							</figure>
 							<p> Justice Conder is a Software Engineer who I've had the pleasure to know and train on
 								Product
@@ -997,14 +1050,21 @@
 	</div>
 
 	<!-- Begin Footer -->
-	<div class="footer">
+	<div class="footer flex-container">
 		<p>
 			<strong class="white">Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
+		</p>
+		<p>
 			The source code is licensed
-			<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+			<a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+		</p>
+		<p>
+			The website content is licensed
 			<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
 		</p>
 	</div>
+
+	<!-- <script defer src="js/script.js"></script> -->
 </body>
 
 </html>
