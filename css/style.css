@@ -410,6 +410,11 @@ body a:hover {
 #about .profile .social-badge .social-item a i.fa {
   font-size: inherit;
 }
+
+/*.fa-github {
+  background: url("github.png");
+}*/
+
 #about .about-info {
   display: grid;
   grid-template: auto auto auto/1fr;
