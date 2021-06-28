@@ -94,6 +94,11 @@
   content: "";
 }
 
+.fa-github::before {
+  content: "";
+}
+
+
 .fa-linkedin::before {
   content: "";
 }
