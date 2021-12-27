@@ -192,6 +192,11 @@ body a:hover {
   font-weight: 600;
 }
 
+.name {
+  text-transform: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
 .large-text {
   font-size: 30px;
   font-weight: 600;
