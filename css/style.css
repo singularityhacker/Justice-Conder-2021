@@ -195,6 +195,7 @@ body a:hover {
 .name {
   text-transform: none;
   font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bold;
 }
 
 .large-text {
