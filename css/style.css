@@ -450,6 +450,28 @@ body a:hover {
   line-height: 30px;
   color: #9ea8b6;
 }
+#about .about-info section .strengths-label {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#about .about-info section .strengths-list {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5em;
+}
+#about .about-info section .strengths-list li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#about .about-info section .strengths-list li:not(:last-child)::after {
+  content: " • ";
+  margin: 0 0.5em;
+  color: #9ea8b6;
+}
 #about .about-info footer {
   grid-area: info;
   margin-bottom: 20px;
@@ -525,6 +547,15 @@ body a:hover {
 }
 #resume .experience .desc p {
   margin: 5px;
+}
+#resume .experience .desc ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 5px 0;
+}
+#resume .experience .desc ul li {
+  margin: 5px 0;
+  color: #9ea8b6;
 }
 #resume .experience .desc h5 {
   font-size: 22px;
