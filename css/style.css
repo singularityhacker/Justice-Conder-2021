@@ -405,6 +405,7 @@ body a:hover {
   width: 40px;
   height: 40px;
   border-radius: 100%;
+  cursor: pointer;
 }
 #about .profile .social-badge .social-item a:hover {
   color: #fff;
@@ -415,6 +416,19 @@ body a:hover {
 }
 #about .profile .social-badge .social-item a i.fa {
   font-size: inherit;
+  pointer-events: none;
+}
+#about .profile .social-badge .social-item a img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0);
+  transition: filter 0.3s ease;
+  pointer-events: none;
+}
+#about .profile .social-badge .social-item a:hover img {
+  filter: brightness(0) invert(1);
 }
 
 /*.fa-github {
@@ -522,6 +536,23 @@ body a:hover {
 }
 #resume .experience .desc .center * {
   text-align: center;
+}
+
+#resume .experience .desc.certifications-list {
+  column-count: 2;
+  column-gap: 2rem;
+  column-fill: balance;
+}
+
+#resume .experience .desc.certifications-list p {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  #resume .experience .desc.certifications-list {
+    column-count: 1;
+  }
 }
 
 #portfolio .portfolio-item {
@@ -721,6 +752,176 @@ body a:hover {
 }
 .footer strong {
   color: rgba(247, 248, 249, 0.7);
+}
+
+/* Speaking Carousel */
+.speaking-carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.speaking-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  cursor: grab;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.carousel-track:active {
+  cursor: grabbing;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* Show multiple slides on larger screens */
+@media (min-width: 768px) {
+  .carousel-slide {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-slide {
+    width: calc(33.333% - 0.67rem);
+  }
+}
+
+.carousel-item {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.02);
+}
+
+.carousel-item img,
+.carousel-item > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.carousel-item:hover .play-overlay {
+  opacity: 1;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.carousel-btn-prev {
+  left: 10px;
+}
+
+.carousel-btn-next {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  padding: 0;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.2);
+}
+
+.carousel-dot.active {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+  
+  .carousel-btn-prev {
+    left: 5px;
+  }
+  
+  .carousel-btn-next {
+    right: 5px;
+  }
+  
+  .speaking-carousel-container {
+    margin: 1rem auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
