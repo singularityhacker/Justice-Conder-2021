@@ -585,6 +585,17 @@ body a:hover {
   break-inside: avoid;
   margin-bottom: 8px;
 }
+#resume .experience .desc.certifications-list h6 {
+  color: #2f3742;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+#resume .experience .desc.certifications-list h6:first-of-type {
+  margin-top: 0;
+}
 
 @media (max-width: 768px) {
   #resume .experience .desc.certifications-list {
