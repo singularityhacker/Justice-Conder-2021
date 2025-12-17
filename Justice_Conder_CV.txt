@@ -1,0 +1,217 @@
+JUSTICE CONDER
+0xJustice.eth
+
+Web3 Operator | DAO Architect | Program Agilist | Software Engineer
+
+CONTACT INFORMATION
+Email: JusticeConder@gmail.com
+Website: https://www.justiceconder.com
+LinkedIn: https://www.linkedin.com/in/justiceconder
+Twitter: https://twitter.com/singularityhack
+GitHub: https://github.com/singularityhacker
+Paragraph: https://paragraph.com/@0xjustice
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+
+Operator, founder, and technologist with 15+ years across software development, large scale agile programs, and Web3-native organizations. Proven record of building and scaling complex socio-technical systems including DAO governance, grant programs, bonding curve launchpads, and agent-driven automation. Comfortable operating from code and architecture through org design, incentives, and capital allocation. Known for high-velocity execution, systems thinking, and translating emerging technology into durable operational primitives.
+
+KEY STRENGTHS
+- Web3 & DAO architecture (governance, grants, token mechanics)
+- Program and org design at scale
+- Bonding curves, token launch infrastructure, grant allocation
+- Agent-based automation and on-chain/off-chain integration
+- Executive communication and technical storytelling
+- Rapid prototyping and iteration
+- Executive strategy
+
+================================================================================
+PROFESSIONAL EXPERIENCE
+================================================================================
+
+HEAD OF GROWTH & INNOVATION
+Thrive Protocol | August 2025 - January 2026
+
+- Designed and built the Thrive Guardian Network (TGN) API, a permissionless x402-powered gig economy
+- Implemented user-deployable agents that source, normalize, and score public project data against private evaluation rubrics
+- Architected agent workflows that fed structured diligence data into Thrive's internal data lake and decision systems
+
+COFOUNDER
+Quadratic Accelerator | February 2025 - August 2026
+Website: https://qacc.giveth.io/
+Whitepaper: https://cdn.prod.website-files.com/667d6bc0b1e956f8d0b52c92/671a9d6f3bbff2f4d648e809_qacc.pdf
+
+- Founded and scaled a bonding-curve-based launchpad into a top-ten protocol by TVL (DefiLlama)
+- Launched 12 production projects using zk-KYC, Proof of Humanity (Passport), and anti-sybil mechanisms
+- Achieved highest ROI grant allocator performance in the Polygon ecosystem (~10x)
+- Acquired by Thrive Protocol in August 2026
+
+DAO BD & TREASURY GOVERNANCE
+Polygon Labs | June 2022 - February 2026
+
+- Served on PolygonDAO grants committee and coordinated Ethereum Adoption DAO (EAD) and Metaverse Alliance DAO (MAD)
+- Led DAO tooling business development, winning major infrastructure deployments across the ecosystem
+- Designed and launched Polygon's community grants program, at the time the largest in Web3 (~$200M annualized)
+
+GOVERNANCE SOLUTION ENGINEER
+BanklessDAO | June 2021 - February 2023
+
+- Core contributor in OpsGuild and co-author of the Sobol Cartographer program
+- Cofounded FRAG Stack, a decentralized, incentive-aligned frontend stack using Radicle and IPFS
+- Cofounded the Project Management Guild and Modern Agilist Podcast
+- Served as GSE lead in the inaugural cohort; compiled the DAO constitution, handbook, and proposal standards
+
+LEAD PROGRAM AGILIST
+UPMC Enterprises | January 2019 - February 2023
+
+- Designed and executed the scaling strategy for MyUPMC (45+ engineers)
+- Reorganized delivery into cross-functional teams and specialty tribes
+- Founded the Agile Working Group and MyUPMC University
+- Authored the MyUPMC Agility Handbook and delivery metrics framework
+  Handbook: https://www.justiceconder.com/myupmc-agility-handbook.pdf
+
+PROGRAM IT TEAM MANAGER
+Highmark | June 2018 - October 2018
+
+- Formed four new scrum teams supporting an enterprise CMS migration
+- Introduced ETL-driven migration strategies that improved speed and data quality
+- Established cross-team coordination mechanisms and executive transparency
+
+BLOCKCHAIN CONSULTANT
+Fraction Software | October 2016 - Present
+
+- Advisor to organizations exploring blockchain, Ethereum, and decentralized architectures
+- Provide feasibility analysis, platform selection, and smart contract constraint modeling
+- Translate complex Web3 concepts for executives and non-technical stakeholders
+
+PRODUCT LEAD
+33 Mile Radius | January 2015 - September 2016
+
+- Led post-acquisition product integration and roadmap execution
+- Built and managed a small engineering team
+- Migrated a local application to a containerized, cloud-based multi-user platform
+- Delivered executive dashboards covering analytics and revenue
+
+DEVELOPER
+Sherwin-Williams | June 2014 - January 2015
+
+- Supported enterprise agile transformation initiatives
+- Executed a 24-hour emergency e-commerce migration using static site generation
+
+DEVELOPER
+Truth for Life | March 2013 - January 2014
+
+- Led frontend development and marketing landing pages
+- Introduced Git workflows, agile practices, and modern QA tooling
+
+DEVELOPER
+Sherwin-Williams | July 2011 - January 2013
+
+- Maintained core web properties and partner sites
+- Built a multilingual European web portal in collaboration with international teams
+
+================================================================================
+EDUCATION
+================================================================================
+
+MASTER OF SCIENCE - COMPUTER SCIENCE WITH AI FOCUS
+Western Governors University (WGU) | 2025 - Present
+Masters Program
+
+ASSOCIATE OF APPLIED SCIENCE - COMPUTER PROGRAMMING AND DATABASE DESIGN
+Stark State College | 2009 - 2011
+Associate's Degree - Graduated with academic distinction
+
+================================================================================
+CERTIFICATIONS
+================================================================================
+
+SCRUM & AGILE
+- STMAC - Scrum Team Member - International Scrum Institute
+- SMAC - Scrum Master - International Scrum Institute
+- SSEAC - Scaled Scrum Expert - International Scrum Institute
+- SCAC - Scrum Coach - International Scrum Institute
+- PSM I - Professional Scrum Master - Scrum.org
+- PSK I - Professional Scrum with Kanban - Scrum.org
+- DevOps - Scrum Alliance
+- Certified SAFe 5 Agilist - Scaled Agile, Inc
+- Certified SAFe 5 Practitioner - Scaled Agile, Inc
+- CSM - Certified Scrum Master - Scrum Alliance
+- A-CSM - Advanced Certified Scrum Master - Scrum Alliance
+- AI for Scrum Masters - Scrum Alliance
+
+BLOCKCHAIN & WEB3
+- Blockchain: Foundations and Use Cases - ConsenSys Academy
+- IBM Blockchain Essentials - IBM
+- IBM Blockchain Foundation Developer - IBM
+- Certified Blockchain Expert - Blockchain Council
+- Certified Cryptocurrency Trader - Blockchain Council
+- Blockchain & Healthcare - Udemy
+- Certified Blockchain & Healthcare Professional - Blockchain Council
+- Certified DAO Expert - Blockchain Council
+- Certified NFT Expert - Blockchain Council
+- Metaverse Professional - 101 Blockchains
+- Token Engineering Fundamentals (1 & 2) - Token Engineering Academy
+
+TECHNOLOGY & DEVELOPMENT
+- AWS Certified Cloud Practitioner - AWS
+- Google Analytics for Beginners - Google
+- GitLab 101 - GitLab
+- Certified Entry-Level Python Programmer - Python Institute
+
+BUSINESS & STRATEGY
+- Mastering Business Models - Strategyzer
+- Certified Platform Design Toolkit Facilitator - Boundaryless
+- Certified Rendanheyi Expert - First Level - Boundaryless
+- Platform Strategy Masterclass - The Platform Institute
+- Team Topologies - Team Topologies Academy
+- Platform as Product - Team Topologies Academy
+
+================================================================================
+KEYWORDS & SKILLS
+================================================================================
+
+Web3, DAO, Decentralized Autonomous Organization, Blockchain, Ethereum, Smart Contracts, Token Engineering, Bonding Curves, Quadratic Funding, Grant Programs, Governance, Program Management, Agile, Scrum, SAFe, Kanban, Software Development, Software Engineering, Product Management, Business Development, Strategy, Organizational Design, Systems Thinking, Agent Automation, API Development, Data Architecture, Python, JavaScript, Git, AWS, Cloud Computing, Agile Transformation, Team Leadership, Cross-functional Teams, Stakeholder Management, Executive Communication, Technical Writing, Documentation
+
+================================================================================
+PUBLICATIONS
+================================================================================
+
+BOOKS
+- Cypherpunk Revolution: A Bitcoin and Blockchain Primer - Amazon
+  https://www.amazon.com/dp/B07KKLMW1X/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+- Data-Driven Agility: A Rigorous Approach to Software Delivery - Amazon
+  https://www.amazon.com/Data-Driven-Agility-Rigorous-Approach-Software-ebook/dp/B099QVD7KV/ref=sr_1_2
+- Cybernetric Org Design: Operating Playbooks for DAO-Native Firms - January 2026
+
+ARTICLES & WRITING
+- SingularityHacker.com - Singularity Hacking Blog
+  https://singularityhacker.com/
+- Medium - Agile Writing
+  https://justiceconder.medium.com
+- Mirror.xyz / Paragraph.com - Web3 Blog
+  https://paragraph.com/@0xjustice
+- The Multiple Persona Theory of Digital Secrecy - 2600 Hacker Quarterly Magazine
+  https://store.2600.com/products/summer-2019
+- Blockchain and Serverless: A Marriage Made in Cyberspace - Coinspeaker.com
+  https://www.coinspeaker.com/blockchain-serverless-marriage-made-cyberspace/
+
+Writing has been cited by ZDNet, Daring Fireball, OSNews, Forefront, TalentDAO, and many other DAO newsletters and thought leaders across the ecosystem and translated into other languages.
+
+================================================================================
+EXITS
+================================================================================
+
+- Ghost Army Software: Procedurally generated marketing and website redesign (2015)
+- Quadratic Accelerator (Q/Acc): Tokenization platform for startups (2025)
+
+================================================================================
+ADDITIONAL INFORMATION
+================================================================================
+
+For full testimonials and speaking engagements, please visit: https://www.justiceconder.com
+This resume is optimized for Applicant Tracking Systems (ATS) and search engine optimization (SEO). For a formatted version, please visit https://www.justiceconder.com
+
+Last Updated: December 2025
+
