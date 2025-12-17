@@ -284,14 +284,14 @@ body a:hover {
 }
 
 @keyframes typing {
-  0%, 33% {
+  0%, 25% {
     width: 0;
     height: 100%;
   }
-  12%, 25% {
+  6.25%, 18.75% {
     width: 100%;
   }
-  34%, 100% {
+  25.01%, 100% {
     width: 0;
     height: 0;
   }
@@ -320,20 +320,24 @@ body a:hover {
   font-weight: normal;
   width: 0;
   height: 0;
-  animation: typing 12s infinite, blinker 0.75s step-end infinite;
+  animation: typing 16s infinite, blinker 0.75s step-end infinite;
   border-right: 0.1em solid #ffde00;
 }
-.intro #typer .role-agile {
+.intro #typer .role-web3 {
   animation-delay: 0s, 0s;
-  animation-timing-function: steps(16, end), step-end;
+  animation-timing-function: steps(13, end), step-end;
 }
-.intro #typer .role-scrum {
+.intro #typer .role-dao {
   animation-delay: 4s, 0s;
-  animation-timing-function: steps(25, end), step-end;
+  animation-timing-function: steps(13, end), step-end;
+}
+.intro #typer .role-agile {
+  animation-delay: 8s, 0s;
+  animation-timing-function: steps(15, end), step-end;
 }
 .intro #typer .role-software {
-  animation-delay: 8s, 0s;
-  animation-timing-function: steps(24, end), step-end;
+  animation-delay: 12s, 0s;
+  animation-timing-function: steps(17, end), step-end;
 }
 
 .navbar {
