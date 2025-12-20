@@ -12,49 +12,38 @@
         }
 
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            font-size: 9pt;
+            font-family: 'Lato', 'Calibri', 'Helvetica', 'Arial', 'Verdana', 'Open Sans', 'Source Sans Pro', 'Roboto', 'Noto Sans', sans-serif;
+            font-size: 10pt;
             line-height: 1.2;
             color: #333;
             max-width: 8.5in;
             margin: 0 auto;
-            padding: 0.3in;
+            padding: 0.5in;
             background: white;
             width: 8.5in;
         }
 
         /* Header */
         .header {
-            display: flex;
-            align-items: center;
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
             margin-bottom: 12px;
         }
 
-        .header .profile-img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 12px;
-            flex-shrink: 0;
-        }
-
-        .header-content {
-            flex: 1;
+        .header {
+            text-align: center;
         }
 
         .header h1 {
             font-size: 16pt;
             font-weight: bold;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
             letter-spacing: 0.5px;
         }
 
         .header .contact {
-            font-size: 8pt;
-            margin-top: 2px;
+            font-size: 9pt;
+            margin-top: 4px;
             line-height: 1.3;
         }
 
@@ -66,31 +55,35 @@
             margin: 0 6px;
         }
 
+        .header .contact-line a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+
         .header .socials {
-            font-size: 7.5pt;
-            color: #555;
             margin-left: 8px;
         }
 
         .header .socials a {
             margin-right: 8px;
-            color: #555;
+            color: #333;
             text-decoration: none;
         }
 
         /* Sections */
         .section {
-            margin-bottom: 12px;
+            margin-bottom: 18px;
         }
 
         .section-title {
-            font-size: 10pt;
+            font-size: 14pt;
             font-weight: bold;
             text-transform: uppercase;
             border-bottom: 1px solid #666;
             padding-bottom: 3px;
             margin-bottom: 8px;
-            margin-top: 12px;
+            margin-top: 18px;
         }
 
         .section-title:first-of-type {
@@ -105,7 +98,7 @@
 
         .summary p {
             margin-bottom: 6px;
-            font-size: 9pt;
+            font-size: 10pt;
         }
 
         .summary ul {
@@ -115,7 +108,7 @@
 
         .summary li {
             margin-bottom: 3px;
-            font-size: 9pt;
+            font-size: 10pt;
         }
 
         /* Experience */
@@ -166,7 +159,7 @@
         .experience-item li {
             margin-bottom: 4px;
             text-align: justify;
-            font-size: 9pt;
+            font-size: 10pt;
         }
 
         /* Education */
@@ -198,7 +191,7 @@
         }
 
         .education-item p {
-            font-size: 9pt;
+            font-size: 10pt;
             display: inline;
         }
 
@@ -242,7 +235,7 @@
         /* Page setup for print */
         @page {
             size: letter;
-            margin: 0.2in;
+            margin: 0.5in;
         }
 
         /* Print-specific styles */
@@ -255,19 +248,14 @@
             body {
                 padding: 0;
                 margin: 0;
-                font-size: 9pt;
+                font-size: 10pt;
                 max-width: 100%;
             }
             
             .resume-container {
-                padding: 0.2in;
+                padding: 0.5in;
                 max-width: 8.5in;
                 margin: 0 auto;
-            }
-            
-            .header .profile-img {
-                width: 60px;
-                height: 60px;
             }
             
             .section {
@@ -315,24 +303,21 @@
     <div class="resume-container">
         <!-- Header -->
         <div class="header">
-            <img src="profile.png" alt="Justice Conder" class="profile-img">
-            <div class="header-content">
-                <h1>JUSTICE CONDER</h1>
-                <div class="contact">
-                    <div class="contact-line">
-                        <span>822 Stonewater Dr. • Kent, OH 44240</span>
-                        <span>330.888.5312</span>
-                        <span>justiceconder@gmail.com</span>
-                    </div>
-                    <div class="contact-line">
-                        <span>justiceconder.com</span>
-                        <span class="socials">
-                            <a href="https://twitter.com/singularityhack">Twitter</a>
-                            <a href="https://github.com/singularityhacker">GitHub</a>
-                            <a href="https://paragraph.com/@0xjustice">Paragraph</a>
-                            <a href="https://www.linkedin.com/in/justiceconder">LinkedIn</a>
-                        </span>
-                    </div>
+            <h1>JUSTICE CONDER</h1>
+            <div class="contact">
+                <div class="contact-line">
+                    <span>822 Stonewater Dr. • Kent, OH 44240</span>
+                    <span>330.888.5312</span>
+                    <span>justiceconder@gmail.com</span>
+                </div>
+                <div class="contact-line">
+                    <a href="https://justiceconder.com">justiceconder.com</a>
+                    <span class="socials">
+                        <a href="https://twitter.com/singularityhack">X:@singularityhack</a>
+                        <a href="https://github.com/singularityhacker">GitHub</a>
+                        <a href="https://paragraph.com/@0xjustice">Blog</a>
+                        <a href="https://www.linkedin.com/in/justiceconder">LinkedIn</a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -341,7 +326,7 @@
         <div class="section">
             <div class="section-title">Summary</div>
             <div class="summary">
-                <p>Operator, founder, and technologist with 15+ years across software development, large scale agile programs, and tech-forward orgs. Proven record of building and scaling complex socio-technical systems. Comfortable operating from code and architecture through org design, incentives, and capital allocation. Known for high-velocity execution, systems thinking, and translating emerging technology into durable operational primitives.</p>
+                <p>Operator, founder, and technologist with 15+ years across software development, large-scale agile programs, and tech-forward orgs. Proven record of building and scaling complex socio-technical systems. Comfortable operating from code and architecture through org design, incentives, and capital allocation. Known for high-velocity execution, systems thinking, and translating emerging technology into durable operational primitives.</p>
                 <p><strong>Strengths:</strong></p>
                 <ul>
                     <li>Program and org design at scale (SAFe, Kanban, Scrum)</li>
@@ -367,7 +352,7 @@
                     <div class="date">Aug 2025 - Jan 2026</div>
                 </div>
                 <ul>
-                    <li>Designed and built the Thrive Guardian Network (TGN) API, a permissionless x402-powered gig economy.</li>
+                    <li>Designed and built the Thrive Guardian Network API, a permissionless x402-powered gig economy.</li>
                     <li>Implemented user-deployable agents that source, normalize, and score web3 projects.</li>
                     <li>Architected agent workflows that fed structured diligence data into Thrive's internal data lake and decision systems.</li>
                 </ul>
@@ -440,7 +425,7 @@
                     <div class="date">June 2018 - Oct 2018</div>
                 </div>
                 <ul>
-                    <li>Formed four new scrum teams supporting an enterprise CMS migration.</li>
+                    <li>Formed four new Scrum teams supporting an enterprise CMS migration.</li>
                     <li>Introduced ETL-driven migration strategies that improved speed and data quality.</li>
                 </ul>
             </div>
