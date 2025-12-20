@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice Conder - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.4in;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .header .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .header .contact {
+            font-size: 9pt;
+            margin-top: 3px;
+            line-height: 1.5;
+        }
+
+        .header .contact .contact-line {
+            margin: 2px 0;
+        }
+
+        .header .contact span {
+            margin: 0 6px;
+        }
+
+        .header .socials {
+            font-size: 8.5pt;
+            margin-top: 4px;
+            color: #555;
+        }
+
+        .header .socials a {
+            margin-right: 10px;
+            color: #555;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #666;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        /* Summary */
+        .summary {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .summary p {
+            margin-bottom: 6px;
+            font-size: 9.5pt;
+        }
+
+        .summary ul {
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+
+        .summary li {
+            margin-bottom: 2px;
+            font-size: 9.5pt;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .experience-header h3 {
+            font-size: 11pt;
+            font-weight: bold;
+        }
+
+        .experience-header .company {
+            font-weight: bold;
+        }
+
+        .experience-header .date {
+            font-size: 9pt;
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        .experience-header .title {
+            font-size: 10pt;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .experience-item ul {
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+
+        .experience-item li {
+            margin-bottom: 3px;
+            text-align: justify;
+            font-size: 9.5pt;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .education-header h3 {
+            font-size: 11pt;
+            font-weight: bold;
+        }
+
+        .education-header .date {
+            font-size: 9pt;
+            font-style: italic;
+        }
+
+        .education-item p {
+            font-size: 9.5pt;
+            margin-top: 2px;
+        }
+
+        /* Certifications */
+        .certifications {
+            column-count: 2;
+            column-gap: 30px;
+        }
+
+        .cert-category {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+
+        .cert-category h4 {
+            font-size: 10pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .cert-category p {
+            font-size: 9pt;
+            margin-bottom: 2px;
+            margin-left: 8px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skills span {
+            font-size: 10pt;
+            padding: 2px 8px;
+            background: #f0f0f0;
+            border-radius: 3px;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                padding: 0.25in;
+                font-size: 9.5pt;
+            }
+            
+            .header .profile-img {
+                width: 90px;
+                height: 90px;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .experience-item {
+                page-break-inside: avoid;
+            }
+
+            .header {
+                page-break-after: avoid;
+            }
+
+            .section-title {
+                page-break-after: avoid;
+            }
+
+            /* Remove links styling for print */
+            a {
+                color: #333;
+                text-decoration: none;
+            }
+
+            /* Ensure proper page breaks */
+            .experience-item:last-child {
+                page-break-after: auto;
+            }
+        }
+
+        /* Screen view adjustments */
+        @media screen {
+            body {
+                background: #f5f5f5;
+                padding: 0.8in;
+            }
+
+            .resume-container {
+                background: white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                padding: 0.4in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="profile.png" alt="Justice Conder" class="profile-img">
+            <div class="header-content">
+                <h1>JUSTICE CONDER</h1>
+                <div class="contact">
+                    <div class="contact-line">
+                        <span>822 Stonewater Dr. • Kent, OH 44240</span>
+                        <span>330.888.5312</span>
+                        <span>justiceconder@gmail.com</span>
+                    </div>
+                    <div class="contact-line">
+                        <span>justiceconder.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="https://twitter.com/singularityhack">Twitter</a>
+                        <a href="https://github.com/singularityhacker">GitHub</a>
+                        <a href="https://paragraph.com/@0xjustice">Paragraph</a>
+                        <a href="https://www.linkedin.com/in/justiceconder">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="section">
+            <div class="section-title">Summary</div>
+            <div class="summary">
+                <p>Operator, founder, and technologist with 15+ years across software development, large scale agile programs, and Web3-native organizations. Proven record of building and scaling complex socio-technical systems including DAO governance, grant programs, bonding curve launchpads, and agent-driven automation. Comfortable operating from code and architecture through org design, incentives, and capital allocation. Known for high-velocity execution, systems thinking, and translating emerging technology into durable operational primitives.</p>
+                <p><strong>Strengths:</strong></p>
+                <ul>
+                    <li>Web3 & DAO architecture (governance, grants, token mechanics)</li>
+                    <li>Program and org design at scale</li>
+                    <li>Bonding curves, token launch infrastructure, grant allocation</li>
+                    <li>Agent-based automation and on-chain/off-chain integration</li>
+                    <li>Executive communication and technical storytelling</li>
+                    <li>Rapid prototyping and iteration</li>
+                    <li>Executive strategy</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Thrive Protocol</h3>
+                        <div class="title">Head of Growth & Innovation</div>
+                    </div>
+                    <div class="date">Aug 2025 - Jan 2026</div>
+                </div>
+                <ul>
+                    <li>Designed and built the Thrive Guardian Network (TGN) API, a permissionless x402-powered gig economy.</li>
+                    <li>Implemented user-deployable agents that source, normalize, and score public project data against private evaluation rubrics.</li>
+                    <li>Architected agent workflows that fed structured diligence data into Thrive's internal data lake and decision systems.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Quadratic Accelerator</h3>
+                        <div class="title">Cofounder</div>
+                    </div>
+                    <div class="date">Feb 2025 - Aug 2026</div>
+                </div>
+                <ul>
+                    <li>Founded and scaled a bonding-curve-based launchpad into a top-ten protocol by TVL (DefiLlama).</li>
+                    <li>Launched 12 production projects using zk-KYC, Proof of Humanity (Passport), and anti-sybil mechanisms.</li>
+                    <li>Achieved highest ROI grant allocator performance in the Polygon ecosystem (~10x).</li>
+                    <li>Acquired by Thrive Protocol in Aug 2026.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Polygon Labs</h3>
+                        <div class="title">DAO BD & Treasury Governance</div>
+                    </div>
+                    <div class="date">June 2022 - Feb 2026</div>
+                </div>
+                <ul>
+                    <li>Served on PolygonDAO grants committee and coordinated Ethereum Adoption DAO (EAD) and Metaverse Alliance DAO (MAD).</li>
+                    <li>Led DAO tooling business development, winning major infrastructure deployments across the ecosystem.</li>
+                    <li>Designed and launched Polygon's community grants program, at the time the largest in Web3 (~$200M annualized).</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">BanklessDAO</h3>
+                        <div class="title">Governance Solution Engineer</div>
+                    </div>
+                    <div class="date">June 2021 - Feb 2023</div>
+                </div>
+                <ul>
+                    <li>Core contributor in OpsGuild and co-author of the Sobol Cartographer program.</li>
+                    <li>Cofounded FRAG Stack, a decentralized, incentive-aligned frontend stack using Radicle and IPFS.</li>
+                    <li>Cofounded the Project Management Guild and Modern Agilist Podcast.</li>
+                    <li>Served as GSE lead in the inaugural cohort; compiled the DAO constitution, handbook, and proposal standards.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">UPMC Enterprises</h3>
+                        <div class="title">Lead Program Agilist</div>
+                    </div>
+                    <div class="date">Jan 2019 - Feb 2023</div>
+                </div>
+                <ul>
+                    <li>Designed and executed the scaling strategy for MyUPMC (45+ engineers).</li>
+                    <li>Reorganized delivery into cross-functional teams and specialty tribes.</li>
+                    <li>Founded the Agile Working Group and MyUPMC University.</li>
+                    <li>Authored the MyUPMC Agility Handbook and delivery metrics framework.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Highmark</h3>
+                        <div class="title">Program IT Team Manager</div>
+                    </div>
+                    <div class="date">June 2018 - Oct 2018</div>
+                </div>
+                <ul>
+                    <li>Formed four new scrum teams supporting an enterprise CMS migration.</li>
+                    <li>Introduced ETL-driven migration strategies that improved speed and data quality.</li>
+                    <li>Established cross-team coordination mechanisms and executive transparency.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Fraction Software</h3>
+                        <div class="title">Blockchain Consultant</div>
+                    </div>
+                    <div class="date">Oct 2016 - Present</div>
+                </div>
+                <ul>
+                    <li>Advisor to organizations exploring blockchain, Ethereum, and decentralized architectures.</li>
+                    <li>Provide feasibility analysis, platform selection, and smart contract constraint modeling.</li>
+                    <li>Translate complex Web3 concepts for executives and non-technical stakeholders.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">33 Mile Radius</h3>
+                        <div class="title">Product Lead</div>
+                    </div>
+                    <div class="date">Jan 2015 - Sep 2016</div>
+                </div>
+                <ul>
+                    <li>Led post-acquisition product integration and roadmap execution.</li>
+                    <li>Built and managed a small engineering team.</li>
+                    <li>Migrated a local application to a containerized, cloud-based multi-user platform.</li>
+                    <li>Delivered executive dashboards covering analytics and revenue.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Sherwin-Williams</h3>
+                        <div class="title">Developer</div>
+                    </div>
+                    <div class="date">June 2014 - Jan 2015</div>
+                </div>
+                <ul>
+                    <li>Supported enterprise agile transformation initiatives.</li>
+                    <li>Executed a 24-hour emergency e-commerce migration using static site generation.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Truth for Life</h3>
+                        <div class="title">Developer</div>
+                    </div>
+                    <div class="date">Mar 2013 - Jan 2014</div>
+                </div>
+                <ul>
+                    <li>Led frontend development and marketing landing pages.</li>
+                    <li>Introduced Git workflows, agile practices, and modern QA tooling.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="company">Sherwin-Williams</h3>
+                        <div class="title">Developer</div>
+                    </div>
+                    <div class="date">July 2011 - Jan 2013</div>
+                </div>
+                <ul>
+                    <li>Maintained core web properties and partner sites.</li>
+                    <li>Built a multilingual European web portal in collaboration with international teams.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>WGU</h3>
+                    <div class="date">2025 - Present</div>
+                </div>
+                <p><strong>Computer Science w/ AI Focus</strong> - Masters Program</p>
+            </div>
+
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Stark State College</h3>
+                    <div class="date">2009 - 2011</div>
+                </div>
+                <p><strong>Computer Programming and Database Design</strong> - Associate's Degree, Graduated with academic distinction</p>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+            <div class="section-title">Certifications</div>
+            <div class="certifications">
+                <div class="cert-category">
+                    <h4>Scrum & Agile</h4>
+                    <p>PSM I - Professional Scrum Master - Scrum.org</p>
+                    <p>PSK I - Professional Scrum with Kanban - Scrum.org</p>
+                    <p>CSM - Certified Scrum Master - Scrum Alliance</p>
+                    <p>A-CSM - Advanced Certified Scrum Master - Scrum Alliance</p>
+                    <p>AI for Scrum Masters - Scrum Alliance</p>
+                    <p>DevOps - Scrum Alliance</p>
+                    <p>Certified SAFe 5 Agilist - Scaled Agile, Inc</p>
+                    <p>Certified SAFe 5 Practitioner - Scaled Agile, Inc</p>
+                    <p>STMAC - Scrum Team Member - International Scrum Institute</p>
+                    <p>SMAC - Scrum Master - International Scrum Institute</p>
+                    <p>SSEAC - Scaled Scrum Expert - International Scrum Institute</p>
+                    <p>SCAC - Scrum Coach - International Scrum Institute</p>
+                </div>
+
+                <div class="cert-category">
+                    <h4>Blockchain & Web3</h4>
+                    <p>Blockchain: Foundations and Use Cases - ConsenSys Academy</p>
+                    <p>IBM Blockchain Essentials - IBM</p>
+                    <p>IBM Blockchain Foundation Developer - IBM</p>
+                    <p>Certified Blockchain Expert - Blockchain Council</p>
+                    <p>Certified Cryptocurrency Trader - Blockchain Council</p>
+                    <p>Blockchain & Healthcare - Udemy</p>
+                    <p>Certified Blockchain & Healthcare Professional - Blockchain Council</p>
+                    <p>Certified DAO Expert - Blockchain Council</p>
+                    <p>Certified NFT Expert - Blockchain Council</p>
+                    <p>Metaverse Professional - 101 Blockchains</p>
+                    <p>Token Engineering Fundamentals (1 & 2) - Token Engineering Academy</p>
+                </div>
+
+                <div class="cert-category">
+                    <h4>Technology & Development</h4>
+                    <p>AWS Certified Cloud Practitioner - AWS</p>
+                    <p>Google Analytics for Beginners - Google</p>
+                    <p>GitLab 101 - GitLab</p>
+                    <p>Certified Entry-Level Python Programmer - Python Institute</p>
+                </div>
+
+                <div class="cert-category">
+                    <h4>Business & Strategy</h4>
+                    <p>Mastering Business Models - Strategyzer</p>
+                    <p>Certified Platform Design Toolkit Facilitator - Boundaryless</p>
+                    <p>Certified Rendanheyi Expert - First Level - Boundaryless</p>
+                    <p>Platform Strategy Masterclass - The Platform Institute</p>
+                    <p>Team Topologies - Team Topologies Academy</p>
+                    <p>Platform as Product - Team Topologies Academy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
