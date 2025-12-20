@@ -20,6 +20,7 @@
             margin: 0 auto;
             padding: 0.3in;
             background: white;
+            width: 8.5in;
         }
 
         /* Header */
@@ -27,8 +28,8 @@
             display: flex;
             align-items: center;
             border-bottom: 2px solid #333;
-            padding-bottom: 6px;
-            margin-bottom: 8px;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .header .profile-img {
@@ -67,8 +68,8 @@
 
         .header .socials {
             font-size: 7.5pt;
-            margin-top: 2px;
             color: #555;
+            margin-left: 8px;
         }
 
         .header .socials a {
@@ -79,8 +80,7 @@
 
         /* Sections */
         .section {
-            margin-bottom: 8px;
-            page-break-inside: avoid;
+            margin-bottom: 12px;
         }
 
         .section-title {
@@ -88,9 +88,9 @@
             font-weight: bold;
             text-transform: uppercase;
             border-bottom: 1px solid #666;
-            padding-bottom: 2px;
-            margin-bottom: 5px;
-            margin-top: 8px;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            margin-top: 12px;
         }
 
         .section-title:first-of-type {
@@ -100,35 +100,34 @@
         /* Summary */
         .summary {
             text-align: justify;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .summary p {
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             font-size: 9pt;
         }
 
         .summary ul {
-            margin-left: 16px;
-            margin-top: 2px;
+            margin-left: 18px;
+            margin-top: 4px;
         }
 
         .summary li {
-            margin-bottom: 1px;
+            margin-bottom: 3px;
             font-size: 9pt;
         }
 
         /* Experience */
         .experience-item {
-            margin-bottom: 6px;
-            page-break-inside: avoid;
+            margin-bottom: 10px;
         }
 
         .experience-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
 
         .experience-header h3 {
@@ -149,36 +148,48 @@
         .experience-header .title {
             font-size: 9pt;
             font-weight: 600;
-            margin-top: 1px;
+            margin-left: 8px;
+            display: inline;
+        }
+        
+        .experience-header .company-title {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
         }
 
         .experience-item ul {
-            margin-left: 16px;
-            margin-top: 2px;
+            margin-left: 18px;
+            margin-top: 4px;
         }
 
         .experience-item li {
-            margin-bottom: 2px;
+            margin-bottom: 4px;
             text-align: justify;
             font-size: 9pt;
         }
 
         /* Education */
         .education-item {
-            margin-bottom: 6px;
-            page-break-inside: avoid;
+            margin-bottom: 8px;
         }
 
         .education-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 2px;
+        }
+
+        .education-header > div {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
         }
 
         .education-header h3 {
             font-size: 10pt;
             font-weight: bold;
+            display: inline;
         }
 
         .education-header .date {
@@ -188,30 +199,29 @@
 
         .education-item p {
             font-size: 9pt;
-            margin-top: 1px;
+            display: inline;
         }
 
         /* Certifications */
         .certifications {
-            column-count: 3;
-            column-gap: 20px;
+            column-count: 2;
+            column-gap: 30px;
         }
 
         .cert-category {
-            margin-bottom: 6px;
-            page-break-inside: avoid;
+            margin-bottom: 8px;
         }
 
         .cert-category h4 {
             font-size: 9pt;
             font-weight: bold;
-            margin-bottom: 3px;
+            margin-bottom: 5px;
             text-transform: uppercase;
         }
 
         .cert-category p {
             font-size: 8.5pt;
-            margin-bottom: 1px;
+            margin-bottom: 3px;
             margin-left: 6px;
         }
 
@@ -229,11 +239,30 @@
             border-radius: 3px;
         }
 
+        /* Page setup for print */
+        @page {
+            size: letter;
+            margin: 0.2in;
+        }
+
         /* Print-specific styles */
         @media print {
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
             body {
+                padding: 0;
+                margin: 0;
+                font-size: 9pt;
+                max-width: 100%;
+            }
+            
+            .resume-container {
                 padding: 0.2in;
-                font-size: 8.5pt;
+                max-width: 8.5in;
+                margin: 0 auto;
             }
             
             .header .profile-img {
@@ -242,26 +271,16 @@
             }
             
             .section {
-                margin-bottom: 6px;
+                margin-bottom: 10px;
+                page-break-inside: auto;
             }
             
             .experience-item {
-                margin-bottom: 4px;
+                margin-bottom: 8px;
+                page-break-inside: auto;
             }
-
-            .section {
-                page-break-inside: avoid;
-            }
-
-            .experience-item {
-                page-break-inside: avoid;
-            }
-
+            
             .header {
-                page-break-after: avoid;
-            }
-
-            .section-title {
                 page-break-after: avoid;
             }
 
@@ -307,12 +326,12 @@
                     </div>
                     <div class="contact-line">
                         <span>justiceconder.com</span>
-                    </div>
-                    <div class="socials">
-                        <a href="https://twitter.com/singularityhack">Twitter</a>
-                        <a href="https://github.com/singularityhacker">GitHub</a>
-                        <a href="https://paragraph.com/@0xjustice">Paragraph</a>
-                        <a href="https://www.linkedin.com/in/justiceconder">LinkedIn</a>
+                        <span class="socials">
+                            <a href="https://twitter.com/singularityhack">Twitter</a>
+                            <a href="https://github.com/singularityhacker">GitHub</a>
+                            <a href="https://paragraph.com/@0xjustice">Paragraph</a>
+                            <a href="https://www.linkedin.com/in/justiceconder">LinkedIn</a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -322,16 +341,15 @@
         <div class="section">
             <div class="section-title">Summary</div>
             <div class="summary">
-                <p>Operator, founder, and technologist with 15+ years across software development, large scale agile programs, and Web3-native organizations. Proven record of building and scaling complex socio-technical systems including DAO governance, grant programs, bonding curve launchpads, and agent-driven automation. Comfortable operating from code and architecture through org design, incentives, and capital allocation. Known for high-velocity execution, systems thinking, and translating emerging technology into durable operational primitives.</p>
+                <p>Operator, founder, and technologist with 15+ years across software development, large scale agile programs, and tech-forward orgs. Proven record of building and scaling complex socio-technical systems. Comfortable operating from code and architecture through org design, incentives, and capital allocation. Known for high-velocity execution, systems thinking, and translating emerging technology into durable operational primitives.</p>
                 <p><strong>Strengths:</strong></p>
                 <ul>
-                    <li>Web3 & DAO architecture (governance, grants, token mechanics)</li>
-                    <li>Program and org design at scale</li>
-                    <li>Bonding curves, token launch infrastructure, grant allocation</li>
-                    <li>Agent-based automation and on-chain/off-chain integration</li>
+                    <li>Program and org design at scale (SAFe, Kanban, Scrum)</li>
+                    <li>Cryptoeconomics and token engineering</li>
+                    <li>Agentic and LLM-based automation</li>
                     <li>Executive communication and technical storytelling</li>
-                    <li>Rapid prototyping and iteration</li>
-                    <li>Executive strategy</li>
+                    <li>Rapid prototyping and iterative delivery</li>
+                    <li>Complex problem solving and systems thinking</li>
                 </ul>
             </div>
         </div>
@@ -342,7 +360,7 @@
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Thrive Protocol</h3>
                         <div class="title">Head of Growth & Innovation</div>
                     </div>
@@ -350,14 +368,14 @@
                 </div>
                 <ul>
                     <li>Designed and built the Thrive Guardian Network (TGN) API, a permissionless x402-powered gig economy.</li>
-                    <li>Implemented user-deployable agents that source, normalize, and score public project data against private evaluation rubrics.</li>
+                    <li>Implemented user-deployable agents that source, normalize, and score web3 projects.</li>
                     <li>Architected agent workflows that fed structured diligence data into Thrive's internal data lake and decision systems.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Quadratic Accelerator</h3>
                         <div class="title">Cofounder</div>
                     </div>
@@ -367,44 +385,41 @@
                     <li>Founded and scaled a bonding-curve-based launchpad into a top-ten protocol by TVL (DefiLlama).</li>
                     <li>Launched 12 production projects using zk-KYC, Proof of Humanity (Passport), and anti-sybil mechanisms.</li>
                     <li>Achieved highest ROI grant allocator performance in the Polygon ecosystem (~10x).</li>
-                    <li>Acquired by Thrive Protocol in Aug 2026.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Polygon Labs</h3>
-                        <div class="title">DAO BD & Treasury Governance</div>
+                        <div class="title"> DAO BD & Treasury Governance</div>
                     </div>
                     <div class="date">June 2022 - Feb 2026</div>
                 </div>
                 <ul>
-                    <li>Served on PolygonDAO grants committee and coordinated Ethereum Adoption DAO (EAD) and Metaverse Alliance DAO (MAD).</li>
+                    <li>Led grants committee, Ethereum Adoption DAO, and Metaverse Alliance DAO.</li>
                     <li>Led DAO tooling business development, winning major infrastructure deployments across the ecosystem.</li>
-                    <li>Designed and launched Polygon's community grants program, at the time the largest in Web3 (~$200M annualized).</li>
+                    <li>Designed Polygon's community grants program, at the time the largest in Web3 (~$200M annualized).</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">BanklessDAO</h3>
                         <div class="title">Governance Solution Engineer</div>
                     </div>
                     <div class="date">June 2021 - Feb 2023</div>
                 </div>
                 <ul>
-                    <li>Core contributor in OpsGuild and co-author of the Sobol Cartographer program.</li>
                     <li>Cofounded FRAG Stack, a decentralized, incentive-aligned frontend stack using Radicle and IPFS.</li>
-                    <li>Cofounded the Project Management Guild and Modern Agilist Podcast.</li>
                     <li>Served as GSE lead in the inaugural cohort; compiled the DAO constitution, handbook, and proposal standards.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">UPMC Enterprises</h3>
                         <div class="title">Lead Program Agilist</div>
                     </div>
@@ -412,15 +427,13 @@
                 </div>
                 <ul>
                     <li>Designed and executed the scaling strategy for MyUPMC (45+ engineers).</li>
-                    <li>Reorganized delivery into cross-functional teams and specialty tribes.</li>
-                    <li>Founded the Agile Working Group and MyUPMC University.</li>
                     <li>Authored the MyUPMC Agility Handbook and delivery metrics framework.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Highmark</h3>
                         <div class="title">Program IT Team Manager</div>
                     </div>
@@ -429,13 +442,12 @@
                 <ul>
                     <li>Formed four new scrum teams supporting an enterprise CMS migration.</li>
                     <li>Introduced ETL-driven migration strategies that improved speed and data quality.</li>
-                    <li>Established cross-team coordination mechanisms and executive transparency.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Fraction Software</h3>
                         <div class="title">Blockchain Consultant</div>
                     </div>
@@ -444,13 +456,12 @@
                 <ul>
                     <li>Advisor to organizations exploring blockchain, Ethereum, and decentralized architectures.</li>
                     <li>Provide feasibility analysis, platform selection, and smart contract constraint modeling.</li>
-                    <li>Translate complex Web3 concepts for executives and non-technical stakeholders.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">33 Mile Radius</h3>
                         <div class="title">Product Lead</div>
                     </div>
@@ -458,15 +469,13 @@
                 </div>
                 <ul>
                     <li>Led post-acquisition product integration and roadmap execution.</li>
-                    <li>Built and managed a small engineering team.</li>
                     <li>Migrated a local application to a containerized, cloud-based multi-user platform.</li>
-                    <li>Delivered executive dashboards covering analytics and revenue.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Sherwin-Williams</h3>
                         <div class="title">Developer</div>
                     </div>
@@ -480,7 +489,7 @@
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Truth for Life</h3>
                         <div class="title">Developer</div>
                     </div>
@@ -494,7 +503,7 @@
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
+                    <div class="company-title">
                         <h3 class="company">Sherwin-Williams</h3>
                         <div class="title">Developer</div>
                     </div>
@@ -513,18 +522,22 @@
 
             <div class="education-item">
                 <div class="education-header">
-                    <h3>WGU</h3>
+                    <div>
+                        <h3>WGU</h3>
+                        <p><strong>Computer Science w/ AI Focus</strong> - Masters Program</p>
+                    </div>
                     <div class="date">2025 - Present</div>
                 </div>
-                <p><strong>Computer Science w/ AI Focus</strong> - Masters Program</p>
             </div>
 
             <div class="education-item">
                 <div class="education-header">
-                    <h3>Stark State College</h3>
+                    <div>
+                        <h3>Stark State College</h3>
+                        <p><strong>Computer Programming</strong> - Associate's Degree</p>
+                    </div>
                     <div class="date">2009 - 2011</div>
                 </div>
-                <p><strong>Computer Programming and Database Design</strong> - Associate's Degree, Graduated with academic distinction</p>
             </div>
         </div>
 
