@@ -66,6 +66,14 @@
   border-left: 5px solid #ffde00;
 }
 
+.blog-card-cover {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  margin: 0 0 0.85rem;
+}
+
 /* Bulma sets article { display: block }, which overrides the hidden attribute. */
 .blog-card[hidden],
 .blog-card.is-hidden-card,
@@ -185,12 +193,21 @@
   margin: 0 0 1.1rem;
 }
 
+.blog-cover {
+  margin: 0 0 1.5rem;
+}
+
+.blog-cover img,
 .blog-prose img,
 .blog-prose video {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 1.2rem 0;
+}
+
+.blog-cover img {
+  margin: 0;
 }
 
 .blog-prose a {

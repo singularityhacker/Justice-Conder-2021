@@ -415,6 +415,9 @@ def fill_clawbank(post: dict) -> dict:
     excerpt = fm.get("description") or post.get("excerpt") or ""
     html_body = sanitize_html(md_to_html(body))
     html_body = rewrite_urls(html_body, "https://clawbank.co")
+    cover = fm.get("cover_image") or post.get("cover") or ""
+    if cover.startswith("/"):
+        cover = "https://clawbank.co" + cover
     post.update(
         {
             "title": title,
@@ -422,6 +425,7 @@ def fill_clawbank(post: dict) -> dict:
             "date_display": display_date(dt),
             "excerpt": excerpt_of(excerpt or html_body),
             "body_html": html_body,
+            "cover_remote": cover,
             "_source_ext": "md",
             "_source_text": text,
         }
@@ -467,7 +471,15 @@ def fill_singularity(post: dict) -> dict:
         return post
     # drop share/read-next leftovers
     body = re.sub(r'(?is)<aside[\s\S]*?</aside>', "", body)
+    body = re.sub(r'(?is)<footer class="post-full-footer">[\s\S]*', "", body)
+    body = re.sub(r'(?is)<section class="author-card">[\s\S]*', "", body)
     body = sanitize_html(rewrite_urls(body, "https://singularityhacker.com"))
+    og_img = re.search(r'<meta property="og:image" content="([^"]+)"', html_text)
+    if og_img:
+        cover = og_img.group(1)
+        if cover.startswith("/"):
+            cover = "https://singularityhacker.com" + cover
+        post["cover_remote"] = cover
     if len(strip_tags(body)) < 40:
         post["_error"] = "extracted body too short"
         return post
@@ -753,6 +765,10 @@ def main() -> int:
     }
     (BLOG_DIR / "ingest-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
+    # Keep a local copy of every image/video so pages do not depend on Paragraph etc.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import localize_blog_media
+    localize_blog_media.main()
     return 0 if filled else 1
 
 
