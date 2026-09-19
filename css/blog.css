@@ -4,7 +4,7 @@
 
 .blog-wrap {
   padding: 40px 20px 80px;
-  max-width: 980px;
+  max-width: 1160px;
 }
 
 .blog-lede {
@@ -57,21 +57,66 @@
 
 .blog-list {
   display: grid;
-  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: #f7f8f9;
-  padding: 1.25rem 1.4rem;
-  border-left: 5px solid #ffde00;
+  padding: 0 0 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 0;
+  cursor: pointer;
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+}
+
+.blog-card:hover {
+  border-color: #cfd3da;
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+  transform: translateY(-2px);
 }
 
 .blog-card-cover {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  overflow: hidden;
+  background: #eceef1;
+  flex-shrink: 0;
+}
+
+.blog-card-cover img {
   display: block;
   width: 100%;
-  max-height: 220px;
+  height: 100%;
   object-fit: cover;
-  margin: 0 0 0.85rem;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-card-cover img {
+  transform: scale(1.04);
+}
+
+.blog-card:not(:has(.blog-card-cover))::before {
+  content: "";
+  display: block;
+  aspect-ratio: 21 / 9;
+  background: #eceef1;
+}
+
+.blog-card .blog-card-meta,
+.blog-card h3,
+.blog-card > p {
+  padding-left: 1.15rem;
+  padding-right: 1.15rem;
+}
+
+.blog-card .blog-card-meta {
+  padding-top: 1.1rem;
 }
 
 /* Bulma sets article { display: block }, which overrides the hidden attribute. */
@@ -82,9 +127,10 @@
 }
 
 .blog-card h3 {
-  font-size: 22px;
+  font-size: 1.05rem;
   font-weight: 600;
-  margin: 0.35rem 0 0.5rem;
+  line-height: 1.3;
+  margin: 0.4rem 0 0.45rem;
   color: #2f3742;
 }
 
@@ -101,6 +147,13 @@
 .blog-card p {
   margin: 0;
   color: #4a5563;
+  font-size: 13px;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .blog-card-meta {
@@ -266,5 +319,21 @@
 
   .blog-article h1 {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 960px) {
+  .blog-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-list {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card h3 {
+    font-size: 1.1rem;
   }
 }

@@ -46,5 +46,14 @@
     });
   });
 
+  cards.forEach(function (card) {
+    var link = card.querySelector("h3 a");
+    if (!link) return;
+    card.addEventListener("click", function (event) {
+      if (event.target.closest("a")) return;
+      window.location.href = link.getAttribute("href");
+    });
+  });
+
   applyFilter(requestedFilter(), false);
 })();

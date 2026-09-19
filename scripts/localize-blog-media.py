@@ -251,7 +251,9 @@ def update_listing(posts: list[dict], covers: dict[str, str]) -> None:
             continue
         insert_at = listing.find(">", card_start) + 1
         snippet = (
-            f'\n\t\t\t\t<img class="blog-card-cover" src="blog/{cover}" alt="">'
+            f'\n\t\t\t\t<div class="blog-card-cover">'
+            f'\n\t\t\t\t\t<img src="blog/{cover}" alt="" loading="lazy">'
+            f'\n\t\t\t\t</div>'
         )
         if f'src="blog/{cover}"' in listing[card_start:card_start + 400]:
             continue
