@@ -7,6 +7,16 @@
   max-width: 1160px;
 }
 
+/* Homepage sections use a 5em top margin; keep the writings index tight. */
+.blog-page .blog-wrap > .blog-lede,
+.blog-page .blog-wrap > .blog-filters,
+.blog-page .blog-wrap > .blog-count,
+.blog-page .blog-wrap > .blog-empty,
+.blog-page .blog-wrap > .blog-list,
+.blog-page .blog-wrap > .blog-crumb {
+  margin-top: 0;
+}
+
 .blog-lede {
   color: #4a5563;
   max-width: 46rem;
