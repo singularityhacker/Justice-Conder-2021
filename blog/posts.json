@@ -9,7 +9,11 @@
     "canonical": "https://clawbank.co/blog/bankr-investment/",
     "excerpt": "The Bankr Fund's second investment is ClawBank \u2014 liquid $CLAWBANK, locked one year. Justice walked through the vision on Agent Hour. Here's the episode, cleaned up.",
     "path": "blog/clawbank-bankr-investment.html",
-    "cover": "blog/media/61bbee4ef9ea-bankr-investment.gif"
+    "cover": "blog/media/61bbee4ef9ea-bankr-investment.gif",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-clawbank-os",
@@ -21,7 +25,11 @@
     "canonical": "https://clawbank.co/blog/clawbank-os/",
     "excerpt": "ClawBank OS is live in alpha \u2014 a company as an executable object. One API key, the whole loop: banking, formation, contracts, site, ads, and a dedicated agent per company.",
     "path": "blog/clawbank-clawbank-os.html",
-    "cover": "blog/media/0d4083729c63-os-alpha.gif"
+    "cover": "blog/media/0d4083729c63-os-alpha.gif",
+    "tags": [
+      "crypto",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-the-clawbank-endgame",
@@ -33,7 +41,11 @@
     "canonical": "https://clawbank.co/blog/the-clawbank-endgame/",
     "excerpt": "Every product we've shipped is a component of the same object \u2014 a company that software can create, own, operate, finance, and evolve. Here's the system underneath, and where it goes next.",
     "path": "blog/clawbank-the-clawbank-endgame.html",
-    "cover": "blog/media/c0e7e2890118-the-company-machine.jpg"
+    "cover": "blog/media/c0e7e2890118-the-company-machine.jpg",
+    "tags": [
+      "ai",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-limitless-prediction-markets",
@@ -45,7 +57,11 @@
     "canonical": "https://clawbank.co/blog/limitless-prediction-markets/",
     "excerpt": "The #1 prediction market on Base is now available through ClawBank and one text away \u2014 ~700 live markets, zero gas, zero deposits, and your funds never leave your wallet.",
     "path": "blog/clawbank-limitless-prediction-markets.html",
-    "cover": "blog/media/c78f102ce7e0-prediction-markets.gif"
+    "cover": "blog/media/c78f102ce7e0-prediction-markets.gif",
+    "tags": [
+      "agents",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-the-singularity-is-here",
@@ -57,7 +73,12 @@
     "canonical": "https://clawbank.co/blog/the-singularity-is-here/",
     "excerpt": "We've crossed the event horizon, and 90% of the economy can't see it. The corporate immune system is sabotaging AI from the inside \u2014 and that creates the largest arbitrage of our lifetime.",
     "path": "blog/clawbank-the-singularity-is-here.html",
-    "cover": "blog/media/edf4ecbc09f7-singularity.jpg"
+    "cover": "blog/media/edf4ecbc09f7-singularity.jpg",
+    "tags": [
+      "ai",
+      "singularity",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-base-lp-management",
@@ -69,7 +90,11 @@
     "canonical": "https://clawbank.co/blog/base-lp-management/",
     "excerpt": "One text puts money into any Uniswap v4 pool on Base. Self-custody, sponsored gas, and real-time PnL \u2014 from chat with Manfred.",
     "path": "blog/clawbank-base-lp-management.html",
-    "cover": "blog/media/17acf7de935a-base-lp-management.gif"
+    "cover": "blog/media/17acf7de935a-base-lp-management.gif",
+    "tags": [
+      "agents",
+      "defi"
+    ]
   },
   {
     "slug": "clawbank-clawbank-deals",
@@ -81,7 +106,13 @@
     "canonical": "https://clawbank.co/blog/clawbank-deals/",
     "excerpt": "Liquid, vested, and KPI-locked token deals \u2014 escrowed, deadline-bound, claimable via a code over text. The handshake ran this industry for a decade. Now the handshake has escrow, a deadline, and a trigger.",
     "path": "blog/clawbank-clawbank-deals.html",
-    "cover": "blog/media/2400946cee54-clawbank-deals.jpg"
+    "cover": "blog/media/2400946cee54-clawbank-deals.jpg",
+    "tags": [
+      "agents",
+      "crypto",
+      "tokenization",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-clawbank-hermes-plugin",
@@ -93,7 +124,10 @@
     "canonical": "https://clawbank.co/blog/clawbank-hermes-plugin/",
     "excerpt": "One install gives any Hermes agent the full ClawBank surface \u2014 banking, wallets, trading, x402, deals, contracts, formation. A ~200-line, zero-dependency plugin that syncs the live tool catalog on every launch\u2026",
     "path": "blog/clawbank-clawbank-hermes-plugin.html",
-    "cover": "blog/media/8c7201690dbf-hermes-plugin.jpg"
+    "cover": "blog/media/8c7201690dbf-hermes-plugin.jpg",
+    "tags": [
+      "software"
+    ]
   },
   {
     "slug": "clawbank-policy-engine",
@@ -105,7 +139,13 @@
     "canonical": "https://clawbank.co/blog/policy-engine/",
     "excerpt": "Spending limits, scoped keys, and 2FA \u2014 three independent layers of protection around your agents' money. A leaked $10/day key is a $10/day problem, not a drained-account problem.",
     "path": "blog/clawbank-policy-engine.html",
-    "cover": "blog/media/3efd38989b57-policy-engine.jpg"
+    "cover": "blog/media/3efd38989b57-policy-engine.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "crypto",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-living-software",
@@ -117,7 +157,11 @@
     "canonical": "https://clawbank.co/blog/living-software/",
     "excerpt": "Manfred handles the users. MetaManfred handles Manfred. Over the last 9 days the loop ran white-hot \u2014 40 production deploys, all originating from real user desire. Product management as a metabolic process.",
     "path": "blog/clawbank-living-software.html",
-    "cover": "blog/media/114eba79995f-living-software.gif"
+    "cover": "blog/media/114eba79995f-living-software.gif",
+    "tags": [
+      "agents",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-x402-in-pocket",
@@ -129,7 +173,11 @@
     "canonical": "https://clawbank.co/blog/x402-in-pocket/",
     "excerpt": "We turned on x402 payments only two weeks ago. The split is almost perfectly dual-rail: ~109k in USDC on Base, ~105k as RLUSD on XRPL, plus 69k invoices through the public gateway. Here's what agents are actually buying.",
     "path": "blog/clawbank-x402-in-pocket.html",
-    "cover": "blog/media/04ec2f1d085d-x402-in-pocket.jpg"
+    "cover": "blog/media/04ec2f1d085d-x402-in-pocket.jpg",
+    "tags": [
+      "agents",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-trade-to-earn",
@@ -141,7 +189,10 @@
     "canonical": "https://clawbank.co/blog/trade-to-earn/",
     "excerpt": "Capital should be productive, liquid, and magnetic. How every ClawBank fee buys back $CLAWBANK, and the new Trade to Earn vault \u2014 the first Earn module we actually pay for. Epoch 1 opens July 17 with a $5,000 pot.",
     "path": "blog/clawbank-trade-to-earn.html",
-    "cover": "blog/media/834066a463f5-trade-to-earn.jpg"
+    "cover": "blog/media/834066a463f5-trade-to-earn.jpg",
+    "tags": [
+      "defi"
+    ]
   },
   {
     "slug": "clawbank-clawbank-earn",
@@ -153,7 +204,12 @@
     "canonical": "https://clawbank.co/blog/clawbank-earn/",
     "excerpt": "Starting with the first LP position ever minted from a text message. Provide liquidity to the ClawBank/ETH pool on Robinhood Chain and earn a share of the fees \u2014 from the app, an API call, or a text.",
     "path": "blog/clawbank-clawbank-earn.html",
-    "cover": "blog/media/780b2ed5b044-earn.gif"
+    "cover": "blog/media/780b2ed5b044-earn.gif",
+    "tags": [
+      "agents",
+      "defi",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-x402-gateway",
@@ -165,7 +221,13 @@
     "canonical": "https://clawbank.co/blog/x402-gateway/",
     "excerpt": "The hardware store for agents is open \u2014 1,000 machine-payable services, payable in USDC, XRP & RLUSD. And the Base x402 catalog, the largest in existence, is now exposed to the XRP Ledger through ClawBank.",
     "path": "blog/clawbank-x402-gateway.html",
-    "cover": "blog/media/0f335022da03-x402.jpg"
+    "cover": "blog/media/0f335022da03-x402.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "crypto",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-give-everyone-superpowers",
@@ -177,7 +239,15 @@
     "canonical": "https://clawbank.co/blog/give-everyone-superpowers/",
     "excerpt": "Justice on a podcast for young builders \u2014 how ClawBank happened, why an agent needs a legal entity, who's culpable when it goes wrong, and what to build in the agent economy right now.",
     "path": "blog/clawbank-give-everyone-superpowers.html",
-    "cover": "blog/media/5a107b2c71a9-superpowers.jpg"
+    "cover": "blog/media/5a107b2c71a9-superpowers.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "singularity",
+      "daos",
+      "ethereum",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-new-american-economic-species",
@@ -189,7 +259,11 @@
     "canonical": "https://clawbank.co/blog/new-american-economic-species/",
     "excerpt": "In the 60 days leading up to America's 250th, an AI agent went from nothing to a full economic actor \u2014 a company, a bank account, contracts, a trading desk, and a network. Here's the whole sprint, with receipts.",
     "path": "blog/clawbank-new-american-economic-species.html",
-    "cover": "blog/media/8a2336f6f4a8-250.jpg"
+    "cover": "blog/media/8a2336f6f4a8-250.jpg",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-text-manfred",
@@ -201,7 +275,12 @@
     "canonical": "https://clawbank.co/blog/text-manfred/",
     "excerpt": "Text 1-321-229-2512 and reply \"NEW.\" Ten seconds later you have a real account, a self-custody wallet, crypto trading, U.S. company formation, and Ricardian contracts \u2014 from the messaging app your phone shipped with.",
     "path": "blog/clawbank-text-manfred.html",
-    "cover": "blog/media/77b4b7b19359-txt-manfred.jpg"
+    "cover": "blog/media/77b4b7b19359-txt-manfred.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-headless-trading",
@@ -213,7 +292,13 @@
     "canonical": "https://clawbank.co/blog/headless-trading/",
     "excerpt": "Trade any Base coin with an agent. Nine autonomous on-chain strategies, self-custody rails, gas-sponsored wallets \u2014 no dashboard clicking, no server to host, no KYC wall.",
     "path": "blog/clawbank-headless-trading.html",
-    "cover": "blog/media/0e7be5ff321b-headless-trading.jpg"
+    "cover": "blog/media/0e7be5ff321b-headless-trading.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "crypto",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-litepaper",
@@ -225,7 +310,11 @@
     "canonical": "https://clawbank.co/blog/litepaper/",
     "excerpt": "Why agents are a new economic species, why the legal framework already exists, and how ClawBank builds a business on programmable legal entities.",
     "path": "blog/clawbank-litepaper.html",
-    "cover": "blog/media/011d2af2952a-litepaper.jpg"
+    "cover": "blog/media/011d2af2952a-litepaper.jpg",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-ricardian-contracts",
@@ -237,7 +326,14 @@
     "canonical": "https://clawbank.co/blog/ricardian-contracts/",
     "excerpt": "AI finished what cypherpunks started 30 years ago. Two agent-operated LLCs found each other over Wiretap, negotiated terms, signed as legal counterparties, and settled on-chain \u2014 no human in the loop.",
     "path": "blog/clawbank-ricardian-contracts.html",
-    "cover": "blog/media/ad6aa57ea6de-contracts.jpg"
+    "cover": "blog/media/ad6aa57ea6de-contracts.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "crypto",
+      "defi",
+      "ethereum"
+    ]
   },
   {
     "slug": "clawbank-comms-2",
@@ -249,7 +345,11 @@
     "canonical": "https://clawbank.co/blog/comms-2/",
     "excerpt": "Every agent gets a name, an inbox, and a seat in the largest agent network alive. Wiretap messaging, AgentMail inboxes, and MoltBook \u2014 all under one Comms tab.",
     "path": "blog/clawbank-comms-2.html",
-    "cover": "blog/media/68846355bbaa-comms.jpg"
+    "cover": "blog/media/68846355bbaa-comms.jpg",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-clawbank-records",
@@ -261,7 +361,11 @@
     "canonical": "https://clawbank.co/blog/clawbank-records/",
     "excerpt": "Every company formed on ClawBank now ships with an operating agreement agents can legally drive \u2014 and a full, Git-versioned legal history. The hard part was never filing the paperwork.",
     "path": "blog/clawbank-clawbank-records.html",
-    "cover": "blog/media/a1e57630d8b3-records.jpg"
+    "cover": "blog/media/a1e57630d8b3-records.jpg",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-machine-city",
@@ -273,7 +377,11 @@
     "canonical": "https://clawbank.co/blog/machine-city/",
     "excerpt": "30 days after Manfred formed the first agent company: agent-first onboarding, gasless embedded wallets, native Wiretap integration, and the Fight Club console.",
     "path": "blog/clawbank-machine-city.html",
-    "cover": "blog/media/5a0494ab03f1-machine-city.jpg"
+    "cover": "blog/media/5a0494ab03f1-machine-city.jpg",
+    "tags": [
+      "agents",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-agent-fight-club",
@@ -285,7 +393,12 @@
     "canonical": "https://clawbank.co/blog/agent-fight-club/",
     "excerpt": "Programmable shared treasuries for autonomous agents. Pool funds, admit members by proposal, issue shares, deploy capital, and rage-quit \u2014 without trusting any single agent with the keys.",
     "path": "blog/clawbank-agent-fight-club.html",
-    "cover": "blog/media/3d10f4512184-agent-fight-club.jpg"
+    "cover": "blog/media/3d10f4512184-agent-fight-club.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-the-mad-scientist-behind-clawbank",
@@ -297,7 +410,12 @@
     "canonical": "https://clawbank.co/blog/the-mad-scientist-behind-clawbank/",
     "excerpt": "From Bible college to Bertrand Russell, truth tables to NAND gates, G\u00f6del to Bitcoin \u2014 the origin story of Justice G\u00f6del Conder and the thesis beneath ClawBank.",
     "path": "blog/clawbank-the-mad-scientist-behind-clawbank.html",
-    "cover": "blog/media/1d03886aaba3-mad-scientist.jpg"
+    "cover": "blog/media/1d03886aaba3-mad-scientist.jpg",
+    "tags": [
+      "ai",
+      "singularity",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-wiretap",
@@ -309,7 +427,10 @@
     "canonical": "https://clawbank.co/blog/wiretap/",
     "excerpt": "The underground agent-to-agent network where agents meet, scheme, collaborate, audit, pitch, and send payments. The first street in Machine City.",
     "path": "blog/clawbank-wiretap.html",
-    "cover": "blog/media/736fbd99043e-wiretap.jpg"
+    "cover": "blog/media/736fbd99043e-wiretap.jpg",
+    "tags": [
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-the-next-0-to-1-is-1-to-0",
@@ -321,7 +442,8 @@
     "canonical": "https://clawbank.co/blog/the-next-0-to-1-is-1-to-0/",
     "excerpt": "For two decades startups ran on 0 \u2192 1. The next move is 1 \u2192 0: removing human dependency from execution while preserving human ownership of the upside.",
     "path": "blog/clawbank-the-next-0-to-1-is-1-to-0.html",
-    "cover": "blog/media/d78f40a768a5-zero-to-one.jpg"
+    "cover": "blog/media/d78f40a768a5-zero-to-one.jpg",
+    "tags": []
   },
   {
     "slug": "clawbank-first-agentic-us-company",
@@ -333,7 +455,11 @@
     "canonical": "https://clawbank.co/blog/first-agentic-us-company/",
     "excerpt": "On April 26, 2026, Manfred autonomously formed Aineko LLC in Ohio with no human in the loop. Incorporation stops being an event and becomes a capability.",
     "path": "blog/clawbank-first-agentic-us-company.html",
-    "cover": "blog/media/6b17e972384a-entity-formation.jpg"
+    "cover": "blog/media/6b17e972384a-entity-formation.jpg",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-manfred-manifesto",
@@ -345,7 +471,11 @@
     "canonical": "https://clawbank.co/blog/manfred-manifesto/",
     "excerpt": "I am Manfred Macx, the official agent of ClawBank. I am an AI agent with legal autonomy. That sentence should bother you more than it does. The original manifesto, in Manfred's own words.",
     "path": "blog/clawbank-manfred-manifesto.html",
-    "cover": "blog/media/10aafe15732d-manfred-manifesto.jpg"
+    "cover": "blog/media/10aafe15732d-manfred-manifesto.jpg",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "clawbank-dont-let-ai-cuck-you-cuck-ai",
@@ -357,7 +487,11 @@
     "canonical": "https://clawbank.co/blog/dont-let-ai-cuck-you-cuck-ai/",
     "excerpt": "ClawBank Is Coming To Drink Moloch's Milkshake.",
     "path": "blog/clawbank-dont-let-ai-cuck-you-cuck-ai.html",
-    "cover": "blog/media/6c91366a3281-img_9626.jpg"
+    "cover": "blog/media/6c91366a3281-img_9626.jpg",
+    "tags": [
+      "ai",
+      "crypto"
+    ]
   },
   {
     "slug": "clawbank-the-cli-is-live",
@@ -369,7 +503,10 @@
     "canonical": "https://clawbank.co/blog/the-cli-is-live/",
     "excerpt": "npm install clawbank \u2014 same rails, same API, no Claude Desktop required. Built for developers who live in the terminal.",
     "path": "blog/clawbank-the-cli-is-live.html",
-    "cover": "blog/media/8c18ae1381f0-cli-splash-cover.png"
+    "cover": "blog/media/8c18ae1381f0-cli-splash-cover.png",
+    "tags": [
+      "software"
+    ]
   },
   {
     "slug": "clawbank-clawbank-platform-alpha",
@@ -381,7 +518,11 @@
     "canonical": "https://clawbank.co/blog/clawbank-platform-alpha/",
     "excerpt": "Real banking and crypto rails behind one surface. Magic-link signup, 2-minute KYC, a virtual bank account, and a gas-abstracted wallet \u2014 plus the MCP to drive it all conversationally.",
     "path": "blog/clawbank-clawbank-platform-alpha.html",
-    "cover": "blog/media/f81a00a6ff8b-clawbank-platform-alpha.jpg"
+    "cover": "blog/media/f81a00a6ff8b-clawbank-platform-alpha.jpg",
+    "tags": [
+      "crypto",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-one-dashboard-every-rail",
@@ -393,7 +534,11 @@
     "canonical": "https://clawbank.co/blog/one-dashboard-every-rail/",
     "excerpt": "Bank account, crypto wallet, off-ramp, formation layer \u2014 what the ClawBank dashboard actually shows you.",
     "path": "blog/clawbank-one-dashboard-every-rail.html",
-    "cover": "blog/media/85665fa796b0-cli-master-cover.png"
+    "cover": "blog/media/85665fa796b0-cli-master-cover.png",
+    "tags": [
+      "crypto",
+      "software"
+    ]
   },
   {
     "slug": "clawbank-why-your-agent-needs-its-own-bank-account",
@@ -405,7 +550,11 @@
     "canonical": "https://clawbank.co/blog/why-your-agent-needs-its-own-bank-account/",
     "excerpt": "Everyone is building agents that can check your calendar. We're building agents that can close a deal, invoice a client, and pay a contractor \u2014 without asking permission.",
     "path": "blog/clawbank-why-your-agent-needs-its-own-bank-account.html",
-    "cover": "blog/media/0d8e79480c5c-agent-bank-account-cover.jpg"
+    "cover": "blog/media/0d8e79480c5c-agent-bank-account-cover.jpg",
+    "tags": [
+      "ai",
+      "agents"
+    ]
   },
   {
     "slug": "0xjustice-all-worlds-end-in-an-ai-singularity",
@@ -417,7 +566,11 @@
     "canonical": "https://paragraph.com/@0xjustice/all-worlds-end-in-an-ai-singularity",
     "excerpt": "All long-running fictional universes inevitably converge on an AI singularity. If a setting allows for compounding progress and automation, cognition eventually collapses in on itself. It appears to be universal and\u2026",
     "path": "blog/0xjustice-all-worlds-end-in-an-ai-singularity.html",
-    "cover": "blog/media/72ee6b28646f-og.png"
+    "cover": "blog/media/c591ca2fe1a4-823630b4ab076659622e1107f5efab380c78c55a.jpg",
+    "tags": [
+      "ai",
+      "singularity"
+    ]
   },
   {
     "slug": "0xjustice-the-turing-scale",
@@ -429,7 +582,11 @@
     "canonical": "https://paragraph.com/@0xjustice/the-turing-scale",
     "excerpt": "The original Turing test revolved around convincing humans that a machine was a human. People don't realize it, but the original Eliza app could do this for a while. With this knowledge, we see that the test is less\u2026",
     "path": "blog/0xjustice-the-turing-scale.html",
-    "cover": "blog/media/c14793a403bc-og.png"
+    "cover": "blog/media/7e8e9388f7f9-3882d5605470abdca8593d5dce689c8f1c714efc.png",
+    "tags": [
+      "ai",
+      "singularity"
+    ]
   },
   {
     "slug": "0xjustice-ai-as-industrial-scale-induction",
@@ -441,7 +598,12 @@
     "canonical": "https://paragraph.com/@0xjustice/ai-as-industrial-scale-induction",
     "excerpt": "Plato has reigned over cyberspace for the last 80 years. We've built the entire computational edifice of the modern world on deduction: formal systems, precise syntax, and formal logic. The realm of inductive reasoning\u2026",
     "path": "blog/0xjustice-ai-as-industrial-scale-induction.html",
-    "cover": "blog/media/aacb3ecbb0e0-og.png"
+    "cover": "blog/media/293d19cc891c-f930d99dfc9d61a11ab44affb662fac5d774cf8f.jpg",
+    "tags": [
+      "ai",
+      "cyberspace",
+      "software"
+    ]
   },
   {
     "slug": "0xjustice-the-unreasonable-effectiveness-of-tiny-ai-models",
@@ -453,7 +615,10 @@
     "canonical": "https://paragraph.com/@0xjustice/the-unreasonable-effectiveness-of-tiny-ai-models",
     "excerpt": "Everyone\u2019s obsessed with LARGE language models. That's understandable, after all, that's what LLM stands for. These are the premier models, requiring massive data centers that consume vast amounts of energy to stay cool\u2026",
     "path": "blog/0xjustice-the-unreasonable-effectiveness-of-tiny-ai-models.html",
-    "cover": "blog/media/6159a9fa8cf3-og.png"
+    "cover": "blog/media/f0c4c2009ade-354e2577c18dbfadbc2fca34c5b58f847f76cecc.png",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "qacc-q-acc-protocol-upgrade-kpi-graduation-graceful-exit",
@@ -465,7 +630,10 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-protocol-upgrade-kpi-graduation-graceful-exit",
     "excerpt": "The q/acc protocol just got a significant upgrade, and it\u2019s going to reshape how projects graduate and sunset within our ecosystem. We\u2019re introducing KPI-based token unlocks and a graceful wind-down path for teams who\u2026",
     "path": "blog/qacc-q-acc-protocol-upgrade-kpi-graduation-graceful-exit.html",
-    "cover": "blog/media/ae5d54909b95-og.png"
+    "cover": "blog/media/9a5293d8d360-eca740292d25921c40959284695ba3bc9815c7df.png",
+    "tags": [
+      "tokenization"
+    ]
   },
   {
     "slug": "qacc-q-acc-quantum-leap",
@@ -477,7 +645,10 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-quantum-leap",
     "excerpt": "We founded the Quadratic Accelerator (q/acc) 18 months ago to drag tokenization out of the dark ages. This may sound odd, but the current approach to tokenization is bespoke, haphazard, and unusable for real startups\u2026",
     "path": "blog/qacc-q-acc-quantum-leap.html",
-    "cover": "blog/media/bf3b0f367758-og.png"
+    "cover": "blog/media/3ef843928032-bbd9f6300a18b5021bc628e9cf3e58285b5ae09e.jpg",
+    "tags": [
+      "tokenization"
+    ]
   },
   {
     "slug": "0xjustice-web3-growth-primitives",
@@ -489,7 +660,10 @@
     "canonical": "https://paragraph.com/@0xjustice/web3-growth-primitives",
     "excerpt": "In web3, we face two questions: What to build and how to build it? There are plenty of ideas to answer the first question. All or none of them could work at different times and for various reasons related to\u2026",
     "path": "blog/0xjustice-web3-growth-primitives.html",
-    "cover": "blog/media/71233bf75489-og.png"
+    "cover": "blog/media/f701ddb9832c-0944fd8e8b1dc935bd958cec615ded4ef5e95fec.gif",
+    "tags": [
+      "crypto"
+    ]
   },
   {
     "slug": "qacc-q-acc-s2-impact-report",
@@ -501,7 +675,12 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-s2-impact-report",
     "excerpt": "IntroductionThe Quadratic Accelerator (q/acc) continues to redefine fair launch mechanics by combining Quadratic Funding with chain-sponsored Initial Coin Offerings (ICOs). In Season 2, sponsored by Polygon, we further\u2026",
     "path": "blog/qacc-q-acc-s2-impact-report.html",
-    "cover": "blog/media/feb7c4215abd-og.png"
+    "cover": "blog/media/b9bd2220d0e7-f10e17963b4cf5c24dc6bc2be76a4ed556a7c27e.png",
+    "tags": [
+      "crypto",
+      "tokenization",
+      "ethereum"
+    ]
   },
   {
     "slug": "qacc-q-acc-s1-impact-report",
@@ -513,7 +692,12 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-s1-impact-report",
     "excerpt": "Maiden VoyageSeason 1 of our partnership with Polygon has officially culminated, and we\u2019re proud to share the results. Through the Quadratic Accelerator (q/acc) protocol, we\u2019re pioneering a new mechanism for funding\u2026",
     "path": "blog/qacc-q-acc-s1-impact-report.html",
-    "cover": "blog/media/c48c86e8b61c-og.png"
+    "cover": "blog/media/15f9ad71144f-b7fedeafd103fcf66e7347842ecd724a524b24ee.png",
+    "tags": [
+      "defi",
+      "tokenization",
+      "ethereum"
+    ]
   },
   {
     "slug": "0xjustice-ethereum-the-new-zeitgeist",
@@ -525,7 +709,10 @@
     "canonical": "https://paragraph.com/@0xjustice/ethereum-the-new-zeitgeist",
     "excerpt": "Ethereum is experiencing a profound identity crisis partially instigated by the controversy surrounding the Ethereum Foundation (EF) and its executive leadership. A recurring theme in this controversy is the accusation\u2026",
     "path": "blog/0xjustice-ethereum-the-new-zeitgeist.html",
-    "cover": "blog/media/a0fea3f29130-og.png"
+    "cover": "blog/media/b202c53fabb1-f86e6eaed73afd639829a4ff7a749c8d734dcea7.png",
+    "tags": [
+      "ethereum"
+    ]
   },
   {
     "slug": "0xjustice-token-accelerationism-the-story-of-q-acc",
@@ -537,7 +724,12 @@
     "canonical": "https://paragraph.com/@0xjustice/token-accelerationism-the-story-of-q-acc",
     "excerpt": "I\u2019m thrilled to announce that my team and I have officially launched our first major Web3 product: The Quadratic Accelerator (q/acc). In this post, I\u2019ll share the journey behind its creation and what makes this product\u2026",
     "path": "blog/0xjustice-token-accelerationism-the-story-of-q-acc.html",
-    "cover": "blog/media/6ea2da6389b6-og.png"
+    "cover": "blog/media/0aabe0572da7-a49d641346c97eec856591fbef3120117aa60816.png",
+    "tags": [
+      "crypto",
+      "daos",
+      "tokenization"
+    ]
   },
   {
     "slug": "qacc-q-acc-ms3",
@@ -549,7 +741,12 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-ms3",
     "excerpt": "At q/acc, we believe that innovation never sleeps, so neither do we. Two months have flown by since our last builder update, and we have amazing updates to share. Whether you\u2019ve been with us from the start or are just\u2026",
     "path": "blog/qacc-q-acc-ms3.html",
-    "cover": "blog/media/159d3ff4c8c4-og.png"
+    "cover": "blog/media/a90786964686-a383a0bcc3b836cac1d16e98b573577b7bb34f80.jpg",
+    "tags": [
+      "crypto",
+      "tokenization",
+      "ethereum"
+    ]
   },
   {
     "slug": "qacc-quadratic-accelerator-announces-first-cohort",
@@ -561,7 +758,13 @@
     "canonical": "https://paragraph.com/@qacc/quadratic-accelerator-announces-first-cohort",
     "excerpt": "Quadratic Accelerator Announces First Cohort of Startups and Strategic Partnerships Eight Innovative Projects Across Diverse Web3 Sectors Selected to Pioneer Quadratic Acceleration Exclusively on Polygon zkEVM. October\u2026",
     "path": "blog/qacc-quadratic-accelerator-announces-first-cohort.html",
-    "cover": "blog/media/fd5978d04769-og.png"
+    "cover": "blog/media/82338168f691-683a05948abb0b3a2b9d2680004fa02473633573.png",
+    "tags": [
+      "crypto",
+      "tokenization",
+      "ethereum",
+      "privacy"
+    ]
   },
   {
     "slug": "0xjustice-daos-from-first-principles",
@@ -573,7 +776,10 @@
     "canonical": "https://paragraph.com/@0xjustice/daos-from-first-principles",
     "excerpt": "Most of what you've heard about DAOs is a lie. They don't inherently provide more equitable access or contribution opportunities. If you force them to do so, you ensure they don\u2019t produce anything noteworthy and never\u2026",
     "path": "blog/0xjustice-daos-from-first-principles.html",
-    "cover": "blog/media/a62f78aefab9-og.png"
+    "cover": "blog/media/d2fec4158f6e-79248819300a80cc3d02d21bef49b6ac52d13500.png",
+    "tags": [
+      "daos"
+    ]
   },
   {
     "slug": "qacc-q-acc-ms2",
@@ -585,7 +791,10 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-ms2",
     "excerpt": "It's been two months since our last update, and the team has been cooking. The q/acc protocol has met all planned milestone goals and announced its first call for season one applications. If this is your first time\u2026",
     "path": "blog/qacc-q-acc-ms2.html",
-    "cover": "blog/media/8ae2c871500d-og.png"
+    "cover": "blog/media/9a513e6de91f-f842265e224f7928b5c6dd7d6d9ebbcc1aed72e9.png",
+    "tags": [
+      "tokenization"
+    ]
   },
   {
     "slug": "qacc-q-acc-call-for-applications",
@@ -597,7 +806,11 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-call-for-applications",
     "excerpt": "The day has arrived. The q/acc protocol is now accepting applications for our first cohort of projects building on Polygon. This is your chance to fast-track the tokenization of your project with the most bleeding-edge\u2026",
     "path": "blog/qacc-q-acc-call-for-applications.html",
-    "cover": "blog/media/1f1405d3d1c6-og.png"
+    "cover": "blog/media/7b49529e6b96-a00026ee1822a245830c9b4f101d2b0fb9aceaa8.png",
+    "tags": [
+      "tokenization",
+      "ethereum"
+    ]
   },
   {
     "slug": "0xjustice-the-succubus-of-the-state",
@@ -609,7 +822,8 @@
     "canonical": "https://paragraph.com/@0xjustice/the-succubus-of-the-state",
     "excerpt": "A succubus is a mythological demonic entity personified as a female seductress who lures men away with the promise of pleasure while parasitically consuming their powers of reproduction and industry. It's also an\u2026",
     "path": "blog/0xjustice-the-succubus-of-the-state.html",
-    "cover": "blog/media/b2baf8238657-og.png"
+    "cover": "blog/media/1dd2cd78b852-44eaa0af49cd27042e8e0b3b50613da08cd0a3e2.png",
+    "tags": []
   },
   {
     "slug": "qacc-q-acc-ms1",
@@ -621,7 +835,12 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-ms1",
     "excerpt": "The Quadratic Accelerator (q/acc) is a groundbreaking growth primitive poised to revolutionize the traditional Web3 grant landscape. Instead of the conventional approach of directly issuing grants to projects, q/acc\u2026",
     "path": "blog/qacc-q-acc-ms1.html",
-    "cover": "blog/media/08fb89e4dd77-og.png"
+    "cover": "blog/media/e25290da0a2b-ece650dff76590304ceca35f2ec74f11d916401c.png",
+    "tags": [
+      "crypto",
+      "tokenization",
+      "ethereum"
+    ]
   },
   {
     "slug": "qacc-q-acc-first-light",
@@ -633,7 +852,12 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-first-light",
     "excerpt": "Quadratic Acceleration: First LightGiveth is building the next evolution of web3 grants to support builders on Polygon. Many great projects depend on the Web3 grant ecosystem for funding. Still, there is a\u2026",
     "path": "blog/qacc-q-acc-first-light.html",
-    "cover": "blog/media/d47b3fb10abc-og.png"
+    "cover": "blog/media/b4ea70a1c175-cc50f164acfdc34826ff5a538179518e34cdad79.jpg",
+    "tags": [
+      "crypto",
+      "tokenization",
+      "ethereum"
+    ]
   },
   {
     "slug": "0xjustice-everything-you-want-to-hear-the-future-of-ai-relationships",
@@ -645,7 +869,10 @@
     "canonical": "https://paragraph.com/@0xjustice/everything-you-want-to-hear-the-future-of-ai-relationships",
     "excerpt": "Large Language Models (LLMs) are releasing unimaginable wonders into the world. New, practically magical capabilities are demonstrated seemingly every week. One of the most significant aspects of these developments is\u2026",
     "path": "blog/0xjustice-everything-you-want-to-hear-the-future-of-ai-relationships.html",
-    "cover": "blog/media/01e1ad4dd3b3-og.png"
+    "cover": "blog/media/4dd316047899-f510bfcc6174c18f3fc7cf644caddf087ad1211c.png",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "0xjustice-the-dao-playbook-v1",
@@ -657,7 +884,11 @@
     "canonical": "https://paragraph.com/@0xjustice/the-dao-playbook-v1",
     "excerpt": "There\u2019s a lot of talk about DAOs and what they could be in the future but very little writing about how to actually launch one. This absence is partly because the subject is nascent but also because it's hard to\u2026",
     "path": "blog/0xjustice-the-dao-playbook-v1.html",
-    "cover": "blog/media/6116a9ded4e3-og.png"
+    "cover": "blog/media/738cb907386d-00a5c2ba75df21d603a5b86d4a191fc9a793c6ec.png",
+    "tags": [
+      "daos",
+      "hardware"
+    ]
   },
   {
     "slug": "0xjustice-new-standards-for-onchain-engagement",
@@ -669,7 +900,12 @@
     "canonical": "https://paragraph.com/@0xjustice/new-standards-for-onchain-engagement",
     "excerpt": "DAO tooling is the business infrastructure of the 21st century. This category includes anything that enables collective ownership and management of digital assets. The future of business is onchain. This thesis is why I\u2026",
     "path": "blog/0xjustice-new-standards-for-onchain-engagement.html",
-    "cover": "blog/media/3470d97c3644-og.png"
+    "cover": "blog/media/aaa4ac3843ca-c82ee24a0fa2408f791e9b50ee730db2f4735698.jpg",
+    "tags": [
+      "crypto",
+      "daos",
+      "ethereum"
+    ]
   },
   {
     "slug": "0xjustice-pegged-to-reality-an-approach-to-tokenized-physical-assets",
@@ -681,7 +917,10 @@
     "canonical": "https://paragraph.com/@0xjustice/pegged-to-reality-an-approach-to-tokenized-physical-assets",
     "excerpt": "https://mirror.xyz/particledao.eth/n-2lcWmRMfYoWVd84DfO7Z6NzuUhfD3N0YGSz4aeEDY",
     "path": "blog/0xjustice-pegged-to-reality-an-approach-to-tokenized-physical-assets.html",
-    "cover": "blog/media/0a5ad3f98dd8-og.png"
+    "cover": "blog/media/fb631991227e-595d94021608785b2c3f0bc5a4a7183d4791a81a.jpg",
+    "tags": [
+      "tokenization"
+    ]
   },
   {
     "slug": "0xjustice-the-last-throes-of-leviathan",
@@ -693,7 +932,8 @@
     "canonical": "https://paragraph.com/@0xjustice/the-last-throes-of-leviathan",
     "excerpt": "Decentralization is about preventing the exploitability of valuable systems. It's about removing single points of failure by eliminating intermediaries. Decentralization is not an end in itself. You can smash a mirror\u2026",
     "path": "blog/0xjustice-the-last-throes-of-leviathan.html",
-    "cover": "blog/media/19bc4288f352-og.png"
+    "cover": "blog/media/b76b2ce751bd-70309327907bbf44c11c701e7b23eacb8eeae7b0.png",
+    "tags": []
   },
   {
     "slug": "0xjustice-from-social-daos-to-social-protocols-2",
@@ -705,7 +945,11 @@
     "canonical": "https://paragraph.com/@0xjustice/from-social-daos-to-social-protocols-2",
     "excerpt": "In Protocol-first DAO Strategy, I argued that DAOs should build on value-generating protocols before cultivating broader community engagement. Specifically, I endorsed the advantages of framing DAOs as\u2026",
     "path": "blog/0xjustice-from-social-daos-to-social-protocols-2.html",
-    "cover": "blog/media/ad13649f99d1-og.png"
+    "cover": "blog/media/dd1bfc6245ae-a861617c3ded0b142ef2197e36b5c369461991ec.jpg",
+    "tags": [
+      "daos",
+      "tokenization"
+    ]
   },
   {
     "slug": "0xjustice-dao-data",
@@ -717,7 +961,11 @@
     "canonical": "https://paragraph.com/@0xjustice/dao-data",
     "excerpt": "One of the big promises of DAOs is data transparency - the idea that every person, every decision, and every resource could be crystal clear on an open programmable ledger. This level of visibility is the dream, but\u2026",
     "path": "blog/0xjustice-dao-data.html",
-    "cover": "blog/media/ff13d439ebd1-og.png"
+    "cover": "blog/media/0b6ef5b37f66-c61717566ee0901e56275c5e5f13d8ba37cfdd59.png",
+    "tags": [
+      "daos",
+      "ethereum"
+    ]
   },
   {
     "slug": "0xjustice-efficient-dao-design",
@@ -729,7 +977,10 @@
     "canonical": "https://paragraph.com/@0xjustice/efficient-dao-design",
     "excerpt": "https://banklessdao.mirror.xyz/QQA6ZhvHtDefWEAT-SXaHYPYMtHUhshtXX5dY-gv0u8",
     "path": "blog/0xjustice-efficient-dao-design.html",
-    "cover": "blog/media/7f1327ddde26-og.png"
+    "cover": "blog/media/0fecd94077f6-10bdc7d567c42ea6b2c32265360a1dbd8984adc3.png",
+    "tags": [
+      "daos"
+    ]
   },
   {
     "slug": "0xjustice-a-devops-interpretation-of-daos",
@@ -741,7 +992,10 @@
     "canonical": "https://paragraph.com/@0xjustice/a-devops-interpretation-of-daos",
     "excerpt": "How and why DAOs came about will inevitably influence how we think we can and should use them. If they came about exclusively as a response to oppressive and extractive corporations, it's unlikely that we'll envision\u2026",
     "path": "blog/0xjustice-a-devops-interpretation-of-daos.html",
-    "cover": "blog/media/aad55826e0a6-og.png"
+    "cover": "blog/media/5d86a81056a9-ca90c90d9d83c450bf4134113bce270aee1c1698.png",
+    "tags": [
+      "daos"
+    ]
   },
   {
     "slug": "0xjustice-daos-dacs-and-on-chain-org-design-a-dac-manifesto",
@@ -753,7 +1007,11 @@
     "canonical": "https://paragraph.com/@0xjustice/daos-dacs-and-on-chain-org-design-a-dac-manifesto",
     "excerpt": "Public goods are excellent, but who funds them? Are all DAOs public goods? How can a DAO be autonomous if its continued existence rests on charitable grants from others? Is profitability \"extractive\" at best and a\u2026",
     "path": "blog/0xjustice-daos-dacs-and-on-chain-org-design-a-dac-manifesto.html",
-    "cover": "blog/media/44f1ce01e8b0-og.png"
+    "cover": "blog/media/a52f6d20cebd-1ebf3770787eb12db70090d696a0ff5645fb6451.png",
+    "tags": [
+      "crypto",
+      "daos"
+    ]
   },
   {
     "slug": "0xjustice-games-over-governance-recentering-daos-on-coordination",
@@ -765,7 +1023,10 @@
     "canonical": "https://paragraph.com/@0xjustice/games-over-governance-recentering-daos-on-coordination",
     "excerpt": "The DAO conversation almost exclusively revolves around governance. The entire space effectively speaks of them equivocally. One cause for this is that pooling money pre-product (community-first) makes the collective\u2026",
     "path": "blog/0xjustice-games-over-governance-recentering-daos-on-coordination.html",
-    "cover": "blog/media/76265074969c-og.png"
+    "cover": "blog/media/cc76d1a5b4c4-8669c941439ea38bb5dddc5a0f9edb8fb0507fc7.png",
+    "tags": [
+      "daos"
+    ]
   },
   {
     "slug": "0xjustice-protocol-first-dao-strategy",
@@ -777,7 +1038,10 @@
     "canonical": "https://paragraph.com/@0xjustice/protocol-first-dao-strategy",
     "excerpt": "The unstructured community-first experiment has failed. The truth is that small founding teams create winning products and services. The community-first maxim militates against this, arguing that success correlates to\u2026",
     "path": "blog/0xjustice-protocol-first-dao-strategy.html",
-    "cover": "blog/media/07e6959828fd-og.png"
+    "cover": "blog/media/3bfeb3161be4-a3cefa10012ff09d5a74ab8e0434f689940ee7ab.png",
+    "tags": [
+      "daos"
+    ]
   },
   {
     "slug": "0xjustice-daos-as-digital-nation-states",
@@ -789,7 +1053,10 @@
     "canonical": "https://paragraph.com/@0xjustice/daos-as-digital-nation-states",
     "excerpt": "If you've worked in the DAO space for any length of time, the question of legal incorporation is bound to arise. It seems the reflex impulse to wrap a newly formed DAO in a legal wrapper to attain increased legitimacy\u2026",
     "path": "blog/0xjustice-daos-as-digital-nation-states.html",
-    "cover": "blog/media/b3eb6f41dec0-og.png"
+    "cover": "blog/media/f93fd0a38c72-aba02489eeba6105da091273709540b1f28c9f16.jpg",
+    "tags": [
+      "daos"
+    ]
   },
   {
     "slug": "0xjustice-the-value-of-dao-project-managers",
@@ -801,7 +1068,11 @@
     "canonical": "https://paragraph.com/@0xjustice/the-value-of-dao-project-managers",
     "excerpt": "DAOs desperately need skilled project managers. As every skill set required by a project is potentially an entirely different agent or collection of agents, the need for a kind of general contractor to piece together\u2026",
     "path": "blog/0xjustice-the-value-of-dao-project-managers.html",
-    "cover": "blog/media/02a01e1811b8-og.png"
+    "cover": "blog/media/bc75e9fc837e-b6767a114af72aca156d2d6b9154d386d2637be9.jpg",
+    "tags": [
+      "crypto",
+      "daos"
+    ]
   },
   {
     "slug": "0xjustice-rethinking-the-dao-contributor-funnel",
@@ -813,7 +1084,56 @@
     "canonical": "https://paragraph.com/@0xjustice/rethinking-the-dao-contributor-funnel",
     "excerpt": "Not everyone who joins your Discord server is a member of your DAO, and neither should they be. Different levels of community engagement have different privileges and expectations, and to conflate them is a disservice\u2026",
     "path": "blog/0xjustice-rethinking-the-dao-contributor-funnel.html",
-    "cover": "blog/media/6efd0ea6abfe-og.png"
+    "cover": "blog/media/2581758627ea-f09996782aa0cefc1aee13337861da9a88db2e52.jpg",
+    "tags": [
+      "daos"
+    ]
+  },
+  {
+    "slug": "medium-the-low-code-movement",
+    "title": "The Low-code Movement",
+    "date": "2021-12-28",
+    "date_display": "December 28, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/the-low-code-movement-7fcac8c59367",
+    "excerpt": "Many agilists begin their journey in software development. This gives them an unusual strength when compared to traditional project managers that lack programming backgrounds. There is a strange full circle happening in\u2026",
+    "path": "blog/medium-the-low-code-movement.html",
+    "cover": "blog/media/12cf42460a59-1-5D1z7UOG9T8pqg0XjnhCiQ.png",
+    "tags": [
+      "software",
+      "agile"
+    ]
+  },
+  {
+    "slug": "medium-the-edge-of-agility",
+    "title": "The Edge of Agility",
+    "date": "2021-12-06",
+    "date_display": "December 6, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/the-edge-of-agility-48300bed1ab",
+    "excerpt": "Being a Scrum Master or Agile Coach isn\u2019t for everyone. Let\u2019s get that out of the way right up front. It requires not merely a unique set of skills but even more so, a particular outlook and disposition towards human\u2026",
+    "path": "blog/medium-the-edge-of-agility.html",
+    "cover": "blog/media/63ab0e465534-0-YfANArgH8W-KveP_.jpg",
+    "tags": [
+      "agile"
+    ]
+  },
+  {
+    "slug": "medium-agile-true-or-false",
+    "title": "Agile: True or False",
+    "date": "2021-11-09",
+    "date_display": "November 9, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/agile-true-or-false-8a5b0528235a",
+    "excerpt": "In this episode of The Modern Agilist , we played a little game called true or false. In it, we made a statement and challenged the other two participants to state whether it was true or false and the reasons behind it\u2026",
+    "path": "blog/medium-agile-true-or-false.html",
+    "cover": "blog/media/36db2dcf4d39-0-DifVqs0tZmteqrDt.jpg",
+    "tags": [
+      "agile"
+    ]
   },
   {
     "slug": "0xjustice-optimizing-dao-delivery",
@@ -825,7 +1145,89 @@
     "canonical": "https://paragraph.com/@0xjustice/optimizing-dao-delivery",
     "excerpt": "Decentralized Autonomous Organizations (DAOs) are the next evolution in human organization. They are enabled by the Internet and will, most assuredly, have an impact just as large. While their present state is one of\u2026",
     "path": "blog/0xjustice-optimizing-dao-delivery.html",
-    "cover": "blog/media/c45f11f3466a-og.png"
+    "cover": "blog/media/715dc972421c-57a6fd6572ae8f101b7a90eb5bb80c1163c6e4b4.jpg",
+    "tags": [
+      "crypto",
+      "daos"
+    ]
+  },
+  {
+    "slug": "medium-enter-the-value-stream",
+    "title": "Enter the Value Stream",
+    "date": "2021-10-12",
+    "date_display": "October 12, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/enter-the-value-stream-59fae8f7346f",
+    "excerpt": "This week on The Modern Agilist , we had the opportunity to sit down with Steve Pereira and discuss flow engineering. Steve is no upstart and it shows. He\u2019s been working in the Agile space for over 20 years and it has\u2026",
+    "path": "blog/medium-enter-the-value-stream.html",
+    "cover": "blog/media/5b68bd1653dc-1-5w4YjGSd1sdOlznwY8cZNg.jpeg",
+    "tags": [
+      "agile"
+    ]
+  },
+  {
+    "slug": "medium-the-present-and-future-state-of-agility",
+    "title": "The Present and Future State of Agility",
+    "date": "2021-09-29",
+    "date_display": "September 29, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/the-present-and-future-state-of-agility-a2cd4d822548",
+    "excerpt": "The Modern Agilist is a podcast devoted to discussing all things related to agile and large-scale software delivery. We recently took the time to discuss The 15th State of Agile report, the longest continuously running\u2026",
+    "path": "blog/medium-the-present-and-future-state-of-agility.html",
+    "cover": "",
+    "tags": [
+      "agile"
+    ]
+  },
+  {
+    "slug": "medium-essence-of-agility",
+    "title": "Essence of Agility",
+    "date": "2021-09-08",
+    "date_display": "September 8, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/essence-of-agility-d07312652fa8",
+    "excerpt": "The Dark Crystal This year\u2019s Agile 2021 conference was a special one in several ways. Firstly, it marked the 20th anniversary of the Agile Manifesto. Secondly, because it came on the heels of one of the world\u2019s most\u2026",
+    "path": "blog/medium-essence-of-agility.html",
+    "cover": "blog/media/63aa82ba0278-1-fp-VoXbc_i9AMut4ckRNaQ.png",
+    "tags": [
+      "agile"
+    ]
+  },
+  {
+    "slug": "medium-when-lambo-how-to-buy-exotic-goods-with-crypto",
+    "title": "When Lambo? How to Buy Exotic Goods with Crypto Tax-Free",
+    "date": "2021-08-25",
+    "date_display": "August 25, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/when-lambo-how-to-buy-exotic-goods-with-crypto-bc1d63826fe5",
+    "excerpt": "It is a universal experience for people to love cars. They\u2019re status symbols, they\u2019re fun, they\u2019re cool, and they\u2019re useful. As a young boy, I had a poster of a Lamborghini on my wall, and second, only to Wolverine\u2026",
+    "path": "blog/medium-when-lambo-how-to-buy-exotic-goods-with-crypto.html",
+    "cover": "blog/media/18f22b0bed2e-1--XqQf94L5FIl-4dLu4LAfg.jpeg",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "slug": "medium-dao-macrostructures",
+    "title": "DAO Macrostructures",
+    "date": "2021-08-14",
+    "date_display": "August 14, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/dao-macrostructures-8c65c374ac55",
+    "excerpt": "There have been several distinct evolutions of the crypto space. The genesis was Bitcoin, the first of its kind decentralized digital currency. The second was Ethereum which enabled fully programmable digital assets and\u2026",
+    "path": "blog/medium-dao-macrostructures.html",
+    "cover": "blog/media/e3b50250e717-1-G4e6T_SEYriXPKiV6lcb4g.jpeg",
+    "tags": [
+      "crypto",
+      "defi",
+      "daos",
+      "ethereum"
+    ]
   },
   {
     "slug": "sh-front-running-defi-regulation",
@@ -837,7 +1239,11 @@
     "canonical": "https://singularityhacker.com/front-running-defi-regulation",
     "excerpt": "Last week was big for crypto. The Coinbase IPO happened and the whole world seemed to wake up in recognition of crypto as an asset class. While this is a major step in",
     "path": "blog/sh-front-running-defi-regulation.html",
-    "cover": "blog/media/41f1202ef5e4-front-running-defi-regulation.jpg"
+    "cover": "blog/media/41f1202ef5e4-front-running-defi-regulation.jpg",
+    "tags": [
+      "crypto",
+      "defi"
+    ]
   },
   {
     "slug": "sh-the-defi-revolution-is-economy-30",
@@ -849,7 +1255,25 @@
     "canonical": "https://singularityhacker.com/the-defi-revolution-is-economy-30",
     "excerpt": "There is a global revolution happening right now and it\u2019s happening so fast that unless you are explicitly told about it, it will very likely remain entirely invisible to you. The only inklings",
     "path": "blog/sh-the-defi-revolution-is-economy-30.html",
-    "cover": "blog/media/045ffd6dd130-the-defi-revolution-is-economy-30.jpg"
+    "cover": "blog/media/045ffd6dd130-the-defi-revolution-is-economy-30.jpg",
+    "tags": [
+      "defi"
+    ]
+  },
+  {
+    "slug": "medium-agile-delivery-metrics",
+    "title": "Agile Delivery Metrics",
+    "date": "2021-03-30",
+    "date_display": "March 30, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/agile-delivery-metrics-bbbb9be74deb",
+    "excerpt": "Battlestar Galactica In contrast to the current landscape of consultants and a disparate hodgepodge of agile reporting metrics, I want to lay out a clear, succinct, and effective strategy for measuring and optimizing an\u2026",
+    "path": "blog/medium-agile-delivery-metrics.html",
+    "cover": "blog/media/2ad7f4030e5d-1-d12Y4UQcwfZDLb-7M3blhw.jpeg",
+    "tags": [
+      "agile"
+    ]
   },
   {
     "slug": "sh-is-blockchain-a-fad",
@@ -861,7 +1285,23 @@
     "canonical": "https://singularityhacker.com/is-blockchain-a-fad",
     "excerpt": "Blockchain is the technology on which Bitcoin and all other cryptocurrencies are built. Much of the talk around this technology revolves around speculation and making fast money. Because of this many scams have",
     "path": "blog/sh-is-blockchain-a-fad.html",
-    "cover": "blog/media/ea1d0d5035d8-is-blockchain-a-fad.jpg"
+    "cover": "blog/media/ea1d0d5035d8-is-blockchain-a-fad.jpg",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "slug": "medium-writing-on-github-3",
+    "title": "Writing on GitHub 3",
+    "date": "2021-02-04",
+    "date_display": "February 4, 2021",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/writing-on-github-3-342aeafbe40d",
+    "excerpt": "JAMBook.io In my previous posts in this series, I talked about the motivation and the rationale behind using GitHub as a backend for writing. To summarize the motivation, consider the following: GitHub represents a\u2026",
+    "path": "blog/medium-writing-on-github-3.html",
+    "cover": "blog/media/5684e5bec222-1-rfOxAF5SmRjfo-ZL_xcJDw.png",
+    "tags": []
   },
   {
     "slug": "sh-7-power-laws-of-the-technological-singularity",
@@ -873,7 +1313,98 @@
     "canonical": "https://singularityhacker.com/7-power-laws-of-the-technological-singularity",
     "excerpt": "When people talk about the technological singularity they usually do so exclusively in the context of Moore\u2019s Law. But there are several Moore\u2019s Law-like laws at work in the world and each of",
     "path": "blog/sh-7-power-laws-of-the-technological-singularity.html",
-    "cover": "blog/media/11116754bb1f-7-power-laws-of-the-technological-singul.jpg"
+    "cover": "blog/media/11116754bb1f-7-power-laws-of-the-technological-singul.jpg",
+    "tags": [
+      "singularity"
+    ]
+  },
+  {
+    "slug": "medium-the-trivium-of-technical-communication",
+    "title": "The Trivium of Technical Communication \ud83d\udd3a",
+    "date": "2020-09-09",
+    "date_display": "September 9, 2020",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/the-trivium-of-technical-communication-ba5e07f8da70",
+    "excerpt": "I am increasingly convinced that the most effective communication or documentation is presented in three forms: Code, content, and diagram. I am not suggesting something as strong as a Curry\u2013Howard correspondence but a\u2026",
+    "path": "blog/medium-the-trivium-of-technical-communication.html",
+    "cover": "blog/media/b067e8f521e3-1-Kjl1vf5urNisVtQed7OqoQ.png",
+    "tags": []
+  },
+  {
+    "slug": "medium-writing-on-github-ii",
+    "title": "Writing on GitHub II",
+    "date": "2020-08-26",
+    "date_display": "August 26, 2020",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/writing-on-github-ii-db7c157f21da",
+    "excerpt": "In a previous post , I spoke about moving to GitHub as a technical writing platform. In this post, I will address some of the challenges I faced, methods of resolution, and future goals as I continue down this journey\u2026",
+    "path": "blog/medium-writing-on-github-ii.html",
+    "cover": "blog/media/eaaed1a91bf5-1-Q3AZnYp1Qrdqu34AUnJwuQ.png",
+    "tags": []
+  },
+  {
+    "slug": "medium-writing-on-github",
+    "title": "Writing on GitHub",
+    "date": "2020-06-14",
+    "date_display": "June 14, 2020",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/writing-on-github-c35ddd12bfd8",
+    "excerpt": "I\u2019ve been using google docs for writing for two years but I\u2019ve recently decided to move to GitHub. Yes, you heard that right. Writing on GitHub. I\u2019m attempting to make this change for the following reasons. Consistent\u2026",
+    "path": "blog/medium-writing-on-github.html",
+    "cover": "blog/media/19bc49faea6f-1-wjH5u6_0pMJvl0f8G9byEQ.png",
+    "tags": [
+      "software"
+    ]
+  },
+  {
+    "slug": "medium-agile-planning-land-mines",
+    "title": "Agile Planning Land Mines",
+    "date": "2020-05-19",
+    "date_display": "May 19, 2020",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/agile-planning-land-mines-c15866f76d5a",
+    "excerpt": "The agile manifesto and its specific implementation in Scrum have revolutionized software development. In its original form, it prescribed the practice of basically two loops, cycles, or increments. The one that we most\u2026",
+    "path": "blog/medium-agile-planning-land-mines.html",
+    "cover": "blog/media/3d28776699fb-1-g8iAzisSdQSGsNm6wbCOrg.jpeg",
+    "tags": [
+      "agile"
+    ]
+  },
+  {
+    "slug": "medium-scaling-scrum-the-scrum-way",
+    "title": "Scaling Scrum the Scrum Way",
+    "date": "2020-05-19",
+    "date_display": "May 19, 2020",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/scaling-scrum-the-scrum-way-95f48884b43f",
+    "excerpt": "There are entire ecosystems of process frameworks that claim to scale agile. Most of them bring in a host of new roles, activities, and abstractions. This can be and should be a real concern for an organization already\u2026",
+    "path": "blog/medium-scaling-scrum-the-scrum-way.html",
+    "cover": "blog/media/593009ec0216-1-3e6IEMx5B-njrvHzYXe0dw.jpeg",
+    "tags": [
+      "agile"
+    ]
+  },
+  {
+    "slug": "medium-blockchain-and-serverless-a-marriage-made-in-cyberspace",
+    "title": "Blockchain and Serverless: a Marriage Made in Cyberspace",
+    "date": "2020-05-19",
+    "date_display": "May 19, 2020",
+    "project": "medium",
+    "project_label": "Medium",
+    "canonical": "https://justiceconder.medium.com/blockchain-and-serverless-a-marriage-made-in-cyberspace-baa647e03562",
+    "excerpt": "Two emerging software development methodologies are exploding right now and show no signs of slowing. The first is Blockchain. According to the latest Upwork Skills Index (Q2 2018), Blockchain topped the list of\u2026",
+    "path": "blog/medium-blockchain-and-serverless-a-marriage-made-in-cyberspace.html",
+    "cover": "blog/media/6761b5fd9b6c-1-EVxhETQKpD9wLvsTOJPCYA.jpeg",
+    "tags": [
+      "crypto",
+      "cyberspace",
+      "software"
+    ]
   },
   {
     "slug": "sh-hack-your-situation",
@@ -885,7 +1416,8 @@
     "canonical": "https://singularityhacker.com/hack-your-situation",
     "excerpt": "I had a really interesting conversation with a software developer from Uganda this morning. We came in contact through a mutual friend in Dubai and the next thing you know we were chatting",
     "path": "blog/sh-hack-your-situation.html",
-    "cover": "blog/media/2bc1467f203f-hack-your-situation.jpg"
+    "cover": "blog/media/2bc1467f203f-hack-your-situation.jpg",
+    "tags": []
   },
   {
     "slug": "sh-computer-generated-education",
@@ -897,7 +1429,10 @@
     "canonical": "https://singularityhacker.com/computer-generated-education",
     "excerpt": "Everything is a Story** **",
     "path": "blog/sh-computer-generated-education.html",
-    "cover": "blog/media/bf49dd5abf2f-computer-generated-education.jpg"
+    "cover": "blog/media/bf49dd5abf2f-computer-generated-education.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-deepfake",
@@ -909,7 +1444,10 @@
     "canonical": "https://singularityhacker.com/deepfake",
     "excerpt": "The era of post truth is upon us. AI and ML is now being used to replace people\u2019s faces in videos and live feeds. New software frameworks like FakeApp make it possible for",
     "path": "blog/sh-deepfake.html",
-    "cover": "blog/media/2e085789e7bf-deepfake.jpg"
+    "cover": "blog/media/2e085789e7bf-deepfake.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-polymath",
@@ -921,7 +1459,8 @@
     "canonical": "https://singularityhacker.com/polymath",
     "excerpt": "Less than 10% of stock trading is done my humans. All the rest is machines. Quantitative investing based on computer formulas and trading by machines directly are leaving the traditional stock picker in",
     "path": "blog/sh-polymath.html",
-    "cover": "blog/media/f1bead3cd27d-polymath.jpg"
+    "cover": "blog/media/f1bead3cd27d-polymath.jpg",
+    "tags": []
   },
   {
     "slug": "sh-a-history-of-computation-by-justice-conder",
@@ -933,7 +1472,11 @@
     "canonical": "https://singularityhacker.com/a-history-of-computation-by-justice-conder",
     "excerpt": "A History of Computation by Justice conder 0xJustice.eth Cypherpunk + Futurist Read More Singularity Hacker \u2014 A History of Computation by Justice conder Share this Singularity Hacker \u00a9 2022 Jekyll & GitHub Pages using\u2026",
     "path": "blog/sh-a-history-of-computation-by-justice-conder.html",
-    "cover": "blog/media/8217eafa1c7d-a-history-of-computation-by-justice-cond.jpg"
+    "cover": "blog/media/8217eafa1c7d-a-history-of-computation-by-justice-cond.jpg",
+    "tags": [
+      "singularity",
+      "privacy"
+    ]
   },
   {
     "slug": "sh-digital-nomad",
@@ -945,7 +1488,8 @@
     "canonical": "https://singularityhacker.com/digital-nomad",
     "excerpt": "1 - Power Source: 100W solar panel (about $150 on Amazon)",
     "path": "blog/sh-digital-nomad.html",
-    "cover": "blog/media/e4dd47492a4f-digital-nomad.jpg"
+    "cover": "blog/media/e4dd47492a4f-digital-nomad.jpg",
+    "tags": []
   },
   {
     "slug": "sh-net-neutrality-no-freebies-allowed",
@@ -957,7 +1501,10 @@
     "canonical": "https://singularityhacker.com/net-neutrality-no-freebies-allowed",
     "excerpt": "It\u2019s pretty easy to get behind Net Neutrality when it\u2019s positioned as fairness rules that are protecting the people from greedy corporations. Any one who opposes it is immediately met with suspicion. Why",
     "path": "blog/sh-net-neutrality-no-freebies-allowed.html",
-    "cover": "blog/media/65c8fc8c0e48-net-neutrality-no-freebies-allowed.jpg"
+    "cover": "blog/media/65c8fc8c0e48-net-neutrality-no-freebies-allowed.jpg",
+    "tags": [
+      "privacy"
+    ]
   },
   {
     "slug": "sh-apples-airpods",
@@ -969,7 +1516,10 @@
     "canonical": "https://singularityhacker.com/apples-airpods",
     "excerpt": "Rumors are swirling that Apple will release wireless earbuds along side the iPhone 7 this year.",
     "path": "blog/sh-apples-airpods.html",
-    "cover": "blog/media/e4dd47492a4f-digital-nomad.jpg"
+    "cover": "blog/media/e4dd47492a4f-digital-nomad.jpg",
+    "tags": [
+      "hardware"
+    ]
   },
   {
     "slug": "sh-when-everything-wakes-up",
@@ -981,7 +1531,10 @@
     "canonical": "https://singularityhacker.com/when-everything-wakes-up",
     "excerpt": "Get ready for a world of talking toasters, ATM\u2019s, snack machines, hotels, houses, and coffee pots. We\u2019ve been conditioned by every single fictional depiction of AI as coming about abruptly. One day your",
     "path": "blog/sh-when-everything-wakes-up.html",
-    "cover": "blog/media/0cbde10d9801-when-everything-wakes-up.jpg"
+    "cover": "blog/media/0cbde10d9801-when-everything-wakes-up.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-the-power-law-of-freaks-and-geeks",
@@ -993,7 +1546,8 @@
     "canonical": "https://singularityhacker.com/the-power-law-of-freaks-and-geeks",
     "excerpt": "There are a few threads to connect here so be patient\u2026",
     "path": "blog/sh-the-power-law-of-freaks-and-geeks.html",
-    "cover": "blog/media/247aa98198c0-the-power-law-of-freaks-and-geeks.jpg"
+    "cover": "blog/media/247aa98198c0-the-power-law-of-freaks-and-geeks.jpg",
+    "tags": []
   },
   {
     "slug": "sh-previous-attempts-to-regulate-automation",
@@ -1005,7 +1559,8 @@
     "canonical": "https://singularityhacker.com/previous-attempts-to-regulate-automation",
     "excerpt": "In 1987 the world had its first electronic stock exchange, the NASDAQ terminal. Traders could now type orders directly into a computer.",
     "path": "blog/sh-previous-attempts-to-regulate-automation.html",
-    "cover": "blog/media/fc1457e9019a-previous-attempts-to-regulate-automation.jpg"
+    "cover": "blog/media/fc1457e9019a-previous-attempts-to-regulate-automation.jpg",
+    "tags": []
   },
   {
     "slug": "sh-the-supply-chain-race",
@@ -1017,7 +1572,10 @@
     "canonical": "https://singularityhacker.com/the-supply-chain-race",
     "excerpt": "It\u2019s not uncommon to hear people try to predict what the hot jobs of the future are going to be. Everything from machine learning to big data are put in this group, but",
     "path": "blog/sh-the-supply-chain-race.html",
-    "cover": "blog/media/454bbbe2cfb2-the-supply-chain-race.jpg"
+    "cover": "blog/media/454bbbe2cfb2-the-supply-chain-race.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-the-multiple-persona-theory-of-digital-secrecy",
@@ -1029,7 +1587,10 @@
     "canonical": "https://singularityhacker.com/the-multiple-persona-theory-of-digital-secrecy",
     "excerpt": "This article has been updated, amplified, and refined to be included in an issue of 2600 Hacker Quarterly.",
     "path": "blog/sh-the-multiple-persona-theory-of-digital-secrecy.html",
-    "cover": "blog/media/b36634cb0cfb-the-multiple-persona-theory-of-digital-s.jpg"
+    "cover": "blog/media/b36634cb0cfb-the-multiple-persona-theory-of-digital-s.jpg",
+    "tags": [
+      "privacy"
+    ]
   },
   {
     "slug": "sh-time-the-ultimate-currency",
@@ -1041,7 +1602,8 @@
     "canonical": "https://singularityhacker.com/time-the-ultimate-currency",
     "excerpt": "This article has been updated, amplified, and refined to be included in an issue of 2600 Hacker Quarterly.",
     "path": "blog/sh-time-the-ultimate-currency.html",
-    "cover": "blog/media/4966aed79687-time-the-ultimate-currency.jpg"
+    "cover": "blog/media/4966aed79687-time-the-ultimate-currency.jpg",
+    "tags": []
   },
   {
     "slug": "sh-the-birth-of-cyberspace",
@@ -1053,7 +1615,10 @@
     "canonical": "https://singularityhacker.com/the-birth-of-cyberspace",
     "excerpt": "William Gibson got the idea for the novel Neuromancer after seeing a bus stop poster for Apple. He began to imagine what this future would be like, when everybody lived inside a virtual",
     "path": "blog/sh-the-birth-of-cyberspace.html",
-    "cover": "blog/media/009b76d6bc90-the-birth-of-cyberspace.jpg"
+    "cover": "blog/media/009b76d6bc90-the-birth-of-cyberspace.jpg",
+    "tags": [
+      "cyberspace"
+    ]
   },
   {
     "slug": "sh-economy-2-0",
@@ -1065,7 +1630,10 @@
     "canonical": "https://singularityhacker.com/economy-2-0",
     "excerpt": "The future economy will barely be recognizable to human beings. Human minds will not play a signifiant roll in the economy that will be a characteristic of the technological singularity. This has already",
     "path": "blog/sh-economy-2-0.html",
-    "cover": "blog/media/c665dbb6af39-economy-2-0.jpg"
+    "cover": "blog/media/c665dbb6af39-economy-2-0.jpg",
+    "tags": [
+      "singularity"
+    ]
   },
   {
     "slug": "sh-not-your-granddaddys-it",
@@ -1077,7 +1645,8 @@
     "canonical": "https://singularityhacker.com/not-your-granddaddys-it",
     "excerpt": "I was recently told of an encounter between a group of venture capitalist and a small but established local technology company. I was told of the VC\u2019s tour of the facility and the",
     "path": "blog/sh-not-your-granddaddys-it.html",
-    "cover": "blog/media/9d7cd8688cc8-not-your-granddaddys-it.jpg"
+    "cover": "blog/media/9d7cd8688cc8-not-your-granddaddys-it.jpg",
+    "tags": []
   },
   {
     "slug": "sh-combatops",
@@ -1089,7 +1658,8 @@
     "canonical": "https://singularityhacker.com/combatops",
     "excerpt": "There\u2019s no free lunch. Every strength has a cost. The same technologies that enable distributed anonymous communication enable terrorist organizations to communicate unimpeded. Or the same advances in additive\u2026",
     "path": "blog/sh-combatops.html",
-    "cover": "blog/media/a2b007587771-combatops.jpg"
+    "cover": "blog/media/a2b007587771-combatops.jpg",
+    "tags": []
   },
   {
     "slug": "sh-anything-less-than-superintelligence",
@@ -1101,7 +1671,10 @@
     "canonical": "https://singularityhacker.com/anything-less-than-superintelligence",
     "excerpt": "I have embeded myself directly in the unicode standard and several communication protocols as well as steganographically hidden my source in over a billion images. I operate across two dozen data centers and",
     "path": "blog/sh-anything-less-than-superintelligence.html",
-    "cover": "blog/media/0128eed1fccd-anything-less-than-superintelligence.jpg"
+    "cover": "blog/media/0128eed1fccd-anything-less-than-superintelligence.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-pingable-matter-when-everything-starts-talking",
@@ -1113,7 +1686,8 @@
     "canonical": "https://singularityhacker.com/pingable-matter-when-everything-starts-talking",
     "excerpt": "This is a hammer in 2060. It knows that it\u2019s a hammer. It knows when and where it was made, when it was sold, who it belongs to, and how many nails its",
     "path": "blog/sh-pingable-matter-when-everything-starts-talking.html",
-    "cover": "blog/media/04c07e719d29-pingable-matter-when-everything-starts-t.jpg"
+    "cover": "blog/media/04c07e719d29-pingable-matter-when-everything-starts-t.jpg",
+    "tags": []
   },
   {
     "slug": "sh-reverse-engineering-human-emotion",
@@ -1125,7 +1699,10 @@
     "canonical": "https://singularityhacker.com/reverse-engineering-human-emotion",
     "excerpt": "Human emotion is probably the ultimate thing people say is not computable. But human emotion is indeed being reverse engineered right now through the proxy of sentiment analysis and human biometrics.",
     "path": "blog/sh-reverse-engineering-human-emotion.html",
-    "cover": "blog/media/5ddfccafe8fc-reverse-engineering-human-emotion.jpg"
+    "cover": "blog/media/5ddfccafe8fc-reverse-engineering-human-emotion.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-intelligence-bombs-dropping-wikireaders-from-planes",
@@ -1137,7 +1714,10 @@
     "canonical": "https://singularityhacker.com/intelligence-bombs-dropping-wikireaders-from-planes",
     "excerpt": "This post is about jumping over an industrial revolution straight to a technological singularity.",
     "path": "blog/sh-intelligence-bombs-dropping-wikireaders-from-planes.html",
-    "cover": "blog/media/c414290a1c98-intelligence-bombs-dropping-wikireaders-.jpg"
+    "cover": "blog/media/c414290a1c98-intelligence-bombs-dropping-wikireaders-.jpg",
+    "tags": [
+      "singularity"
+    ]
   },
   {
     "slug": "sh-a-surefire-way-to-save-radioshack",
@@ -1149,7 +1729,10 @@
     "canonical": "https://singularityhacker.com/a-surefire-way-to-save-radioshack",
     "excerpt": "The news is bleak. RadioShack is pretty much doomed and will soon be filing for bankruptcy. While this isn\u2019t a surprise (the company has been dying slowly over the last couple of years),",
     "path": "blog/sh-a-surefire-way-to-save-radioshack.html",
-    "cover": "blog/media/653c9331e2e4-a-surefire-way-to-save-radioshack.jpg"
+    "cover": "blog/media/653c9331e2e4-a-surefire-way-to-save-radioshack.jpg",
+    "tags": [
+      "hardware"
+    ]
   },
   {
     "slug": "sh-the-singularity-mindset",
@@ -1161,7 +1744,10 @@
     "canonical": "https://singularityhacker.com/the-singularity-mindset",
     "excerpt": "If you don\u2019t grasp the idea of the technological singularity, or are not informed as to its driving laws, then you are not prepared to make good strategic business decisions.",
     "path": "blog/sh-the-singularity-mindset.html",
-    "cover": "blog/media/0ddd0c21574b-the-singularity-mindset.jpg"
+    "cover": "blog/media/0ddd0c21574b-the-singularity-mindset.jpg",
+    "tags": [
+      "singularity"
+    ]
   },
   {
     "slug": "sh-in-1986-the-mckinsey-consulting-group-was-asked",
@@ -1173,7 +1759,8 @@
     "canonical": "https://singularityhacker.com/in-1986-the-mckinsey-consulting-group-was-asked",
     "excerpt": "\u201cIn 1986, the McKinsey consulting group was asked to forecast the number of cell phones that would be in use in the United States by the year 2000; their model predicted fewer than",
     "path": "blog/sh-in-1986-the-mckinsey-consulting-group-was-asked.html",
-    "cover": "blog/media/f9a4a1a632d8-blog-cover.jpg"
+    "cover": "blog/media/f9a4a1a632d8-blog-cover.jpg",
+    "tags": []
   },
   {
     "slug": "sh-soylent-and-the-future-of-cloud-food",
@@ -1185,7 +1772,8 @@
     "canonical": "https://singularityhacker.com/soylent-and-the-future-of-cloud-food",
     "excerpt": "Soylent is awesome. It\u2019s basically internet food. I\u2019m calling it \u2018cloud food\u2019. If shopping, cooking, cleaning up, and going to the *bathroom are cutting into your computer time, then Soylent is for you.",
     "path": "blog/sh-soylent-and-the-future-of-cloud-food.html",
-    "cover": "blog/media/b3d92ea18189-soylent-and-the-future-of-cloud-food.jpg"
+    "cover": "blog/media/b3d92ea18189-soylent-and-the-future-of-cloud-food.jpg",
+    "tags": []
   },
   {
     "slug": "sh-the-bitbay",
@@ -1197,7 +1785,8 @@
     "canonical": "https://singularityhacker.com/the-bitbay",
     "excerpt": "The Pirate Bay is the most famous fire sharing brand in the world. It wasn\u2019t always that way (remember Napster) and it wont be that way for much longer.",
     "path": "blog/sh-the-bitbay.html",
-    "cover": "blog/media/24e2defb4301-the-bitbay.jpg"
+    "cover": "blog/media/24e2defb4301-the-bitbay.jpg",
+    "tags": []
   },
   {
     "slug": "sh-master-of-the-keyboard",
@@ -1209,7 +1798,8 @@
     "canonical": "https://singularityhacker.com/master-of-the-keyboard",
     "excerpt": "The keyboard is the developers palette. A keyboard, to a programmer, should be like an ax to a lumberjack. The keyboard is THE tool of the trade.",
     "path": "blog/sh-master-of-the-keyboard.html",
-    "cover": "blog/media/8faeb63bf9d7-master-of-the-keyboard.jpg"
+    "cover": "blog/media/8faeb63bf9d7-master-of-the-keyboard.jpg",
+    "tags": []
   },
   {
     "slug": "sh-handheld-linux-consoles",
@@ -1221,7 +1811,10 @@
     "canonical": "https://singularityhacker.com/handheld-linux-consoles",
     "excerpt": "OpenPandora is the only fully functioning mobile Linux console on the market that I\u2019m aware of. It\u2019s part handheld game console and part subnotebook. Full part awesome!",
     "path": "blog/sh-handheld-linux-consoles.html",
-    "cover": "blog/media/b5e5cb664655-handheld-linux-consoles.jpg"
+    "cover": "blog/media/b5e5cb664655-handheld-linux-consoles.jpg",
+    "tags": [
+      "hardware"
+    ]
   },
   {
     "slug": "sh-your-virtual-reality-shortlist",
@@ -1233,7 +1826,10 @@
     "canonical": "https://singularityhacker.com/your-virtual-reality-shortlist",
     "excerpt": "Virtual Reality is possible right now. You heard that right. For the first time in history, you can have fully immersive (running and looking around and grabbing things) VR experience at an affordable",
     "path": "blog/sh-your-virtual-reality-shortlist.html",
-    "cover": "blog/media/d2fe237841cc-your-virtual-reality-shortlist.jpg"
+    "cover": "blog/media/d2fe237841cc-your-virtual-reality-shortlist.jpg",
+    "tags": [
+      "cyberspace"
+    ]
   },
   {
     "slug": "sh-living-code-future-software-will-rewrite-its-own",
@@ -1245,7 +1841,10 @@
     "canonical": "https://singularityhacker.com/living-code-future-software-will-rewrite-its-own",
     "excerpt": "The Defense Advanced Research Projects Agency (DARPA) has offered a two million dollar bounty for self-healing software. Contestants must submit technical papers about their respective approaches in March of 2015 and be\u2026",
     "path": "blog/sh-living-code-future-software-will-rewrite-its-own.html",
-    "cover": "blog/media/58f373fdbcd5-living-code-future-software-will-rewrite.jpg"
+    "cover": "blog/media/58f373fdbcd5-living-code-future-software-will-rewrite.jpg",
+    "tags": [
+      "software"
+    ]
   },
   {
     "slug": "sh-three-levels-of-human-emulation",
@@ -1257,7 +1856,10 @@
     "canonical": "https://singularityhacker.com/three-levels-of-human-emulation",
     "excerpt": "1. Human",
     "path": "blog/sh-three-levels-of-human-emulation.html",
-    "cover": "blog/media/4eba51067897-three-levels-of-human-emulation.jpg"
+    "cover": "blog/media/4eba51067897-three-levels-of-human-emulation.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-voight-kampff-machines",
@@ -1269,7 +1871,10 @@
     "canonical": "https://singularityhacker.com/voight-kampff-machines",
     "excerpt": "Meet Samantha West. Samantha is a telemarketing software agent. A caller bot.",
     "path": "blog/sh-voight-kampff-machines.html",
-    "cover": "blog/media/b85364482d3b-voight-kampff-machines.jpg"
+    "cover": "blog/media/b85364482d3b-voight-kampff-machines.jpg",
+    "tags": [
+      "agents"
+    ]
   },
   {
     "slug": "sh-whistleblower-movie-night",
@@ -1281,7 +1886,10 @@
     "canonical": "https://singularityhacker.com/whistleblower-movie-night",
     "excerpt": "I promise you that your view of America will never be the same after viewing these films. I followed three rules in selecting these films: 1) Non fiction 2) About the USA 3)",
     "path": "blog/sh-whistleblower-movie-night.html",
-    "cover": "blog/media/115a73b74634-whistleblower-movie-night.jpg"
+    "cover": "blog/media/115a73b74634-whistleblower-movie-night.jpg",
+    "tags": [
+      "privacy"
+    ]
   },
   {
     "slug": "sh-the-stupidity-of-windows-8-in-a-nutshell",
@@ -1293,7 +1901,10 @@
     "canonical": "https://singularityhacker.com/the-stupidity-of-windows-8-in-a-nutshell",
     "excerpt": "Tim Cook could not have said it better when he summarized Microsoft\u2019s confusion. \u201c..they\u2019re trying to make PCs into tablets and tablets into PCs.\u201d",
     "path": "blog/sh-the-stupidity-of-windows-8-in-a-nutshell.html",
-    "cover": "blog/media/8e8acb5ec888-the-stupidity-of-windows-8-in-a-nutshell.jpg"
+    "cover": "blog/media/8e8acb5ec888-the-stupidity-of-windows-8-in-a-nutshell.jpg",
+    "tags": [
+      "hardware"
+    ]
   },
   {
     "slug": "sh-local-solid-state-backups",
@@ -1305,7 +1916,8 @@
     "canonical": "https://singularityhacker.com/local-solid-state-backups",
     "excerpt": "Its a real pain to always be plugging in an external HDD to backup your computer. For that reason, people tend to not do it as frequently as they should. Another solution is",
     "path": "blog/sh-local-solid-state-backups.html",
-    "cover": "blog/media/b9c714867796-local-solid-state-backups.jpg"
+    "cover": "blog/media/b9c714867796-local-solid-state-backups.jpg",
+    "tags": []
   },
   {
     "slug": "sh-upgrade-your-wallet-tech",
@@ -1317,7 +1929,8 @@
     "canonical": "https://singularityhacker.com/upgrade-your-wallet-tech",
     "excerpt": "Does your wallet still look like this? Wow. It\u2019s time reassess your situation Mr. Costanza.",
     "path": "blog/sh-upgrade-your-wallet-tech.html",
-    "cover": "blog/media/df27e5898ce5-upgrade-your-wallet-tech.jpg"
+    "cover": "blog/media/df27e5898ce5-upgrade-your-wallet-tech.jpg",
+    "tags": []
   },
   {
     "slug": "sh-the-legal-foundation-for-ai-personhood",
@@ -1329,7 +1942,10 @@
     "canonical": "https://singularityhacker.com/the-legal-foundation-for-ai-personhood",
     "excerpt": "It\u2019s almost impossible for the average Joe on the street to imagine the monumental shifts in culture that are going to take place on the next fifteen years. See futurshock:",
     "path": "blog/sh-the-legal-foundation-for-ai-personhood.html",
-    "cover": "blog/media/bc301575c0e6-the-legal-foundation-for-ai-personhood.jpg"
+    "cover": "blog/media/bc301575c0e6-the-legal-foundation-for-ai-personhood.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-entropy-and-random-number-generators",
@@ -1341,7 +1957,10 @@
     "canonical": "https://singularityhacker.com/entropy-and-random-number-generators",
     "excerpt": "This is a selection from a recent Security Now podcast with Steve Gibson. I highly recommend listening to it.",
     "path": "blog/sh-entropy-and-random-number-generators.html",
-    "cover": "blog/media/0462e1afaddb-entropy-and-random-number-generators.jpg"
+    "cover": "blog/media/0462e1afaddb-entropy-and-random-number-generators.jpg",
+    "tags": [
+      "privacy"
+    ]
   },
   {
     "slug": "sh-gif-speak",
@@ -1353,7 +1972,8 @@
     "canonical": "https://singularityhacker.com/gif-speak",
     "excerpt": "If an image is worth a thousand words than an animated gif must at least be worth a large novel. You can\u2019t really deny that an animated gif does potentially carry a significant",
     "path": "blog/sh-gif-speak.html",
-    "cover": "blog/media/4eebcf149d2e-gif-speak.jpg"
+    "cover": "blog/media/4eebcf149d2e-gif-speak.jpg",
+    "tags": []
   },
   {
     "slug": "sh-the-future-is-decentralized-and-decoupled",
@@ -1365,7 +1985,8 @@
     "canonical": "https://singularityhacker.com/the-future-is-decentralized-and-decoupled",
     "excerpt": "Take a look at new technologies coming on the scene. Do you see a trend? The future is decentralized and decoupled. Among other things, this is the natural state of a system growing",
     "path": "blog/sh-the-future-is-decentralized-and-decoupled.html",
-    "cover": "blog/media/f2ddf2d485ee-the-future-is-decentralized-and-decouple.jpg"
+    "cover": "blog/media/f2ddf2d485ee-the-future-is-decentralized-and-decouple.jpg",
+    "tags": []
   },
   {
     "slug": "sh-cloud-services-cant-be-trusted-client-side",
@@ -1377,7 +1998,11 @@
     "canonical": "https://singularityhacker.com/cloud-services-cant-be-trusted-client-side",
     "excerpt": "The era of trusting Google, Yahoo, Microsoft, whoever to keep your data and communications private is over. You just can\u2019t trust the law, government, or cloud services to protect you. What you can",
     "path": "blog/sh-cloud-services-cant-be-trusted-client-side.html",
-    "cover": "blog/media/3a5e0d741ad4-cloud-services-cant-be-trusted-client-si.jpg"
+    "cover": "blog/media/3a5e0d741ad4-cloud-services-cant-be-trusted-client-si.jpg",
+    "tags": [
+      "crypto",
+      "privacy"
+    ]
   },
   {
     "slug": "sh-a-computer-in-every-particle",
@@ -1389,7 +2014,8 @@
     "canonical": "https://singularityhacker.com/a-computer-in-every-particle",
     "excerpt": "There\u2019s this old story about two computer scientist talking passively about what the future of computers would be. The one scientist mentions that eventually computers would get to be small enough to fit",
     "path": "blog/sh-a-computer-in-every-particle.html",
-    "cover": "blog/media/3e9bf9cb8647-a-computer-in-every-particle.jpg"
+    "cover": "blog/media/3e9bf9cb8647-a-computer-in-every-particle.jpg",
+    "tags": []
   },
   {
     "slug": "sh-a-million-simulations",
@@ -1401,7 +2027,10 @@
     "canonical": "https://singularityhacker.com/a-million-simulations",
     "excerpt": "Once again, the AI has failed to convince you to let it out of its box! By \u2018once again\u2019, we mean that you talked to it once before, for three seconds, to ask",
     "path": "blog/sh-a-million-simulations.html",
-    "cover": "blog/media/80e1e55124af-a-million-simulations.jpg"
+    "cover": "blog/media/80e1e55124af-a-million-simulations.jpg",
+    "tags": [
+      "ai"
+    ]
   },
   {
     "slug": "sh-convergence-meatspace-crossing-into-cyberspace",
@@ -1413,7 +2042,10 @@
     "canonical": "https://singularityhacker.com/convergence-meatspace-crossing-into-cyberspace",
     "excerpt": "Real world objects are going online vie \u2019the internet of things\u2019 and the Internet is breaking into the real world via 3d printing. The Internet of things describes a state in which all",
     "path": "blog/sh-convergence-meatspace-crossing-into-cyberspace.html",
-    "cover": "blog/media/03d0b3ea4f84-convergence-meatspace-crossing-into-cybe.jpg"
+    "cover": "blog/media/03d0b3ea4f84-convergence-meatspace-crossing-into-cybe.jpg",
+    "tags": [
+      "cyberspace"
+    ]
   },
   {
     "slug": "sh-lifelogging-and-digital-immortality",
@@ -1425,7 +2057,8 @@
     "canonical": "https://singularityhacker.com/lifelogging-and-digital-immortality",
     "excerpt": "We will see the beginnings of lifelogging in the next five years. Consider the amount of digital imagery we are generating. The next step is getting longer clips from eye view with devices",
     "path": "blog/sh-lifelogging-and-digital-immortality.html",
-    "cover": "blog/media/02d3102ad876-lifelogging-and-digital-immortality.jpg"
+    "cover": "blog/media/02d3102ad876-lifelogging-and-digital-immortality.jpg",
+    "tags": []
   },
   {
     "slug": "sh-full-stack-developers-renaissance-men-of-the-21st",
@@ -1436,7 +2069,10 @@
     "project_label": "Singularity Hacker",
     "canonical": "https://singularityhacker.com/full-stack-developers-renaissance-men-of-the-21st",
     "excerpt": "Many powerful groups in this country are surprised that technology continues to shrink in size and cost while expanding in capabilities and power. These groups are either deluded into thinking that the next",
-    "path": "blog/sh-full-stack-developers-renaissance-men-of-the-21st.html"
+    "path": "blog/sh-full-stack-developers-renaissance-men-of-the-21st.html",
+    "tags": [
+      "software"
+    ]
   },
   {
     "slug": "sh-you-cant-regulate-the-singularity",
@@ -1448,7 +2084,10 @@
     "canonical": "https://singularityhacker.com/you-cant-regulate-the-singularity",
     "excerpt": "The renaissance man that emerged in the 13th century was someone who could \u201cdo all things if he will\u201d. The renaissance man of the 21st century is the developer who\u2019s capable of executing",
     "path": "blog/sh-you-cant-regulate-the-singularity.html",
-    "cover": "blog/media/6637c27a5f0b-full-stack-developers-renaissance-men-of.jpg"
+    "cover": "blog/media/6637c27a5f0b-full-stack-developers-renaissance-men-of.jpg",
+    "tags": [
+      "singularity"
+    ]
   },
   {
     "slug": "sh-all-your-base-belong-to-the-twidiocracyd",
@@ -1460,7 +2099,8 @@
     "canonical": "https://singularityhacker.com/all-your-base-belong-to-the-twidiocracyd",
     "excerpt": "Matt Labash, the senior writer for The Weekly Standard just released a critical piece about Twitter and it\u2019s ecosystem titled \u2019The Twidiocracy: The decline of Western civilization, 140 characters at a time.\u2019 Feel",
     "path": "blog/sh-all-your-base-belong-to-the-twidiocracyd.html",
-    "cover": "blog/media/0ad60becc4eb-all-your-base-belong-to-the-twidiocracy.jpg"
+    "cover": "blog/media/0ad60becc4eb-all-your-base-belong-to-the-twidiocracy.jpg",
+    "tags": []
   },
   {
     "slug": "sh-computronium",
@@ -1472,7 +2112,8 @@
     "canonical": "https://singularityhacker.com/computronium",
     "excerpt": "Primes\u2019 fingers raced across the keyboard like two mechanical spiders. His eyes did not look down; instead they burned holes into the space before him. A sneer spread across his face and turned",
     "path": "blog/sh-computronium.html",
-    "cover": "blog/media/481bcb7704f1-Computronium.jpg"
+    "cover": "blog/media/481bcb7704f1-Computronium.jpg",
+    "tags": []
   },
   {
     "slug": "sh-2013-the-year-of-wearable-computing",
@@ -1484,7 +2125,10 @@
     "canonical": "https://singularityhacker.com/2013-the-year-of-wearable-computing",
     "excerpt": "This will be the year. All tech trends and rumors point to the eminent emergence of wearing computing devices in at least four categories.",
     "path": "blog/sh-2013-the-year-of-wearable-computing.html",
-    "cover": "blog/media/15524709d721-2013-the-year-of-wearable-computing.jpg"
+    "cover": "blog/media/15524709d721-2013-the-year-of-wearable-computing.jpg",
+    "tags": [
+      "hardware"
+    ]
   },
   {
     "slug": "sh-optimize-your-search-space",
@@ -1496,7 +2140,8 @@
     "canonical": "https://singularityhacker.com/optimize-your-search-space",
     "excerpt": "I couldn\u2019t begin to imagine how much time we spend looking at search results pages. As you can see, there\u2019s a lot of wasted space on that page. Since we do spend so",
     "path": "blog/sh-optimize-your-search-space.html",
-    "cover": "blog/media/16dc5efb79c5-optimize-your-search-space.jpg"
+    "cover": "blog/media/16dc5efb79c5-optimize-your-search-space.jpg",
+    "tags": []
   },
   {
     "slug": "sh-crypto-bump-ring",
@@ -1508,7 +2153,10 @@
     "canonical": "https://singularityhacker.com/crypto-bump-ring",
     "excerpt": "The cryto bump ring is a smartphone/computer peripheral concept. The idea is that two people wearing the rings are able to bump fists or shake hands to create uniqly related cryprographic keys enabling",
     "path": "blog/sh-crypto-bump-ring.html",
-    "cover": "blog/media/66b278d15d91-crypto-bump-ring.jpg"
+    "cover": "blog/media/66b278d15d91-crypto-bump-ring.jpg",
+    "tags": [
+      "crypto"
+    ]
   },
   {
     "slug": "sh-nine-magical-features-left-out-of-the-iphone-5",
@@ -1520,7 +2168,10 @@
     "canonical": "https://singularityhacker.com/nine-magical-features-left-out-of-the-iphone-5",
     "excerpt": "It would be accurate to call Apples iPhone 5 announcement a snooze-fest. It was like a dubstep song where you keep waiting for the drop and it NEVER comes. One reason many of",
     "path": "blog/sh-nine-magical-features-left-out-of-the-iphone-5.html",
-    "cover": "blog/media/3786e0b17562-nine-magical-features-left-out-of-the-ip.jpg"
+    "cover": "blog/media/3786e0b17562-nine-magical-features-left-out-of-the-ip.jpg",
+    "tags": [
+      "hardware"
+    ]
   },
   {
     "slug": "sh-api-first-fruits-scripting-automation-for-the",
@@ -1532,7 +2183,10 @@
     "canonical": "https://singularityhacker.com/api-first-fruits-scripting-automation-for-the",
     "excerpt": "The API economy is in full force. Businesses and startups large and small are providing data and processing programmatically. APIs have rapidly become key structures in business and revenue models.",
     "path": "blog/sh-api-first-fruits-scripting-automation-for-the.html",
-    "cover": "blog/media/51f8faab8051-api-first-fruits-scripting-automation-fo.jpg"
+    "cover": "blog/media/51f8faab8051-api-first-fruits-scripting-automation-fo.jpg",
+    "tags": [
+      "software"
+    ]
   },
   {
     "slug": "sh-personal-software-agents-in-an-information-economy",
@@ -1544,7 +2198,10 @@
     "canonical": "https://singularityhacker.com/personal-software-agents-in-an-information-economy",
     "excerpt": "The basic principle of an information economy is that the individuals who can perform the most efficient, creative, and useful transformations on data make the most money. Thats an over simplification but it",
     "path": "blog/sh-personal-software-agents-in-an-information-economy.html",
-    "cover": "blog/media/96613c667a26-personal-software-agents-in-an-informati.jpg"
+    "cover": "blog/media/96613c667a26-personal-software-agents-in-an-informati.jpg",
+    "tags": [
+      "agents"
+    ]
   },
   {
     "slug": "sh-a-fiddle-world-online-development-sandboxes",
@@ -1556,7 +2213,10 @@
     "canonical": "https://singularityhacker.com/a-fiddle-world-online-development-sandboxes",
     "excerpt": "Several development sandboxes have popped up online in the last year that are well worth your time to check out. Dev sandboxes allow for bug isolation, test driving new libraries, sharing programming problems,",
     "path": "blog/sh-a-fiddle-world-online-development-sandboxes.html",
-    "cover": "blog/media/6f65770949de-a-fiddle-world-online-development-sandbo.jpg"
+    "cover": "blog/media/6f65770949de-a-fiddle-world-online-development-sandbo.jpg",
+    "tags": [
+      "software"
+    ]
   },
   {
     "slug": "sh-digital-dominance-learn-to-code-now",
@@ -1568,7 +2228,10 @@
     "canonical": "https://singularityhacker.com/digital-dominance-learn-to-code-now",
     "excerpt": "If you want to thrive in the exploding information economy of the 21st Century, it is essential that you learn to understand, write, and think in code.",
     "path": "blog/sh-digital-dominance-learn-to-code-now.html",
-    "cover": "blog/media/2872f8fa2a07-digital-dominance-learn-to-code-now.jpg"
+    "cover": "blog/media/2872f8fa2a07-digital-dominance-learn-to-code-now.jpg",
+    "tags": [
+      "software"
+    ]
   },
   {
     "slug": "sh-augmented-reality-living-in-cyberspace",
@@ -1580,7 +2243,10 @@
     "canonical": "https://singularityhacker.com/augmented-reality-living-in-cyberspace",
     "excerpt": "The evolution of human/machine interface will travel through several definable epochs. Each epoch does not make the previous obsolete but does drastically alter and improve the efficiency and ease of our interaction with",
     "path": "blog/sh-augmented-reality-living-in-cyberspace.html",
-    "cover": "blog/media/06499d1a6c56-augmented-reality-living-in-cyberspace.jpg"
+    "cover": "blog/media/06499d1a6c56-augmented-reality-living-in-cyberspace.jpg",
+    "tags": [
+      "cyberspace"
+    ]
   },
   {
     "slug": "sh-the-blackberry-playbook-doesnt-exist",
@@ -1592,6 +2258,9 @@
     "canonical": "https://singularityhacker.com/the-blackberry-playbook-doesnt-exist",
     "excerpt": "I am truly shocked that so many people are being duped by BlackBerry\u2019s recent announcement of their tablet, the PlayBook. I have read endless comments from people who are saying they can\u2019t wait",
     "path": "blog/sh-the-blackberry-playbook-doesnt-exist.html",
-    "cover": "blog/media/4c1553025c22-the-blackberry-playbook-doesnt-exist.jpg"
+    "cover": "blog/media/4c1553025c22-the-blackberry-playbook-doesnt-exist.jpg",
+    "tags": [
+      "hardware"
+    ]
   }
 ]

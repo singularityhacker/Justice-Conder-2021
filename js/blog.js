@@ -1,48 +1,96 @@
 (function () {
-  var buttons = Array.prototype.slice.call(document.querySelectorAll(".blog-filter"));
+  var eraButtons = Array.prototype.slice.call(document.querySelectorAll(".blog-filter"));
+  var tagButtons = Array.prototype.slice.call(document.querySelectorAll(".blog-tag-filter"));
+  var eraRows = Array.prototype.slice.call(document.querySelectorAll(".blog-era-row"));
+  var blurbs = Array.prototype.slice.call(document.querySelectorAll(".blog-era-blurb"));
   var cards = Array.prototype.slice.call(document.querySelectorAll(".blog-card"));
   var empty = document.getElementById("blog-empty");
   var count = document.getElementById("blog-count");
 
-  function requestedFilter() {
+  function requested() {
+    var params = new URLSearchParams(window.location.search);
     var hash = (window.location.hash || "").replace(/^#/, "");
-    var query = new URLSearchParams(window.location.search).get("project") || "";
-    var value = query || hash;
-    if (!value || value === "all") return "all";
-    return value;
+    var era = params.get("project") || hash || "all";
+    var tag = params.get("tag") || "all";
+    if (!era) era = "all";
+    if (!tag) tag = "all";
+    return { era: era, tag: tag };
   }
 
-  function applyFilter(project, push) {
+  function cardTags(card) {
+    return (card.getAttribute("data-tags") || "").trim().split(/\s+/).filter(Boolean);
+  }
+
+  function applyFilters(era, tag, push) {
     var visible = 0;
     cards.forEach(function (card) {
-      var match = project === "all" || card.getAttribute("data-project") === project;
+      var eraMatch = era === "all" || card.getAttribute("data-project") === era;
+      var tagMatch = tag === "all" || cardTags(card).indexOf(tag) !== -1;
+      var match = eraMatch && tagMatch;
       card.hidden = !match;
       card.classList.toggle("is-hidden-card", !match);
       if (match) visible += 1;
     });
     if (empty) empty.hidden = visible !== 0;
     if (count) {
-      var label = project === "all" ? "writings" : "writings in this project";
+      var label = "writings";
+      if (era !== "all" && tag !== "all") label = "writings in this era and topic";
+      else if (era !== "all") label = "writings in this era";
+      else if (tag !== "all") label = "writings on this topic";
       count.textContent = visible + " " + label;
     }
-    buttons.forEach(function (btn) {
-      btn.classList.toggle("is-active", btn.getAttribute("data-filter") === project);
+
+    eraButtons.forEach(function (btn) {
+      btn.classList.toggle("is-active", btn.getAttribute("data-filter") === era);
     });
+    eraRows.forEach(function (row) {
+      var on = row.getAttribute("data-filter") === era;
+      row.classList.toggle("is-active", on);
+      row.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    tagButtons.forEach(function (btn) {
+      btn.classList.toggle("is-active", btn.getAttribute("data-tag") === tag);
+    });
+    blurbs.forEach(function (el) {
+      var show = el.getAttribute("data-era") === era;
+      el.hidden = !show;
+      el.classList.toggle("is-active", show);
+    });
+
     if (push) {
       var url = new URL(window.location.href);
-      if (project === "all") {
-        url.searchParams.delete("project");
-        history.replaceState(null, "", url.pathname + url.search);
-      } else {
-        url.searchParams.set("project", project);
-        history.replaceState(null, "", url.pathname + url.search);
-      }
+      if (era === "all") url.searchParams.delete("project");
+      else url.searchParams.set("project", era);
+      if (tag === "all") url.searchParams.delete("tag");
+      else url.searchParams.set("tag", tag);
+      history.replaceState(null, "", url.pathname + url.search);
     }
   }
 
-  buttons.forEach(function (btn) {
+  function current() {
+    var activeEra = document.querySelector(".blog-filter.is-active");
+    var activeTag = document.querySelector(".blog-tag-filter.is-active");
+    return {
+      era: (activeEra && activeEra.getAttribute("data-filter")) || "all",
+      tag: (activeTag && activeTag.getAttribute("data-tag")) || "all",
+    };
+  }
+
+  eraButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      applyFilter(btn.getAttribute("data-filter"), true);
+      applyFilters(btn.getAttribute("data-filter"), current().tag, true);
+    });
+  });
+  eraRows.forEach(function (row) {
+    row.addEventListener("click", function () {
+      var era = row.getAttribute("data-filter");
+      var next = current().era === era ? "all" : era;
+      applyFilters(next, current().tag, true);
+    });
+  });
+  tagButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      applyFilters(current().era, btn.getAttribute("data-tag"), true);
     });
   });
 
@@ -55,5 +103,6 @@
     });
   });
 
-  applyFilter(requestedFilter(), false);
+  var start = requested();
+  applyFilters(start.era, start.tag, false);
 })();

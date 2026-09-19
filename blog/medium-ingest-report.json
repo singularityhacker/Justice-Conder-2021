@@ -1,0 +1,226 @@
+{
+  "added": [
+    {
+      "title": "Agile Planning Land Mines",
+      "date": "2020-05-19",
+      "url": "https://justiceconder.medium.com/agile-planning-land-mines-c15866f76d5a"
+    },
+    {
+      "title": "Agile Delivery Metrics",
+      "date": "2021-03-30",
+      "url": "https://justiceconder.medium.com/agile-delivery-metrics-bbbb9be74deb"
+    },
+    {
+      "title": "Scaling Scrum the Scrum Way",
+      "date": "2020-05-19",
+      "url": "https://justiceconder.medium.com/scaling-scrum-the-scrum-way-95f48884b43f"
+    },
+    {
+      "title": "Writing on GitHub II",
+      "date": "2020-08-26",
+      "url": "https://justiceconder.medium.com/writing-on-github-ii-db7c157f21da"
+    },
+    {
+      "title": "The Trivium of Technical Communication \ud83d\udd3a",
+      "date": "2020-09-09",
+      "url": "https://justiceconder.medium.com/the-trivium-of-technical-communication-ba5e07f8da70"
+    },
+    {
+      "title": "Writing on GitHub 3",
+      "date": "2021-02-04",
+      "url": "https://justiceconder.medium.com/writing-on-github-3-342aeafbe40d"
+    },
+    {
+      "title": "Blockchain and Serverless: a Marriage Made in Cyberspace",
+      "date": "2020-05-19",
+      "url": "https://justiceconder.medium.com/blockchain-and-serverless-a-marriage-made-in-cyberspace-baa647e03562"
+    },
+    {
+      "title": "Writing on GitHub",
+      "date": "2020-06-14",
+      "url": "https://justiceconder.medium.com/writing-on-github-c35ddd12bfd8"
+    },
+    {
+      "title": "The Present and Future State of Agility",
+      "date": "2021-09-29",
+      "url": "https://justiceconder.medium.com/the-present-and-future-state-of-agility-a2cd4d822548"
+    },
+    {
+      "title": "Enter the Value Stream",
+      "date": "2021-10-12",
+      "url": "https://justiceconder.medium.com/enter-the-value-stream-59fae8f7346f"
+    },
+    {
+      "title": "Agile: True or False",
+      "date": "2021-11-09",
+      "url": "https://justiceconder.medium.com/agile-true-or-false-8a5b0528235a"
+    },
+    {
+      "title": "The Edge of Agility",
+      "date": "2021-12-06",
+      "url": "https://justiceconder.medium.com/the-edge-of-agility-48300bed1ab"
+    },
+    {
+      "title": "The Low-code Movement",
+      "date": "2021-12-28",
+      "url": "https://justiceconder.medium.com/the-low-code-movement-7fcac8c59367"
+    },
+    {
+      "title": "Essence of Agility",
+      "date": "2021-09-08",
+      "url": "https://justiceconder.medium.com/essence-of-agility-d07312652fa8"
+    },
+    {
+      "title": "When Lambo? How to Buy Exotic Goods with Crypto Tax-Free",
+      "date": "2021-08-25",
+      "url": "https://justiceconder.medium.com/when-lambo-how-to-buy-exotic-goods-with-crypto-bc1d63826fe5"
+    },
+    {
+      "title": "DAO Macrostructures",
+      "date": "2021-08-14",
+      "url": "https://justiceconder.medium.com/dao-macrostructures-8c65c374ac55"
+    }
+  ],
+  "skipped_duplicates": [
+    {
+      "url": "https://justiceconder.medium.com/the-multiple-persona-theory-of-digital-secrecy-f7244cf51d7d",
+      "title": "The Multiple Persona Theory of Digital Secrecy",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/is-blockchain-a-fad-dac359f083dd",
+      "title": "Is Blockchain a Fad?",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/computer-generated-education-e779656697f1",
+      "title": "Computer Generated Education",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/the-singularity-engine-4d6f81f125e4",
+      "title": "7 Power Laws of the Technological Singularity",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/hacking-your-situation-e7a1fb580f12",
+      "title": "Hacking Your Situation",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/front-running-defi-regulation-65c87931e118",
+      "title": "Front-Running Defi Regulation",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/the-unreasonable-effectiveness-of-tiny-ai-models-5fce3944c9b9",
+      "title": "The Unreasonable Effectiveness of Tiny AI Models",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/ai-as-industrial-scale-induction-2a836f3d8072",
+      "title": "AI as Industrial-Scale Induction",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/rethinking-the-dao-contributor-funnel-f9d314fd7c1f",
+      "title": "Rethinking the DAO Contributor Funnel",
+      "reason": "already on blog from another source"
+    },
+    {
+      "url": "https://justiceconder.medium.com/optimizing-dao-delivery-de651cc97352",
+      "title": "Optimizing DAO Delivery",
+      "reason": "already on blog from another source"
+    }
+  ],
+  "failed": [],
+  "date_sources": [
+    {
+      "title": "Agile Planning Land Mines",
+      "date": "2020-05-19",
+      "source": "byline"
+    },
+    {
+      "title": "Agile Delivery Metrics",
+      "date": "2021-03-30",
+      "source": "byline"
+    },
+    {
+      "title": "Scaling Scrum the Scrum Way",
+      "date": "2020-05-19",
+      "source": "byline"
+    },
+    {
+      "title": "Writing on GitHub II",
+      "date": "2020-08-26",
+      "source": "byline"
+    },
+    {
+      "title": "The Trivium of Technical Communication \ud83d\udd3a",
+      "date": "2020-09-09",
+      "source": "byline"
+    },
+    {
+      "title": "Writing on GitHub 3",
+      "date": "2021-02-04",
+      "source": "byline"
+    },
+    {
+      "title": "Blockchain and Serverless: a Marriage Made in Cyberspace",
+      "date": "2020-05-19",
+      "source": "byline"
+    },
+    {
+      "title": "Writing on GitHub",
+      "date": "2020-06-14",
+      "source": "byline"
+    },
+    {
+      "title": "The Present and Future State of Agility",
+      "date": "2021-09-29",
+      "source": "byline"
+    },
+    {
+      "title": "Enter the Value Stream",
+      "date": "2021-10-12",
+      "source": "byline"
+    },
+    {
+      "title": "Agile: True or False",
+      "date": "2021-11-09",
+      "source": "byline"
+    },
+    {
+      "title": "The Edge of Agility",
+      "date": "2021-12-06",
+      "source": "byline"
+    },
+    {
+      "title": "The Low-code Movement",
+      "date": "2021-12-28",
+      "source": "byline"
+    },
+    {
+      "title": "Essence of Agility",
+      "date": "2021-09-08",
+      "source": "byline"
+    },
+    {
+      "title": "When Lambo? How to Buy Exotic Goods with Crypto Tax-Free",
+      "date": "2021-08-25",
+      "source": "byline"
+    },
+    {
+      "title": "DAO Macrostructures",
+      "date": "2021-08-14",
+      "source": "byline"
+    }
+  ],
+  "sitemap_articles": 26,
+  "not_on_public_listing": [
+    {
+      "title": "Out to Sea",
+      "reason": "in skip list from earlier notes; not present on the public Medium sitemap or RSS"
+    }
+  ]
+}

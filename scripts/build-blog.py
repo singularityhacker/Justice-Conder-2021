@@ -41,6 +41,10 @@ PROJECTS = {
         "label": "ClawBank",
         "home": "https://clawbank.co/blog.html",
     },
+    "medium": {
+        "label": "Medium",
+        "home": "https://justiceconder.medium.com/",
+    },
 }
 
 MD = mdlib.Markdown(extensions=["extra", "sane_lists", "nl2br"])
@@ -613,8 +617,9 @@ def write_listing(posts: list[dict]) -> None:
         label = PROJECTS[project]["label"]
         date_iso = post.get("date") or ""
         date_disp = post.get("date_display") or date_iso
+        tags = " ".join(post.get("tags") or [])
         cards.append(
-            f"""\t\t\t<article class="blog-card" data-project="{html.escape(project)}" data-date="{html.escape(date_iso)}">
+            f"""\t\t\t<article class="blog-card" data-project="{html.escape(project)}" data-date="{html.escape(date_iso)}" data-tags="{html.escape(tags)}">
 \t\t\t\t<div class="blog-card-meta">
 \t\t\t\t\t<span class="blog-tag blog-tag--{html.escape(project)}">{html.escape(label)}</span>
 \t\t\t\t\t<time datetime="{html.escape(date_iso)}">{html.escape(date_disp)}</time>
@@ -769,6 +774,8 @@ def main() -> int:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import localize_blog_media
     localize_blog_media.main()
+    import apply_blog_filters
+    apply_blog_filters.main()
     return 0 if filled else 1
 
 

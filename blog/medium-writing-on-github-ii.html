@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Writing on GitHub II — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Writing on GitHub II — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--medium">Medium</span>
+				<time datetime="2020-08-26">August 26, 2020</time>
+			</div>
+			<h1>Writing on GitHub II</h1>
+			<p class="blog-source">Originally published at <a href="https://justiceconder.medium.com/writing-on-github-ii-db7c157f21da" target="_blank" rel="noopener">https://justiceconder.medium.com/writing-on-github-ii-db7c157f21da</a></p>
+			<p class="blog-cover"><img src="media/eaaed1a91bf5-1-Q3AZnYp1Qrdqu34AUnJwuQ.png" alt=""></p>
+			<div class="blog-prose">
+<p>In a <a href="https://medium.com/@justiceconder/writing-on-github-c35ddd12bfd8">previous post</a>, I spoke about moving to GitHub as a technical writing platform. In this post, I will address some of the challenges I faced, methods of resolution, and future goals as I continue down this journey. If you want to know the exact reasons I have made this change you can review that <a href="https://medium.com/@justiceconder/writing-on-github-c35ddd12bfd8">previous post</a>.</p>
+<p>But just to recap some of the largest points:</p>
+<ul>
+<li>Knowledge workers should be consistently producing useful content</li>
+<li>The most precise way of measuring and collaborating on that content is with a version control system</li>
+<li>GitHub naturally presents itself as an ideal platform for this</li>
+</ul>
+<p><strong>Writing Modes</strong></p>
+<p>When I first started down this path, I wasn’t accustomed to writing in markdown. I typically did all my writing in Google Docs. After migrating some of my existing writing projects to a GitHub repository with this <a href="https://www.buymeacoffee.com/docstomarkdown">addon</a>, I cloned them to my local machine and started looking for a good markdown editor. This is where things got strange. It seems that writing in markdown has become something of a rising trend to the degree that there are several paid editors on the market with some even requiring a paid subscription. That kind of blew my mind. A subscription text editor? Thankfully, I didn’t capitulate and decided to just use <a href="https://code.visualstudio.com/">Visual Studio Code</a> as my editor. I had to brush up on the IDE interface, staging and committing changes, and package installation. I few things I liked about this setup were:</p>
+<ul>
+<li>No third-party access to my repository</li>
+<li>Unambiguous git interactions</li>
+<li>Side-by-side rendering of markdown content</li>
+<li>A Grammarly extension (removed from the market place but still available <a href="https://github.com/znck/grammarly/releases/tag/v0.12.2">here</a>)</li>
+<li>Options to use “second/external brain” approaches with things like <a href="https://foambubble.github.io/foam/">Foam</a></li>
+</ul>
+<p>The exercise proved beneficial but one aspect of the workflow I still really didn’t like was the Grammarly integration. By accident, I discovered that editing files directly from within the browser on the GitHub website itself proved sufficient for most things I wanted to do. Talk about going full circle. After adding <a href="https://github.com/ckeditor/github-writer">GitHub Writer</a>, a browser extension that made editing markdown files even more friendly and realizing that the <a href="https://support.grammarly.com/hc/en-us/articles/115000091552-Install-the-Grammarly-browser-extension">Grammarly browser extension</a> worked as well when this extension was enabled, I started to really fall into a groove. What’s cool is that all my content is still available locally if needed (meaning I can interact with it with any application on my machine) but still conveniently available to be edited within a browser window. It’s really the best of both worlds.</p>
+<p><strong>Image Management</strong></p>
+<p>Image paths in GitHub repositories can be tricky. While GitHub does offer an <a href="https://gist.github.com/vinkla/dca76249ba6b73c5dd66a4e986df4c8d">image hosting CDN</a> mechanism, there is no mechanism to view-all-uploaded or <a href="https://stackoverflow.com/questions/33215211/github-how-do-i-delete-an-attachment-in-github-issues">delete images</a> once uploaded. I didn’t want to use dropbox as that entire domain can be blocked on some corporate networks so landed on a slick <a href="https://imgur.com/">Imgur</a> workflow that handles my local screenshot needs as well. With this <a href="https://github.com/mileswd/mac2imgur">mac app</a> and an Imgur account, you can drag and drop images to be uploaded or just take any screenshot and it will be uploaded to your account and the link copied to your clipboard.</p>
+<p><strong>Organization and Workflow</strong></p>
+<p>I am staying organized on priorities and in-flight work with a <a href="https://github.com/features/project-management/">GitHub project board</a>. I recommend creating your main project board at the topmost level of your GitHub account so you can use a single cross-cutting board to link issues to any of your repositories. If you make it at the level of a single repository then it is scoped to that repository. Milestones can be used to create a cadence if you are working in sprints.</p>
+<p>My workflow starts with creating an issue. I’ll add miscellaneous thoughts into the issue as ideas come to me on a topic and also talk through issues with peers. When it seems the ideas are fleshed out sufficiently, then a new markdown file can be created in the relevant repo and a first draft created and committed from those developed notes in the issue. This is <a href="https://github.com/singularityhacker/Content/issues/2">the issue</a> that started this very post.</p>
+<p><strong>Presenting Content</strong></p>
+<p>I’m most frequently working in private repositories but have a need to present content to people who don’t have access. This is where <a href="https://hackmd.io/">HackMD</a> comes in. It allows me to pull in content from any repo (even private) and present it <a href="https://hackmd.io/c/tutorials/%2Fs%2Fhow-to-create-slide-deck">as a slideshow</a>. Any updates to that file in git can be pulled into the HackMD version and it also allows pushing the other direction as well.</p>
+<p><strong>Future Steps</strong></p>
+<p>One of the several motivations I had in making the move to writing on GitHub was to encourage a don’t-break-the-chain pattern. This is useful as can be seen from my commit history since June. I even went to the trouble of adding my commit-graph to my Apple watch with <a href="https://apps.apple.com/us/app/contributions-for-github/id1153432612">this app</a>. I consider this a good first pass at what I’m trying to accomplish but I think I’m increasingly eager to move into the next step of quantifying this output.</p>
+<p>The next logical step will be to quantify daily word count, and not just commits. The GitHub commit-graph counts two commits of one word each as more than a single commit of a thousand words so it’s really not a good proxy of consistent content creation. Just like lines of code, word count is not a determining factor of good work but it means some activity/effort is happening. I’m hopeful that I’ll be able to accomplish something like this with a <a href="https://github.com/features/actions">GitHub action</a>. Secondly, I’d really like to be “releasing” more frequently. If authoring can be construed as development and publishing (as a presentation, article, or documentation) can be viewed as deployment, then I need to deploy a lot more frequently.</p>
+<p>This is the conclusion of my second update on this journey. Feel free to follow me on <a href="https://medium.com/@justiceconder">Medium</a> or <a href="https://github.com/singularityhacker">GitHub</a> to get updates or possibly collaborate on future endeavors.</p>
+<p><a href="https://medium.com/tag/github?source=post_page---footer_tags--db7c157f21da-----------------------------------------">Github</a></p>
+<p><a href="https://medium.com/tag/technical-writing?source=post_page---footer_tags--db7c157f21da-----------------------------------------">Technical Writing</a></p>
+<p><a href="https://medium.com/tag/automation?source=post_page---footer_tags--db7c157f21da-----------------------------------------">Automation</a></p>
+<p><a href="https://medium.com/tag/devops?source=post_page---footer_tags--db7c157f21da-----------------------------------------">DevOps</a></p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

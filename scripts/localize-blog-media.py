@@ -189,17 +189,61 @@ def singularity_covers() -> dict[str, str]:
     return covers
 
 
+# Paragraph auto-generates 1200x630 title-on-black OG cards. Prefer the first
+# real in-article image instead of those placeholders.
+PLACEHOLDER_COVER = re.compile(r"(?:-og\.png|/og\.png|logo\.png|play\.png|branding/)", re.I)
+PARAGRAPH_CHROME = (
+    "63e5f16669b3b00cd647",  # profile avatar
+    "f833ce7763ed2d192d64",
+    "42e32756d23813879f5a",
+    "e4db67ae4359b94ea088",
+    "paragraph.com/branding",
+)
+
+
+def is_placeholder_cover(url: str) -> bool:
+    if not url:
+        return True
+    if PLACEHOLDER_COVER.search(url):
+        return True
+    return any(part in url for part in PARAGRAPH_CHROME)
+
+
+def first_article_image(html: str) -> str | None:
+    match = re.search(r'<div class="blog-prose">([\s\S]*?)</div>\s*</article>', html)
+    if not match:
+        return None
+    for src in re.findall(r'<img[^>]+src="([^"]+)"', match.group(1)):
+        if is_placeholder_cover(src):
+            continue
+        if src.startswith("http"):
+            continue
+        return src
+    return None
+
+
 def paragraph_covers(posts: list[dict]) -> dict[str, str]:
+    """Remote fallback only when a post has no local article image."""
     covers = {}
 
     def one(post: dict) -> tuple[str, str | None]:
         html = fetch_text(post["canonical"])
         if not html:
             return post["slug"], None
+        # Prefer first in-page article image over the generated OG title card.
+        for src in re.findall(r'<img[^>]+src="([^"]+)"', html):
+            url = normalize_url(src)
+            if not url or is_placeholder_cover(url):
+                continue
+            if any(host in url for host in ("storage.googleapis.com/papyrus_images", "img.paragraph.com", "papyrus_images")):
+                return post["slug"], url
         og = re.search(r'<meta property="og:image" content="([^"]+)"', html)
         if not og:
             return post["slug"], None
-        return post["slug"], normalize_url(og.group(1))
+        url = normalize_url(og.group(1))
+        if url and not is_placeholder_cover(url):
+            return post["slug"], url
+        return post["slug"], None
 
     targets = [p for p in posts if p["project"] in {"0xjustice", "qacc"}]
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
@@ -224,7 +268,12 @@ def rewrite_html(html: str, mapping: dict[str, str], prefix: str) -> str:
 
 def inject_cover(html: str, local_rel: str) -> str:
     if 'class="blog-cover"' in html:
-        return html
+        return re.sub(
+            r'(<p class="blog-cover"><img src=")[^"]+(" alt="">)',
+            rf"\1{local_rel}\2",
+            html,
+            count=1,
+        )
     block = (
         f'\t\t\t<p class="blog-cover"><img src="{local_rel}" alt=""></p>\n'
     )
@@ -255,7 +304,16 @@ def update_listing(posts: list[dict], covers: dict[str, str]) -> None:
             f'\n\t\t\t\t\t<img src="blog/{cover}" alt="" loading="lazy">'
             f'\n\t\t\t\t</div>'
         )
-        if f'src="blog/{cover}"' in listing[card_start:card_start + 400]:
+        card_end = listing.find("</article>", card_start)
+        card = listing[card_start:card_end]
+        if re.search(r'<div class="blog-card-cover">', card):
+            card = re.sub(
+                r'(<div class="blog-card-cover">\s*<img src=")[^"]+(")',
+                rf'\1blog/{cover}\2',
+                card,
+                count=1,
+            )
+            listing = listing[:card_start] + card + listing[card_end:]
             continue
         listing = listing[:insert_at] + snippet + listing[insert_at:]
     (ROOT / "blog.html").write_text(listing, encoding="utf-8")
@@ -341,10 +399,43 @@ def main() -> int:
         json.dumps({"map": mapping, "covers": local_covers, "failed": failed}, indent=2) + "\n",
         encoding="utf-8",
     )
+    apply_local_article_covers()
     print(json.dumps({k: report[k] for k in report if k != "failed"}, indent=2))
     if failed:
         print("failed", len(failed))
     return 0
+
+
+def apply_local_article_covers() -> dict[str, str]:
+    """Use the first real in-article image as the listing/post cover."""
+    posts = json.loads((BLOG_DIR / "posts.json").read_text(encoding="utf-8"))
+    chosen: dict[str, str] = {}
+    for post in posts:
+        if post.get("project") not in {"0xjustice", "qacc"}:
+            continue
+        page = BLOG_DIR / f"{post['slug']}.html"
+        if not page.exists():
+            continue
+        html = page.read_text(encoding="utf-8")
+        src = first_article_image(html)
+        if not src:
+            continue
+        html = inject_cover(html, src)
+        page.write_text(html, encoding="utf-8")
+        local = src if src.startswith("media/") else src
+        chosen[post["slug"]] = local
+        post["cover"] = f"blog/{local}" if not local.startswith("blog/") else local
+    (BLOG_DIR / "posts.json").write_text(json.dumps(posts, indent=2) + "\n", encoding="utf-8")
+    listing_covers = {}
+    for post in posts:
+        cover = post.get("cover") or ""
+        if cover.startswith("blog/"):
+            listing_covers[post["slug"]] = cover[5:]
+        elif cover:
+            listing_covers[post["slug"]] = cover
+    update_listing(posts, listing_covers)
+    print(f"article covers applied: {len(chosen)}")
+    return chosen
 
 
 if __name__ == "__main__":
