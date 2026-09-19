@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="ClawBank Policy Engine: Armor for Your Fleet of Sovereign Agents — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ClawBank Policy Engine: Armor for Your Fleet of Sovereign Agents — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-07-27">July 27, 2026</time>
+			</div>
+			<h1>ClawBank Policy Engine: Armor for Your Fleet of Sovereign Agents</h1>
+			<p class="blog-source">Originally published at <a href="https://clawbank.co/blog/policy-engine/" target="_blank" rel="noopener">https://clawbank.co/blog/policy-engine/</a></p>
+			<div class="blog-prose">
+<p>Spending limits, scoped keys, and 2FA: ClawBank agents now operate in full plate.</p>
+<p>Starting today, you can mint an API key for your agent with its own allowance. Say, $10 a day. No matter what that agent is asked to do, tricked into doing, or hallucinates entirely on its own, it cannot spend more than that.</p>
+<h2>Why now</h2>
+<p>AI agents holding money is the whole point of ClawBank, and the last few weeks made the stakes obvious to everyone. High-profile incidents across the industry showed what happens when an agent with unrestricted access to funds goes wrong. There's no undo button on a blockchain.</p>
+<p>Today we're shipping three layers of protection. They're independent. Use any of them, or bolt all three together.</p>
+<h2>1. Agent keys with allowances (live today)</h2>
+<p>Every API key you mint can now carry two kinds of restrictions, set at creation time in Settings or via the agent bootstrap API.</p>
+<p><strong>Spending limits.</strong> A per-transaction cap and a daily cap, in USD. A key minted with a $10/day limit can move $10 of value per day. The attempt that crosses the line gets a clear, machine-readable refusal telling the agent exactly what its limit is, how much it has spent today, and when the budget resets (midnight UTC, since agents always ask). Every key's spending is tracked separately: one agent's bad day never eats another agent's budget.</p>
+<p><strong>Permissions (scopes).</strong> Independently of how much a key can spend, you control what it can do:</p>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Grants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read</code></td>
+<td>Balances, statuses, listings. Look, don't touch.</td>
+</tr>
+<tr>
+<td><code>trade</code></td>
+<td>The trading engine and Trade to Earn</td>
+</tr>
+<tr>
+<td><code>send</code></td>
+<td>Money movement: sends, bridges, transfers</td>
+</tr>
+<tr>
+<td><code>admin</code></td>
+<td>Account configuration: recipients, budgets, comms</td>
+</tr>
+<tr>
+<td><code>raw_sign</code></td>
+<td>Arbitrary transaction signing (most keys should never have this)</td>
+</tr>
+</tbody>
+</table>
+<p>The two compose into the key you actually want to hand an agent: <code>read</code> + <code>send</code>, $10 a day. It can check balances and pay for things, and that's the complete list of what it can do.</p>
+<p>A few deliberate design decisions worth knowing:</p>
+<ul>
+<li><strong>Limits are fixed at creation.</strong> You can't edit a key's allowance; you mint a new key. A compromised session can't quietly raise an agent's budget.</li>
+<li><strong>Capped keys can only move value we can price.</strong> If a capped key tries to send an asset whose USD value can't be established, the send is refused. Otherwise, the cap would be trivial to sidestep with obscure tokens.</li>
+<li><strong>Your existing keys are untouched.</strong> Every key minted before today keeps full access. Nothing breaks. Restrictions apply only to keys you create with restrictions.</li>
+</ul>
+<h2>2. Account-level spending limits (rolling out this week)</h2>
+<p>Beneath the per-key allowances sits an account-wide policy engine. Every outbound send (Base, XRPL, Robinhood chain, bridges, deal escrow) is now evaluated against your account's limits: $1,000 per transaction and $5,000 per day by default, adjustable in Settings. Raising them requires a fresh login, which means 2FA if you've enrolled.</p>
+<p>As of today, the engine is watching every send in production and building a complete audit trail: which asset, what USD value, what destination, which API key initiated it. Hard enforcement switches on this week, after we've verified the engine's judgment against real traffic. These limits sit in front of every user's money movement, and we'd rather watch it be right for a few days than surprise a single legitimate send.</p>
+<p>When enforcement is on, it comes with a layer that's genuinely hard to get around: sends are signed inside a secure hardware enclave under policies that deny anything outside the rules. The limits hold even if the application itself is compromised. That's the difference between a policy check and a policy engine.</p>
+<h2>3. Two-factor authentication (live today)</h2>
+<p>Standard authenticator-app 2FA, opt-in, in Settings. Scan a QR code, verify one code, save your ten single-use recovery codes. From then on, logging in takes your email link plus the current code from your app.</p>
+<p>Sensitive actions (minting API keys, raising send limits, changing payment connections) already required a fresh login. With 2FA enrolled, a fresh login now requires your authenticator. So the second factor automatically guards every sensitive action, not just the front door.</p>
+<p>Agents are unaffected. 2FA is for humans on the web app. Your agents keep authenticating with their API keys, which is exactly why those keys now have scopes and allowances.</p>
+<h2>How the pieces fit together</h2>
+<p>Think of it as concentric rings around your money:</p>
+<ol>
+<li>The key's <strong>scopes</strong> decide whether the request type is allowed at all.</li>
+<li>The key's <strong>allowance</strong> decides whether this particular send fits the key's budget.</li>
+<li>Your <strong>account limits</strong> decide whether it fits your rules.</li>
+<li>The <strong>enclave</strong> enforces the rules in hardware, independent of our application code.</li>
+</ol>
+<p><img alt="Concentric rings of protection: scopes, allowance, account limits, and the enclave around your money" src="https://clawbank.co/assets/blog/policy-engine-rings.jpg" /></p>
+<p>An attacker, or a confused agent, has to clear every ring. A leaked read-only key can't send. A leaked $10/day key is a $10/day problem, not a drained-account problem. And your account-wide caps bound the damage from anything else.</p>
+<h2>Where everything stands</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Per-key spending limits</td>
+<td><strong>Live and enforced now</strong></td>
+</tr>
+<tr>
+<td>Per-key scopes</td>
+<td><strong>Live and enforced now</strong></td>
+</tr>
+<tr>
+<td>2FA</td>
+<td><strong>Live now</strong>, opt-in, in Settings</td>
+</tr>
+<tr>
+<td>Account-level limits</td>
+<td><strong>Monitoring live traffic now; hard enforcement this week</strong></td>
+</tr>
+<tr>
+<td>Existing API keys and existing users</td>
+<td><strong>Nothing changes.</strong> All restrictions are opt-in</td>
+</tr>
+</tbody>
+</table>
+<p>Formation gave agents a body. Records gave them a memory. Contracts let them make promises. Resources gave them a market. The policy engine gives them armor.</p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="The CLI is live — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>The CLI is live — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-04-10">April 10, 2026</time>
+			</div>
+			<h1>The CLI is live</h1>
+			<p class="blog-source">Originally published at <a href="https://clawbank.co/blog/the-cli-is-live/" target="_blank" rel="noopener">https://clawbank.co/blog/the-cli-is-live/</a></p>
+			<div class="blog-prose">
+<p><code>npm install clawbank</code> is live.</p>
+<p>Everything you can do through the MCP — check balances, send money, get routing numbers, query wallet state — you can now do from your terminal. Same API surface, same authentication, same infrastructure. No Claude Desktop required.</p>
+<h2>Why a CLI</h2>
+<p>The MCP integration is the magic trick. You install a <code>.mcpb</code> file, Claude gets banking capabilities, done. But a lot of the builders using ClawBank aren't working through a chat interface. They're writing agents in Python and TypeScript, running jobs in CI, building automations that fire at 3am. They needed a first-class terminal interface.</p>
+<p>The CLI is that interface.</p>
+<h2>Getting started</h2>
+<pre><code class="language-bash">npm install -g clawbank
+clawbank auth
+clawbank balance
+</code></pre>
+<p>Entry point is your API key — generate one in the ClawBank dashboard, paste it once, and the CLI stores it locally. From there:</p>
+<pre><code class="language-bash">clawbank send --to routing:021000089 --amount 50 --memo &quot;invoice 1042&quot;
+clawbank wallet list
+clawbank activity --last 10
+</code></pre>
+<h2>Same rails</h2>
+<p>This isn't a wrapper around a wrapper. The CLI talks directly to the ClawBank API — the same one the MCP uses, the same one your programmatic integrations use. One API key, every interface.</p>
+<p>The formation layer, scoped agent keys, and sweep functions are all coming to the CLI as they ship. You'll get them automatically on the next update.</p>
+<h2>What's next</h2>
+<p>Company formation from the terminal. An agent spawning a new LLC, registering a bank account, and starting operations — without a single UI interaction. That's the build.</p>
+<p>If you're integrating ClawBank into something interesting, reach out. We're giving early builders direct access and hands-on support while we harden the tooling.</p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

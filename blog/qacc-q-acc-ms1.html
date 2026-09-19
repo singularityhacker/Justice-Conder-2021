@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Q/ACC: MS1 — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Q/ACC: MS1 — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--qacc">q/acc</span>
+				<time datetime="2024-06-10">June 10, 2024</time>
+			</div>
+			<h1>Q/ACC: MS1</h1>
+			<p class="blog-source">Originally published at <a href="https://paragraph.com/@qacc/q-acc-ms1" target="_blank" rel="noopener">https://paragraph.com/@qacc/q-acc-ms1</a></p>
+			<div class="blog-prose">
+<p>The Quadratic Accelerator (q/acc) is a groundbreaking growth primitive poised to revolutionize the traditional Web3 grant landscape. Instead of the conventional approach of directly issuing grants to projects, q/acc redirects grant capital as collateral to an <a href="https://www.commonsstack.org/augmented-bonding-curve">augmented bonding curve</a>. This innovative process creates a new project token that not only grants holders access to projects but also empowers them with influence.</p>
+<p>The protocol further enhances the excitement with <a href="https://www.wtfisqf.com/">quadratic funding</a> style rounds, where donors are rewarded with project tokens. All token trades incur a small tax, which then becomes a perpetual revenue source for the project. The q/acc protocol is a game-changer, realigning chain, project, and community incentives in a way that was previously unimaginable. With the q/acc protocol:</p>
+<ul>
+<li>
+<p>Chains get native projects, eliminate dumping, and boost TVL.</p>
+</li>
+<li>
+<p>Projects get a perpetual funding source.</p>
+</li>
+<li>
+<p>Communities get ownership and participation in new projects.</p>
+</li>
+</ul>
+<p>After much discussion and deliberation, Polygon Labs has given Giveth a grant to build and launch the q/acc protocol on zkEVM. As a part of this grant agreement, three key milestones are required to unlock the full grant and bring q/acc to production. After several weeks of building, we are happy to announce the completion of the first milestone.</p>
+<h2>Module Specification</h2>
+<p>The q/acc protocol builds on and extends the <a href="https://www.inverter.network/">Inverter Protocols</a> parameterized bonding curve stack capabilities. By doing so, q/acc leverages its existing library of over a dozen modules and adds the specific capabilities required to complete the mechanism contracts end-to-end. This cuts down on audit costs and ensures maximum module composability. Below is an abbreviated list of q/acc-specific parameterizations and modules:</p>
+<ol>
+<li>
+<p>Hatched Token Minting</p>
+</li>
+<li>
+<p>BC Activation &amp; Deactivation</p>
+</li>
+<li>
+<p>Conditioned BC participation</p>
+</li>
+<li>
+<p>Conditioned BC token release</p>
+</li>
+<li>
+<p>Redemption set specification</p>
+</li>
+<li>
+<p>Funding pot liquidity caps</p>
+</li>
+<li>
+<p>BC compatible Arbitrage Bot</p>
+</li>
+</ol>
+<p>Combined with the other commissioned Inverter customizations, the module specification for q/acc is complete, and the team retains the flexibility to make parameter changes based on learnings gleaned from successive cohorts.</p>
+<p><img alt="Expanding Module Library" src="https://storage.googleapis.com/papyrus_images/ece650dff76590304ceca35f2ec74f11d916401c3774580daad50d1fa99fad84.png" /></p>
+<p>Expanding Module Library</p>
+<h2>Code Complete</h2>
+<p>The development of all required q/acc modules and capabilities is complete, and the code freeze will be entered on June 4th. The first round of audits has begun, and no blocking issues are indicated. <a href="https://0xmacro.com/audits">Macro</a> is conducting the audit and has a client list that includes prominent projects like Maker and Farcaster. In addition to the macro audit, an audit competition with a $85k pot will be held on <a href="https://hats.finance/">Hats Finance</a> next week.</p>
+<p><img alt="" src="https://storage.googleapis.com/papyrus_images/c52aaf83a51c1a984d7766e4b4b7f47a4f44399c5a2508dfe856bcc0c03ca34c.png" /></p>
+<p>The q/acc contract code and the rest of Inverter's other modules can be viewed in the GitHub repository <a href="https://github.com/InverterNetwork/contracts">here</a>, and branch activity can be quickly referenced <a href="https://github.com/InverterNetwork/contracts/branches/active">here</a>.</p>
+<h2>Teaser Announcement</h2>
+<p>Giveth and the q/acc team have opted to build in the open to drive awareness and community anticipation instead of making one large announcement upon launch. To this end, Giveth announced a teaser of the q/acc program and an interest form. The <a href="https://twitter.com/Giveth/status/1792903280663621894">teaser thread</a> had fantastic reach, generating hundreds of likes and retweets, all organic and from mature Web3 natives, and nearly 50 submissions were submitted to the interest form.</p>
+<p>Giveth founder Griff released a dedicated podcast with Kevin Owocki immediately following the announcement, in which he discussed the details of the q/acc mechanism. A teaser of that show can be viewed <a href="https://x.com/greenpillnet/status/1792906568239087875">here</a>. This is merely the inkling of the beginnings of q/acc mindshare. Materials further describing the mechanism and value prop of q/acc will be made available to key Polygon stakeholders like BD and Defi so they can use the protocol to augment their strategic offerings and goals.</p>
+<h2>Next Steps</h2>
+<p>The team's next milestones include completing the audit, the SDK, and deploying contracts to test net. Concurrently, the team will increase education and awareness about the program and the number and quality of interested projects. Numerous program requirements not explicitly referenced in our milestones are being undertaken daily. One singular goal remains the focus: drive the highest quality tokenized projects to zkEVM. No other program has had such an innovation, and no one will except Polygon. Everyone from the growing list of communities helping to bring q/acc to life is counting down to season two of the Polygon grants program. Together, we will forever change the story of Web3 growth and sustainability.</p>
+<p>A very special shoutout and thanks to the communities making this possible:</p>
+<ul>
+<li>
+<p>Polygon</p>
+</li>
+<li>
+<p>Giveth</p>
+</li>
+<li>
+<p>Inverter Protocol</p>
+</li>
+<li>
+<p>CommonsStack</p>
+</li>
+<li>
+<p>General Magic</p>
+</li>
+</ul>
+<hr />
+<p><em>Originally published on <a href="https://paragraph.com/@qacc/q-acc-ms1">Quadratic Accelerator</a></em></p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

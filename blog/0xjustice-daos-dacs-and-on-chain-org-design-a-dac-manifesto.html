@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="DAOs, DACs, and On-chain Org Design: A DAC Manifesto — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>DAOs, DACs, and On-chain Org Design: A DAC Manifesto — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+				<time datetime="2023-03-17">March 17, 2023</time>
+			</div>
+			<h1>DAOs, DACs, and On-chain Org Design: A DAC Manifesto</h1>
+			<p class="blog-source">Originally published at <a href="https://paragraph.com/@0xjustice/daos-dacs-and-on-chain-org-design-a-dac-manifesto" target="_blank" rel="noopener">https://paragraph.com/@0xjustice/daos-dacs-and-on-chain-org-design-a-dac-manifesto</a></p>
+			<div class="blog-prose">
+<p>Public goods are excellent, but who funds them? Are all DAOs public goods? How can a DAO be autonomous if its continued existence rests on charitable grants from others? Is profitability "extractive" at best and a blatant violation of the <a href="https://jacob.energy/hyperstructures.html">hyperstructure thesis</a> at worst? When faced with the rhetoric of the current Web3 ethos, these are the questions you must ask yourself. </p>
+<p>In September 2013, Stan and Dan Larimer (father/son) published their vision for Decentralized Autonomous Companies (DACs) in <a href="https://web.archive.org/web/20221226215823/http://letstalkbitcoin.com/bitcoin-and-the-three-laws-of-robotics/"><em>Bitcoin and the Three Laws of Robotics</em></a> and <a href="https://web.archive.org/web/20221129021154/https://letstalkbitcoin.com/is-bitcoin-overpaying-for-false-security">Overpaying for Security</a> in the <em>Let's Talk Bitcoin</em> publication. In it, they describe the motivation and value of recreating traditional companies on a blockchain. Their work and views fell through the cracks and have yet to receive the attention they deserve, but more on this later. </p>
+<p>In May 2014, Vitalik Buterin published his seminal paper <a href="https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide"><em>DAOs, DACs, DAs and More: An Incomplete Terminology Guide</em></a> describing his taxonomic breakdown of decentralized entities. He categorizes DAOs as nonprofit and DACs as for-profit on-chain organizations with the caveat that "this distinction is a murky one" and "more of a fluid one and hinges on emphasis." In either case, each personality seemed uniquely attracted to one of the two implementations. An illustration of both Larimer's and Vitaliks' taxonomy might look as follows. </p>
+<p><img alt="" src="https://storage.googleapis.com/papyrus_images/1ebf3770787eb12db70090d696a0ff5645fb64515516505603fbbf945250daa4.png" /></p>
+<p>I don’t want to be too sidetracked by terminology, but what's interesting is that the nonprofit version of decentralized organizations has completely overtaken the conversation and view of the movement. It's become a joke to compare DAOs to businesses. The DAO landscape recoils from any structure or practice that resembles traditional organizational structures, and seasoned founders see DAOs as an efficient way to waste money. While I won't discount the need for nonprofit crypto-native organizations, I believe there is a tremendous opportunity to flesh out the for-profit side of the story. </p>
+<p>I want to make a renewed case for DACs. I'll do this by restating their value proposition and then argue that for-profit on-chain organizations vastly outnumber the need for nonprofit on-chain organizations. Lastly, I'll offer up a Manifesto for DAC thinkers and conclude with an invitation to join a broader movement called On-Chain Org Design (OOD) to help advance both classes of organizations. </p>
+<h2>The Value Proposition of DACs</h2>
+<p>Asking if DAOs are businesses is like asking if submarines swim. They "swim" faster and more powerfully than a human ever could. On-chain organizations do for traditional organizations what computers did for the stock market. They accelerate and supercharge them in entirely new ways. </p>
+<p>They have an unbounded reach, are potentially faster, and are more customizable than their traditional counterparts. They're all this and ultimately not reliant on national authorities to be so. They possess these traits through the power of the following properties:</p>
+<ul>
+<li>
+<p>Programmable stakeholders</p>
+</li>
+<li>
+<p>Programmable incentives</p>
+</li>
+<li>
+<p>Programmable governance</p>
+</li>
+<li>
+<p>Incorruptible business rules</p>
+</li>
+</ul>
+<p>Just as Ray Kurzweil has pointed out, as soon as a domain of knowledge moves within the scope of information science, it inherits the same property of exponentially accelerating returns. This perspective is a macro view of on-chain organizations. On-chain organizations are not about preconceived notions of hierarchy and governance but about the fact that you can build anything imaginable. </p>
+<p>The original vision for DACs was that they would be more efficient than traditional organizations, enabling them to charge lower fees. Compare this with today's narrative, which often says they are less efficient by design. How can a less efficient organization charge less than its traditional counterpart?</p>
+<p>A strong thread in the Larimer writings is the notion of incorruptibility. "Ultimately, to achieve complete incorruptibility, developers must be willing to let go of their own control. If there remains any centralized human control anywhere, it will eventually be exploited to the detriment of the DAC's stakeholders. DACs need to be free to be trusted." </p>
+<p>He states this as a chief reason for creators relinquishing control. "Its creator can improve its survival odds by promoting it and defending it up to a point. But the umbilical cord should be quickly severed since its creator remains exposed to the risks of the real world." DACs are not second-rate DAOs. They're the original use case. </p>
+<h2>The Preponderance of DACs</h2>
+<p>Nine out of ten companies globally are for-profit endeavors. Nonprofits and public goods are great, but the world runs on ventures. For-profit is not inferior to nonprofit. Free trade among voluntary agents is a positive-sum game. Both parties benefit, or else they wouldn't trade. </p>
+<p>In September 2022, Vitalik wrote a paper titled <a href="https://vitalik.ca/general/2022/09/20/daos.html">DAOs are not Corporations</a>, yet despite what the title says, he came to a similar conclusion. </p>
+<blockquote>
+<p>"Realistically, we probably only need a small number of DAOs that look more like constructs from political science than something out of corporate governance…." </p>
+</blockquote>
+<p>In other words, most "DAOs" are best served by adopting traditional business dynamics. Vitalik says that "by far the greatest number of organizations, even in a crypto world, are going to be 'contractual' second-order organizations.." </p>
+<p>Again, most on-chain organizations will be standard for-profit organizations, and a much smaller subset will be of the nonprofit political variety. So if this is the case, why is so little discussion and strategy had around it?</p>
+<h2>A DAC Manifesto</h2>
+<p>In the spirit of the <a href="https://agilemanifesto.org/">Agile Manifesto</a>, I submit the following DAC Manifesto. And similar to that Manifesto, I'll assert that while the things on the right are important, those on the left are more important. </p>
+<ol>
+<li>
+<p><strong>Value</strong> before Community</p>
+</li>
+<li>
+<p><strong>Coordination Games</strong> over Governance </p>
+</li>
+<li>
+<p><strong>Self-sustainability</strong> over Grants</p>
+</li>
+<li>
+<p><strong>Renovation</strong> over Reinvention</p>
+</li>
+<li>
+<p><strong>Modules</strong> over Monoliths</p>
+</li>
+</ol>
+<h3>Value before Community</h3>
+<p>Build something people want (worth protecting) before incentivizing its promotion and decentralizing. Raising money pre-product is an exception rather than a rule for startups. Someone will object, "How do you know you're building something people want?!" The same way founders did in the past. You build an MVP and then iterate its development, validating at every stage. </p>
+<p>Startups may become communities, but they don't start that way. Projects spend more time and money cultivating community than finding product market fit (PMF). The number one mistake of startups is premature scaling, according to the <a href="https://startupgenome.com/">Startup Genome Project</a>. It may be premature decentralization for crypto-native projects. Attempting to decentralize before finding PMF is deadly. </p>
+<h3>Coordination Games over Governance</h3>
+<p>Every business is a game. We typically call those games business models. The critical feature made possible by crypto-native organizations is guaranteed execution and programmability; through these, we can execute advanced levels of coordination. </p>
+<p>Governance is not a business model. Manual decision-making (governance) is unavoidable, but it's not the key feature of programmable organizations. We wouldn't entertain founders who hadn't thought through their business model. Why should it be different here? </p>
+<p>Governance obsession has hijacked the conversation. It's time to recenter on coordination. </p>
+<h3>Self-sustainability over Grants</h3>
+<p>Nonprofits and cooperatives are only two of the <a href="https://www.volusion.com/blog/business-types/">seven</a> predominant categories of ventures. They are not the typical drivers of new innovation. As many of the DAO Twitterati would suggest, the casual pooling of funds is not "bigger" than for-profit business as an industry. </p>
+<p>The reader may be surprised to hear that collectivism is one of many recognized methods of addressing the tragedy of the commons. Privatization is another. Speaking of <a href="https://en.wikipedia.org/wiki/Garrett_Hardin">Garrett Hardin's</a> essay on "The Tragedy of the Commons," Case Western Reserve University School Law professor Jonathan H. Adler says: </p>
+<blockquote>
+<p>"What many forget is Hardin actually offered two prescriptions for preventing the tragedy of the commons. 'Mutual coercion, mutually agreed upon' was one approach, but Hardin had another. In the alternative, Hardin suggested that greater reliance on property rights was a proven way to prevent the tragedy of the commons. As he explained, the tragedy of the commons 'is averted by private property or something formally like it.' Indeed, Hardin suggested this was one of the primary functions of property in land." - <a href="https://www.theatlantic.com/business/archive/2012/05/property-rights-and-the-tragedy-of-the-commons/257549/">Property Rights and the Tragedy of the Commons</a></p>
+</blockquote>
+<p>Declaring a project a public good is not a replacement for a business model. Charitable donations can't be the business model for every Web3 organization, and founders don't help themselves by presumptively categorizing their ventures as such. DAC design begins with sustainability. </p>
+<h3>Renovation over Reinvention</h3>
+<p>On-chain organizations are certainly an innovation and represent a discontinuity with the past, but we lose too much if we abandon all sense of historical continuity. Web3 is an evolution and advancement of Web2, not a repudiation or rejection of it. We should replicate what has worked and then improve it. We reject the reactionary opposition to anything that looks like traditional organizational structures. </p>
+<p>Businesses are not, by definition, exploitative or mindless top-down meat grinders. Many early visions of business were purpose-driven and lean, and leaders like <a href="https://en.wikipedia.org/wiki/W._Edwards_Deming">Edwards Deming</a> championed bottom-up decision-making for decades. All good companies have positive externalities. Lean practitioners have championed this forever.</p>
+<blockquote>
+<p>"Great companies are not in business to make money; they make money to stay in business and accomplish an important purpose." - <a href="http://www.poppendieck.com/">Mary and Tom Poppendieck</a>.</p>
+</blockquote>
+<p>We can frame crypto-native organizations as a natural evolution of the <a href="https://octopus.com/blog/what-is-everything-as-code">Everything as Code</a> and <a href="https://www.postman.com/api-first/">API-first</a> movement. The idea is that just as code has consumed the development process and infrastructure, it has now engulfed the organization. </p>
+<p>Rather than building as reactions to imagined poorly run organizations, DACs develop and advance on the learnings of well-run organizations. See <a href="https://banklessdao.mirror.xyz/QQA6ZhvHtDefWEAT-SXaHYPYMtHUhshtXX5dY-gv0u8">Efficient DAO Design</a> for how we can do this. </p>
+<h3>Modules over Monoliths</h3>
+<p>There's no one right way to build an organization. What's right at one size is wrong at another. We must judge any configuration relative to a desired goal. By framing on-chain organizations as combinations of organizational capabilities or modules, we adopt a vocabulary that is neither exclusionary nor dogmatic. </p>
+<p>This last value of the Manifesto encourages flexibility and less judgment over what is a real or fake "DAO/DAC." It encourages neutrality over what should or shouldn't be built and represents a builder-over-bureaucracy viewpoint. Like software, we can theorize patterns and antipatterns. It's all about tradeoffs. This is the way to move forward.</p>
+<h2>Conclusion</h2>
+<p>My purpose is not to alienate current DAO practitioners or thought leaders. Quit the contrary; I want us to create a new, more practical, and sustainable Schelling point that has applicability to a greater variety of organizations. </p>
+<p>We all know the public goods narrative, but someone pays for those public goods. When markets shift and grants dry up, there should be a strong backbone of revenue-generating companies; else, the whole system has no hope of gaining greater adoption. </p>
+<p>The Web3 movement has promoted the narrative of providing for the unbanked, but we may have overlooked the need to equip the industrious. DACs, address these things by rearticulating the value prop of building on-chain in a way that speaks to founders and traditional organizations. </p>
+<p>If this resonates with you, the Polygon DoD team invites you to join us in advancing this new vision of On-chain Org Design (OOD). We want to partner with you to cultivate this scene.  </p>
+<p>This Manifesto, combined with <a href="https://operator.mirror.xyz/MBNHkLf0s-NPRty1gAsf1OrJji28JL3DfDCC7tACBW4">Protocol-first DAO Strategy</a> &amp; <a href="https://operator.mirror.xyz/Tye2rxnMC52aXo5rthrtKCqynSsfIigaqBawWZ1gyLU">Games over Governance</a>, comprises a siren call to builders eager to press into the next generation of digital organizations. We'll do this through articles, hands-on education, and a series of Playbooks designed to equip founders to build the next generation of internet-native organizations. </p>
+<p>Join us. Let's create a movement: <a href="https://forms.gle/mSeqG9tXP2FBk2TdA">https://forms.gle/mSeqG9tXP2FBk2TdA</a></p>
+<hr />
+<p>Special thanks to <a href="https://twitter.com/gitamar">Itamar</a> for inspiring this document's explicitly agile manifesto structure and providing invaluable editorial feedback. Special thanks to my teammates, <a href="https://twitter.com/GrendelMarco">Grendel</a> and <a href="https://twitter.com/olofsson_tommy">Tommy</a>, who are creating the Polygon Village 2.0 program to equip early-stage projects to avoid many of the pitfalls in this post. We will build bigger and better. Powered by <a href="https://twitter.com/0xPolygon">Polygon</a>.</p>
+<hr />
+<p><em>Originally published on <a href="https://paragraph.com/@0xjustice/daos-dacs-and-on-chain-org-design-a-dac-manifesto">0xJustice.eth</a></em></p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

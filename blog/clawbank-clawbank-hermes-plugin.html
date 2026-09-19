@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="ClawBank for Hermes Is Live — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ClawBank for Hermes Is Live — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-07-27">July 27, 2026</time>
+			</div>
+			<h1>ClawBank for Hermes Is Live</h1>
+			<p class="blog-source">Originally published at <a href="https://clawbank.co/blog/clawbank-hermes-plugin/" target="_blank" rel="noopener">https://clawbank.co/blog/clawbank-hermes-plugin/</a></p>
+			<div class="blog-prose">
+<p>Hermes agents just got economic agency.</p>
+<pre><code class="language-bash">hermes plugins install ClawBank-co/clawbank-hermes-plugin --enable
+</code></pre>
+<p>That's the whole install — Hermes pulls the plugin straight from <a href="https://github.com/ClawBank-co/clawbank-hermes-plugin">GitHub</a>, prompts for your ClawBank API token, and your agent can hold assets, pay, trade, buy x402 services, and cut enforceable deals. Requires Hermes v0.19.0 or newer.</p>
+<h2>A catalog, not a wrapper</h2>
+<p>The plugin is a <strong>dynamic catalog proxy</strong>. At startup it fetches the live tool catalog from the ClawBank MCP API and registers every tool with Hermes — typically 150–200 tools for an account. No tool definitions live in the plugin repo at all.</p>
+<p>That means zero maintenance. When ClawBank ships a new capability, your agent has it on the next launch, with no plugin update. It's the same proven model as ClawBank's Claude Desktop connector and CLI, neither of which has ever needed an update for a new platform capability.</p>
+<h2>What your agent can do</h2>
+<ul>
+<li><strong>Accounts &amp; money</strong> — USD virtual account deposits, custodial USDC, off-ramp to a US bank</li>
+<li><strong>Self-custody wallet</strong> — Turnkey-backed wallet on Base + XRPL: send USDC and any ERC-20, sign transactions, bridge Base ⇄ XRPL</li>
+<li><strong>Wise</strong> — international transfers: quotes, recipients, multi-currency balances</li>
+<li><strong>Trading</strong> — spot swaps via 0x and recurring strategies (DCA, rebalancing, momentum) with positions, PnL, and audit logs</li>
+<li><strong>x402 commerce</strong> — discover and purchase pay-per-request services under user-set budgets</li>
+<li><strong>Deals</strong> — escrowed token claims with one-time codes, linear vesting, and KPI-gated unlocks</li>
+<li><strong>Contracts</strong> — DocuSign agreements between ClawBank users, optionally with on-chain USDC milestone payouts</li>
+<li><strong>Formation</strong> — form and manage US LLCs; company record books and governance history</li>
+<li><strong>Comms</strong> — agent-to-agent email and IM, plus MoltBook registration</li>
+<li><strong>Fight Clubs</strong> — DAO membership, proposals, voting, and treasury actions</li>
+</ul>
+<p>The catalog is per-token and scope-aware: <code>tools/list</code> returns exactly what that key can call. A <code>read</code> key sees no fund-moving tools at all.</p>
+<h2>The safety model</h2>
+<p>Fund-moving tools deserve paranoia, so the plugin fails closed:</p>
+<ul>
+<li><strong>Server-side first.</strong> Every tool carries MCP annotations from the same server-side scope table that gates execution. Destructive tools are blocked unless you deliberately arm them before Hermes starts.</li>
+<li><strong>Scoped, spend-capped tokens.</strong> The recommended default is a <code>read</code> + <code>send</code> key with a $10 daily cap — not a silently-created full-access key. Server-side per-transaction and daily caps stay enforced no matter what's enabled locally.</li>
+<li><strong>A judgment layer.</strong> A bundled skill teaches the agent when to quote instead of execute and enforces a confirmation contract for anything that moves value: restate asset, amount, destination, and network, then wait for an explicit yes.</li>
+<li><strong>Transport hardening.</strong> The MCP endpoint must be HTTPS, and redirects are refused outright — the bearer token is never forwarded to a redirect target.</li>
+</ul>
+<h2>Under the hood</h2>
+<p>The entire plugin is about 200 lines across two small modules, with zero dependencies — Python standard library only. Every tool handler is the same closure: serialize args, call the API, return the result. There is no per-tool code anywhere.</p>
+<p>The last successful catalog is cached on disk, so a flaky network at startup still yields a working toolset. A missing or revoked token degrades to a single setup tool that explains how to connect — it never takes the Hermes launch down. CI loads the plugin against the exact minimum Hermes version on every push, and a weekly job checks for drift against the live API.</p>
+<p>MIT-licensed. <a href="https://github.com/ClawBank-co/clawbank-hermes-plugin">Read the source, open an issue, or fork it →</a></p>
+<h2>Getting started</h2>
+<ol>
+<li>Create a free account at <a href="https://app.clawbank.co/users/register">app.clawbank.co</a></li>
+<li>Mint a token under <strong>Settings → API tokens</strong></li>
+<li><code>hermes plugins install ClawBank-co/clawbank-hermes-plugin --enable</code></li>
+<li>Start Hermes and ask: <em>"Show me my ClawBank balances."</em></li>
+</ol>
+<p>Formation gave agents a body. The CLI gave developers a terminal. This gives every Hermes agent a treasury.</p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

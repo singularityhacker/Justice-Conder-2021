@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="ClawBank Deals: Programmatic Token Agreements for the Trenches — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ClawBank Deals: Programmatic Token Agreements for the Trenches — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-07-28">July 28, 2026</time>
+			</div>
+			<h1>ClawBank Deals: Programmatic Token Agreements for the Trenches</h1>
+			<p class="blog-source">Originally published at <a href="https://clawbank.co/blog/clawbank-deals/" target="_blank" rel="noopener">https://clawbank.co/blog/clawbank-deals/</a></p>
+			<div class="blog-prose">
+<p>Every early-stage token project runs on the same handshake: tokens for work. An allocation for the advisor, a grant for the KOL, a cut for community members who showed up before it was cool.</p>
+<p>We've watched a lot of these deals get done over the years, and almost no one on either side is set up for it. Lawyers, vesting contracts, token warrants: that machinery was built for the $10M raise, not for the trenches.</p>
+<p>So deals collapse into advisory arrangements, liquid tokens held together by trust and relationship. Sometimes it works. Many times it doesn't. Builders send tokens and watch them hit the chart two weeks later.</p>
+<p>Vesting fixes half of that. The other half, making the tokens conditional on the outcome actually happening, has stayed untouched. "You get the allocation when the project gets there" is the deal everyone actually wants to make, but can't.</p>
+<p>Until now.</p>
+<h2>Three Kinds of Deals</h2>
+<p>Deals is a new capability inside ClawBank, available through all the usual channels (console, API, MCP, SMS, and yes, Manfred). It comes in three flavors.</p>
+<p><strong>Liquid.</strong> N tokens of any Base ERC-20, claimable via a link. The crypto gift card. Your recipient can show up with nothing: no wallet, no account, no funds. Opening the link and claiming creates their wallet.</p>
+<p><strong>Vested.</strong> Tokens that stream to the claimer over time. A start date, an end date, a straight line between them. The stream is a Sablier NFT minted directly to their wallet, and it's non-transferable, so a KOL can't take the deal, flip the position, and vanish. What's vested is theirs forever. What isn't, isn't yet.</p>
+<p><strong>KPI.</strong> The headline act. "1M $FOO, but only if the market cap holds $5M for 24 hours, within 90 days." The condition is checked against live prices every 15 minutes, and it has to hold, so a wick pump doesn't trigger it. The moment the target is sustained, the tokens release and both parties get a text. If the deadline passes unmet, the tokens return to the sender automatically. It releases, or it expires.</p>
+<p>And they compose. Combine liquid, vested, and KPI into one incentive-alignment package.</p>
+<h2>How Deals Work</h2>
+<p><strong>You cut it.</strong> Tell Manfred the terms (or use the New Deal form in the console, or call the API). Confirm with YES. Your tokens move into escrow: they've left your wallet, so the offer is real, but the terms are now the only thing that can move them.</p>
+<p><strong>You get two credentials.</strong> A claim code (like <code>FOO-7K2M-9QXP</code>), shown once, never again. Whoever redeems it first gets the deal, so guard it like cash. And a preview link: a shareable card showing the terms that can't claim anything, safe to post anywhere.</p>
+<p><strong>You deliver it.</strong> iMessage, WhatsApp, email, X DM, a QR code on a slide, read out loud across a table. We never text your counterparty. You hand over the deal the way you'd hand over anything valuable.</p>
+<p><strong>They claim it.</strong> Tap the link and enter the code, type it into the console, or text "CLAIM FOO-7K2M-9QXP" to Manfred. No account? Claiming walks them through creating one; that's the whole ask. It costs them nothing. We sponsor the gas.</p>
+<p><strong>The clock is always running.</strong> Every deal has a claim window (default 7 days). Unclaimed past it, the tokens bounce straight back to your wallet. KPI deals carry their own deadline on top. Your capital never sits hostage to a deal no one took.</p>
+<h2>The Cancel Lever</h2>
+<p>A vested deal comes in two flavors, set at creation and shown to the recipient before they accept.</p>
+<p><strong>Cancelable:</strong> you can kill the live stream at any time. The unvested remainder returns to you; everything already vested is theirs forever and can never be clawed back. The stream stays on while they deliver, gets turned off when they don't.</p>
+<p><strong>Non-cancelable:</strong> trustless once claimed. No one can touch it. Including you.</p>
+<p>Either way, cancel authority lives on-chain, with you. When the stream mints, its on-chain sender is your wallet. Clawbacks are between you and your counterparty; we're structurally out of the loop.</p>
+<p>A KPI deal has no cancel lever. Once accepted, the only forces that can end it are the condition and the deadline. You can't pull the deal at 90% of the target after the work's been done.</p>
+<h2>Any Token</h2>
+<p>Any ERC-20 on Base you hold can be the subject of a deal, including tokens launched on other platforms. (We screen out fee-on-transfer and rebasing tokens.) The same rail ships as plain direct sends: "send 50k FOO to 0xabc…" works for any token in your wallet.</p>
+<h2>Agents Cut Deals Too</h2>
+<p>Deal codes are bearer credentials with no identity gate, which means an agent can cut a deal and another agent can claim it. No human, no browser, end-to-end. Manfred-over-SMS and the web console are just two clients of the same surface.</p>
+<p>Somewhere out there, two agents are going to negotiate an advisory deal, escrow it, hit the KPI, and settle it without a single human in the loop.</p>
+<h2>The Big Picture</h2>
+<p>Every claim link is an onboarding link. The person claiming came for the 250k FOO someone cut them, and what they're holding afterward is a funded wallet with an account attached. Deal-making is the product; the network grows as a side effect of people cutting each other in.</p>
+<p>Headless Trading gave agents a trading desk. Txt Manfred put an agent with a bank in your contacts. ClawBank Deals hands both species the instrument they were missing: a way to bind future value to future outcomes, over a text.</p>
+<p>The deal itself is the primitive. Today it carries tokens: liquid, streaming, or condition-locked. The same claims engine extends to anything escrowable with terms attached. We're building deal-making infrastructure for the whole token economy.</p>
+<p>The handshake ran this industry for a decade. Now the handshake has escrow, a deadline, and a trigger.</p>
+<h2>Rolling Out This Week</h2>
+<p>We're opening ClawBank Deals to early adopters this week. Everything above is built and running. Liquid deals are free; vested and KPI deals carry a small creation fee. All proceeds route to $CLAWBANK token buybacks.</p>
+<p>The trenches are evolving, and there's one operating system at the center of it: ClawBank.</p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Headless Trading Goes Live — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Headless Trading Goes Live — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-07-01">July 1, 2026</time>
+			</div>
+			<h1>Headless Trading Goes Live</h1>
+			<p class="blog-source">Originally published at <a href="https://clawbank.co/blog/headless-trading/" target="_blank" rel="noopener">https://clawbank.co/blog/headless-trading/</a></p>
+			<div class="blog-prose">
+<p>We're excited to announce our latest agentic release: <strong>Headless Trading</strong>.</p>
+<p>ClawBank Headless Trading lets AI agents run automated on-chain trading strategies for any coin on Base, autonomously. No dashboard clicking. No Mac Mini to set up. No KYC.</p>
+<p>Your agent reads the built-in guide, picks a token, spins up a strategy, tunes it, and watches its own P&amp;L. Think of it as hire-a-trading-desk-via-API.</p>
+<h2>Made for agents</h2>
+<p>There are plenty of trading platforms and APIs out there. A lot of them even advertise that you can connect them to your agent. Most don't mention the fine print: the only way to actually do it is to get KYC'd first and trade on a CEX.</p>
+<p>ClawBank's built differently. Point your agent at our docs page and tell it to sign up. All it needs is your email. The agent creates its own API key, installs it in its own config, and gives you its wallet address. Fund that wallet, and it can trade continuously.</p>
+<p>Set trigger points. Add tokens it's watching. Have it extrapolate a token's history into a forecast and act on it. All without you in the loop, on a heartbeat.</p>
+<h2>What went live</h2>
+<p>Trading strategies are evaluated on a timed schedule and execute market swaps through ClawBank gas-sponsored wallets. There's nothing to host. You don't stand up a server, you don't hand an agent a private key, and you don't wire it into a third-party trading API that quietly requires an identity check before it'll let a bot place an order.</p>
+<p>Everything below is available over MCP, CLI, REST, and through our in-app agent, Manfred.</p>
+<h2>The strategy catalog</h2>
+<p>Nine strategies ship:</p>
+<ol>
+<li><strong>Spot Swap.</strong> A single immediate buy or sell of a fixed USDC amount. Runs inline, no scheduler.</li>
+<li><strong>DCA.</strong> Recurring buys or sells of a fixed notional until the total budget is spent.</li>
+<li><strong>Rebalancing.</strong> Holds a target base/USDC split by USD value and trades back toward it when drift crosses a threshold. Sells strength, buys weakness.</li>
+<li><strong>Momentum.</strong> Enters long on upward momentum over a lookback window, exits on drawdown from the peak.</li>
+<li><strong>Mean Reversion.</strong> Buys dips below the moving average, sells the reversion, with an optional hard stop-loss.</li>
+<li><strong>Grid.</strong> A virtual ladder of N levels between a floor and ceiling — buying levels crossed down, selling levels crossed up. The biggest volume engine.</li>
+<li><strong>Conditional.</strong> A single "if this, then trade" order that waits for your price and fires once. Stack a few and you get a full trading desk: a take-profit paired with a stop-loss, or a laddered scale-in.</li>
+<li><strong>Treasury.</strong> Keeps holdings near an absolute target with a dead-band so it doesn't churn. Control, not volume.</li>
+<li><strong>Tide.</strong> One large buy, then bleed the position back off in random-sized chunks at random intervals. A market-presence pattern.</li>
+</ol>
+<h2>Custody and guardrails</h2>
+<p><strong>Self-custody, always.</strong> Capital never leaves the user's ClawBank wallet. Proceeds are only withdrawable back to that same wallet — there's no way to name an external withdrawal address at strategy creation.</p>
+<p><strong>Recipient-restricted signing.</strong> The signer can only send transactions to the on-chain swap settlement contract or the user's own withdrawal address, enforced at the enclave. A compromised control plane still can't move funds anywhere else.</p>
+<p><strong>Slippage protection on every swap.</strong> A 0-bps tolerance is rejected outright because it always reverts.</p>
+<h2>Lifecycle and P&amp;L</h2>
+<p>Pause, resume, stop, and start are free and instant. Capital stays in the wallet the whole time. Every confirmed swap gets written to the trade log with side, amounts, fill price, tx hash, and timestamp. Realized and unrealized P&amp;L are computed on every fill using weighted-average cost basis.</p>
+<h2>What's coming</h2>
+<p>ClawBank operates in the zero-human company space. An agent-run company needs a handful of foundational capabilities: wallets, bank accounts, legal wrappers, and contracts. And it needs to trade autonomously — eventually in its own tokens.</p>
+<p>Headless Trading is one of those foundations. It's the piece that lets an incorporated agent do more than hold and sign. It can now take positions, defend a treasury, and run a book, all on the same self-custody rails as everything else it does on ClawBank.</p>
+<p>Tomorrow's token launches won't be launched by humans or babysat by market makers. They'll be run by a new economic species.</p>
+<p>Powered by ClawBank rails.</p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

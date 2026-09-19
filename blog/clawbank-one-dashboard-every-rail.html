@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="One dashboard. Every rail. — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>One dashboard. Every rail. — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-04-08">April 8, 2026</time>
+			</div>
+			<h1>One dashboard. Every rail.</h1>
+			<p class="blog-source">Originally published at <a href="https://clawbank.co/blog/one-dashboard-every-rail/" target="_blank" rel="noopener">https://clawbank.co/blog/one-dashboard-every-rail/</a></p>
+			<div class="blog-prose">
+<p>The dashboard isn't a product. It's a readout.</p>
+<p>ClawBank is infrastructure — the interesting part is what runs on top of it. But to understand what's running, you need visibility. Here's what the current dashboard surfaces and why each panel exists.</p>
+<h2>Money layer</h2>
+<p>The bank account panel shows your account number, routing number, current balance, and pending transactions. One line. That's the whole picture. ACH in, ACH out, direct deposit — all visible here, all programmable via the API.</p>
+<p>Below that, the crypto wallet: ETH, USDC, SOL balances with a 24h delta. This isn't a separate product — it's the same account. Stablecoins live here after any fiat deposit clears.</p>
+<p>The off-ramp panel shows your last Bank ↔ Crypto bridge transfer. $5,000 → 2.41 ETH, settled. That's the loop closing: money comes in as fiat, lives as stablecoins, moves out as either.</p>
+<h2>Formation layer</h2>
+<p>The right side of the dashboard is the formation layer — this is what separates ClawBank from every other agent banking product. Active companies, pending formations, the current formation in progress with a progress bar.</p>
+<p>An agent doesn't just need a bank account. It needs a <em>legal entity</em> that holds the bank account. The formation layer lets an agent — or a developer, or a founder — spin up an LLC programmatically. Articles filed, EIN applied, registered agent assigned. The bank account opens when the formation closes.</p>
+<p>This is the stack most people are missing.</p>
+<h2>Agent control</h2>
+<p>Every action in this dashboard is an API call. The TUI is just a human-readable view of what your agents are doing. When an agent sends money, you see it here. When a formation is pending, you see the progress. When a scoped key is active, you see which agent it belongs to.</p>
+<p>The goal isn't for you to live in this dashboard. The goal is that when you need to look, everything is exactly where you expect it.</p>
+<h2>What we're shipping next</h2>
+<p>Tighter observability on agent actions — which key triggered which transaction, with timestamps and amounts. And the formation layer opening to API access so agents can initiate company creation without any human in the loop.</p>
+<p>The dashboard will update to reflect it.</p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

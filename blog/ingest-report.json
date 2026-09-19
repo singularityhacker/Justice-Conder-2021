@@ -1,0 +1,11 @@
+{
+  "ok": {
+    "0xjustice": 25,
+    "singularity-hacker": 64,
+    "qacc": 10,
+    "clawbank": 34
+  },
+  "failed": [],
+  "total_ok": 133,
+  "total_failed": 0
+}

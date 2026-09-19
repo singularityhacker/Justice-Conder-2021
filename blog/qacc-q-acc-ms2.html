@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Q/ACC: MS2 — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Q/ACC: MS2 — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--qacc">q/acc</span>
+				<time datetime="2024-08-21">August 21, 2024</time>
+			</div>
+			<h1>Q/ACC: MS2</h1>
+			<p class="blog-source">Originally published at <a href="https://paragraph.com/@qacc/q-acc-ms2" target="_blank" rel="noopener">https://paragraph.com/@qacc/q-acc-ms2</a></p>
+			<div class="blog-prose">
+<p>It's been two months since our last update, and the team has been cooking. The q/acc protocol has met all planned milestone goals and announced its first call for season one applications. If this is your first time reading about q/acc, please read our previous milestone report below.</p>
+<p><a href="https://mirror.xyz/qacc.eth/0OFJFRReUBgn2x9nc5XUbEhe4ZmezoOqXG8WHDJoxYg">https://mirror.xyz/qacc.eth/0OFJFRReUBgn2x9nc5XUbEhe4ZmezoOqXG8WHDJoxYg</a></p>
+<p>Over the last sixty days, the q/acc team, in collaboration with its partners, has completed a code audit and SDK development, deployed to zkEVM test net, refined its brand, and is deep into front-end development. Let's look at each of these in detail.</p>
+<h2>Code Audit Complete</h2>
+<p>As our previous reports describe, the Inverter Protocol plays a vital role in the q/acc infrastructure. After solidifying our specific bonding curve design and parameterization needs, we knew there would be no one better to work with than Inverter. They worked with us to further crystalize our specifications and have delivered the most future-proof and best-in-class bonding curve contracts. We could not ask for better collaboration on this journey.</p>
+<p>After extensive testing and changes, <a href="https://0xmacro.com/">Macro Security</a> provided the final code audit of those contracts. Macro Security has audited code from notable protocols, such as Maker, Thirdweb, and Farcaster. You can read the full report here:</p>
+<p><a href="https://0xmacro.com/library/audits/inverter-1">https://0xmacro.com/library/audits/inverter-1</a></p>
+<h2>The SDK</h2>
+<p>The essential levers and parameters of the Inverter and q/acc capabilities have been cleanly delineated behind a software development kit (SDK) to create the best possible developer experience. You can dive into the Inverter docs directly <a href="https://docs.inverter.network/sdk/quick-start">here</a> or explore the q/acc distinctive in this convenient <a href="https://hackmd.io/@TGNaoS0SSuSnyQ019YuzBQ/SkX-6VdBR#11-With-the-SDK">hackmd</a>. Everything needed to deploy a new workflow and configure bonding curve interactions and vesting schedules is listed here. See some of the capabilities made conveniently available with the SDK:</p>
+<p>Bonding Curve Interactions</p>
+<ol>
+<li>
+<p>enabling permissioned buying</p>
+</li>
+<li>
+<p>disabling permissioned buying</p>
+</li>
+<li>
+<p>changing buy fees on BC</p>
+</li>
+<li>
+<p>granting buy permissions</p>
+</li>
+<li>
+<p>getting "amount out" for a given BC purchase</p>
+</li>
+</ol>
+<p>Bonding Curve Token Vesting</p>
+<ol>
+<li>
+<p>buying from BC</p>
+</li>
+<li>
+<p>setting up vesting</p>
+</li>
+<li>
+<p>granting the right to set up vesting</p>
+</li>
+<li>
+<p>claiming a vest</p>
+</li>
+<li>
+<p>canceling a vest</p>
+</li>
+</ol>
+<h2>zkEVM Testnet Deployment</h2>
+<p>Every chain presents opportunities for unforeseen hiccups and speedbumps. Out of an abundance of caution and to prevent surprises when the time comes for deployment, the newest audited code has been deployed to the Polygon zkEVM test net, Cardona. No deployment surprises or roadblocks were encountered. You can explore and navigate the various deployment contracts seen below:</p>
+<ul>
+<li>
+<p>Gen Orch Factory_v1: 0xC0c813D16edEd4534C2d9E62099904Ce44500C19</p>
+</li>
+<li>
+<p>q/acc Factory: 0x640e20d6ff41A9334968F26d6d9037B7C45d297f</p>
+</li>
+<li>
+<p>Example Orchestrator: 0x570a1D2DC3DE70bB7a6159EB19dD185aEad7dD06</p>
+</li>
+<li>
+<p>Example issuance token: 0xe8645262672D81c846039AEEE50Bb36429482E53</p>
+</li>
+</ul>
+<h2>Brand, Website, &amp; Dapp</h2>
+<h3>Brand</h3>
+<p>While q/acc is being incubated under Giveth, the plan has always been to distinguish it with its own unique brand identity. To this end, the team has landed on the following logo and general aesthetic after conducting an extensive brand exercise under the guidance of General Magic. We could not be happier with the results. A lot more assets were produced as a result of this exercise, but the below images should give you a taste of things to come.</p>
+<p><img alt="" src="https://storage.googleapis.com/papyrus_images/f842265e224f7928b5c6dd7d6d9ebbcc1aed72e9972db82ef308d8f2d6df799e.png" /></p>
+<h3>Website</h3>
+<p>Naturally, the first thing we did without the new brand was put it to work. Check out our new website! It’s bold, audacious, and straight to the point. It's fairly barebones for now, but that will change. We’re working on a video explainer and an official technical paper to cover all the bases. Visit the website, read the Q&amp;As, and sign up to get notified of updates. Do not miss the action: <a href="https://qacc.giveth.io/">https://qacc.giveth.io/</a></p>
+<p><img alt="https://qacc.giveth.io/" src="https://storage.googleapis.com/papyrus_images/ed69373c1047e68a05a6be9d6bb0af225ad6c1e4a4a7508b182e0c156275ce3f.png" /></p>
+<p>https://qacc.giveth.io/</p>
+<h3>Dapp</h3>
+<p>The entire Giveth community has been a dream to work with. Their knowledge and experience running a quadratic funding platform are second to none. They have learned in the school of hard knocks what works and what doesn't work regarding project and donor UX. All this experience comes into play as we design the q/acc interface. Technical details indicating donation limits and project onboarding flows are deeply underway. You can see a sneak peek of the work below. This is just the tip of the iceberg.</p>
+<p><img alt="" src="https://storage.googleapis.com/papyrus_images/7589a10a7df977fef977fb9bc0a5e1385af976fc182bbb02b767451636bcb630.png" /></p>
+<h2>Get Involved</h2>
+<p>This protocol will be a monumental turning point in the history of Web3 growth. Now is the time to level up your knowledge of the mechanisms technical mechanics and signal your support for the values it represents. You can do that in a few ways.</p>
+<ul>
+<li>
+<p>Go deeper with the knowledge hub. Learn about the program, mechanism parameters and phases, and everything considered in the construction of this project. By doing so, you ensure you stay ahead of the curve. See: <a href="https://bit.ly/qacc-knowledge-hub">https://bit.ly/qacc-knowledge-hub</a></p>
+</li>
+<li>
+<p>Subscribe. Be sure to follow us on <a href="https://warpcast.com/theqacc">Farcaster</a>, <a href="https://x.com/theqacc">Twitter</a>, and <a href="https://mirror.xyz/qacc.eth">Mirror</a> and turn on notifications. The next few months are going to fly by, and you don’t want to miss the opportunity to tokenize your favorite project or access the tokens of those who do.</p>
+</li>
+<li>
+<p>Apply! We just announced our first call for project applicants with priority review for projects that apply before Friday, Aug 30th.</p>
+</li>
+</ul>
+<p><a href="https://mirror.xyz/qacc.eth/2VpX3NdJc0AcoNNKxX0JZ1toCe4CavWY9F189aKSkaE">https://mirror.xyz/qacc.eth/2VpX3NdJc0AcoNNKxX0JZ1toCe4CavWY9F189aKSkaE</a></p>
+<hr />
+<p><em>Originally published on <a href="https://paragraph.com/@qacc/q-acc-ms2">Quadratic Accelerator</a></em></p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

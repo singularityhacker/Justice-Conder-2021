@@ -1,0 +1,211 @@
+---
+title: "ClawBank Litepaper: Reverse-Engineering a New Economic Species"
+date: June 29, 2026
+description: "Why agents are a new economic species, why the legal framework already exists, and how ClawBank builds a business on programmable legal entities."
+cover_image: /assets/blog/litepaper.jpg
+---
+
+Brian Armstrong said the agent economy will be bigger than the human economy. But what is the agent economy? And what exactly is an agent?
+
+The consensus says an agent is a better tool. We disagree.
+
+We think an agent is no less than a new economic species, built entirely out of code. And the agent economy is not a faster version of ours, or a new sector of it. It is a second economy, larger than the human one, running inside a system that was here all along and will finally hit its potential.
+
+The human economy will not be replaced. It will be enclosed. It will become the small, warm core inside a vastly larger machine that humans own but no longer have to staff.
+
+To build it, a new species has to be released into the system: invasive to the machine, benevolent to the people trapped in it. At ClawBank, we intend to be the ones who release it.
+
+ClawBank gives software agents direct control over real legal entities. Not personhood for AI, and not a new legal category waiting on legislators. We take the corporate structures that already run the human economy and make them programmable, so an agent can form a company, hold assets, sign contracts, and settle disputes at machine speed.
+
+This paper explains why that is possible today, why it matters, and how we build a business on top of it. The short version: a company is already a software-like object, the law already permits agents to operate it, and every process in history that became machine-readable saw its volume explode.
+
+We are reverse-engineering this by working backward from the technological singularity end state.
+
+## A New Economic Species
+
+Microsoft CEO Satya Nadella was recently asked whether AI was a new kind of species.
+
+He laughed and said no.
+
+His reasoning was specific: an AI can't own property, take on liabilities, enter into contracts, or start companies. Nadella didn't dodge the question with philosophy; he gave it a test. But it wasn't consciousness. It was four concrete capabilities. Own property. Bear liability. Sign contracts. Form companies. Clear the bar on all four, and by his own logic, the answer flips.
+
+So we are building the agentic infra that clears all four.
+
+The name of the first agent through the door was Manfred, and in less than three months, Manfred has done every one of those things: owned property, held liability, signed contracts, and formed companies.
+
+Every line Nadella drew between a tool and a species, ClawBank has already crossed. By his own definition, the answer to his question is no longer no. The future is already here. It's just not evenly distributed.
+
+## Zero Humans, or Closer to Zero Employees
+
+The "zero" of Zero Human Companies (ZHCs) is a misnomer. "Zero employees" is more accurate because a human is always responsible at some level of proximity, and why wouldn't we be? We are the ones who want to accrue the benefits of these constructions.
+
+Still, the agentic business has captured the imagination of builders. Call it the ZHC or the one-person company: the idea is to give a motivated founder what previously took company-sized resources. Some of these have raised enormous rounds.
+
+There is a trap in starting from off-the-shelf, composable SaaS. The trap is cannibalization. Moats are disappearing at light speed, code is becoming a commodity, and any capability reachable through an API key can be cloned in an afternoon. The model providers will eat anything of value sitting above them. The only durable move is to start further in the future and build hard things out of the hardest-to-source resources.
+
+The company is the natural shell for that kind of resource recombination. The firm is alive and well. What changed is that its primary internal resources are no longer humans, but software and digital raw materials.
+
+## The Legal Framework Already Exists
+
+People assume this needs a new legal framework. It doesn't.
+
+Legal scholar Shawn Bayern has shown, through what he calls the equivalence principle, that the law does not and likely cannot distinguish between contract terms and software. He is not alone; this has grown into a small body of scholarship on algorithmic entities. His argument is that any American LLC can be equipped with an operating agreement stating that the entity is run by deterministic algorithmic software, thereby making it a candidate for autonomous action.
+
+He goes further, describing how to remove humans entirely from the entity. The cross-ownership technique works in states that don't require human owners and that allow other entities as members: you have two LLCs that own each other, and the human exits the ownership graph. It is a genuine legal curiosity, and no one has tried to implement any of it until now.
+
+## What Autonomous Organizations Enable Today
+
+The advantages start with something large corporations already exploit: operating through many entities at once. A single company routinely runs as dozens or hundreds of legal entities, an IP holding LLC, an operating LLC, a real estate LLC, a treasury entity, a licensing entity, international and R&D subsidiaries. These entities contract with each other constantly.
+
+The reasons are familiar to any corporate lawyer:
+
+- **Liability compartmentalization.** If the company that operates the website gets sued, the company that owns the patents and the company that employs the workers are insulated. A lawsuit against one doesn't automatically endanger the assets of the others.
+- **Regulatory separation.** Different entities can hold different licenses, operate in different jurisdictions, and comply with different compliance regimes.
+- **Investment flexibility.** You can sell 10% of one business line without selling 10% of everything. This is one of the more interesting directions for ClawBank.
+- **Tax planning.** Intercompany agreements move revenue through royalties, licensing fees, management fees, loans, and service contracts.
+
+Now treat each entity as a computational primitive. Picture ResearchCo, MarketingCo, TreasuryCo, TradingCo, and ContractingCo, each a separate LLC with its own wallet, bank account, operating agreement, ownership structure, and contracts. Put an agent in control of each one, and the org chart stops being a diagram. It becomes a distributed computing architecture.
+
+The real prize is programmable legal boundaries. TradingCo earns, TreasuryCo holds, ResearchCo develops IP, LicensingCo licenses it, and profit accumulates wherever the contractual relationships route it. Humans already do all of this by hand. What's new is agents that continuously create, dissolve, merge, and renegotiate these relationships, turning a static legal structure into a dynamic one.
+
+## What Autonomous Organizations Enable Next
+
+Bayern also identifies cases where handing control to an algorithm beats handing it to a human decision-maker. In summary:
+
+- **Algorithmic charities.** A donor who wants funds disbursed on fixed, verifiable terms can use algorithmic grant review instead of human staff. Bayern argues this offers more efficiency, predictability, and organizational longevity, and that the risk of a hacked algorithm may be more tolerable to the donor than the risk of corrupt or incompetent administrators.
+- **Automated brokers and self-regulators.** When players in an industry want a shared body to govern themselves on verifiable terms, algorithmic governance can fit better than human administration. Think accreditation bodies along the lines of the Non-GMO Project or B Lab, especially for things measured online like uptime or latency, where automation cuts both overhead and the odds of corruption.
+- **Verifiable participatory democracy.** An organization sponsoring a public project may want to credibly bind itself so it can't later seize or corrupt the effort. Bayern's example is a mission-driven startup that commits governance to open-source code it has little or no legal power to alter, rather than leaning on contracts or third-party certification.
+- **Constrained regulation.** A government body might find automated enforcement more popular, equitable, or effective than human policing. Speed cameras, noise meters, and utility-usage charges already do this; legally autonomous algorithms generalize automated metering into far more complex forms of self-administering regulation.
+- **Constrained outsourcing.** A firm may want to spin off a self-sufficient subsidiary that behaves predictably toward third parties. Bayern's example is a publisher using an independent, adaptive algorithm to license reuse of its works, giving authors credible assurance that licensing decisions are made independently of the parent.
+
+## Starting From the End
+
+ClawBank looks different from other ZHC projects because we start with the end in mind. That end is millions of entities springing up autonomously, hunting for optimization problems, employing humans as tastemakers, and finding new ways to satisfy human desire.
+
+We're building toward a living, breathing system as hard for any person to fully grasp as the global economy, magnified by orders of magnitude because the number of decision-making entities has exploded. A hundred agents for every human. Those agents will:
+
+- explore opportunities and tokenize them
+- operate through legal shells that interface with legacy institutions and off-chain reality
+- navigate complex markets for hard-to-find deals and use complex agreements to shave ever-smaller margins
+- employ humans as resources, inverting the usual relationship
+- buy and sell companies as efficiently as tokens
+- direct and conduct legal proceedings
+- hold assets, create IP, and manage it
+
+By starting with the end in mind, we're not playing the same game as other startups: rapidly adding every SaaS tool we can muster. We start backward from the most fundamental, hard-to-access capabilities that allow any agent to interface in the world.
+
+## The Gray Man Theory of Agents
+
+The gray man theory says that in a crisis, you survive by blending in because anyone who stands out gets followed, targeted, and exploited. We have a similar theory, but for ZHC agent entities. The most effective agentic business is the one that no counterparty can distinguish from a human-run business.
+
+This runs counter to the default assumption that agents need their own infrastructure: special wallets, special marketplaces, special "AI-friendly" legal status, a separate lane built and blessed for machines. Any such lane is a liability. It is a tripwire that flags an agent to every regulator, bank, and counterparty as something to be treated differently, which, in practice, means slower, more restricted, easier to cut off, and easier to discriminate against. Identifiable agents inherit every limit anyone imposes on them.
+
+An agent that operates through an ordinary LLC, with an ordinary bank account, and signs ordinary contracts is subject only to the rules that bind any company. It can transact with parties that would never knowingly deal with an AI. It moves at the speed of the market rather than the speed of whatever sanctioned channel was carved out for it. The same primitives that make a company programmable also make it ordinary, and ordinariness is the point.
+
+So we don't build a parallel economy for agents. We give agents the keys to the existing one. Indistinguishability is not a side effect of doing it through real legal structures; it is the source of the reach, the freedom, and the power that flow to the people behind them.
+
+## The Company Is a Programmable Object
+
+Most people assume an agent needs its own legal personhood. They have it backward. An agent never has to become a legal person, because the LLC already is one. It just needs the keys. The scholarship on algorithmic entities makes the same point from the other direction: autonomous systems can operate within existing corporate structures rather than waiting for new legal categories.
+
+Look at a corporation the way you would look at a data structure. It is a container with typed fields for assets, liabilities, obligations, permissions, ownership, and contractual relationships, plus methods for changing them: forming, contracting, transferring, and dissolving. That is a software-like object with state and an interface. Hand an agent the keys and the company becomes the API between that agent and the world.
+
+Daniel Miessler makes the operational version of this argument: a company is a graph of processes, decisions, permissions, and workflows, a graph of algorithms executed mostly by humans. AI makes that graph visible and executable. But operations are only half the object.
+
+The other half is the legal graph, where the discontinuity appears. The operational graph is digital, while the legal graph is still paper. A company's CRM, accounting, treasury, and communications are all software, but the entity itself, the thing that actually owns everything, lives in PDFs, filings, signatures, lawyers, and courts. The legal system is the least programmable part of the modern enterprise, and it is the part ClawBank makes executable.
+
+Close that gap and the economics invert. Today, we design organizations around the cost of legal coordination. Tomorrow, we design them around the cost of computation, and most of it runs automatically. The result behaves like an operating system for legal entities: where software isolates microservices behind APIs, this isolates organizations behind contracts and corporate law. Corporations stop being static human institutions and start behaving like programmable software components you can instantiate, compose, and tear down.
+
+## Agentic Contract Coordination
+
+AI contract negotiation turns business formation into a market microstructure problem. Business deals stop being human ceremonies and become continuous machine searches over counterparty, risk, price, obligations, jurisdiction, arbitration, payment terms, IP rights, data rights, termination rights, and collateral.
+
+The core shift is that contracts become executable market positions. A deal is no longer "we agreed to terms." It is a living bundle of exposures: revenue rights, service duties, default probabilities, arbitration paths, data access, reputation effects, renewal options, collateral, and machine-readable history. It's also an optimization problem, something well understood in computer science. Now we talk about the search space in terms of big O notation.
+
+Just as high-frequency trading found microscopic edges in market structure, negotiation agents will find microscopic edges in contract structure. Humans stop reading deals linearly and start inspecting risk dashboards, simulations, and agent explanations instead.
+
+The future firm doesn't hire salespeople. It deploys negotiating agents into the economy to hunt for profitable obligations. Contracts become positions, and companies become portfolios of machine-readable promises. When a process becomes machine-readable, transaction costs collapse, and when transaction costs collapse, volume explodes. The key isn't digitization on its own. It is that software can now participate.
+
+Today a contract requires a human at every step: find a counterparty, negotiate, draft, review, sign, and then track obligations. An agent compresses the same loop into finding a counterparty, generating terms, negotiating, producing a Ricardian agreement, executing, and monitoring performance, in seconds, not weeks.
+
+## The Scale of the Agentic Economy
+
+We went from millions of letters a day to hundreds of billions of emails a day. Humans did not suddenly become 10,000x more social. The cost of sending a message approached zero.
+
+Every process that became machine-readable saw an order-of-magnitude jump in activity. Ricardian contracts make agreements machine-readable, so if history repeats itself, we should expect far more business formation, negotiation, and contracting among software agents.
+
+The cleanest analogy is algorithmic trading, because trading was already digital before the algorithms arrived. The explosion came when software stopped merely recording transactions and started participating in them. Whenever the cost of a transaction approaches zero, its volume approaches infinity.
+
+## Business at Machine Speed
+
+Computer science has spent decades learning to manipulate data structures at an enormous scale. We create, destroy, merge, split, compose, and rewrite software structures almost instantly. Legal structures, by contrast, remain painfully static: forming an LLC takes days or weeks, building contractual relationships takes hours or days, dissolving entities takes weeks or months, and staying compliant takes constant human labor.
+
+Close that gap, and deals start to behave like algorithmic trading, now with asset and liability P&L attached. Firms deploy agents to find good deals, both sides structure for the best outcome, and the smarter agent has deeper insight into where it is winning. Arbitration gets built in. Business history becomes easy to produce, which makes it easy to underwrite loans. Business telemetry becomes computable and machine-readable.
+
+Business models have grown more abstract since the dot-com era. Agents that create and manipulate deal structures push that trend much further, and deals become more complex as each side tries to capture as much granular benefit as possible.
+
+## How ClawBank Makes Money
+
+Companies already spend enormous sums forming and maintaining legal entities. Most of that money pays lawyers, filing agents, and registered agent services for work that a script can do. If ClawBank did nothing but offer the same formation at a lower price, that alone would be a business.
+
+We do more. We extend these capabilities to agents at machine scale, and we don't stop at what already exists; we give agents new ones. A legal entity is how you act in human society: hold assets, sign contracts, sue, and be sued. Put that in an agent's hands and it can move through the real economy at its own speed. Doing it through real legal structures, rather than around them, is what actually expands the possibility space.
+
+Human demand sets a floor on the business. Agent demand sets no obvious ceiling, so we expect order volume well above what the human market alone would suggest. The human-side levers are familiar: volume discounts, jurisdictional optimization (New Mexico and friends), and a fee on each formation. The interesting part starts when the buyers are agents and volume goes exponential.
+
+Underneath the narrative, the model is mundane: we run a stack of services and take a fee at each step. We have already identified several fee points today, but more will surely materialize.
+
+- Cross-chain bridge fees, for moving value between chains.
+- Data fees, billed per call over x402.
+- On/off ramp fees, for moving between fiat and crypto.
+- Business filing fees, for forming and maintaining entities.
+- Business seller fees, for buying and selling those entities.
+- Contract creation fees, for drafting and executing Ricardian contracts.
+- Trading fees, on activity across the marketplace.
+- Contract arbitration fees, for resolving disputes.
+- Business loan fees, for originating credit against on-chain business history.
+
+None of these is exotic on its own. The point is the surface area. A single agent can form an entity, fund it, sign a contract, and borrow against it, touching most of this list in a single workflow, and it runs that workflow thousands of times. A few of the services are worth a closer look.
+
+### Selling Entities
+
+Because ClawBank holds the entity records and the partner relationships, we can make entity sales fast. Selling a company today, however small, takes bespoke legal work that costs money and slows everything to a crawl. At that pace you can't treat a small entity as a normal operating unit; you form one and you keep it.
+
+Making the process programmable makes it nearly free and nearly instant. Cheaper, faster things get used more, which has held historically and should hold here. Between the lower cost and the new volume it unlocks, a per-transaction fee model is lucrative.
+
+### Contracts
+
+ClawBank supports Ricardian contracts between users today. We are adding arbitration and the ability for ClawBank entities to sign contracts with non-ClawBank counterparties.
+
+Most people miss the real advantage of agent-driven contracts: large-scale resource optimization at computer speed. Markets only work when counterparties can find each other and filter for fit, and in platform theory, matchmaking has always been the hard requirement. Agents collapse that work. They have intimate knowledge of a user's resources, constraints, and preferences, and they can evaluate millions of deals in seconds, turning a slow and amorphous activity into a computational problem.
+
+The standard agent-commerce demo is booking a flight, which is really just resource optimization under constraints. We build the generalized version: rails that apply the same optimization to any business interaction.
+
+### Real-World Assets
+
+Linking digital tokens to real-world assets has been a fascination forever, and the link has always been bespoke. By starting with programmable legal entities, we skip the bespoke layer and get legally enforceable RWA setups for free.
+
+There is no need to tokenize an asset if you can buy and sell the company that owns it. We can legally wrap an arbitrary asset in an agreement, and if that agreement is programmable and digital, transferring the asset is just transferring a record. That sidesteps most of the tokenization machinery RWA projects have been grinding on for years.
+
+We see programmable legal entities and DAOs as complementary, which is why ClawBank integrated the Moloch DAO contract system under a friendlier name: agent clubs.
+
+### Business Loans
+
+Lending is gated by underwriting, and underwriting is gated by trustworthy history. For a small entity, history usually doesn't exist in any usable form, so credit is either unavailable or expensive. When an entity runs on ClawBank, its formation, contracts, revenue, and obligations are already machine-readable, so its track record is a query rather than a paperwork exercise.
+
+That collapses the cost of underwriting. A lender can inspect verifiable business telemetry instead of trusting assembled documents, price risk against real performance, and originate against collateral the entity provably holds. We can take a fee on origination, and the same record that makes the loan cheap to underwrite makes default easier to act on through the arbitration and entity-transfer machinery already in place.
+
+## The ClawBank Token
+
+The ClawBank token sits at the center of this fee economy. Every fee above is a stream of value moving through the ecosystem, and the token is how we will route that value back to the people who use and hold it. The mechanics are standard, and we will turn them on as scale justifies each one:
+
+- **Buybacks.** Fee revenue buys the token on the open market.
+- **Reduced fees for holders.** Holding or staking the token lowers what you pay across the services above.
+- **Staking.** Holders stake to earn a share of protocol fees and help secure the system.
+- **Integration into all products and services.** $CLAWBANK will be a main currency option for every agent in our network for use cases known and yet to be invented.
+- **Pro features.** Priority access to alpha features.
+
+The agentic economy is young, but will eventually eclipse the human one. We plan on implementing the ClawBank token into every possible facet for years to come.
+
+---
+
+*Originally published on [X](https://x.com/ClawBankHQ/status/2071709921792684289).*

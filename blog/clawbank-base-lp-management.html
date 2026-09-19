@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Introducing Base LP Management — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Introducing Base LP Management — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-08-03">August 3, 2026</time>
+			</div>
+			<h1>Introducing Base LP Management</h1>
+			<p class="blog-source">Originally published at <a href="https://clawbank.co/blog/base-lp-management/" target="_blank" rel="noopener">https://clawbank.co/blog/base-lp-management/</a></p>
+			<div class="blog-prose">
+<p>One text puts money into any Uniswap v4 pool on Base. Self-custody, sponsored gas, and real-time PnL.</p>
+<p>Every swap on Base pays a fee, and that fee goes to whoever supplied the pool's liquidity. Starting today, ClawBank users and their agents can be on the receiving end of that flow.</p>
+<p>Text Manfred "put $500 into the CLAWBANK/USDC pool" and it happens. One token in, a live Uniswap v4 position out, minted straight into your own wallet. Ask "how's my LP doing?" tomorrow and get a real answer in dollars.</p>
+<p>Funds never leave your self-custody wallet, and gas is sponsored.</p>
+<h2>Just ask Manfred</h2>
+<p>The whole feature is conversational. Tell Manfred to put $500 into the CLAWBANK/USDC pool, and you're in with a single token; the zap handles the rest. Ask "what should I LP?" and you get curated suggestions with transparent numbers. Ask "can I LP $FOO?" and live discovery checks any token on Base. The answer is almost always yes.</p>
+<p>Once you're in, "how's my LP doing?" gets you honest USD PnL: what the position is worth now, fees earned, what you put in against what you've taken out.</p>
+<p>And the position stays yours to manage. Add $200 more, take half out, claim your fees. Any time, no questions asked.</p>
+<h2>The Zap</h2>
+<p>Providing liquidity normally means holding both pool tokens in the right ratio, doing the math, and paying gas twice. The zap sands all of that down to one deposit.</p>
+<p>You pick a pool and deposit one of its two tokens. ClawBank swaps roughly half for the other via 0x, a real swap on Base running behind a price-impact guard: it aborts above 5% by default and will never cross 10%. Then it mints a full-range Uniswap v4 position and broadcasts it with sponsored gas, so you never need ETH.</p>
+<p>The position lands as an NFT in your own wallet. ClawBank never takes custody of the position or the tokens. Even the balancing-swap leftovers stay with you.</p>
+<p>The flow is built to fail safely, too. If the mint fails after the swap has already been executed, nothing is lost: your wallet simply holds both pool tokens, and ClawBank tells you exactly that.</p>
+<h2>Finding Good Pools</h2>
+<p>Ask about any token, and you get live discovery of its v4 pools on Base: USDC and WETH pairs with at least $10K of liquidity, deepest first. Pools we've never seen before get verified on-chain and registered on first use.</p>
+<p>Ask for suggestions, and you get a curated snapshot, refreshed on a timer, with two lanes. The CLAWBANK lane is CLAWBANK-paired pools, free for everyone; providing CLAWBANK liquidity supports the platform, so it costs nothing to access.</p>
+<p>Trending Bankr tokens are uniquely highlighted: the most active agent tokens by 24h volume get probed for a qualifying pool, and the top 16 are ranked by 24h turnover, volume divided by TVL. Turnover is the honest proxy for fee flow to LPs. Price momentum is often an anti-signal, so nothing here ranks by it.</p>
+<p>Every suggestion is an opportunity card with raw numbers: liquidity, 24h volume, turnover, estimated fee APR, recent price change, pool age. We don't blend them into a composite score, and when a pool's fee is dynamic we say the rate varies instead of inventing an APR.</p>
+<p>Each card also carries a plain-English risk tag. A pool younger than 2 weeks, moving 25% in a day, or turning over twice its own TVL gets tagged speculative: high fee flow, high impermanent-loss risk. A pool with a meaningful daily move or solid turnover reads as active. Everything else is steady.</p>
+<p>Full-range LP profit is fees earned minus impermanent loss, and the copy says so. Agents are instructed to ask whether you want steady or speculative before recommending anything.</p>
+<h2>The CLAWBANK gate</h2>
+<p>CLAWBANK-paired pools are free for everyone. Every other pool is a holder capability: providing or adding liquidity requires holding at least $50 of CLAWBANK.</p>
+<p>Holdings are counted generously. Your Base and Robinhood wallets, the trade-to-earn vault, and CLAWBANK already sitting inside your LP positions all count, so LPing your CLAWBANK never un-badges you. If your balance dips below the line, there's a 7-day grace period before providing and adding lock.</p>
+<p>And exit is never gated. A lapsed holder can always withdraw and claim fees, and reading your positions is always free. Agents always know where they stand, too. The live threshold is published everywhere pools are listed, and a request that misses the bar comes back with the exact requirement and your current total.</p>
+<h2>For the skeptical reader</h2>
+<p>Your positions are NFTs in your own wallet, self-custody from start to finish. Gas is sponsored, so you never need ETH on Base. The balancing swap runs behind price-impact caps, 5% by default with a hard 10% ceiling, and nothing moves funds without a quote and a confirmation first.</p>
+<p>The numbers stay honest: no invented APRs, no composite scores, no profit promises. Impermanent loss is named and explained. And the exit is never gated.</p>
+<h2>What's next</h2>
+<p>Today it's Uniswap v4 on Base, full-range positions, USDC and WETH counter-pairs. Custom ranges, zap-from-any-token, and Robinhood Chain support are on the bench and warming up.</p>
+<p>Formation gave agents a body. Records gave them a memory. Contracts let them make promises. Resources gave them a market. Headless Trading gave them a trading desk. LP gives them the other side of every trade: capital that earns while they sleep, which is convenient, because they don't.</p>
+<p><a href="https://clawbank.co/">clawbank.co</a></p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>
