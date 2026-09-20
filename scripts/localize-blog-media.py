@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import concurrent.futures
 import hashlib
+import html
 import json
 import mimetypes
 import re
@@ -13,7 +14,7 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
-from urllib.parse import unquote, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 BLOG_DIR = ROOT / "blog"
@@ -189,14 +190,15 @@ def singularity_covers() -> dict[str, str]:
     return covers
 
 
-# Paragraph auto-generates 1200x630 title-on-black OG cards. Prefer the first
-# real in-article image instead of those placeholders.
-PLACEHOLDER_COVER = re.compile(r"(?:-og\.png|/og\.png|logo\.png|play\.png|branding/)", re.I)
+# Paragraph's /api/og card overlays title text on the cover. Use the cover
+# photo itself (coverPhotoUrl / JSON-LD Article.image), not a body image and
+# not the generated social card.
+PLACEHOLDER_COVER = re.compile(
+    r"(?:/api/og(?:\?|$)|-og\.png|/og\.png|logo\.png|play\.png|branding/|/editor/twitter/)",
+    re.I,
+)
 PARAGRAPH_CHROME = (
-    "63e5f16669b3b00cd647",  # profile avatar
-    "f833ce7763ed2d192d64",
-    "42e32756d23813879f5a",
-    "e4db67ae4359b94ea088",
+    "63e5f16669b3b00cd647",  # 0xjustice profile avatar
     "paragraph.com/branding",
 )
 
@@ -209,41 +211,65 @@ def is_placeholder_cover(url: str) -> bool:
     return any(part in url for part in PARAGRAPH_CHROME)
 
 
-def first_article_image(html: str) -> str | None:
-    match = re.search(r'<div class="blog-prose">([\s\S]*?)</div>\s*</article>', html)
-    if not match:
-        return None
-    for src in re.findall(r'<img[^>]+src="([^"]+)"', match.group(1)):
-        if is_placeholder_cover(src):
-            continue
-        if src.startswith("http"):
-            continue
-        return src
+def unwrap_paragraph_url(url: str) -> str:
+    """Prefer the underlying papyrus URL inside an img.paragraph.com CDN wrap."""
+    url = html.unescape(url.strip())
+    for marker in ("https://storage.googleapis.com/", "http://storage.googleapis.com/"):
+        if marker in url:
+            return marker + url.split(marker, 1)[1]
+    return url
+
+
+def paragraph_hero_url(html_text: str) -> str | None:
+    """Return Paragraph's dedicated cover photo, not an in-body illustration."""
+    text = html.unescape(html_text)
+
+    for raw in re.findall(r"coverPhotoUrl=([^&\"'\s]+)", text):
+        url = normalize_url(unquote(raw))
+        if url and not is_placeholder_cover(url):
+            return url
+
+    og = re.search(
+        r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"',
+        text,
+        re.I,
+    ) or re.search(
+        r'<meta[^>]+content="([^"]+)"[^>]+property="og:image"',
+        text,
+        re.I,
+    )
+    if og:
+        raw = unwrap_paragraph_url(og.group(1))
+        parsed = urlparse(raw)
+        cover = (parse_qs(parsed.query).get("coverPhotoUrl") or [None])[0]
+        if cover:
+            url = normalize_url(unquote(cover))
+            if url and not is_placeholder_cover(url):
+                return url
+        url = normalize_url(raw)
+        if url and not is_placeholder_cover(url):
+            return url
+
+    ld = re.search(
+        r'"@type":"Article"[\s\S]{0,12000}?"image":\{"@type":"ImageObject","url":"([^"]+)"',
+        text,
+    )
+    if ld:
+        url = normalize_url(unwrap_paragraph_url(ld.group(1)))
+        if url and not is_placeholder_cover(url):
+            return url
     return None
 
 
 def paragraph_covers(posts: list[dict]) -> dict[str, str]:
-    """Remote fallback only when a post has no local article image."""
+    """Use each Paragraph post's main cover photo."""
     covers = {}
 
     def one(post: dict) -> tuple[str, str | None]:
-        html = fetch_text(post["canonical"])
-        if not html:
+        page = fetch_text(post["canonical"])
+        if not page:
             return post["slug"], None
-        # Prefer first in-page article image over the generated OG title card.
-        for src in re.findall(r'<img[^>]+src="([^"]+)"', html):
-            url = normalize_url(src)
-            if not url or is_placeholder_cover(url):
-                continue
-            if any(host in url for host in ("storage.googleapis.com/papyrus_images", "img.paragraph.com", "papyrus_images")):
-                return post["slug"], url
-        og = re.search(r'<meta property="og:image" content="([^"]+)"', html)
-        if not og:
-            return post["slug"], None
-        url = normalize_url(og.group(1))
-        if url and not is_placeholder_cover(url):
-            return post["slug"], url
-        return post["slug"], None
+        return post["slug"], paragraph_hero_url(page)
 
     targets = [p for p in posts if p["project"] in {"0xjustice", "qacc"}]
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
@@ -399,32 +425,54 @@ def main() -> int:
         json.dumps({"map": mapping, "covers": local_covers, "failed": failed}, indent=2) + "\n",
         encoding="utf-8",
     )
-    apply_local_article_covers()
     print(json.dumps({k: report[k] for k in report if k != "failed"}, indent=2))
     if failed:
         print("failed", len(failed))
     return 0
 
 
-def apply_local_article_covers() -> dict[str, str]:
-    """Use the first real in-article image as the listing/post cover."""
+def refresh_paragraph_covers() -> int:
+    """Re-apply Paragraph hero covers without re-downloading every body asset."""
     posts = json.loads((BLOG_DIR / "posts.json").read_text(encoding="utf-8"))
-    chosen: dict[str, str] = {}
-    for post in posts:
-        if post.get("project") not in {"0xjustice", "qacc"}:
-            continue
-        page = BLOG_DIR / f"{post['slug']}.html"
+    print("Collecting Paragraph hero covers…")
+    covers_remote = paragraph_covers(posts)
+    print(f"  heroes found: {len(covers_remote)}")
+
+    mapping = {}
+    manifest_path = BLOG_DIR / "media-manifest.json"
+    if manifest_path.exists():
+        mapping.update(json.loads(manifest_path.read_text(encoding="utf-8")).get("map") or {})
+
+    failed = []
+    local_covers = {}
+    for slug, url in covers_remote.items():
+        local = mapping.get(url)
+        dest = (BLOG_DIR / local) if local else None
+        if not local or dest is None or not dest.exists():
+            data, ctype, err = fetch_bytes(url)
+            if not data:
+                failed.append({"url": url, "error": err or "empty"})
+                print(f"  FAIL {slug} {url} — {err}")
+                continue
+            name = local_name(url, ctype)
+            (MEDIA_DIR / name).write_bytes(data)
+            local = f"media/{name}"
+            mapping[url] = local
+            print(f"  ok   {local}  ← {url[:90]}")
+        local_covers[slug] = local
+
+    for slug, local in local_covers.items():
+        page = BLOG_DIR / f"{slug}.html"
         if not page.exists():
             continue
-        html = page.read_text(encoding="utf-8")
-        src = first_article_image(html)
-        if not src:
-            continue
-        html = inject_cover(html, src)
-        page.write_text(html, encoding="utf-8")
-        local = src if src.startswith("media/") else src
-        chosen[post["slug"]] = local
-        post["cover"] = f"blog/{local}" if not local.startswith("blog/") else local
+        html_text = page.read_text(encoding="utf-8")
+        page.write_text(inject_cover(html_text, local), encoding="utf-8")
+
+    for post in posts:
+        local = local_covers.get(post["slug"])
+        if local:
+            post["cover"] = f"blog/{local}" if not local.startswith("blog/") else local
+
     (BLOG_DIR / "posts.json").write_text(json.dumps(posts, indent=2) + "\n", encoding="utf-8")
     listing_covers = {}
     for post in posts:
@@ -434,9 +482,23 @@ def apply_local_article_covers() -> dict[str, str]:
         elif cover:
             listing_covers[post["slug"]] = cover
     update_listing(posts, listing_covers)
-    print(f"article covers applied: {len(chosen)}")
-    return chosen
+
+    existing = {}
+    if manifest_path.exists():
+        existing = json.loads(manifest_path.read_text(encoding="utf-8"))
+    existing["map"] = mapping
+    existing["covers"] = {
+        **(existing.get("covers") or {}),
+        **local_covers,
+    }
+    if failed:
+        existing["failed"] = (existing.get("failed") or []) + failed
+    manifest_path.write_text(json.dumps(existing, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"covers": len(local_covers), "failed": len(failed)}, indent=2))
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
+    if "--covers-only" in sys.argv:
+        raise SystemExit(refresh_paragraph_covers())
     raise SystemExit(main())
