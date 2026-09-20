@@ -164,23 +164,42 @@
   color: #c5c8ce;
 }
 
+body {
+  padding-bottom: 88px;
+}
+
 @media (max-width: 600px) {
   .look-switcher {
-    left: 12px;
+    left: auto;
     right: 12px;
     bottom: max(12px, env(safe-area-inset-bottom));
   }
 
   .look-toggle {
-    width: 100%;
+    width: auto;
     justify-content: center;
   }
 
   .look-panel {
+    right: 0;
+    left: auto;
+    width: min(360px, calc(100vw - 24px));
+    bottom: 60px;
+  }
+
+  .look-switcher.is-open {
+    left: 12px;
+    right: 12px;
+  }
+
+  .look-switcher.is-open .look-toggle {
+    width: 100%;
+  }
+
+  .look-switcher.is-open .look-panel {
     left: 0;
     right: 0;
     width: auto;
-    bottom: 60px;
   }
 }
 
@@ -192,8 +211,8 @@ html:not([data-theme]) .look-option[data-look-id="classic"] {
 /* ---------- Shared tokens for redesigns ---------- */
 
 html[data-theme="atelier"] {
-  --bg: #f4efe6;
-  --bg-elevated: #fffaf3;
+  --bg: #efe4d2;
+  --bg-elevated: #f8f0e4;
   --text: #2a241c;
   --text-muted: #6b6258;
   --heading: #1f1a14;
@@ -201,7 +220,7 @@ html[data-theme="atelier"] {
   --accent-ink: #fffaf3;
   --link: #9a3a16;
   --link-hover: #6f240c;
-  --nav-bg: #f7f3eb;
+  --nav-bg: #f3eadc;
   --nav-text: #1f1a14;
   --nav-hover: #b5451b;
   --card: #fffaf3;
