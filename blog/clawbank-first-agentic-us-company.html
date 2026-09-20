@@ -13,6 +13,16 @@
 	<link rel="stylesheet" href="../css/style.css" type="text/css" />
 	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
 	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="../css/themes.css" type="text/css" />
+	<script>
+	(function () {
+		try {
+			var q = new URLSearchParams(location.search).get("theme");
+			var t = q || localStorage.getItem("jc-site-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	})();
+	</script>
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
 		as="style" onload="this.rel='stylesheet'" />
@@ -141,6 +151,7 @@
 	</div>
 	<div class="footer flex-container"></div>
 
+	<script src="../js/theme-switcher.js"></script>
 </body>
 
 </html>

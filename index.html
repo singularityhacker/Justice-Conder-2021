@@ -16,6 +16,16 @@
 	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="css/themes.css" type="text/css" />
+	<script>
+	(function () {
+		try {
+			var q = new URLSearchParams(location.search).get("theme");
+			var t = q || localStorage.getItem("jc-site-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	})();
+	</script>
 
 	<!-- google font -->
 	<link rel="preload"
@@ -1575,6 +1585,7 @@
 			updateCarousel();
 		})();
 	</script>
+	<script src="js/theme-switcher.js"></script>
 </body>
 
 </html>

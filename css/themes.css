@@ -1,0 +1,901 @@
+/* Preview-only redesigns. Classic is the untouched original.
+   Remove this file and the look switcher after a direction is chosen. */
+
+.look-switcher {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 9999;
+  font-family: "IBM Plex Sans", "Open Sans", sans-serif;
+  color: #f4f1ea;
+}
+
+.look-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 16px 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: #141414;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.look-toggle-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background:
+    conic-gradient(#ffde00 0 90deg, #4f46e5 90deg 180deg, #3dff8a 180deg 270deg, #b5451b 270deg 360deg);
+  box-shadow: inset 0 0 0 2px #141414;
+}
+
+.look-panel {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: min(360px, calc(100vw - 24px));
+  max-height: min(75vh, 640px);
+  overflow: auto;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: #121212;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+}
+
+.look-panel[hidden] {
+  display: none !important;
+}
+
+.look-panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.look-kicker {
+  margin: 0 0 2px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9aa1ab;
+}
+
+.look-panel h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.look-lede {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #c5c8ce;
+}
+
+.look-close {
+  flex-shrink: 0;
+  min-height: 36px;
+  padding: 0 10px;
+  border: 0;
+  background: transparent;
+  color: #c5c8ce;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+
+.look-list {
+  display: grid;
+  gap: 8px;
+}
+
+.look-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: #1b1b1b;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.look-option:hover,
+.look-option:focus {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.look-option.is-active {
+  border-color: #ffde00;
+  box-shadow: inset 0 0 0 1px #ffde00;
+}
+
+.look-option-swatches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  width: 36px;
+  height: 36px;
+}
+
+.look-swatch {
+  display: block;
+  border-radius: 3px;
+}
+
+.look-option-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.look-option-kind {
+  display: inline-block;
+  margin: 2px 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9aa1ab;
+}
+
+.look-option-blurb {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #c5c8ce;
+}
+
+@media (max-width: 600px) {
+  .look-switcher {
+    left: 12px;
+    right: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  .look-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .look-panel {
+    left: 0;
+    right: 0;
+    width: auto;
+    bottom: 60px;
+  }
+}
+
+html[data-theme="classic"] .look-option[data-look-id="classic"],
+html:not([data-theme]) .look-option[data-look-id="classic"] {
+  border-color: #ffde00;
+}
+
+/* ---------- Shared tokens for redesigns ---------- */
+
+html[data-theme="atelier"] {
+  --bg: #f4efe6;
+  --bg-elevated: #fffaf3;
+  --text: #2a241c;
+  --text-muted: #6b6258;
+  --heading: #1f1a14;
+  --accent: #b5451b;
+  --accent-ink: #fffaf3;
+  --link: #9a3a16;
+  --link-hover: #6f240c;
+  --nav-bg: #f7f3eb;
+  --nav-text: #1f1a14;
+  --nav-hover: #b5451b;
+  --card: #fffaf3;
+  --card-border: #e4d8c6;
+  --rule: #d8cbb8;
+  --shadow: 0 10px 30px rgba(70, 48, 24, 0.08);
+  --radius: 6px;
+  --font-body: "Source Serif 4", "Times New Roman", serif;
+  --font-display: Fraunces, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", "Lucida Console", monospace;
+  --kicker-bg: #b5451b;
+  --kicker-ink: #fffaf3;
+  --hero-overlay: linear-gradient(#2a1a1088, #1a1008cc);
+  --btn-bg: #b5451b;
+  --btn-ink: #fffaf3;
+  --btn-hover-bg: #1f1a14;
+  --btn-hover-ink: #fffaf3;
+  --footer-bg: #1f1a14;
+  --footer-text: #f0e6d8;
+  --selection-bg: #b5451b;
+  --selection-ink: #fffaf3;
+  --hamburger: #1f1a14;
+  --title-color: #b5451b;
+  --quote: #fff4e8;
+  color-scheme: light;
+}
+
+html[data-theme="atelier-night"] {
+  --bg: #161310;
+  --bg-elevated: #221c18;
+  --text: #e8ddd0;
+  --text-muted: #b5a898;
+  --heading: #f6efe6;
+  --accent: #e8a87c;
+  --accent-ink: #1a140e;
+  --link: #f0b58a;
+  --link-hover: #ffd7b0;
+  --nav-bg: #100d0b;
+  --nav-text: #f6efe6;
+  --nav-hover: #e8a87c;
+  --card: #221c18;
+  --card-border: #3a322b;
+  --rule: #3a322b;
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --radius: 6px;
+  --font-body: "Source Serif 4", "Times New Roman", serif;
+  --font-display: Fraunces, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", "Lucida Console", monospace;
+  --kicker-bg: #e8a87c;
+  --kicker-ink: #1a140e;
+  --hero-overlay: linear-gradient(#080604aa, #080604ee);
+  --btn-bg: #e8a87c;
+  --btn-ink: #1a140e;
+  --btn-hover-bg: #f6efe6;
+  --btn-hover-ink: #1a140e;
+  --footer-bg: #0c0a08;
+  --footer-text: #f0e6d8;
+  --selection-bg: #e8a87c;
+  --selection-ink: #1a140e;
+  --hamburger: #f6efe6;
+  --title-color: #e8a87c;
+  --quote: #2a221c;
+  color-scheme: dark;
+}
+
+html[data-theme="signal"] {
+  --bg: #f6f7fb;
+  --bg-elevated: #ffffff;
+  --text: #1f2430;
+  --text-muted: #5b6475;
+  --heading: #111827;
+  --accent: #4f46e5;
+  --accent-ink: #ffffff;
+  --link: #4338ca;
+  --link-hover: #312e81;
+  --nav-bg: #ffffff;
+  --nav-text: #111827;
+  --nav-hover: #4f46e5;
+  --card: #ffffff;
+  --card-border: #e4e7ef;
+  --rule: #e4e7ef;
+  --shadow: 0 12px 32px rgba(17, 24, 39, 0.08);
+  --radius: 14px;
+  --font-body: "IBM Plex Sans", "Open Sans", sans-serif;
+  --font-display: "Space Grotesk", "Raleway", sans-serif;
+  --font-mono: "IBM Plex Mono", "Lucida Console", monospace;
+  --kicker-bg: #4f46e5;
+  --kicker-ink: #ffffff;
+  --hero-overlay: linear-gradient(#1e1b4baa, #111827d9);
+  --btn-bg: #4f46e5;
+  --btn-ink: #ffffff;
+  --btn-hover-bg: #111827;
+  --btn-hover-ink: #ffffff;
+  --footer-bg: #111827;
+  --footer-text: #e8eaf4;
+  --selection-bg: #4f46e5;
+  --selection-ink: #ffffff;
+  --hamburger: #111827;
+  --title-color: #4f46e5;
+  --quote: #eef0ff;
+  color-scheme: light;
+}
+
+html[data-theme="signal-night"] {
+  --bg: #0b1020;
+  --bg-elevated: #141a2e;
+  --text: #dfe3f2;
+  --text-muted: #9aa3c2;
+  --heading: #f4f6ff;
+  --accent: #818cf8;
+  --accent-ink: #0b1020;
+  --link: #a5b4fc;
+  --link-hover: #c7d2fe;
+  --nav-bg: #070b16;
+  --nav-text: #f4f6ff;
+  --nav-hover: #818cf8;
+  --card: #141a2e;
+  --card-border: #2a3354;
+  --rule: #2a3354;
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  --radius: 14px;
+  --font-body: "IBM Plex Sans", "Open Sans", sans-serif;
+  --font-display: "Space Grotesk", "Raleway", sans-serif;
+  --font-mono: "IBM Plex Mono", "Lucida Console", monospace;
+  --kicker-bg: #818cf8;
+  --kicker-ink: #0b1020;
+  --hero-overlay: linear-gradient(#0b1020cc, #070b16f2);
+  --btn-bg: #818cf8;
+  --btn-ink: #0b1020;
+  --btn-hover-bg: #f4f6ff;
+  --btn-hover-ink: #0b1020;
+  --footer-bg: #070b16;
+  --footer-text: #e8eaf4;
+  --selection-bg: #818cf8;
+  --selection-ink: #0b1020;
+  --hamburger: #f4f6ff;
+  --title-color: #818cf8;
+  --quote: #1b2240;
+  color-scheme: dark;
+}
+
+html[data-theme="terminal"] {
+  --bg: #070a08;
+  --bg-elevated: #0d1410;
+  --text: #c8f0d0;
+  --text-muted: #7aa384;
+  --heading: #e8ffe9;
+  --accent: #3dff8a;
+  --accent-ink: #061109;
+  --link: #3dff8a;
+  --link-hover: #a6ffc8;
+  --nav-bg: #050705;
+  --nav-text: #c8f0d0;
+  --nav-hover: #3dff8a;
+  --card: #0d1410;
+  --card-border: #1d3a28;
+  --rule: #1d3a28;
+  --shadow: none;
+  --radius: 0;
+  --font-body: "IBM Plex Sans", "Open Sans", sans-serif;
+  --font-display: "IBM Plex Mono", "Lucida Console", monospace;
+  --font-mono: "IBM Plex Mono", "Lucida Console", monospace;
+  --kicker-bg: transparent;
+  --kicker-ink: #3dff8a;
+  --hero-overlay: linear-gradient(#001408bb, #000c06ee);
+  --btn-bg: #3dff8a;
+  --btn-ink: #061109;
+  --btn-hover-bg: #ffbf3c;
+  --btn-hover-ink: #061109;
+  --footer-bg: #030504;
+  --footer-text: #c8f0d0;
+  --selection-bg: #3dff8a;
+  --selection-ink: #061109;
+  --hamburger: #3dff8a;
+  --title-color: #3dff8a;
+  --quote: #102018;
+  color-scheme: dark;
+}
+
+html[data-theme]:not([data-theme="classic"]) {
+  background: var(--bg);
+}
+
+html[data-theme]:not([data-theme="classic"]) ::selection {
+  background: var(--selection-bg);
+  color: var(--selection-ink);
+}
+
+html[data-theme]:not([data-theme="classic"]) body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+html[data-theme]:not([data-theme="classic"]) #content li,
+html[data-theme]:not([data-theme="classic"]) #content p {
+  color: var(--text);
+}
+
+html[data-theme="atelier"] body,
+html[data-theme="atelier-night"] body {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+html[data-theme="signal"] body,
+html[data-theme="signal-night"] body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+html[data-theme="terminal"] body {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+html[data-theme]:not([data-theme="classic"]) body a {
+  color: var(--link);
+}
+
+html[data-theme]:not([data-theme="classic"]) body a:hover {
+  color: var(--link-hover);
+}
+
+html[data-theme]:not([data-theme="classic"]) .title-text {
+  font-family: var(--font-display);
+}
+
+html[data-theme]:not([data-theme="classic"]) .name {
+  font-family: var(--font-mono);
+}
+
+html[data-theme]:not([data-theme="classic"]) .link-btn {
+  background: var(--btn-bg);
+  color: var(--btn-ink);
+  border-radius: var(--radius);
+}
+
+html[data-theme]:not([data-theme="classic"]) .link-btn:hover {
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-ink);
+}
+
+html[data-theme]:not([data-theme="classic"]) .subject-header h2 {
+  color: var(--heading);
+  font-family: var(--font-display);
+}
+
+html[data-theme]:not([data-theme="classic"]) .subject-header span {
+  background: var(--kicker-bg);
+  color: var(--kicker-ink);
+  border-radius: var(--radius);
+}
+
+html[data-theme]:not([data-theme="classic"]) .subject-header .bg-text {
+  color: color-mix(in srgb, var(--heading) 10%, transparent);
+  font-family: var(--font-display);
+}
+
+html[data-theme="atelier"] .subject-header h2,
+html[data-theme="atelier-night"] .subject-header h2 {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+html[data-theme="signal"] .subject-header h2,
+html[data-theme="signal-night"] .subject-header h2 {
+  letter-spacing: -0.03em;
+}
+
+html[data-theme="terminal"] .subject-header span {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+html[data-theme="terminal"] .subject-header .bg-text {
+  color: rgba(61, 255, 138, 0.08);
+}
+
+html[data-theme]:not([data-theme="classic"]) .intro {
+  background: var(--hero-overlay), url("../images/header-background.webp") center / cover no-repeat !important;
+}
+
+html[data-theme="terminal"] .intro {
+  background:
+    repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0 2px, transparent 2px 4px),
+    var(--hero-overlay),
+    url("../images/header-background.webp") center / cover no-repeat !important;
+}
+
+html[data-theme]:not([data-theme="classic"]) .intro #typer .typer-effect {
+  border-right-color: var(--accent);
+}
+
+html[data-theme]:not([data-theme="classic"]) .navbar {
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--card-border);
+}
+
+html[data-theme]:not([data-theme="classic"]) .navbar .navbar-header .navbar-brand {
+  color: var(--nav-text);
+}
+
+html[data-theme]:not([data-theme="classic"]) .navbar .nav-link a {
+  color: var(--nav-text);
+}
+
+html[data-theme]:not([data-theme="classic"]) .navbar .nav-link a:hover,
+html[data-theme]:not([data-theme="classic"]) .navbar .nav-link a:focus,
+html[data-theme]:not([data-theme="classic"]) .navbar .nav-link a:active,
+html[data-theme]:not([data-theme="classic"]) .navbar .nav-link a.is-current {
+  border-bottom-color: var(--nav-hover);
+  color: var(--nav-hover);
+}
+
+html[data-theme="signal"] .navbar.desktop-only,
+html[data-theme="signal-night"] .navbar.desktop-only {
+  backdrop-filter: blur(12px);
+}
+
+html[data-theme="atelier"] .navbar.desktop-only .nav-link a,
+html[data-theme="atelier-night"] .navbar.desktop-only .nav-link a,
+html[data-theme="signal"] .navbar.desktop-only .nav-link a,
+html[data-theme="signal-night"] .navbar.desktop-only .nav-link a {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  html[data-theme]:not([data-theme="classic"]) .navbar.mobile-only {
+    background: var(--nav-bg);
+    color: var(--nav-text);
+  }
+
+  html[data-theme]:not([data-theme="classic"]) .navbar.mobile-only .hamburger div {
+    background: var(--hamburger);
+  }
+
+  html[data-theme]:not([data-theme="classic"]) .navbar.mobile-only .nav-link {
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--card-border);
+  }
+}
+
+html[data-theme]:not([data-theme="classic"]) #about .profile figure {
+  background: var(--bg-elevated);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+html[data-theme]:not([data-theme="classic"]) #about .profile .social-badge {
+  background: var(--accent);
+}
+
+html[data-theme]:not([data-theme="classic"]) #about .profile .social-badge .social-item a {
+  color: var(--heading);
+  background: var(--bg-elevated);
+}
+
+html[data-theme]:not([data-theme="classic"]) #about .profile .social-badge .social-item a:hover {
+  color: var(--accent-ink);
+  background: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) #about .about-info section,
+html[data-theme]:not([data-theme="classic"]) #about .about-info section .strengths-list li:not(:last-child)::after {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) #about .info-badge header {
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) #about .info-badge p {
+  color: var(--text-muted);
+}
+
+html[data-theme="atelier"] #about .about-info section,
+html[data-theme="atelier-night"] #about .about-info section {
+  font-style: normal;
+}
+
+html[data-theme]:not([data-theme="classic"]) #resume .experience {
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 22px 18px;
+  margin: 28px 0;
+}
+
+html[data-theme="atelier"] #resume .experience,
+html[data-theme="atelier-night"] #resume .experience {
+  border-left: 3px solid var(--accent);
+}
+
+html[data-theme="terminal"] #resume .experience {
+  border-left: 2px solid var(--accent);
+  box-shadow: none;
+}
+
+html[data-theme="terminal"] #resume .experience .title-text,
+html[data-theme="terminal"] #resume .experience .desc h5 {
+  font-family: var(--font-mono);
+}
+
+html[data-theme]:not([data-theme="classic"]) #resume .experience .title-text {
+  color: var(--title-color);
+}
+
+html[data-theme]:not([data-theme="classic"]) #resume .experience .date,
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc ul li {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc h1,
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc h2,
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc h3,
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc h4,
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc h5,
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc h6,
+html[data-theme]:not([data-theme="classic"]) #resume .experience .desc.certifications-list h6 {
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item {
+  border-radius: var(--radius);
+}
+
+html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item .info {
+  background: var(--heading);
+  color: var(--bg);
+}
+
+html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item .info footer {
+  color: var(--accent);
+}
+
+html[data-theme]:not([data-theme="classic"]) #skill ul li i {
+  color: var(--accent);
+}
+
+html[data-theme]:not([data-theme="classic"]) #experience h3 {
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) #experience p {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) #testimonials .recommendation-container .item header {
+  color: var(--link);
+}
+
+html[data-theme]:not([data-theme="classic"]) #testimonials .recommendation-container .item section {
+  background: var(--card);
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+html[data-theme]:not([data-theme="classic"]) #testimonials .recommendation-container .item section ::before {
+  border-color: var(--card) transparent transparent transparent;
+}
+
+html[data-theme]:not([data-theme="classic"]) #testimonials .recommendation-container .item footer {
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) #contact {
+  background: var(--bg-elevated);
+}
+
+html[data-theme]:not([data-theme="classic"]) #contact .section-title {
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) .footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+html[data-theme]:not([data-theme="classic"]) .footer strong {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) .carousel-item {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+html[data-theme]:not([data-theme="classic"]) .carousel-btn {
+  background: color-mix(in srgb, var(--heading) 70%, transparent);
+}
+
+html[data-theme]:not([data-theme="classic"]) .carousel-dot {
+  background: color-mix(in srgb, var(--heading) 28%, transparent);
+}
+
+html[data-theme]:not([data-theme="classic"]) .carousel-dot.active {
+  background: var(--accent);
+}
+
+html[data-theme="terminal"] .carousel-item,
+html[data-theme="terminal"] .carousel-btn {
+  border-radius: 0;
+}
+
+@keyframes jc-blinker {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--accent); }
+}
+
+html[data-theme]:not([data-theme="classic"]) .intro #typer .typer-effect {
+  animation-name: typing, jc-blinker;
+}
+
+/* Blog surfaces */
+
+html[data-theme]:not([data-theme="classic"]) .blog-page {
+  background: var(--bg);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-lede,
+html[data-theme]:not([data-theme="classic"]) .blog-era-blurb,
+html[data-theme]:not([data-theme="classic"]) .blog-count,
+html[data-theme]:not([data-theme="classic"]) .blog-empty,
+html[data-theme]:not([data-theme="classic"]) .blog-source,
+html[data-theme]:not([data-theme="classic"]) .blog-card p,
+html[data-theme]:not([data-theme="classic"]) .blog-card-meta,
+html[data-theme]:not([data-theme="classic"]) .blog-timeline-kicker,
+html[data-theme]:not([data-theme="classic"]) .blog-era-dates,
+html[data-theme]:not([data-theme="classic"]) .blog-era-blurb-dates {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-timeline {
+  background: var(--bg-elevated);
+  border-color: var(--card-border);
+  border-radius: var(--radius);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-timeline-span,
+html[data-theme]:not([data-theme="classic"]) .blog-era-row:hover .blog-era-name,
+html[data-theme]:not([data-theme="classic"]) .blog-era-row.is-active .blog-era-name,
+html[data-theme]:not([data-theme="classic"]) .blog-card h3,
+html[data-theme]:not([data-theme="classic"]) .blog-card h3 a,
+html[data-theme]:not([data-theme="classic"]) .blog-article h1,
+html[data-theme]:not([data-theme="classic"]) .blog-prose,
+html[data-theme]:not([data-theme="classic"]) .blog-prose h1,
+html[data-theme]:not([data-theme="classic"]) .blog-prose h2,
+html[data-theme]:not([data-theme="classic"]) .blog-prose h3,
+html[data-theme]:not([data-theme="classic"]) .blog-prose h4 {
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-era-name {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-era-track {
+  background: color-mix(in srgb, var(--text) 10%, var(--bg));
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-era-row.is-active .blog-era-track {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-filter,
+html[data-theme]:not([data-theme="classic"]) .blog-tag-filter {
+  background: var(--bg-elevated);
+  border-color: var(--card-border);
+  color: var(--text);
+  border-radius: 999px;
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-filter:hover,
+html[data-theme]:not([data-theme="classic"]) .blog-filter:focus,
+html[data-theme]:not([data-theme="classic"]) .blog-tag-filter:hover,
+html[data-theme]:not([data-theme="classic"]) .blog-tag-filter:focus {
+  border-color: var(--heading);
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-filter.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-tag-filter.is-active {
+  background: var(--heading);
+  border-color: var(--heading);
+  color: var(--bg);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-empty {
+  border-color: var(--card-border);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-card {
+  background: var(--card);
+  border-color: var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: none;
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-card-cover,
+html[data-theme]:not([data-theme="classic"]) .blog-card:not(:has(.blog-card-cover))::before {
+  background: var(--bg-elevated);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-crumb a,
+html[data-theme]:not([data-theme="classic"]) .blog-source a,
+html[data-theme]:not([data-theme="classic"]) .blog-prose a {
+  color: var(--link);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-prose blockquote {
+  border-left-color: var(--accent);
+  color: var(--text-muted);
+  background: var(--quote);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-prose pre {
+  background: var(--heading);
+  color: var(--bg);
+  border-radius: var(--radius);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-prose :not(pre) > code {
+  background: var(--bg-elevated);
+  color: var(--heading);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-prose th,
+html[data-theme]:not([data-theme="classic"]) .blog-prose td {
+  border-color: var(--card-border);
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-prose hr {
+  border-top-color: var(--rule);
+}
+
+html[data-theme="atelier"] .blog-article h1,
+html[data-theme="atelier-night"] .blog-article h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+html[data-theme="signal"] .blog-article h1,
+html[data-theme="signal-night"] .blog-article h1,
+html[data-theme="terminal"] .blog-article h1 {
+  font-family: var(--font-display);
+}
+
+html[data-theme="terminal"] .blog-filter,
+html[data-theme="terminal"] .blog-tag-filter,
+html[data-theme="terminal"] .blog-card,
+html[data-theme="terminal"] .blog-timeline {
+  border-radius: 0;
+}
+
+@media (max-width: 1024px) {
+  html[data-theme]:not([data-theme="classic"]) #resume .experience {
+    grid-template: auto auto 1fr / 80px auto;
+    grid-template-areas: "icon title" "icon date" "desc desc";
+  }
+}
+
+@media (max-width: 768px) {
+  html[data-theme]:not([data-theme="classic"]) #resume .experience {
+    padding: 16px;
+  }
+
+  html[data-theme="atelier"] body,
+  html[data-theme="atelier-night"] body,
+  html[data-theme="signal"] body,
+  html[data-theme="signal-night"] body {
+    font-size: 16px;
+  }
+}
