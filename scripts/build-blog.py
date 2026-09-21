@@ -586,6 +586,8 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 \t<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />
 \t<link rel="stylesheet" href="{prefix}css/theme-icon.css" type="text/css" />
 \t<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />
+\t<link rel="stylesheet" href="{prefix}css/dark-operator.css" type="text/css" />
+\t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
 \t<link rel="preload"
 \t\thref="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
 \t\tas="style" onload="this.rel='stylesheet'" />
@@ -595,7 +597,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 {extra_head}
 </head>
 
-<body class="blog-page">
+<body class="blog-page dark-operator">
 \t<header class="header" id="home"></header>
 {nav_html("Writing", prefix)}
 \t<div class="container blog-wrap">

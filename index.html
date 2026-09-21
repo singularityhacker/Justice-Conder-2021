@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/theme-icon.css" type="text/css" />
 	<link rel="stylesheet" href="css/themes.css" type="text/css" />
-
-	<!-- google font -->
+	<link rel="stylesheet" href="css/dark-operator.css" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
 		as="style" onload="this.rel='stylesheet'" />
@@ -28,7 +28,7 @@
 		as="style" onload="this.rel='stylesheet'" />
 </head>
 
-<body>
+<body class="dark-operator">
 	<!-- home -->
 	<header class="header" id="home"></header>
 
@@ -37,7 +37,11 @@
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="index.html">
 				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
-				<!-- <p id="nav-name">Justice Conder</p> -->
+				<span class="brand-lockup">
+					<span class="brand-name">0xJustice</span>
+					<span class="brand-dot" aria-hidden="true"></span>
+					<span class="brand-role">Web3 Operator</span>
+				</span>
 			</a>
 		</div>
 		<ul class="nav-link title-text flex-container">
@@ -56,7 +60,11 @@
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="index.html">
 				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
-				<!-- <p id="nav-name">Justice Conder</p> -->
+				<span class="brand-lockup">
+					<span class="brand-name">0xJustice</span>
+					<span class="brand-dot" aria-hidden="true"></span>
+					<span class="brand-role">Web3 Operator</span>
+				</span>
 			</a>
 		</div>
 		<div class="nav-opener">
@@ -89,13 +97,29 @@
 				<li class="typer-effect role-dao">Delivery Architect</li>
 				<li class="typer-effect role-agile">Program Agilist</li>
 				<li class="typer-effect role-software">Software Engineer</li>
-
-
-
-
-
 			</ul>
 		</div>
+
+		<aside class="intro-panel" aria-label="Profile">
+			<div class="intro-panel-head">
+				<span>Profile</span>
+			</div>
+			<dl>
+				<div class="intro-panel-row">
+					<dt>Name</dt>
+					<dd>0xJustice</dd>
+				</div>
+				<div class="intro-panel-row">
+					<dt>Roles</dt>
+					<dd>Web3 Operator · Delivery Architect · Program Agilist · Software Engineer</dd>
+				</div>
+				<div class="intro-panel-row">
+					<dt>Archive</dt>
+					<dd><a href="blog.html">Writing</a></dd>
+				</div>
+			</dl>
+			<p class="intro-panel-quote">Operator, founder, and technologist — from code and architecture through org design, incentives, and capital allocation.</p>
+		</aside>
 
 		<div class="link-btn CVS">
 			Download CV:
@@ -1621,7 +1645,8 @@
 
 	<!-- Begin Footer -->
 	<div class="footer flex-container">
-		
+		<span class="brand-name">0xJustice</span>
+		<span class="brand-role">Web3 Operator</span>
 	</div>
 
 	<!-- <script defer src="js/script.js"></script> -->

@@ -204,6 +204,8 @@ def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> s
 	<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />
 	<link rel="stylesheet" href="{prefix}css/theme-icon.css" type="text/css" />
 	<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="{prefix}css/dark-operator.css" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
 		as="style" onload="this.rel='stylesheet'" />
@@ -212,7 +214,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> s
 		as="style" onload="this.rel='stylesheet'" />
 </head>
 
-<body class="blog-page">
+<body class="blog-page dark-operator">
 	<header class="header" id="home"></header>
 	<nav id="menu" class="navbar navbar-default desktop-only">
 		<div class="navbar-header">
