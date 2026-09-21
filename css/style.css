@@ -103,6 +103,13 @@
   .intro #typer {
     font-size: 18px !important;
   }
+  .intro .intro-headline {
+    font-size: 1.25rem;
+  }
+  .intro .intro-desc {
+    font-size: 0.95rem;
+    padding: 0 0.75rem;
+  }
 
   body {
     font-size: 16px !important;
@@ -1066,6 +1073,316 @@ body a:hover {
   
   .speaking-carousel-container {
     margin: 1rem auto;
+  }
+}
+
+/* FDE / FDS portfolio */
+.intro .name {
+  margin-bottom: 0.35rem;
+}
+.intro .intro-headline {
+  max-width: 40rem;
+  margin: 0.35rem auto 0.85rem;
+  font-family: Raleway, "Open Sans", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #ffde00;
+}
+.intro .intro-desc {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #f3f4f6;
+}
+.intro .intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.6rem 0 0.85rem;
+}
+.intro .intro-actions a {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  background: #ffde00;
+  color: #282828;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #ffde00;
+}
+.intro .intro-actions a:hover,
+.intro .intro-actions a:focus {
+  background: transparent;
+  color: #ffde00;
+}
+.intro .intro-support {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.how-i-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 0.5rem 0 2rem;
+}
+.how-i-work-item {
+  background: #f7f8f9;
+  padding: 1.25rem 1.2rem 1.35rem;
+  border-top: 4px solid #ffde00;
+}
+.how-i-work-item h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+  color: #282828;
+}
+.how-i-work-item p {
+  margin: 0 0 0.75rem;
+  color: #4a5563;
+  line-height: 1.5;
+}
+.how-i-work-item .connected {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #6b7280;
+}
+.how-i-work-item .connected a {
+  color: #282828;
+  font-weight: 600;
+}
+
+.work-featured {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 0.25rem 0 1.75rem;
+}
+.work-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 18px rgba(40, 40, 40, 0.06);
+}
+.work-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.work-card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1rem 1.05rem 1.15rem;
+  flex: 1;
+}
+.work-card header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #282828;
+}
+.work-card .work-kind {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+.work-card p {
+  margin: 0;
+  color: #4a5563;
+  line-height: 1.5;
+}
+.work-card footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+.work-card footer a,
+.work-card footer .prep-label {
+  display: inline-block;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.work-card footer a {
+  background: #ffde00;
+  color: #282828;
+}
+.work-card footer a.secondary {
+  background: #f3f4f6;
+  color: #282828;
+}
+.prep-label {
+  background: #282828;
+  color: #ffde00;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+}
+
+.related-work {
+  margin: 0 0 2rem;
+  padding: 1.1rem 1.2rem;
+  background: #f7f8f9;
+  border: 1px solid #e5e7eb;
+}
+.related-work h3 {
+  margin: 0 0 0.4rem;
+}
+.related-work p {
+  margin: 0 0 0.75rem;
+  color: #4a5563;
+}
+.related-work a {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.28rem 0.65rem;
+  background: #ffde00;
+  color: #282828;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.more-work-label {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.experience-links {
+  margin-top: 0.45rem;
+}
+.experience-links a {
+  margin-right: 0.75rem;
+}
+
+.selected-writing-list,
+.talks-list,
+.book-list,
+.cert-feature,
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+.selected-writing-list li,
+.talks-list li,
+.book-list li {
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid #eee;
+  color: #4a5563;
+  line-height: 1.5;
+}
+.selected-writing-list a,
+.talks-list a,
+.book-list a {
+  color: #282828;
+  font-weight: 700;
+}
+.talks-cities {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+}
+
+.book-feature {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin: 0 0 1.5rem;
+}
+.book-feature img {
+  width: 160px;
+  height: auto;
+  display: block;
+  box-shadow: 0 8px 16px rgba(40, 40, 40, 0.12);
+}
+.book-feature h3 {
+  margin: 0 0 0.45rem;
+}
+.earlier-pubs {
+  color: #6b7280;
+  margin: 0 0 1.75rem;
+}
+
+.about-compact {
+  margin-top: 0.5rem;
+}
+.about-compact .education-line,
+.about-compact .cert-feature {
+  color: #4a5563;
+  line-height: 1.55;
+}
+.cert-feature li {
+  margin: 0 0 0.35rem;
+}
+
+.contact-block {
+  margin: 0 0 2rem;
+}
+.contact-list li {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+.contact-list a {
+  color: #282828;
+  font-weight: 600;
+}
+
+.case-page .container {
+  max-width: 780px;
+  padding: 3rem 1.25rem 4rem;
+}
+.case-page .prep-banner {
+  display: inline-block;
+  margin: 0 0 1rem;
+}
+.case-page h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #282828;
+}
+.case-page .case-lede {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #374151;
+}
+.case-page .case-facts,
+.case-page .case-links {
+  margin: 1.25rem 0;
+  padding-left: 1.2rem;
+  color: #4a5563;
+  line-height: 1.55;
+}
+.case-crumb {
+  margin: 0 0 1.25rem;
+  color: #6b7280;
+}
+.case-crumb a {
+  color: #282828;
+}
+
+@media (max-width: 900px) {
+  .how-i-work-grid,
+  .work-featured,
+  .book-feature {
+    grid-template-columns: 1fr;
+  }
+  .book-feature img {
+    width: 140px;
   }
 }
 
