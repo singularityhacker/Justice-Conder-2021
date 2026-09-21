@@ -805,7 +805,7 @@ body a:hover {
 
 /* Speaking locations map */
 .talks-map-wrap {
-  max-width: 920px;
+  max-width: 800px;
   margin: 1.25rem auto 0.25rem;
   padding: 0 1rem;
 }
@@ -814,32 +814,39 @@ body a:hover {
   display: block;
   width: 100%;
   height: auto;
-  background: #282828;
+  background: #1f1f1f;
   border-radius: 8px;
 }
 
 .talks-map-ocean {
-  fill: #282828;
+  fill: #1f1f1f;
+}
+
+.talks-map-grid {
+  stroke: rgba(255, 255, 255, 0.06);
+  stroke-width: 1;
 }
 
 .talks-map-land {
-  fill: #4a4a4a;
+  fill: #6d6d6d;
+  stroke: #7d7d7d;
+  stroke-width: 0.6;
 }
 
 .talks-map-pin {
   fill: #ffde00;
-  stroke: #282828;
+  stroke: #1f1f1f;
   stroke-width: 1.4;
 }
 
 .talks-map-label {
   fill: #fffaf0;
   font-family: "Open Sans", "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   paint-order: stroke;
-  stroke: #282828;
-  stroke-width: 3.5px;
+  stroke: #1f1f1f;
+  stroke-width: 2px;
   stroke-linejoin: round;
 }
 

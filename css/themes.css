@@ -726,7 +726,12 @@ html[data-theme]:not([data-theme="classic"]) .talks-map-ocean {
 }
 
 html[data-theme]:not([data-theme="classic"]) .talks-map-land {
-  fill: color-mix(in srgb, var(--heading) 22%, var(--bg-elevated));
+  fill: color-mix(in srgb, var(--heading) 34%, var(--bg-elevated));
+  stroke: color-mix(in srgb, var(--heading) 44%, var(--bg-elevated));
+}
+
+html[data-theme]:not([data-theme="classic"]) .talks-map-grid {
+  stroke: color-mix(in srgb, var(--heading) 10%, transparent);
 }
 
 html[data-theme]:not([data-theme="classic"]) .talks-map-pin {
