@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="ClawBank Status Update — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ClawBank Status Update — Justice Conder</title>
+	<link rel="icon" href="../images/icon/cubes-icon.gif" type="image/gif" />
+	<link rel="shortcut icon" href="../images/icon/cubes-icon.gif" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="../css/consultant.css" type="text/css" />
+</head>
+
+<body class="blog-page">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+				<time datetime="2026-03-17">March 17, 2026</time>
+			</div>
+			<h1>ClawBank Status Update</h1>
+			<p class="blog-source">Originally published at <a href="https://x.com/clawbankco/article/2033997750145036498" target="_blank" rel="noopener">https://x.com/clawbankco/article/2033997750145036498</a></p>
+			<p class="blog-cover"><img src="media/909fb4d034da-clawbank-status-update.jpg" alt=""></p>
+			<div class="blog-prose">
+<p>This is an update on the current state of ClawBank, how it started, and where it's heading.</p>
+<p>The first ClawBank release was basically an MCP server that connected to the Wise banking infra. People had to first create an account on Wise, obtain their API keys, and then add them to the MCP server. Basic, but a compelling proof of concept, no doubt.</p>
+<p>That got us moving money on trad rails, but was also intrinsically limited.</p>
+<p>Wise forbids crypto integration in its TOS. We worked hard to work around it, but this fundamental limitation, along with the inelegant onboarding process, fundamentally limited what ClawBank could be.</p>
+<p>After seeing the tremendous response from the first few versions, I knew I needed a more enlightened architecture. I needed a solution that provided easy and integrated onboarding and was fundamentally crypto-friendly. This is where everything changed. This new platform was built out last week. The very first invites for beta testers will go out in the next few days.</p>
+<h2>Alpha Experience</h2>
+<p>This next integrated platform release of ClawBank will be an entirely different experience and address everything we want in seed form. It will consist of the following flow and capabilities:</p>
+<ul>
+<li>
+<p>Magic link signup (no passwords)</p>
+</li>
+<li>
+<p>Abbreviated KYC: basic info, scan front/back of driver's license, click-through agreements</p>
+</li>
+<li>
+<p>Provisioning: 1 virtual bank account, several crypto wallets</p>
+</li>
+<li>
+<p>Fiat: send money into the virtual account, buy and sell crypto programmatically</p>
+</li>
+<li>
+<p>Crypto: deposit to a separate wallet, send out from that wallet</p>
+</li>
+<li>
+<p>Access: API key, usable via an MCP server or the ClawBank CLI</p>
+</li>
+</ul>
+<p>The goal is simple. Any agent should be able to run its own fiat and crypto accounts without a human babysitter (subject to the fundamental legal constraints of U.S. law).</p>
+<h2>What's next</h2>
+<p>What I'm building toward next is the stuff that makes this feel like a real interface to meatspace bureaucracy: spinning up companies, virtual addresses, and other high-friction objects that usually require a long email chain and a patient human.</p>
+<p>For the broader framing, see my last public note:</p>
+<p class="blog-embed-cite"><a href="https://x.com/singularityhack/status/2029279897957310715">@singularityhack · Mar 4</a></p>
+<p><img alt="Article cover image" src="../media/702ade20ed56-hclxbtbboaan8p-format-jpg-name-medium.jpg" /></p>
+<p>The New Machine Economy</p>
+<p>We're past the event horizon. I don't say that for effect. If you're on the timeline, you already know. The speed of change isn't slowing down either. I don't think AGI is around the corner, but it's...</p>
+<h2>Interfacing with slow-time Institutions</h2>
+<p>No matter how fast ClawBank moves, the institutional rails we're interfacing with still move on old-world slow time. This has been one of the most surprising findings thus far. Our info partners said onboarding would take three to six months. 24 hours later, we were sending emails saying we were ready for prod keys. People unfamiliar with the accelerated timeline of people riding the technological singularity shock wave are struggling to process what's happening.</p>
+<h2>The ClawBank Token</h2>
+<p>Another shortcoming of the previous versions of ClawBank was that there was no way to capture value directly. Anyone could fork and run the ClawBank MCP server. With the new platform, we'll be able to charge fees on certain economic activities or business formation filings. There are several ways we can tie the token into this. We can make it so the token holders don't pay those fees, or use those fees to do autonomous token buybacks. The possibilities are really quite open. What's important to know is that these are first-class, top-of-mind priorities and that they'll be addressed with urgency.</p>
+<h2>Glowup Redesign</h2>
+<p>I have tapped the best designer I've ever met and worked with over the past several years, and the stars have aligned. He's agreed to take our humble yet respectable beginnings and raise them ten notches. Concurrent with build activity and progress, both the website and the platform will receive a massive glow-up treatment that will make ClawBank immediately impressionable as an investable product. That work starts this week.</p>
+<h2>Don't miss the Boat</h2>
+<p>It's easy to get buried in every AI and agent-related announcement right now. Every headline, every post claims to be the bleeding-edge solution. The reality is that giving an agent any type of control or access to an already existing digital ecosystem is almost trivial. What is not trivial is connecting them to hard-to-access but well-established institutional rails. Don't miss the signal from the noise. If it were easy, it would already be available. What ClawBank is doing is shocking in its ambition. Even when basic is explained to normies, it leaves their heads spinning, and we're only just getting started. Be sure to add your email to the ClawBank signup to be notified of the release. LFG</p>
+<p>Website:</p>
+<p><a href="https://clawbank.co/">ClawBank.co</a></p>
+			</div>
+		</article>
+	</div>
+	<div class="footer flex-container"></div>
+
+</body>
+
+</html>

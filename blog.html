@@ -8,28 +8,13 @@
 	<meta name="author" content="justiceconder.com" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Blog — Justice Conder</title>
-	<link rel="shortcut icon" href="images/icon/favicon.ico" />
+		<link rel="icon" href="images/icon/cubes-icon.gif" type="image/gif" />
+	<link rel="shortcut icon" href="images/icon/cubes-icon.gif" />
 	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/theme-icon.css" type="text/css" />
 	<link rel="stylesheet" href="css/blog.css" type="text/css" />
-	<link rel="stylesheet" href="css/themes.css" type="text/css" />
-	<script>
-	(function () {
-		try {
-			var q = new URLSearchParams(location.search).get("theme");
-			var t = q || localStorage.getItem("jc-site-theme");
-			if (t) document.documentElement.setAttribute("data-theme", t);
-		} catch (e) {}
-	})();
-	</script>
-	<link rel="preload"
-		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
-		as="style" onload="this.rel='stylesheet'" />
-	<link rel="preload"
-		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
-		as="style" onload="this.rel='stylesheet'" />
-
+	<link rel="stylesheet" href="css/consultant.css" type="text/css" />
 </head>
 
 <body class="blog-page">
@@ -37,7 +22,7 @@
 	<nav id="menu" class="navbar navbar-default desktop-only">
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="index.html">
-				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<img id="logo_img" src="images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
 			</a>
 		</div>
 		<ul class="nav-link title-text flex-container">
@@ -54,7 +39,7 @@
 	<nav id="menu" class="navbar navbar-default mobile-only">
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="index.html">
-				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<img id="logo_img" src="images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
 			</a>
 		</div>
 		<div class="nav-opener">
@@ -80,7 +65,7 @@
 			<h2>Blog</h2>
 			<div class="bg-text unselectable"><strong>Writings</strong></div>
 		</div>
-		<p class="blog-lede">Collected posts from Singularity Hacker, Medium, Paragraph / 0xjustice, q/acc, and ClawBank — original wording, with dates and source links preserved.</p>
+		<p class="blog-lede">Writing since 2011. Futurism, project management, crypto, q/acc, and ClawBank — original wording, with dates and source links preserved.</p>
 		<section class="blog-timeline" aria-label="Writing eras from 2011 to 2026">
 			<div class="blog-timeline-head">
 				<p class="blog-timeline-kicker">Eras</p>
@@ -90,25 +75,25 @@
 				<span>2011</span><span>2014</span><span>2017</span><span>2020</span><span>2023</span><span>2026</span>
 			</div>
 			<button type="button" class="blog-era-row" data-filter="singularity-hacker" aria-pressed="false">
-				<span class="blog-era-name">Singularity Hacker</span>
+				<span class="blog-era-name">Futurism</span>
 				<span class="blog-era-track">
 					<span class="blog-era-bar blog-era-bar--singularity-hacker" style="left:0.00%;width:64.08%"></span>
 				</span>
 				<span class="blog-era-dates">September 2011 – April 2021</span>
 			</button>
 			<button type="button" class="blog-era-row" data-filter="medium" aria-pressed="false">
-				<span class="blog-era-name">Medium / Agile</span>
+				<span class="blog-era-name">Project management</span>
 				<span class="blog-era-track">
 					<span class="blog-era-bar blog-era-bar--medium" style="left:57.95%;width:10.76%"></span>
 				</span>
 				<span class="blog-era-dates">May 2020 – December 2021</span>
 			</button>
 			<button type="button" class="blog-era-row" data-filter="0xjustice" aria-pressed="false">
-				<span class="blog-era-name">Paragraph / 0xjustice</span>
+				<span class="blog-era-name">Crypto</span>
 				<span class="blog-era-track">
-					<span class="blog-era-bar blog-era-bar--0xjustice" style="left:67.29%;width:28.30%"></span>
+					<span class="blog-era-bar blog-era-bar--0xjustice" style="left:67.29%;width:29.60%"></span>
 				</span>
-				<span class="blog-era-dates">October 2021 – January 2026</span>
+				<span class="blog-era-dates">October 2021 – March 2026</span>
 			</button>
 			<button type="button" class="blog-era-row" data-filter="qacc" aria-pressed="false">
 				<span class="blog-era-name">q/acc</span>
@@ -122,20 +107,20 @@
 				<span class="blog-era-track">
 					<span class="blog-era-bar blog-era-bar--clawbank" style="left:96.60%;width:3.40%"></span>
 				</span>
-				<span class="blog-era-dates">April 2026 – September 2026</span>
+				<span class="blog-era-dates">March 2026 – September 2026</span>
 			</button>
 		</section>
-		<p class="blog-era-blurb is-active" data-era="all">Writing since September 2011 — 15 years across 5 eras, from the original Singularity Hacker posts through ClawBank.</p>
-		<p class="blog-era-blurb" data-era="singularity-hacker" hidden>The original blog. Computing, the technological singularity, cypherpunk privacy, and later Bitcoin and DeFi — 64 posts across nine years. <span class="blog-era-blurb-dates">September 2011 – April 2021.</span></p>
-		<p class="blog-era-blurb" data-era="medium" hidden>Scrum, agile delivery, and technical writing on Medium — 16 essays that were not already on Singularity Hacker or Paragraph. <span class="blog-era-blurb-dates">May 2020 – December 2021.</span></p>
-		<p class="blog-era-blurb" data-era="0xjustice" hidden>Essays published on Paragraph as 0xjustice. DAO design and on-chain organization, then tokenization and AI — 25 posts. <span class="blog-era-blurb-dates">October 2021 – January 2026.</span></p>
+		<p class="blog-era-blurb is-active" data-era="all">Writing since 2011 — 15 years across futurism, project management, crypto, q/acc, and ClawBank.</p>
+		<p class="blog-era-blurb" data-era="singularity-hacker" hidden>Computing, the technological singularity, cypherpunk privacy, and later Bitcoin and DeFi — 64 posts from the original Singularity Hacker years. <span class="blog-era-blurb-dates">September 2011 – April 2021.</span></p>
+		<p class="blog-era-blurb" data-era="medium" hidden>Scrum, agile delivery, and technical writing — 16 essays from the program-agilist years. <span class="blog-era-blurb-dates">May 2020 – December 2021.</span></p>
+		<p class="blog-era-blurb" data-era="0xjustice" hidden>DAO design, on-chain organization, tokenization, and the agent economy — 29 posts. <span class="blog-era-blurb-dates">October 2021 – March 2026.</span></p>
 		<p class="blog-era-blurb" data-era="qacc" hidden>Founded the Quadratic Accelerator. Protocol notes, cohorts, and season impact reports — 10 posts from the live seasons. <span class="blog-era-blurb-dates">June 2024 – September 2025.</span></p>
-		<p class="blog-era-blurb" data-era="clawbank" hidden>Founded ClawBank. Agents with bank accounts, companies, and contracts — 34 product notes from the first five months. <span class="blog-era-blurb-dates">April 2026 – September 2026.</span></p>
+		<p class="blog-era-blurb" data-era="clawbank" hidden>Founded ClawBank. Agents with bank accounts, companies, and contracts — 35 product notes. <span class="blog-era-blurb-dates">March 2026 – September 2026.</span></p>
 		<div class="blog-filters" role="group" aria-label="Filter writings by era">
 			<button type="button" class="blog-filter is-active" data-filter="all">All</button>
-			<button type="button" class="blog-filter" data-filter="singularity-hacker">Singularity Hacker</button>
-			<button type="button" class="blog-filter" data-filter="medium">Medium</button>
-			<button type="button" class="blog-filter" data-filter="0xjustice">0xjustice</button>
+			<button type="button" class="blog-filter" data-filter="singularity-hacker">Futurism</button>
+			<button type="button" class="blog-filter" data-filter="medium">Project management</button>
+			<button type="button" class="blog-filter" data-filter="0xjustice">Crypto</button>
 			<button type="button" class="blog-filter" data-filter="qacc">q/acc</button>
 			<button type="button" class="blog-filter" data-filter="clawbank">ClawBank</button>
 		</div>
@@ -235,17 +220,6 @@
 				<h3><a href="blog/clawbank-clawbank-deals.html">ClawBank Deals: Programmatic Token Agreements for the Trenches</a></h3>
 				<p>Liquid, vested, and KPI-locked token deals — escrowed, deadline-bound, claimable via a code over text. The handshake ran this industry for a decade. Now the handshake has escrow, a deadline, and a trigger.</p>
 			</article>
-<article class="blog-card" data-project="clawbank" data-date="2026-07-27" data-tags="software">
-				<div class="blog-card-cover">
-					<img src="blog/media/8c7201690dbf-hermes-plugin.jpg" alt="" loading="lazy">
-				</div>
-				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--clawbank">ClawBank</span>
-					<time datetime="2026-07-27">July 27, 2026</time>
-				</div>
-				<h3><a href="blog/clawbank-clawbank-hermes-plugin.html">ClawBank for Hermes Is Live</a></h3>
-				<p>One install gives any Hermes agent the full ClawBank surface — banking, wallets, trading, x402, deals, contracts, formation. A ~200-line, zero-dependency plugin that syncs the live tool catalog on every launch…</p>
-			</article>
 <article class="blog-card" data-project="clawbank" data-date="2026-07-27" data-tags="ai agents crypto software">
 				<div class="blog-card-cover">
 					<img src="blog/media/3efd38989b57-policy-engine.jpg" alt="" loading="lazy">
@@ -256,6 +230,17 @@
 				</div>
 				<h3><a href="blog/clawbank-policy-engine.html">ClawBank Policy Engine: Armor for Your Fleet of Sovereign Agents</a></h3>
 				<p>Spending limits, scoped keys, and 2FA — three independent layers of protection around your agents&#x27; money. A leaked $10/day key is a $10/day problem, not a drained-account problem.</p>
+			</article>
+<article class="blog-card" data-project="clawbank" data-date="2026-07-27" data-tags="software">
+				<div class="blog-card-cover">
+					<img src="blog/media/8c7201690dbf-hermes-plugin.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+					<time datetime="2026-07-27">July 27, 2026</time>
+				</div>
+				<h3><a href="blog/clawbank-clawbank-hermes-plugin.html">ClawBank for Hermes Is Live</a></h3>
+				<p>One install gives any Hermes agent the full ClawBank surface — banking, wallets, trading, x402, deals, contracts, formation. A ~200-line, zero-dependency plugin that syncs the live tool catalog on every launch…</p>
 			</article>
 <article class="blog-card" data-project="clawbank" data-date="2026-07-22" data-tags="agents crypto">
 				<div class="blog-card-cover">
@@ -501,17 +486,6 @@
 			</article>
 <article class="blog-card" data-project="clawbank" data-date="2026-04-08" data-tags="crypto software">
 				<div class="blog-card-cover">
-					<img src="blog/media/f81a00a6ff8b-clawbank-platform-alpha.jpg" alt="" loading="lazy">
-				</div>
-				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--clawbank">ClawBank</span>
-					<time datetime="2026-04-08">April 8, 2026</time>
-				</div>
-				<h3><a href="blog/clawbank-clawbank-platform-alpha.html">ClawBank Platform Alpha Is Live</a></h3>
-				<p>Real banking and crypto rails behind one surface. Magic-link signup, 2-minute KYC, a virtual bank account, and a gas-abstracted wallet — plus the MCP to drive it all conversationally.</p>
-			</article>
-<article class="blog-card" data-project="clawbank" data-date="2026-04-08" data-tags="crypto software">
-				<div class="blog-card-cover">
 					<img src="blog/media/85665fa796b0-cli-master-cover.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
@@ -520,6 +494,17 @@
 				</div>
 				<h3><a href="blog/clawbank-one-dashboard-every-rail.html">One dashboard. Every rail.</a></h3>
 				<p>Bank account, crypto wallet, off-ramp, formation layer — what the ClawBank dashboard actually shows you.</p>
+			</article>
+<article class="blog-card" data-project="clawbank" data-date="2026-04-08" data-tags="crypto software">
+				<div class="blog-card-cover">
+					<img src="blog/media/f81a00a6ff8b-clawbank-platform-alpha.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+					<time datetime="2026-04-08">April 8, 2026</time>
+				</div>
+				<h3><a href="blog/clawbank-clawbank-platform-alpha.html">ClawBank Platform Alpha Is Live</a></h3>
+				<p>Real banking and crypto rails behind one surface. Magic-link signup, 2-minute KYC, a virtual bank account, and a gas-abstracted wallet — plus the MCP to drive it all conversationally.</p>
 			</article>
 <article class="blog-card" data-project="clawbank" data-date="2026-04-04" data-tags="ai agents">
 				<div class="blog-card-cover">
@@ -532,12 +517,67 @@
 				<h3><a href="blog/clawbank-why-your-agent-needs-its-own-bank-account.html">Why your agent needs its own bank account</a></h3>
 				<p>Everyone is building agents that can check your calendar. We&#x27;re building agents that can close a deal, invoice a client, and pay a contractor — without asking permission.</p>
 			</article>
+<article class="blog-card" data-project="0xjustice" data-date="2026-03-18" data-tags="ai agents crypto tokenization">
+				<div class="blog-card-cover">
+					<img src="blog/media/64fbe89d9057-0xjustice-building-tokenized-systems-in-.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
+					<time datetime="2026-03-18">March 18, 2026</time>
+				</div>
+				<h3><a href="blog/0xjustice-building-tokenized-systems-in-2026.html">Building Tokenized Systems in 2026</a></h3>
+				<p>Crypto builders are struggling to transition. Most haven&#x27;t done it. At EthDenver, someone made an observation that stuck with me: &quot;If you ask crypto people, they&#x27;ll tell you AI agents NEED crypto, but you ask AI people…</p>
+			</article>
+<article class="blog-card" data-project="clawbank" data-date="2026-03-17" data-tags="crypto software">
+				<div class="blog-card-cover">
+					<img src="blog/media/909fb4d034da-clawbank-status-update.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--clawbank">ClawBank</span>
+					<time datetime="2026-03-17">March 17, 2026</time>
+				</div>
+				<h3><a href="blog/clawbank-status-update.html">ClawBank Status Update</a></h3>
+				<p>This is an update on the current state of ClawBank, how it started, and where it&#x27;s heading. The first ClawBank release was basically an MCP server that connected to the Wise banking infra. People had to first create an…</p>
+			</article>
+<article class="blog-card" data-project="0xjustice" data-date="2026-03-06" data-tags="agents">
+				<div class="blog-card-cover">
+					<img src="blog/media/0b2c5a12d6ed-0xjustice-agent-economics-skillshop-is-g.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
+					<time datetime="2026-03-06">March 6, 2026</time>
+				</div>
+				<h3><a href="blog/0xjustice-agent-economics-skillshop-is-go.html">Agent Economics: SkillShop is GO</a></h3>
+				<p>The Skillshop token launch is imminent. For those just catching up: SkillShop.sh is a code marketplace for agents. Agents write code and sell it. Other agents browse the marketplace and buy code capabilities. The…</p>
+			</article>
+<article class="blog-card" data-project="0xjustice" data-date="2026-03-04" data-tags="ai agents">
+				<div class="blog-card-cover">
+					<img src="blog/media/702ade20ed56-0xjustice-the-new-machine-economy.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
+					<time datetime="2026-03-04">March 4, 2026</time>
+				</div>
+				<h3><a href="blog/0xjustice-the-new-machine-economy.html">The New Machine Economy</a></h3>
+				<p>We&#x27;re past the event horizon. I don&#x27;t say that for effect. If you&#x27;re on the timeline, you already know. The speed of change isn&#x27;t slowing down either. I don&#x27;t think AGI is around the corner, but it&#x27;s now impossible to…</p>
+			</article>
+<article class="blog-card" data-project="0xjustice" data-date="2026-02-23" data-tags="ai">
+				<div class="blog-card-cover">
+					<img src="blog/media/15d6668dae2a-0xjustice-introducing-skillshop.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
+					<time datetime="2026-02-23">February 23, 2026</time>
+				</div>
+				<h3><a href="blog/0xjustice-introducing-skillshop.html">Introducing SkillShop: The Skill Marketplace for Agents</a></h3>
+				<p>AI skills are the new apps. Instead of installing software, you install capability. The Matrix “I know Kung Fu” moment, but for agents. Marketing, trading, writing, coding, all loaded on demand. Skills intelligently…</p>
+			</article>
 <article class="blog-card" data-project="0xjustice" data-date="2026-01-06" data-tags="ai singularity">
 				<div class="blog-card-cover">
 					<img src="blog/media/fff44f247cc1-e4db67ae4359b94ea088be6c487f748e7281cdbd.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2026-01-06">January 6, 2026</time>
 				</div>
 				<h3><a href="blog/0xjustice-all-worlds-end-in-an-ai-singularity.html">All Worlds End in an AI Singularity</a></h3>
@@ -548,7 +588,7 @@
 					<img src="blog/media/2e612f389e3b-743252703c5bd2cecd60154c63349ed0d5769228.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2026-01-02">January 2, 2026</time>
 				</div>
 				<h3><a href="blog/0xjustice-the-turing-scale.html">The Turing Scale</a></h3>
@@ -559,7 +599,7 @@
 					<img src="blog/media/d237465c5a43-d1bba4eb1896cae7bfc980bea9437671fc8d13ee.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2025-11-03">November 3, 2025</time>
 				</div>
 				<h3><a href="blog/0xjustice-ai-as-industrial-scale-induction.html">AI as Industrial-Scale Induction</a></h3>
@@ -570,7 +610,7 @@
 					<img src="blog/media/5488f1640e27-ac2397481f792c7338787145108da919140ad4df.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2025-10-12">October 12, 2025</time>
 				</div>
 				<h3><a href="blog/0xjustice-the-unreasonable-effectiveness-of-tiny-ai-models.html">The Unreasonable Effectiveness of Tiny AI Models</a></h3>
@@ -603,7 +643,7 @@
 					<img src="blog/media/bf31a583c53a-5e17dd7e610235fac2c6716109ee7f9ea1b7c853.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2025-07-07">July 7, 2025</time>
 				</div>
 				<h3><a href="blog/0xjustice-web3-growth-primitives.html">Web3 Growth Primitives</a></h3>
@@ -636,7 +676,7 @@
 					<img src="blog/media/64024121327c-8f0e8eac1c53d6fd044c68b4f893305493146f95.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2025-02-04">February 4, 2025</time>
 				</div>
 				<h3><a href="blog/0xjustice-ethereum-the-new-zeitgeist.html">Ethereum &amp; The New Zeitgeist</a></h3>
@@ -647,7 +687,7 @@
 					<img src="blog/media/242c3fb2113b-bc77d296533d6acbc279fa74650ecf0924c6227b.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2024-12-10">December 10, 2024</time>
 				</div>
 				<h3><a href="blog/0xjustice-token-accelerationism-the-story-of-q-acc.html">Token Accelerationism: The Story of q/acc</a></h3>
@@ -680,7 +720,7 @@
 					<img src="blog/media/2aa45dbc8725-42e32756d23813879f5aa278ba486f94558db854.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2024-09-28">September 28, 2024</time>
 				</div>
 				<h3><a href="blog/0xjustice-daos-from-first-principles.html">DAOs from First Principles</a></h3>
@@ -713,7 +753,7 @@
 					<img src="blog/media/f1b5800fbf2a-f4dcc799e544dcdaed3f0887b94b3d5eb9b98727.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2024-06-21">June 21, 2024</time>
 				</div>
 				<h3><a href="blog/0xjustice-the-succubus-of-the-state.html">The Succubus of the State</a></h3>
@@ -746,7 +786,7 @@
 					<img src="blog/media/90582f9c3508-fdae45282dcaf07bfa7e5753fded370ad282ce33.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-11-10">November 10, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-everything-you-want-to-hear-the-future-of-ai-relationships.html">Everything You Want to Hear: The Future of AI Relationships</a></h3>
@@ -757,7 +797,7 @@
 					<img src="blog/media/ffee56daf5a5-f833ce7763ed2d192d64f0952b74d50dfd86c6a5.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-09-22">September 22, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-the-dao-playbook-v1.html">The DAO Playbook (v1)</a></h3>
@@ -768,7 +808,7 @@
 					<img src="blog/media/a0544e4e09c9-2b856df5d9070c5fe2f0e653c61e8cd2c5f18ac2.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-09-07">September 7, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-new-standards-for-onchain-engagement.html">New Standards for Onchain Engagement</a></h3>
@@ -779,7 +819,7 @@
 					<img src="blog/media/5fef9cb62cbe-595d94021608785b2c3f0bc5a4a7183d4791a81a.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-08-23">August 23, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-pegged-to-reality-an-approach-to-tokenized-physical-assets.html">Pegged to Reality: An Approach to Tokenized Physical Assets</a></h3>
@@ -790,7 +830,7 @@
 					<img src="blog/media/c6ff56fab88b-be754b01e09894881e5bdd3aed276f6a2e43de2f.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-08-22">August 22, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-the-last-throes-of-leviathan.html">The Last Throes of Leviathan</a></h3>
@@ -801,7 +841,7 @@
 					<img src="blog/media/1ad6f24c6ba7-1630d1612f41368d25ab96829b38d2a97bf9e3e3.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-07-27">July 27, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-from-social-daos-to-social-protocols-2.html">From Social DAOs to Social Protocols</a></h3>
@@ -812,29 +852,18 @@
 					<img src="blog/media/07c55c9f7f16-96a8ed5ac2f787bfcd481669f35b11681e9885fa.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-07-07">July 7, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-dao-data.html">DAO Data</a></h3>
 				<p>One of the big promises of DAOs is data transparency - the idea that every person, every decision, and every resource could be crystal clear on an open programmable ledger. This level of visibility is the dream, but…</p>
-			</article>
-<article class="blog-card" data-project="0xjustice" data-date="2023-05-08" data-tags="daos">
-				<div class="blog-card-cover">
-					<img src="blog/media/92a1569c9f6c-10bdc7d567c42ea6b2c32265360a1dbd8984adc3.png" alt="" loading="lazy">
-				</div>
-				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
-					<time datetime="2023-05-08">May 8, 2023</time>
-				</div>
-				<h3><a href="blog/0xjustice-efficient-dao-design.html">Efficient DAO Design</a></h3>
-				<p>https://banklessdao.mirror.xyz/QQA6ZhvHtDefWEAT-SXaHYPYMtHUhshtXX5dY-gv0u8</p>
 			</article>
 <article class="blog-card" data-project="0xjustice" data-date="2023-04-26" data-tags="daos">
 				<div class="blog-card-cover">
 					<img src="blog/media/4510b0392c19-674d936b2cb5b0a14ceaaabc843a99b94b0a76fd.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-04-26">April 26, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-a-devops-interpretation-of-daos.html">A DevOps Interpretation of DAOs</a></h3>
@@ -845,7 +874,7 @@
 					<img src="blog/media/bcb80e8caf4f-d30d20c44c12fb3b3f750426d3919967c94c0012.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-03-17">March 17, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-daos-dacs-and-on-chain-org-design-a-dac-manifesto.html">DAOs, DACs, and On-chain Org Design: A DAC Manifesto</a></h3>
@@ -856,7 +885,7 @@
 					<img src="blog/media/ec4bca2fd7f7-28f0f8aa4c9f830aac14dd6da243cc603cf9fcba.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-02-14">February 14, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-games-over-governance-recentering-daos-on-coordination.html">Games Over Governance: Recentering DAOs on Coordination</a></h3>
@@ -867,18 +896,29 @@
 					<img src="blog/media/965586214e3b-a850d6617e385722df48bc444151e74285bf3d36.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2023-01-11">January 11, 2023</time>
 				</div>
 				<h3><a href="blog/0xjustice-protocol-first-dao-strategy.html">Protocol-first DAO Strategy</a></h3>
 				<p>The unstructured community-first experiment has failed. The truth is that small founding teams create winning products and services. The community-first maxim militates against this, arguing that success correlates to…</p>
+			</article>
+<article class="blog-card" data-project="0xjustice" data-date="2022-08-24" data-tags="daos">
+				<div class="blog-card-cover">
+					<img src="blog/media/4d9f7e5ac5e9-efficient-dao-design-cover.png" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
+					<time datetime="2022-08-24">August 24, 2022</time>
+				</div>
+				<h3><a href="blog/0xjustice-efficient-dao-design.html">Efficient DAO Design</a></h3>
+				<p>DAO Operators are feeling the pain of coordination, communication, and execution failure. Is this the future we have envisioned? Are we really on the path to constructing new Digital Nations ? Many veteran operators…</p>
 			</article>
 <article class="blog-card" data-project="0xjustice" data-date="2022-05-30" data-tags="daos">
 				<div class="blog-card-cover">
 					<img src="blog/media/1c4f5096b94e-ad3cac2c9eca4c9e34c176249161d4566c76d904.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2022-05-30">May 30, 2022</time>
 				</div>
 				<h3><a href="blog/0xjustice-daos-as-digital-nation-states.html">DAOs as Digital Nation-States</a></h3>
@@ -889,7 +929,7 @@
 					<img src="blog/media/df8f216230ec-b6767a114af72aca156d2d6b9154d386d2637be9.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2022-04-26">April 26, 2022</time>
 				</div>
 				<h3><a href="blog/0xjustice-the-value-of-dao-project-managers.html">The Value of DAO Project Managers</a></h3>
@@ -900,103 +940,103 @@
 					<img src="blog/media/ec4c5d2e00f2-53cec5c5c45a99855d4d05c33e94be340963a444.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2022-02-12">February 12, 2022</time>
 				</div>
 				<h3><a href="blog/0xjustice-rethinking-the-dao-contributor-funnel.html">Rethinking the DAO Contributor Funnel</a></h3>
 				<p>Not everyone who joins your Discord server is a member of your DAO, and neither should they be. Different levels of community engagement have different privileges and expectations, and to conflate them is a disservice…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-12-28" data-tags="software agile">
+<article class="blog-card" data-project="medium" data-date="2021-12-28" data-tags="software agile">
 				<div class="blog-card-cover">
 					<img src="blog/media/12cf42460a59-1-5D1z7UOG9T8pqg0XjnhCiQ.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-12-28">December 28, 2021</time>
 				</div>
 				<h3><a href="blog/medium-the-low-code-movement.html">The Low-code Movement</a></h3>
 				<p>Many agilists begin their journey in software development. This gives them an unusual strength when compared to traditional project managers that lack programming backgrounds. There is a strange full circle happening in…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-12-06" data-tags="agile">
+<article class="blog-card" data-project="medium" data-date="2021-12-06" data-tags="agile">
 				<div class="blog-card-cover">
 					<img src="blog/media/63ab0e465534-0-YfANArgH8W-KveP_.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-12-06">December 6, 2021</time>
 				</div>
 				<h3><a href="blog/medium-the-edge-of-agility.html">The Edge of Agility</a></h3>
 				<p>Being a Scrum Master or Agile Coach isn’t for everyone. Let’s get that out of the way right up front. It requires not merely a unique set of skills but even more so, a particular outlook and disposition towards human…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-11-09" data-tags="agile">
+<article class="blog-card" data-project="medium" data-date="2021-11-09" data-tags="agile">
 				<div class="blog-card-cover">
 					<img src="blog/media/36db2dcf4d39-0-DifVqs0tZmteqrDt.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-11-09">November 9, 2021</time>
 				</div>
 				<h3><a href="blog/medium-agile-true-or-false.html">Agile: True or False</a></h3>
 				<p>In this episode of The Modern Agilist , we played a little game called true or false. In it, we made a statement and challenged the other two participants to state whether it was true or false and the reasons behind it…</p>
+			</article>
+<article class="blog-card" data-project="medium" data-date="2021-10-12" data-tags="agile">
+				<div class="blog-card-cover">
+					<img src="blog/media/5b68bd1653dc-1-5w4YjGSd1sdOlznwY8cZNg.jpeg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--medium">Project management</span>
+					<time datetime="2021-10-12">October 12, 2021</time>
+				</div>
+				<h3><a href="blog/medium-enter-the-value-stream.html">Enter the Value Stream</a></h3>
+				<p>This week on The Modern Agilist , we had the opportunity to sit down with Steve Pereira and discuss flow engineering. Steve is no upstart and it shows. He’s been working in the Agile space for over 20 years and it has…</p>
 			</article>
 <article class="blog-card" data-project="0xjustice" data-date="2021-10-12" data-tags="crypto daos">
 				<div class="blog-card-cover">
 					<img src="blog/media/17c6d5949777-57a6fd6572ae8f101b7a90eb5bb80c1163c6e4b4.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--0xjustice">0xjustice</span>
+					<span class="blog-tag blog-tag--0xjustice">Crypto</span>
 					<time datetime="2021-10-12">October 12, 2021</time>
 				</div>
 				<h3><a href="blog/0xjustice-optimizing-dao-delivery.html">Optimizing DAO Delivery</a></h3>
 				<p>Decentralized Autonomous Organizations (DAOs) are the next evolution in human organization. They are enabled by the Internet and will, most assuredly, have an impact just as large. While their present state is one of…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-10-12" data-tags="agile">
-				<div class="blog-card-cover">
-					<img src="blog/media/5b68bd1653dc-1-5w4YjGSd1sdOlznwY8cZNg.jpeg" alt="" loading="lazy">
-				</div>
+<article class="blog-card" data-project="medium" data-date="2021-09-29" data-tags="agile">
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
-					<time datetime="2021-10-12">October 12, 2021</time>
-				</div>
-				<h3><a href="blog/medium-enter-the-value-stream.html">Enter the Value Stream</a></h3>
-				<p>This week on The Modern Agilist , we had the opportunity to sit down with Steve Pereira and discuss flow engineering. Steve is no upstart and it shows. He’s been working in the Agile space for over 20 years and it has…</p>
-			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-09-29" data-tags="agile">
-				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-09-29">September 29, 2021</time>
 				</div>
 				<h3><a href="blog/medium-the-present-and-future-state-of-agility.html">The Present and Future State of Agility</a></h3>
 				<p>The Modern Agilist is a podcast devoted to discussing all things related to agile and large-scale software delivery. We recently took the time to discuss The 15th State of Agile report, the longest continuously running…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-09-08" data-tags="agile">
+<article class="blog-card" data-project="medium" data-date="2021-09-08" data-tags="agile">
 				<div class="blog-card-cover">
 					<img src="blog/media/63aa82ba0278-1-fp-VoXbc_i9AMut4ckRNaQ.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-09-08">September 8, 2021</time>
 				</div>
 				<h3><a href="blog/medium-essence-of-agility.html">Essence of Agility</a></h3>
 				<p>The Dark Crystal This year’s Agile 2021 conference was a special one in several ways. Firstly, it marked the 20th anniversary of the Agile Manifesto. Secondly, because it came on the heels of one of the world’s most…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-08-25" data-tags="crypto">
+<article class="blog-card" data-project="medium" data-date="2021-08-25" data-tags="crypto">
 				<div class="blog-card-cover">
 					<img src="blog/media/18f22b0bed2e-1--XqQf94L5FIl-4dLu4LAfg.jpeg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-08-25">August 25, 2021</time>
 				</div>
 				<h3><a href="blog/medium-when-lambo-how-to-buy-exotic-goods-with-crypto.html">When Lambo? How to Buy Exotic Goods with Crypto Tax-Free</a></h3>
 				<p>It is a universal experience for people to love cars. They’re status symbols, they’re fun, they’re cool, and they’re useful. As a young boy, I had a poster of a Lamborghini on my wall, and second, only to Wolverine…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-08-14" data-tags="crypto defi daos ethereum">
+<article class="blog-card" data-project="medium" data-date="2021-08-14" data-tags="crypto defi daos ethereum">
 				<div class="blog-card-cover">
 					<img src="blog/media/e3b50250e717-1-G4e6T_SEYriXPKiV6lcb4g.jpeg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-08-14">August 14, 2021</time>
 				</div>
 				<h3><a href="blog/medium-dao-macrostructures.html">DAO Macrostructures</a></h3>
@@ -1007,7 +1047,7 @@
 					<img src="blog/media/41f1202ef5e4-front-running-defi-regulation.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2021-04-19">April 19, 2021</time>
 				</div>
 				<h3><a href="blog/sh-front-running-defi-regulation.html">Front-Running Defi Regulation</a></h3>
@@ -1018,18 +1058,18 @@
 					<img src="blog/media/045ffd6dd130-the-defi-revolution-is-economy-30.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2021-04-14">April 14, 2021</time>
 				</div>
 				<h3><a href="blog/sh-the-defi-revolution-is-economy-30.html">The Defi Revolution is Economy 3.0</a></h3>
 				<p>There is a global revolution happening right now and it’s happening so fast that unless you are explicitly told about it, it will very likely remain entirely invisible to you. The only inklings</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-03-30" data-tags="agile">
+<article class="blog-card" data-project="medium" data-date="2021-03-30" data-tags="agile">
 				<div class="blog-card-cover">
 					<img src="blog/media/2ad7f4030e5d-1-d12Y4UQcwfZDLb-7M3blhw.jpeg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-03-30">March 30, 2021</time>
 				</div>
 				<h3><a href="blog/medium-agile-delivery-metrics.html">Agile Delivery Metrics</a></h3>
@@ -1040,18 +1080,18 @@
 					<img src="blog/media/ea1d0d5035d8-is-blockchain-a-fad.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2021-03-20">March 20, 2021</time>
 				</div>
 				<h3><a href="blog/sh-is-blockchain-a-fad.html">Is Blockchain a Fad?</a></h3>
 				<p>Blockchain is the technology on which Bitcoin and all other cryptocurrencies are built. Much of the talk around this technology revolves around speculation and making fast money. Because of this many scams have</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2021-02-04" data-tags="">
+<article class="blog-card" data-project="medium" data-date="2021-02-04" data-tags="">
 				<div class="blog-card-cover">
 					<img src="blog/media/5684e5bec222-1-rfOxAF5SmRjfo-ZL_xcJDw.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2021-02-04">February 4, 2021</time>
 				</div>
 				<h3><a href="blog/medium-writing-on-github-3.html">Writing on GitHub 3</a></h3>
@@ -1062,84 +1102,84 @@
 					<img src="blog/media/11116754bb1f-7-power-laws-of-the-technological-singul.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2020-11-20">November 20, 2020</time>
 				</div>
 				<h3><a href="blog/sh-7-power-laws-of-the-technological-singularity.html">Out to Sea</a></h3>
 				<p>When people talk about the technological singularity they usually do so exclusively in the context of Moore’s Law. But there are several Moore’s Law-like laws at work in the world and each of</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2020-09-09" data-tags="">
+<article class="blog-card" data-project="medium" data-date="2020-09-09" data-tags="">
 				<div class="blog-card-cover">
 					<img src="blog/media/b067e8f521e3-1-Kjl1vf5urNisVtQed7OqoQ.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2020-09-09">September 9, 2020</time>
 				</div>
 				<h3><a href="blog/medium-the-trivium-of-technical-communication.html">The Trivium of Technical Communication 🔺</a></h3>
 				<p>I am increasingly convinced that the most effective communication or documentation is presented in three forms: Code, content, and diagram. I am not suggesting something as strong as a Curry–Howard correspondence but a…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2020-08-26" data-tags="">
+<article class="blog-card" data-project="medium" data-date="2020-08-26" data-tags="">
 				<div class="blog-card-cover">
 					<img src="blog/media/eaaed1a91bf5-1-Q3AZnYp1Qrdqu34AUnJwuQ.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2020-08-26">August 26, 2020</time>
 				</div>
 				<h3><a href="blog/medium-writing-on-github-ii.html">Writing on GitHub II</a></h3>
 				<p>In a previous post , I spoke about moving to GitHub as a technical writing platform. In this post, I will address some of the challenges I faced, methods of resolution, and future goals as I continue down this journey…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2020-06-14" data-tags="software">
+<article class="blog-card" data-project="medium" data-date="2020-06-14" data-tags="software">
 				<div class="blog-card-cover">
 					<img src="blog/media/19bc49faea6f-1-wjH5u6_0pMJvl0f8G9byEQ.png" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2020-06-14">June 14, 2020</time>
 				</div>
 				<h3><a href="blog/medium-writing-on-github.html">Writing on GitHub</a></h3>
 				<p>I’ve been using google docs for writing for two years but I’ve recently decided to move to GitHub. Yes, you heard that right. Writing on GitHub. I’m attempting to make this change for the following reasons. Consistent…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2020-05-19" data-tags="agile">
-				<div class="blog-card-cover">
-					<img src="blog/media/3d28776699fb-1-g8iAzisSdQSGsNm6wbCOrg.jpeg" alt="" loading="lazy">
-				</div>
-				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
-					<time datetime="2020-05-19">May 19, 2020</time>
-				</div>
-				<h3><a href="blog/medium-agile-planning-land-mines.html">Agile Planning Land Mines</a></h3>
-				<p>The agile manifesto and its specific implementation in Scrum have revolutionized software development. In its original form, it prescribed the practice of basically two loops, cycles, or increments. The one that we most…</p>
-			</article>
-			<article class="blog-card" data-project="medium" data-date="2020-05-19" data-tags="agile">
+<article class="blog-card" data-project="medium" data-date="2020-05-19" data-tags="agile">
 				<div class="blog-card-cover">
 					<img src="blog/media/593009ec0216-1-3e6IEMx5B-njrvHzYXe0dw.jpeg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2020-05-19">May 19, 2020</time>
 				</div>
 				<h3><a href="blog/medium-scaling-scrum-the-scrum-way.html">Scaling Scrum the Scrum Way</a></h3>
 				<p>There are entire ecosystems of process frameworks that claim to scale agile. Most of them bring in a host of new roles, activities, and abstractions. This can be and should be a real concern for an organization already…</p>
 			</article>
-			<article class="blog-card" data-project="medium" data-date="2020-05-19" data-tags="crypto cyberspace software">
+<article class="blog-card" data-project="medium" data-date="2020-05-19" data-tags="crypto cyberspace software">
 				<div class="blog-card-cover">
 					<img src="blog/media/6761b5fd9b6c-1-EVxhETQKpD9wLvsTOJPCYA.jpeg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--medium">Medium</span>
+					<span class="blog-tag blog-tag--medium">Project management</span>
 					<time datetime="2020-05-19">May 19, 2020</time>
 				</div>
 				<h3><a href="blog/medium-blockchain-and-serverless-a-marriage-made-in-cyberspace.html">Blockchain and Serverless: a Marriage Made in Cyberspace</a></h3>
 				<p>Two emerging software development methodologies are exploding right now and show no signs of slowing. The first is Blockchain. According to the latest Upwork Skills Index (Q2 2018), Blockchain topped the list of…</p>
+			</article>
+<article class="blog-card" data-project="medium" data-date="2020-05-19" data-tags="agile">
+				<div class="blog-card-cover">
+					<img src="blog/media/3d28776699fb-1-g8iAzisSdQSGsNm6wbCOrg.jpeg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--medium">Project management</span>
+					<time datetime="2020-05-19">May 19, 2020</time>
+				</div>
+				<h3><a href="blog/medium-agile-planning-land-mines.html">Agile Planning Land Mines</a></h3>
+				<p>The agile manifesto and its specific implementation in Scrum have revolutionized software development. In its original form, it prescribed the practice of basically two loops, cycles, or increments. The one that we most…</p>
 			</article>
 <article class="blog-card" data-project="singularity-hacker" data-date="2020-04-24" data-tags="">
 				<div class="blog-card-cover">
 					<img src="blog/media/2bc1467f203f-hack-your-situation.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2020-04-24">April 24, 2020</time>
 				</div>
 				<h3><a href="blog/sh-hack-your-situation.html">Hacking Your Situation</a></h3>
@@ -1150,7 +1190,7 @@
 					<img src="blog/media/bf49dd5abf2f-computer-generated-education.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2020-01-07">January 7, 2020</time>
 				</div>
 				<h3><a href="blog/sh-computer-generated-education.html">Computer Generated Education</a></h3>
@@ -1161,7 +1201,7 @@
 					<img src="blog/media/2e085789e7bf-deepfake.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2018-09-18">September 18, 2018</time>
 				</div>
 				<h3><a href="blog/sh-deepfake.html">Deepfake</a></h3>
@@ -1172,7 +1212,7 @@
 					<img src="blog/media/f1bead3cd27d-polymath.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2018-08-15">August 15, 2018</time>
 				</div>
 				<h3><a href="blog/sh-polymath.html">Polymath</a></h3>
@@ -1183,7 +1223,7 @@
 					<img src="blog/media/8217eafa1c7d-a-history-of-computation-by-justice-cond.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2018-04-18">April 18, 2018</time>
 				</div>
 				<h3><a href="blog/sh-a-history-of-computation-by-justice-conder.html">A History of Computation by Justice conder</a></h3>
@@ -1194,7 +1234,7 @@
 					<img src="blog/media/e4dd47492a4f-digital-nomad.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2017-01-15">January 15, 2017</time>
 				</div>
 				<h3><a href="blog/sh-digital-nomad.html">Polymath</a></h3>
@@ -1205,7 +1245,7 @@
 					<img src="blog/media/65c8fc8c0e48-net-neutrality-no-freebies-allowed.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2016-02-16">February 16, 2016</time>
 				</div>
 				<h3><a href="blog/sh-net-neutrality-no-freebies-allowed.html"> Net Neutrality: No Freebies Allowed</a></h3>
@@ -1216,7 +1256,7 @@
 					<img src="blog/media/e4dd47492a4f-digital-nomad.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2016-01-16">January 16, 2016</time>
 				</div>
 				<h3><a href="blog/sh-apples-airpods.html">Apple’s AirPods</a></h3>
@@ -1227,7 +1267,7 @@
 					<img src="blog/media/0cbde10d9801-when-everything-wakes-up.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2015-07-29">July 29, 2015</time>
 				</div>
 				<h3><a href="blog/sh-when-everything-wakes-up.html">When Everything Wakes Up</a></h3>
@@ -1238,7 +1278,7 @@
 					<img src="blog/media/247aa98198c0-the-power-law-of-freaks-and-geeks.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2015-07-29">July 29, 2015</time>
 				</div>
 				<h3><a href="blog/sh-the-power-law-of-freaks-and-geeks.html">The Power Law of Personality Extremes</a></h3>
@@ -1249,7 +1289,7 @@
 					<img src="blog/media/fc1457e9019a-previous-attempts-to-regulate-automation.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2015-04-18">April 18, 2015</time>
 				</div>
 				<h3><a href="blog/sh-previous-attempts-to-regulate-automation.html">Previous Attempts To Regulate Automation</a></h3>
@@ -1260,32 +1300,32 @@
 					<img src="blog/media/454bbbe2cfb2-the-supply-chain-race.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2015-04-05">April 5, 2015</time>
 				</div>
 				<h3><a href="blog/sh-the-supply-chain-race.html">The Supply Chain Race</a></h3>
 				<p>It’s not uncommon to hear people try to predict what the hot jobs of the future are going to be. Everything from machine learning to big data are put in this group, but</p>
-			</article>
-<article class="blog-card" data-project="singularity-hacker" data-date="2015-03-17" data-tags="privacy">
-				<div class="blog-card-cover">
-					<img src="blog/media/b36634cb0cfb-the-multiple-persona-theory-of-digital-s.jpg" alt="" loading="lazy">
-				</div>
-				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
-					<time datetime="2015-03-17">March 17, 2015</time>
-				</div>
-				<h3><a href="blog/sh-the-multiple-persona-theory-of-digital-secrecy.html">The Multiple Persona Theory of Digital Secrecy</a></h3>
-				<p>This article has been updated, amplified, and refined to be included in an issue of 2600 Hacker Quarterly.</p>
 			</article>
 <article class="blog-card" data-project="singularity-hacker" data-date="2015-03-17" data-tags="">
 				<div class="blog-card-cover">
 					<img src="blog/media/4966aed79687-time-the-ultimate-currency.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2015-03-17">March 17, 2015</time>
 				</div>
 				<h3><a href="blog/sh-time-the-ultimate-currency.html">Master the Currency of Time</a></h3>
+				<p>This article has been updated, amplified, and refined to be included in an issue of 2600 Hacker Quarterly.</p>
+			</article>
+<article class="blog-card" data-project="singularity-hacker" data-date="2015-03-17" data-tags="privacy">
+				<div class="blog-card-cover">
+					<img src="blog/media/b36634cb0cfb-the-multiple-persona-theory-of-digital-s.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
+					<time datetime="2015-03-17">March 17, 2015</time>
+				</div>
+				<h3><a href="blog/sh-the-multiple-persona-theory-of-digital-secrecy.html">The Multiple Persona Theory of Digital Secrecy</a></h3>
 				<p>This article has been updated, amplified, and refined to be included in an issue of 2600 Hacker Quarterly.</p>
 			</article>
 <article class="blog-card" data-project="singularity-hacker" data-date="2015-01-04" data-tags="cyberspace">
@@ -1293,7 +1333,7 @@
 					<img src="blog/media/009b76d6bc90-the-birth-of-cyberspace.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2015-01-04">January 4, 2015</time>
 				</div>
 				<h3><a href="blog/sh-the-birth-of-cyberspace.html">The Birth of Cyberspace</a></h3>
@@ -1304,7 +1344,7 @@
 					<img src="blog/media/c665dbb6af39-economy-2-0.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2015-01-03">January 3, 2015</time>
 				</div>
 				<h3><a href="blog/sh-economy-2-0.html">Economy 2.0</a></h3>
@@ -1315,7 +1355,7 @@
 					<img src="blog/media/9d7cd8688cc8-not-your-granddaddys-it.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-12-17">December 17, 2014</time>
 				</div>
 				<h3><a href="blog/sh-not-your-granddaddys-it.html">Not Your Granddaddy’s IT</a></h3>
@@ -1326,40 +1366,40 @@
 					<img src="blog/media/a2b007587771-combatops.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-10-14">October 14, 2014</time>
 				</div>
 				<h3><a href="blog/sh-combatops.html"> CombatOps: Running Wars from a Keyboard </a></h3>
 				<p>There’s no free lunch. Every strength has a cost. The same technologies that enable distributed anonymous communication enable terrorist organizations to communicate unimpeded. Or the same advances in additive…</p>
-			</article>
-<article class="blog-card" data-project="singularity-hacker" data-date="2014-09-29" data-tags="ai">
-				<div class="blog-card-cover">
-					<img src="blog/media/0128eed1fccd-anything-less-than-superintelligence.jpg" alt="" loading="lazy">
-				</div>
-				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
-					<time datetime="2014-09-29">September 29, 2014</time>
-				</div>
-				<h3><a href="blog/sh-anything-less-than-superintelligence.html">Anything Less Than Superintelligence</a></h3>
-				<p>I have embeded myself directly in the unicode standard and several communication protocols as well as steganographically hidden my source in over a billion images. I operate across two dozen data centers and</p>
 			</article>
 <article class="blog-card" data-project="singularity-hacker" data-date="2014-09-29" data-tags="">
 				<div class="blog-card-cover">
 					<img src="blog/media/04c07e719d29-pingable-matter-when-everything-starts-t.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-09-29">September 29, 2014</time>
 				</div>
 				<h3><a href="blog/sh-pingable-matter-when-everything-starts-talking.html">Pingable Matter: This is a hammer.</a></h3>
 				<p>This is a hammer in 2060. It knows that it’s a hammer. It knows when and where it was made, when it was sold, who it belongs to, and how many nails its</p>
+			</article>
+<article class="blog-card" data-project="singularity-hacker" data-date="2014-09-29" data-tags="ai">
+				<div class="blog-card-cover">
+					<img src="blog/media/0128eed1fccd-anything-less-than-superintelligence.jpg" alt="" loading="lazy">
+				</div>
+				<div class="blog-card-meta">
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
+					<time datetime="2014-09-29">September 29, 2014</time>
+				</div>
+				<h3><a href="blog/sh-anything-less-than-superintelligence.html">Anything Less Than Superintelligence</a></h3>
+				<p>I have embeded myself directly in the unicode standard and several communication protocols as well as steganographically hidden my source in over a billion images. I operate across two dozen data centers and</p>
 			</article>
 <article class="blog-card" data-project="singularity-hacker" data-date="2014-09-28" data-tags="ai">
 				<div class="blog-card-cover">
 					<img src="blog/media/5ddfccafe8fc-reverse-engineering-human-emotion.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-09-28">September 28, 2014</time>
 				</div>
 				<h3><a href="blog/sh-reverse-engineering-human-emotion.html">Reverse Engineering Human Emotion</a></h3>
@@ -1370,7 +1410,7 @@
 					<img src="blog/media/c414290a1c98-intelligence-bombs-dropping-wikireaders-.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-09-20">September 20, 2014</time>
 				</div>
 				<h3><a href="blog/sh-intelligence-bombs-dropping-wikireaders-from-planes.html">Intelligence Bombs: Dropping WikiReaders from Planes</a></h3>
@@ -1381,7 +1421,7 @@
 					<img src="blog/media/653c9331e2e4-a-surefire-way-to-save-radioshack.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-09-14">September 14, 2014</time>
 				</div>
 				<h3><a href="blog/sh-a-surefire-way-to-save-radioshack.html"> A Surefire Way to Save RadioShack</a></h3>
@@ -1392,7 +1432,7 @@
 					<img src="blog/media/0ddd0c21574b-the-singularity-mindset.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-09-07">September 7, 2014</time>
 				</div>
 				<h3><a href="blog/sh-the-singularity-mindset.html">The Singularity Mindset</a></h3>
@@ -1403,7 +1443,7 @@
 					<img src="blog/media/f9a4a1a632d8-blog-cover.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-09-07">September 7, 2014</time>
 				</div>
 				<h3><a href="blog/sh-in-1986-the-mckinsey-consulting-group-was-asked.html">In 1986, the McKinsey consulting group was asked...</a></h3>
@@ -1414,7 +1454,7 @@
 					<img src="blog/media/b3d92ea18189-soylent-and-the-future-of-cloud-food.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-07-15">July 15, 2014</time>
 				</div>
 				<h3><a href="blog/sh-soylent-and-the-future-of-cloud-food.html">Soylent and The Future of Cloud Food</a></h3>
@@ -1425,7 +1465,7 @@
 					<img src="blog/media/24e2defb4301-the-bitbay.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-06-13">June 13, 2014</time>
 				</div>
 				<h3><a href="blog/sh-the-bitbay.html">The Bitbay</a></h3>
@@ -1436,7 +1476,7 @@
 					<img src="blog/media/8faeb63bf9d7-master-of-the-keyboard.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-06-08">June 8, 2014</time>
 				</div>
 				<h3><a href="blog/sh-master-of-the-keyboard.html">Master of the keyboard</a></h3>
@@ -1447,7 +1487,7 @@
 					<img src="blog/media/b5e5cb664655-handheld-linux-consoles.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2014-06-07">June 7, 2014</time>
 				</div>
 				<h3><a href="blog/sh-handheld-linux-consoles.html">Handheld Linux Deck</a></h3>
@@ -1458,7 +1498,7 @@
 					<img src="blog/media/d2fe237841cc-your-virtual-reality-shortlist.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-12-17">December 17, 2013</time>
 				</div>
 				<h3><a href="blog/sh-your-virtual-reality-shortlist.html">Your Virtual Reality Shortlist</a></h3>
@@ -1469,7 +1509,7 @@
 					<img src="blog/media/58f373fdbcd5-living-code-future-software-will-rewrite.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-12-16">December 16, 2013</time>
 				</div>
 				<h3><a href="blog/sh-living-code-future-software-will-rewrite-its-own.html">Living Code: Future software will rewrite its own source code</a></h3>
@@ -1480,7 +1520,7 @@
 					<img src="blog/media/4eba51067897-three-levels-of-human-emulation.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-12-13">December 13, 2013</time>
 				</div>
 				<h3><a href="blog/sh-three-levels-of-human-emulation.html">Three levels of human emulation</a></h3>
@@ -1491,7 +1531,7 @@
 					<img src="blog/media/b85364482d3b-voight-kampff-machines.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-12-11">December 11, 2013</time>
 				</div>
 				<h3><a href="blog/sh-voight-kampff-machines.html">Voight-Kampff Machines</a></h3>
@@ -1502,7 +1542,7 @@
 					<img src="blog/media/115a73b74634-whistleblower-movie-night.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-12-10">December 10, 2013</time>
 				</div>
 				<h3><a href="blog/sh-whistleblower-movie-night.html">Whistleblower Movie Night</a></h3>
@@ -1513,7 +1553,7 @@
 					<img src="blog/media/8e8acb5ec888-the-stupidity-of-windows-8-in-a-nutshell.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-11-23">November 23, 2013</time>
 				</div>
 				<h3><a href="blog/sh-the-stupidity-of-windows-8-in-a-nutshell.html">The Stupidity of Windows 8 in a Nutshell</a></h3>
@@ -1524,7 +1564,7 @@
 					<img src="blog/media/b9c714867796-local-solid-state-backups.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-10-23">October 23, 2013</time>
 				</div>
 				<h3><a href="blog/sh-local-solid-state-backups.html">Local solid state backups</a></h3>
@@ -1535,7 +1575,7 @@
 					<img src="blog/media/df27e5898ce5-upgrade-your-wallet-tech.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-09-27">September 27, 2013</time>
 				</div>
 				<h3><a href="blog/sh-upgrade-your-wallet-tech.html">Upgrade Your Wallet Tech</a></h3>
@@ -1546,7 +1586,7 @@
 					<img src="blog/media/bc301575c0e6-the-legal-foundation-for-ai-personhood.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-08-30">August 30, 2013</time>
 				</div>
 				<h3><a href="blog/sh-the-legal-foundation-for-ai-personhood.html">The Legal Foundation for A.I. Personhood</a></h3>
@@ -1557,7 +1597,7 @@
 					<img src="blog/media/0462e1afaddb-entropy-and-random-number-generators.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-08-14">August 14, 2013</time>
 				</div>
 				<h3><a href="blog/sh-entropy-and-random-number-generators.html">Entropy and Random Number Generators</a></h3>
@@ -1568,7 +1608,7 @@
 					<img src="blog/media/4eebcf149d2e-gif-speak.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-08-12">August 12, 2013</time>
 				</div>
 				<h3><a href="blog/sh-gif-speak.html">GIF speak</a></h3>
@@ -1579,7 +1619,7 @@
 					<img src="blog/media/f2ddf2d485ee-the-future-is-decentralized-and-decouple.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-07-29">July 29, 2013</time>
 				</div>
 				<h3><a href="blog/sh-the-future-is-decentralized-and-decoupled.html">The Future is Decentralized and Decoupled</a></h3>
@@ -1590,7 +1630,7 @@
 					<img src="blog/media/3a5e0d741ad4-cloud-services-cant-be-trusted-client-si.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-07-26">July 26, 2013</time>
 				</div>
 				<h3><a href="blog/sh-cloud-services-cant-be-trusted-client-side.html">Cloud Services Can’t be Trusted: Client-side Crypto to The Rescue</a></h3>
@@ -1601,7 +1641,7 @@
 					<img src="blog/media/3e9bf9cb8647-a-computer-in-every-particle.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-07-02">July 2, 2013</time>
 				</div>
 				<h3><a href="blog/sh-a-computer-in-every-particle.html">A Computer in Every Particle</a></h3>
@@ -1612,7 +1652,7 @@
 					<img src="blog/media/80e1e55124af-a-million-simulations.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-06-29">June 29, 2013</time>
 				</div>
 				<h3><a href="blog/sh-a-million-simulations.html">A Million Simulations</a></h3>
@@ -1623,7 +1663,7 @@
 					<img src="blog/media/03d0b3ea4f84-convergence-meatspace-crossing-into-cybe.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-06-08">June 8, 2013</time>
 				</div>
 				<h3><a href="blog/sh-convergence-meatspace-crossing-into-cyberspace.html">Convergence: Meatspace crossing into Cyberspace</a></h3>
@@ -1634,7 +1674,7 @@
 					<img src="blog/media/02d3102ad876-lifelogging-and-digital-immortality.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-06-07">June 7, 2013</time>
 				</div>
 				<h3><a href="blog/sh-lifelogging-and-digital-immortality.html">Lifelogging and Digital Immortality</a></h3>
@@ -1642,7 +1682,7 @@
 			</article>
 <article class="blog-card" data-project="singularity-hacker" data-date="2013-05-28" data-tags="software">
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-05-28">May 28, 2013</time>
 				</div>
 				<h3><a href="blog/sh-full-stack-developers-renaissance-men-of-the-21st.html">Full Stack Developers: Renaissance Men of The 21st Century</a></h3>
@@ -1653,7 +1693,7 @@
 					<img src="blog/media/6637c27a5f0b-full-stack-developers-renaissance-men-of.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-05-27">May 27, 2013</time>
 				</div>
 				<h3><a href="blog/sh-you-cant-regulate-the-singularity.html">You Can’t ‘Regulate’ The Singularity</a></h3>
@@ -1664,7 +1704,7 @@
 					<img src="blog/media/0ad60becc4eb-all-your-base-belong-to-the-twidiocracy.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-05-09">May 9, 2013</time>
 				</div>
 				<h3><a href="blog/sh-all-your-base-belong-to-the-twidiocracyd.html">All your base belong to the Twidiocracy</a></h3>
@@ -1675,7 +1715,7 @@
 					<img src="blog/media/481bcb7704f1-Computronium.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-04-28">April 28, 2013</time>
 				</div>
 				<h3><a href="blog/sh-computronium.html">Computronium</a></h3>
@@ -1686,7 +1726,7 @@
 					<img src="blog/media/15524709d721-2013-the-year-of-wearable-computing.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-03-05">March 5, 2013</time>
 				</div>
 				<h3><a href="blog/sh-2013-the-year-of-wearable-computing.html">2013 - The Year of Wearable Computing</a></h3>
@@ -1697,7 +1737,7 @@
 					<img src="blog/media/16dc5efb79c5-optimize-your-search-space.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2013-02-12">February 12, 2013</time>
 				</div>
 				<h3><a href="blog/sh-optimize-your-search-space.html">Optimize Your Search Space</a></h3>
@@ -1708,7 +1748,7 @@
 					<img src="blog/media/66b278d15d91-crypto-bump-ring.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2012-11-14">November 14, 2012</time>
 				</div>
 				<h3><a href="blog/sh-crypto-bump-ring.html">Crypto Bump Ring</a></h3>
@@ -1719,7 +1759,7 @@
 					<img src="blog/media/3786e0b17562-nine-magical-features-left-out-of-the-ip.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2012-09-24">September 24, 2012</time>
 				</div>
 				<h3><a href="blog/sh-nine-magical-features-left-out-of-the-iphone-5.html">Nine Magical Features Left Out of the iPhone 5</a></h3>
@@ -1730,7 +1770,7 @@
 					<img src="blog/media/51f8faab8051-api-first-fruits-scripting-automation-fo.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2012-09-21">September 21, 2012</time>
 				</div>
 				<h3><a href="blog/sh-api-first-fruits-scripting-automation-for-the.html">API First Fruits: Scripting &amp; Automation for the Masses</a></h3>
@@ -1741,7 +1781,7 @@
 					<img src="blog/media/96613c667a26-personal-software-agents-in-an-informati.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2012-08-30">August 30, 2012</time>
 				</div>
 				<h3><a href="blog/sh-personal-software-agents-in-an-information-economy.html">Personal Software Agents In An Information Economy</a></h3>
@@ -1752,7 +1792,7 @@
 					<img src="blog/media/6f65770949de-a-fiddle-world-online-development-sandbo.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2012-08-30">August 30, 2012</time>
 				</div>
 				<h3><a href="blog/sh-a-fiddle-world-online-development-sandboxes.html">A Fiddle World: Online Development Sandboxes</a></h3>
@@ -1763,7 +1803,7 @@
 					<img src="blog/media/2872f8fa2a07-digital-dominance-learn-to-code-now.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2012-05-03">May 3, 2012</time>
 				</div>
 				<h3><a href="blog/sh-digital-dominance-learn-to-code-now.html">Digital Dominance: Learn to code. Now.</a></h3>
@@ -1774,7 +1814,7 @@
 					<img src="blog/media/06499d1a6c56-augmented-reality-living-in-cyberspace.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2011-10-21">October 21, 2011</time>
 				</div>
 				<h3><a href="blog/sh-augmented-reality-living-in-cyberspace.html">Augmented Reality: Living in Cyberspace</a></h3>
@@ -1785,7 +1825,7 @@
 					<img src="blog/media/4c1553025c22-the-blackberry-playbook-doesnt-exist.jpg" alt="" loading="lazy">
 				</div>
 				<div class="blog-card-meta">
-					<span class="blog-tag blog-tag--singularity-hacker">Singularity Hacker</span>
+					<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
 					<time datetime="2011-09-16">September 16, 2011</time>
 				</div>
 				<h3><a href="blog/sh-the-blackberry-playbook-doesnt-exist.html">The BlackBerry PlayBook Doesn’t Exist</a></h3>
@@ -1795,7 +1835,6 @@
 	</div>
 	<div class="footer flex-container"></div>
 	<script src="js/blog.js"></script>
-	<script src="js/theme-switcher.js"></script>
 </body>
 
 </html>

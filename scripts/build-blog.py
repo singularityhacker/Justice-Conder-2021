@@ -26,11 +26,11 @@ UA = "justiceconder-blog-import/1.0 (+https://justiceconder.com)"
 
 PROJECTS = {
     "0xjustice": {
-        "label": "0xjustice",
+        "label": "Crypto",
         "home": "https://paragraph.com/@0xjustice",
     },
     "singularity-hacker": {
-        "label": "Singularity Hacker",
+        "label": "Futurism",
         "home": "https://singularityhacker.com/",
     },
     "qacc": {
@@ -42,7 +42,7 @@ PROJECTS = {
         "home": "https://clawbank.co/blog.html",
     },
     "medium": {
-        "label": "Medium",
+        "label": "Project management",
         "home": "https://justiceconder.medium.com/",
     },
 }
@@ -544,7 +544,7 @@ def nav_html(active: str, prefix: str = "") -> str:
     return f"""\t<nav id="menu" class="navbar navbar-default desktop-only">
 \t\t<div class="navbar-header">
 \t\t\t<a rel="noopener" class="navbar-brand" href="{href("index.html")}">
-\t\t\t\t<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+\t\t\t\t<img id="logo_img" src="{prefix}images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
 \t\t\t</a>
 \t\t</div>
 \t\t<ul class="nav-link title-text flex-container">
@@ -555,7 +555,7 @@ def nav_html(active: str, prefix: str = "") -> str:
 \t<nav id="menu" class="navbar navbar-default mobile-only">
 \t\t<div class="navbar-header">
 \t\t\t<a rel="noopener" class="navbar-brand" href="{href("index.html")}">
-\t\t\t\t<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+\t\t\t\t<img id="logo_img" src="{prefix}images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
 \t\t\t</a>
 \t\t</div>
 \t\t<div class="nav-opener">
@@ -582,17 +582,12 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 \t<meta name="author" content="justiceconder.com" />
 \t<meta name="viewport" content="width=device-width, initial-scale=1" />
 \t<title>{html.escape(title)}</title>
-\t<link rel="shortcut icon" href="{prefix}images/icon/favicon.ico" />
-\t<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
-\t<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />
-\t<link rel="stylesheet" href="{prefix}css/theme-icon.css" type="text/css" />
-\t<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />
-\t<link rel="preload"
-\t\thref="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
-\t\tas="style" onload="this.rel='stylesheet'" />
-\t<link rel="preload"
-\t\thref="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
-\t\tas="style" onload="this.rel='stylesheet'" />
+\t<link rel="icon" href="{prefix}images/icon/cubes-icon.gif" type="image/gif" />
+	<link rel="shortcut icon" href="{prefix}images/icon/cubes-icon.gif" />
+	<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />
+	<link rel="stylesheet" href="{prefix}css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="{prefix}css/consultant.css" type="text/css" />
 {extra_head}
 </head>
 

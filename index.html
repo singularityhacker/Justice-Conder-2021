@@ -10,31 +10,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Justice Conder</title>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/icon/favicon.ico" />
+	<link rel="icon" href="images/icon/cubes-icon.gif" type="image/gif" />
+	<link rel="shortcut icon" href="images/icon/cubes-icon.gif" />
 
 	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/theme-icon.css" type="text/css" />
-	<link rel="stylesheet" href="css/themes.css" type="text/css" />
-	<script>
-	(function () {
-		try {
-			var q = new URLSearchParams(location.search).get("theme");
-			var t = q || localStorage.getItem("jc-site-theme");
-			if (t) document.documentElement.setAttribute("data-theme", t);
-		} catch (e) {}
-	})();
-	</script>
-
-	<!-- google font -->
-	<link rel="preload"
-		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
-		as="style" onload="this.rel='stylesheet'" />
-
-	<link rel="preload"
-		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
-		as="style" onload="this.rel='stylesheet'" />
+	<link rel="stylesheet" href="css/consultant.css" type="text/css" />
 </head>
 
 <body>
@@ -45,8 +27,7 @@
 	<nav id="menu" class="navbar navbar-default desktop-only">
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="index.html">
-				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
-				<!-- <p id="nav-name">Justice Conder</p> -->
+				<img id="logo_img" src="images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
 			</a>
 		</div>
 		<ul class="nav-link title-text flex-container">
@@ -65,8 +46,7 @@
 	<nav id="menu" class="navbar navbar-default mobile-only">
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="index.html">
-				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
-				<!-- <p id="nav-name">Justice Conder</p> -->
+				<img id="logo_img" src="images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
 			</a>
 		</div>
 		<div class="nav-opener">
@@ -91,8 +71,9 @@
 	<!-- navbar -->
 
 	<!-- intro -->
-	<div id="intro" class="intro title-text"
-		style="background: linear-gradient(#0000000F, #00000080), url('images/header-background.webp');">
+	<div id="intro" class="intro title-text">
+		<div class="intro-topo" aria-hidden="true"></div>
+		<p class="intro-kicker">Justice Conder · writing since 2011</p>
 		<h1 class="is-size-2 name">0xJustice</h1>
 		<div id="typer" class="is-size-3">
 			<ul>
@@ -124,7 +105,7 @@
 		<div id="about" class="flex-container">
 			<div class="profile">
 				<figure>
-					<img loading="lazy" src="images/new-profile.png" alt="" width="300" height="329">
+					<img src="images/justice-headshot.jpg" alt="Justice Conder" width="240" height="240">
 
 					<ul class="social-badge">
 						<li class="social-item">
@@ -139,14 +120,6 @@
 								target="_blank">
 								<i class="fa fa-github"></i>
 								<span>github</span>
-							</a>
-						</li>
-
-						<li class="social-item">
-							<a rel="noopener" href="https://paragraph.com/@0xjustice"
-								target="_blank">
-								<img src="images/paragraph.png" alt="Paragraph">
-								<span>paragraph</span>
 							</a>
 						</li>
 
@@ -780,10 +753,7 @@
 			</div>
 
 			<ul>
-				<li><a href="blog.html">Collected writings</a> — Singularity Hacker, Medium, 0xjustice, q/acc, and ClawBank, with era and topic filters</li>
-				<li><a href="https://singularityhacker.com/" target="_blank">SingularityHacker.com</a> - Singularity Hacking Blog</li>
-				<li><a href="https://justiceconder.medium.com" target="_blank">Medium</a> - Agile Writing</li>
-				<li><a href="https://paragraph.com/@0xjustice" target="_blank">Mirror.xyz / Paragraph.com</a> - Web3 Blog</li>
+				<li><a href="blog.html">Collected writings</a> — writing since 2011: futurism, project management, crypto, q/acc, and ClawBank</li>
 				<li><a href="https://store.2600.com/products/summer-2019" target="_blank">The Multiple Persona Theory of Digital Secrecy</a> - 2600 Hacker Quarterly Magazine</li>
 				<li><a href="https://www.coinspeaker.com/blockchain-serverless-marriage-made-cyberspace/" target="_blank">Blockchain and Serverless: A Marriage Made in Cyberspace</a> - Coinspeaker.com</li>
 				<br>
@@ -1585,7 +1555,6 @@
 			updateCarousel();
 		})();
 	</script>
-	<script src="js/theme-switcher.js"></script>
 </body>
 
 </html>

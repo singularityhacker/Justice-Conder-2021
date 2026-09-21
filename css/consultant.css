@@ -1,0 +1,328 @@
+/* Default live look: consultant / operator. System type, no bitmap hero. */
+
+:root {
+  --ink: #0b0e13;
+  --ink-2: #14181f;
+  --paper: #f3efe6;
+  --paper-2: #e8e2d6;
+  --brass: #c9a227;
+  --brass-2: #e4c25a;
+  --copy: #1b1f26;
+  --muted: #5b616b;
+  --line: #d7d0c3;
+  --card: #fffdf8;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  font-family: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--copy);
+  background: var(--paper);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.title-text {
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+
+.name,
+.intro #typer .typer-effect,
+.blog-source,
+.blog-card-meta,
+.blog-timeline-kicker {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+body a {
+  color: #1f3d2b;
+}
+
+body a:hover {
+  color: var(--ink);
+}
+
+.navbar {
+  background: var(--ink);
+}
+
+.navbar .navbar-header .navbar-brand img {
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.navbar .nav-link a {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link a:hover,
+.navbar .nav-link a:focus,
+.navbar .nav-link a.is-current {
+  border-bottom-color: var(--brass);
+  color: var(--brass-2);
+}
+
+.navbar.mobile-only .hamburger div {
+  background: var(--brass-2);
+}
+
+.intro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 320px;
+  padding: 72px 20px 56px;
+  background: var(--ink);
+}
+
+.intro-topo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(11, 14, 19, 0.15), rgba(11, 14, 19, 0.72)),
+    url("../images/topo-hero.svg") center / cover no-repeat,
+    var(--ink);
+}
+
+.intro-kicker {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass-2);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.intro .name {
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.intro #typer {
+  margin-top: 8px;
+  color: #e8e2d6;
+}
+
+.intro #typer .typer-effect {
+  border-right-color: var(--brass-2);
+}
+
+.link-btn {
+  background: var(--brass);
+  color: var(--ink);
+  border-radius: 2px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.link-btn:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.subject-header span {
+  background: var(--brass);
+  color: var(--ink);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 12px;
+}
+
+.subject-header h2 {
+  font-size: 32px;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.subject-header .bg-text {
+  display: none;
+}
+
+#about .profile figure {
+  width: 240px;
+  background: transparent;
+}
+
+#about .profile img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: #efe8d8;
+}
+
+#about .profile .social-badge {
+  background: transparent;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+#about .profile .social-badge .social-item {
+  margin: 0;
+}
+
+#about .profile .social-badge .social-item a {
+  background: var(--ink);
+  color: #fff;
+}
+
+#about .profile .social-badge .social-item a:hover {
+  background: var(--brass);
+  color: var(--ink);
+}
+
+#about .about-info section p,
+#about .strengths-list {
+  color: var(--copy);
+  font-size: 16px;
+}
+
+#resume .experience {
+  border-left: 2px solid var(--brass);
+  padding-left: 8px;
+}
+
+#testimonials .recommendation-container .item section {
+  background: var(--card);
+  color: var(--muted);
+  border: 1px solid var(--line);
+}
+
+#testimonials .recommendation-container .item section ::before {
+  border-color: var(--card) transparent transparent transparent;
+}
+
+.footer {
+  background: var(--ink);
+}
+
+.blog-page {
+  background: var(--paper);
+}
+
+.blog-lede,
+.blog-era-blurb {
+  color: var(--muted);
+}
+
+.blog-timeline {
+  padding: 0.4rem 0.7rem 0.3rem;
+  margin: 0 0 0.7rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+
+.blog-timeline-head {
+  margin-bottom: 0.25rem;
+}
+
+.blog-timeline-kicker,
+.blog-timeline-span,
+.blog-era-name,
+.blog-era-dates,
+.blog-timeline-scale {
+  font-size: 10px;
+}
+
+.blog-timeline-scale {
+  margin: 0 0 0.2rem 132px;
+}
+
+.blog-era-row {
+  grid-template-columns: 132px minmax(0, 1fr) 150px;
+  gap: 8px;
+  margin: 0 0 2px;
+  padding: 1px 0;
+}
+
+.blog-era-track {
+  height: 6px;
+  background: var(--paper-2);
+}
+
+.blog-era-row.is-active .blog-era-track {
+  box-shadow: 0 0 0 2px var(--brass);
+}
+
+.blog-era-blurb {
+  font-size: 14px;
+  margin: 0 0 0.7rem;
+}
+
+.blog-filter.is-active {
+  background: var(--brass);
+  border-color: var(--brass);
+  color: var(--ink);
+}
+
+.blog-embed-cite {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.blog-card {
+  background: var(--card);
+  border-color: var(--line);
+  border-radius: 2px;
+}
+
+.blog-card:hover {
+  border-color: var(--ink);
+  box-shadow: 0 10px 28px rgba(11, 14, 19, 0.08);
+}
+
+.blog-tag--singularity-hacker { background: #1f4b3a; }
+.blog-tag--medium { background: #3d4f2f; }
+.blog-tag--0xjustice { background: #1b1f26; }
+.blog-tag--qacc { background: #3b2f7a; }
+.blog-tag--clawbank { background: #8a1f12; }
+
+.blog-article h1,
+.blog-prose h2,
+.blog-prose h3 {
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.blog-prose {
+  font-size: 18px;
+}
+
+.blog-prose blockquote {
+  border-left-color: var(--brass);
+}
+
+.look-switcher {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  .blog-timeline-scale {
+    margin-left: 0;
+  }
+
+  .intro {
+    min-height: 260px;
+    padding: 64px 16px 40px;
+  }
+}

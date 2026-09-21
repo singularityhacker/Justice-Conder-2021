@@ -21,21 +21,21 @@ POSTS_PATH = ROOT / "blog" / "posts.json"
 ERA_META = [
     {
         "key": "singularity-hacker",
-        "label": "Singularity Hacker",
-        "short": "SH",
-        "blurb": "The original blog. Computing, the technological singularity, cypherpunk privacy, and later Bitcoin and DeFi — {count} posts across nine years.",
+        "label": "Futurism",
+        "short": "Fut",
+        "blurb": "Computing, the technological singularity, cypherpunk privacy, and later Bitcoin and DeFi — {count} posts from the original Singularity Hacker years.",
     },
     {
         "key": "medium",
-        "label": "Medium / Agile",
-        "short": "Med",
-        "blurb": "Scrum, agile delivery, and technical writing on Medium — {count} essays that were not already on Singularity Hacker or Paragraph.",
+        "label": "Project management",
+        "short": "PM",
+        "blurb": "Scrum, agile delivery, and technical writing — {count} essays from the program-agilist years.",
     },
     {
         "key": "0xjustice",
-        "label": "Paragraph / 0xjustice",
+        "label": "Crypto",
         "short": "0x",
-        "blurb": "Essays published on Paragraph as 0xjustice. DAO design and on-chain organization, then tokenization and AI — {count} posts.",
+        "blurb": "DAO design, on-chain organization, tokenization, and the agent economy — {count} posts.",
     },
     {
         "key": "qacc",
@@ -47,14 +47,14 @@ ERA_META = [
         "key": "clawbank",
         "label": "ClawBank",
         "short": "CB",
-        "blurb": "Founded ClawBank. Agents with bank accounts, companies, and contracts — {count} product notes from the first five months.",
+        "blurb": "Founded ClawBank. Agents with bank accounts, companies, and contracts — {count} product notes.",
     },
 ]
 
 FILTER_LABELS = {
-    "singularity-hacker": "Singularity Hacker",
-    "medium": "Medium",
-    "0xjustice": "0xjustice",
+    "singularity-hacker": "Futurism",
+    "medium": "Project management",
+    "0xjustice": "Crypto",
     "qacc": "q/acc",
     "clawbank": "ClawBank",
 }
@@ -119,7 +119,7 @@ def header_html(tag_slugs: list[str], eras: list[dict], posts: list[dict]) -> st
 
     years = t1.year - t0.year
     blurbs = [
-        f"""\t\t<p class="blog-era-blurb is-active" data-era="all">Writing since {t0.strftime("%B %Y")} — {years} years across {len(eras)} eras, from the original Singularity Hacker posts through ClawBank.</p>"""
+        f"""\t\t<p class="blog-era-blurb is-active" data-era="all">Writing since 2011 — {years} years across futurism, project management, crypto, q/acc, and ClawBank.</p>"""
     ]
     for era in eras:
         blurbs.append(
@@ -144,7 +144,7 @@ def header_html(tag_slugs: list[str], eras: list[dict], posts: list[dict]) -> st
         scale_years.append(t1.year)
     scale = "".join(f"<span>{year}</span>" for year in scale_years)
 
-    return f"""\t\t<p class="blog-lede">Collected posts from Singularity Hacker, Medium, Paragraph / 0xjustice, q/acc, and ClawBank — original wording, with dates and source links preserved.</p>
+    return f"""\t\t<p class="blog-lede">Writing since 2011. Futurism, project management, crypto, q/acc, and ClawBank — original wording, with dates and source links preserved.</p>
 \t\t<section class="blog-timeline" aria-label="Writing eras from {t0.year} to {t1.year}">
 \t\t\t<div class="blog-timeline-head">
 \t\t\t\t<p class="blog-timeline-kicker">Eras</p>
