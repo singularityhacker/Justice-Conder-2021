@@ -237,8 +237,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> s
 			<li><a href="{prefix}index.html#resume">Experience</a></li>
 			<li><a href="{prefix}index.html#education">Education</a></li>
 			<li><a href="{prefix}index.html#portfolio">Portfolio</a></li>
-			<li><a href="{prefix}index.html#content">Content</a></li>
-			<li><a href="{prefix}blog.html" class="is-current">Blog</a></li>
+			<li><a href="{prefix}blog.html" class="is-current">Writing</a></li>
 			<li><a href="{prefix}index.html#testimonials">Testimonials</a></li>
 		</ul>
 	</nav>
@@ -260,8 +259,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> s
 			<li><a href="{prefix}index.html#resume">Experience</a></li>
 			<li><a href="{prefix}index.html#education">Education</a></li>
 			<li><a href="{prefix}index.html#portfolio">Portfolio</a></li>
-			<li><a href="{prefix}index.html#content">Content</a></li>
-			<li><a href="{prefix}blog.html" class="is-current">Blog</a></li>
+			<li><a href="{prefix}blog.html" class="is-current">Writing</a></li>
 			<li><a href="{prefix}index.html#testimonials">Testimonials</a></li>
 			</ul>
 		</div>

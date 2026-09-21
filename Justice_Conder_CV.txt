@@ -115,10 +115,6 @@ Sherwin-Williams | July 2011 - January 2013
 EDUCATION
 ================================================================================
 
-MASTER OF SCIENCE - COMPUTER SCIENCE WITH AI FOCUS
-Western Governors University (WGU) | 2025 - Present
-Masters Program
-
 ASSOCIATE OF APPLIED SCIENCE - COMPUTER PROGRAMMING AND DATABASE DESIGN
 Stark State College | 2009 - 2011
 Associate's Degree - Graduated with academic distinction
@@ -183,7 +179,7 @@ BOOKS
   https://www.amazon.com/dp/B07KKLMW1X/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
 - Data-Driven Agility: A Rigorous Approach to Software Delivery - Amazon
   https://www.amazon.com/Data-Driven-Agility-Rigorous-Approach-Software-ebook/dp/B099QVD7KV/ref=sr_1_2
-- Cybernetric Org Design: Operating Playbooks for DAO-Native Firms - January 2026
+- Cybernetic Org Design: Operating Playbooks for DAO-Native Firms - January 2026
 
 ARTICLES & WRITING
 - SingularityHacker.com - Singularity Hacking Blog

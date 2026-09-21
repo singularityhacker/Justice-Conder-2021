@@ -9,6 +9,7 @@
 
 /* Homepage sections use a 5em top margin; keep the writings index tight. */
 .blog-page .blog-wrap > .blog-lede,
+.blog-page .blog-wrap > .blog-cite,
 .blog-page .blog-wrap > .blog-timeline,
 .blog-page .blog-wrap > .blog-era-blurb,
 .blog-page .blog-wrap > .blog-filters,
@@ -24,6 +25,14 @@
   color: #4a5563;
   max-width: 46rem;
   margin: 0.5rem 0 1.25rem;
+}
+
+.blog-cite {
+  color: #4a5563;
+  max-width: 46rem;
+  margin: -0.45rem 0 1.25rem;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .blog-timeline {

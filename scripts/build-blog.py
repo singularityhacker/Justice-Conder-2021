@@ -524,8 +524,7 @@ NAV_ITEMS = [
     ("index.html#resume", "Experience"),
     ("index.html#education", "Education"),
     ("index.html#portfolio", "Portfolio"),
-    ("index.html#content", "Content"),
-    ("blog.html", "Blog"),
+    ("blog.html", "Writing"),
     ("index.html#testimonials", "Testimonials"),
 ]
 
@@ -610,7 +609,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 
 <body class="blog-page">
 \t<header class="header" id="home"></header>
-{nav_html("Blog", prefix)}
+{nav_html("Writing", prefix)}
 \t<div class="container blog-wrap">
 {body}
 \t</div>
@@ -653,10 +652,11 @@ def write_listing(posts: list[dict]) -> None:
     )
     body = f"""\t\t<div class="subject-header">
 \t\t\t<span>Writings</span>
-\t\t\t<h2>Blog</h2>
+\t\t\t<h2>Writing</h2>
 \t\t\t<div class="bg-text unselectable"><strong>Writings</strong></div>
 \t\t</div>
 \t\t<p class="blog-lede">Collected posts from 0xjustice, Singularity Hacker, q/acc, and ClawBank — original wording, with dates and source links preserved.</p>
+\t\t<p class="blog-cite">My writing has been cited by ZDNet, Daring Fireball, OSNews, Forefront, TalentDAO, and many other DAO newsletters and thought leaders across the ecosystem and translated into other languages.</p>
 \t\t<div class="blog-filters" role="group" aria-label="Filter writings by project">
 {filter_btns}
 \t\t</div>
@@ -667,7 +667,7 @@ def write_listing(posts: list[dict]) -> None:
 \t\t</div>"""
     extra_js = '\t<script src="js/blog.js"></script>'
     (ROOT / "blog.html").write_text(
-        page_shell("Blog — Justice Conder", body, extra_js=extra_js),
+        page_shell("Writing — Justice Conder", body, extra_js=extra_js),
         encoding="utf-8",
     )
 

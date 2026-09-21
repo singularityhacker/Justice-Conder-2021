@@ -415,8 +415,8 @@ html[data-theme]:not([data-theme="classic"]) body {
   font-family: var(--font-body);
 }
 
-html[data-theme]:not([data-theme="classic"]) #content li,
-html[data-theme]:not([data-theme="classic"]) #content p {
+html[data-theme]:not([data-theme="classic"]) #talks li,
+html[data-theme]:not([data-theme="classic"]) #talks p {
   color: var(--text);
 }
 
@@ -765,25 +765,17 @@ html[data-theme="terminal"] .talks-map {
   border-radius: 0;
 }
 
-html[data-theme]:not([data-theme="classic"]) .carousel-item {
+html[data-theme]:not([data-theme="classic"]) .speaking-thumb {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  background: var(--bg-elevated);
 }
 
-html[data-theme]:not([data-theme="classic"]) .carousel-btn {
-  background: color-mix(in srgb, var(--heading) 70%, transparent);
+html[data-theme]:not([data-theme="classic"]) .speaking-card-title {
+  color: var(--heading);
 }
 
-html[data-theme]:not([data-theme="classic"]) .carousel-dot {
-  background: color-mix(in srgb, var(--heading) 28%, transparent);
-}
-
-html[data-theme]:not([data-theme="classic"]) .carousel-dot.active {
-  background: var(--accent);
-}
-
-html[data-theme="terminal"] .carousel-item,
-html[data-theme="terminal"] .carousel-btn {
+html[data-theme="terminal"] .speaking-thumb {
   border-radius: 0;
 }
 
@@ -803,6 +795,7 @@ html[data-theme]:not([data-theme="classic"]) .blog-page {
 }
 
 html[data-theme]:not([data-theme="classic"]) .blog-lede,
+html[data-theme]:not([data-theme="classic"]) .blog-cite,
 html[data-theme]:not([data-theme="classic"]) .blog-era-blurb,
 html[data-theme]:not([data-theme="classic"]) .blog-count,
 html[data-theme]:not([data-theme="classic"]) .blog-empty,
