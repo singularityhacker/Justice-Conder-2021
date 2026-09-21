@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Restore classic chrome: yellow favicon, logo.webp, themes, look-switcher."""
+"""Restore classic chrome: yellow favicon, logo.webp. Theme switcher stays off."""
 
 from __future__ import annotations
 
@@ -25,16 +25,13 @@ CUBES_LOGO = re.compile(
     r'src="((?:\.\./)?)images/icon/cubes-icon\.gif"(?:\s+alt="Justice Conder")?(?:\s+height="40")?(?:\s+width="40")?'
 )
 
-THEME_SCRIPT = """\t<script>
-\t(function () {
-\t\ttry {
-\t\t\tvar q = new URLSearchParams(location.search).get("theme");
-\t\t\tvar t = q || localStorage.getItem("jc-site-theme");
-\t\t\tif (t) document.documentElement.setAttribute("data-theme", t);
-\t\t} catch (e) {}
-\t})();
-\t</script>
-"""
+THEME_BOOTSTRAP = re.compile(
+    r"""\s*<script>\s*\(function \(\) \{\s*try \{\s*var q = new URLSearchParams\(location\.search\)\.get\("theme"\);.*?data-theme.*?</script>\s*""",
+    re.S,
+)
+THEME_SWITCHER = re.compile(
+    r"""\s*<script src="(?:\.\./)?js/theme-switcher\.js"></script>\s*"""
+)
 
 FONTS = """\t<link rel="preload"
 \t\thref="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
@@ -67,25 +64,11 @@ def apply(text: str, prefix: str) -> str:
             f'\t<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />',
         )
 
-    if f"{prefix}css/themes.css" not in text and f"{prefix}css/blog.css" in text:
-        text = text.replace(
-            f'<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />',
-            f'<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />\n'
-            f'\t<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />',
-        )
-
-    if "jc-site-theme" not in text and f"{prefix}css/themes.css" in text:
-        text = text.replace(
-            f'<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />',
-            f'<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />\n{THEME_SCRIPT.rstrip()}\n',
-        )
+    text = THEME_BOOTSTRAP.sub("\n", text)
+    text = THEME_SWITCHER.sub("\n", text)
 
     if "fonts.googleapis.com" not in text and "</head>" in text:
         text = text.replace("</head>", f"{FONTS}</head>")
-
-    switcher = f'<script src="{prefix}js/theme-switcher.js"></script>'
-    if "theme-switcher.js" not in text:
-        text = text.replace("</body>", f"\t{switcher}\n</body>")
 
     return text
 

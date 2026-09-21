@@ -571,8 +571,6 @@ def nav_html(active: str, prefix: str = "") -> str:
 
 
 def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", extra_js: str = "") -> str:
-    switcher = f'\t<script src="{prefix}js/theme-switcher.js"></script>'
-    extra_js = f"{extra_js}\n{switcher}" if extra_js else switcher
     return f"""<!DOCTYPE html>
 <html lang="en">
 
@@ -588,16 +586,6 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 \t<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />
 \t<link rel="stylesheet" href="{prefix}css/theme-icon.css" type="text/css" />
 \t<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />
-\t<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />
-\t<script>
-\t(function () {{
-\t\ttry {{
-\t\t\tvar q = new URLSearchParams(location.search).get("theme");
-\t\t\tvar t = q || localStorage.getItem("jc-site-theme");
-\t\t\tif (t) document.documentElement.setAttribute("data-theme", t);
-\t\t}} catch (e) {{}}
-\t}})();
-\t</script>
 \t<link rel="preload"
 \t\thref="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
 \t\tas="style" onload="this.rel='stylesheet'" />
