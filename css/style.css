@@ -389,7 +389,8 @@ body a:hover {
 #about .profile img {
   display: block;
   width: 100%;
-  /*height: 329px;*/
+  height: auto;
+  border-radius: 0;
 }
 #about .profile .social-badge {
   display: flex;
