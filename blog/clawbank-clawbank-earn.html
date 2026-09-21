@@ -13,6 +13,16 @@
 	<link rel="stylesheet" href="../css/style.css" type="text/css" />
 	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
 	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="../css/themes.css" type="text/css" />
+	<script>
+	(function () {
+		try {
+			var q = new URLSearchParams(location.search).get("theme");
+			var t = q || localStorage.getItem("jc-site-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	})();
+	</script>
 
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
@@ -31,12 +41,14 @@
 			</a>
 		</div>
 		<ul class="nav-link title-text flex-container">
-			<li><a href="../index.html#work">Work</a></li>
-			<li><a href="../index.html#resume">Experience</a></li>
-			<li><a href="../blog.html" class="is-current">Writing</a></li>
 			<li><a href="../index.html#about">About</a></li>
-			<li><a href="../index.html#contact">Contact</a></li>
-			</ul>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
 	</nav>
 
 	<nav id="menu" class="navbar navbar-default mobile-only">
@@ -52,11 +64,13 @@
 				<div></div>
 			</div>
 			<ul class="nav-link flex-container title-text">
-			<li><a href="../index.html#work">Work</a></li>
-			<li><a href="../index.html#resume">Experience</a></li>
-			<li><a href="../blog.html" class="is-current">Writing</a></li>
 			<li><a href="../index.html#about">About</a></li>
-			<li><a href="../index.html#contact">Contact</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../index.html#content">Content</a></li>
+			<li><a href="../blog.html" class="is-current">Blog</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -123,6 +137,7 @@
 		</article>
 	</div>
 	<div class="footer flex-container"></div>
+	<script src="../js/theme-switcher.js"></script>
 </body>
 
 </html>

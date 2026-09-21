@@ -13,6 +13,16 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/theme-icon.css" type="text/css" />
 	<link rel="stylesheet" href="css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="css/themes.css" type="text/css" />
+	<script>
+	(function () {
+		try {
+			var q = new URLSearchParams(location.search).get("theme");
+			var t = q || localStorage.getItem("jc-site-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		} catch (e) {}
+	})();
+	</script>
 
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
@@ -31,11 +41,13 @@
 			</a>
 		</div>
 		<ul class="nav-link title-text flex-container">
-			<li><a href="index.html#work">Work</a></li>
-			<li><a href="index.html#resume">Experience</a></li>
-			<li><a href="blog.html" class="is-current">Writing</a></li>
 			<li><a href="index.html#about">About</a></li>
-			<li><a href="index.html#contact">Contact</a></li>
+			<li><a href="index.html#resume">Experience</a></li>
+			<li><a href="index.html#education">Education</a></li>
+			<li><a href="index.html#portfolio">Portfolio</a></li>
+			<li><a href="index.html#content">Content</a></li>
+			<li><a href="blog.html" class="is-current">Blog</a></li>
+			<li><a href="index.html#testimonials">Testimonials</a></li>
 		</ul>
 	</nav>
 
@@ -52,30 +64,23 @@
 				<div></div>
 			</div>
 			<ul class="nav-link flex-container title-text">
-			<li><a href="index.html#work">Work</a></li>
-			<li><a href="index.html#resume">Experience</a></li>
-			<li><a href="blog.html" class="is-current">Writing</a></li>
 			<li><a href="index.html#about">About</a></li>
-			<li><a href="index.html#contact">Contact</a></li>
+			<li><a href="index.html#resume">Experience</a></li>
+			<li><a href="index.html#education">Education</a></li>
+			<li><a href="index.html#portfolio">Portfolio</a></li>
+			<li><a href="index.html#content">Content</a></li>
+			<li><a href="blog.html" class="is-current">Blog</a></li>
+			<li><a href="index.html#testimonials">Testimonials</a></li>
 			</ul>
 		</div>
 	</nav>
 	<div class="container blog-wrap">
 		<div class="subject-header">
 			<span>Writings</span>
-			<h2>Writing</h2>
+			<h2>Blog</h2>
 			<div class="bg-text unselectable"><strong>Writings</strong></div>
 		</div>
 		<p class="blog-lede">Writing since 2011. Futurism, project management, crypto, q/acc, and ClawBank — original wording, with dates and source links preserved.</p>
-		<section class="selected-writing" aria-label="Selected writing">
-			<h3>Selected Writing</h3>
-			<ul class="selected-writing-list">
-				<li><a href="blog/clawbank-living-software.html">Living Software: The Platform That Patches Itself</a> — from reported problems to shipped fixes in an AI-assisted delivery loop.</li>
-				<li><a href="blog/clawbank-policy-engine.html">ClawBank Policy Engine</a> — spending limits, scoped keys, and account-wide policy for agent operations.</li>
-				<li><a href="blog/medium-agile-delivery-metrics.html">Agile Delivery Metrics</a> — a practical set of charts for seeing and improving a delivery process.</li>
-			</ul>
-		</section>
-		<h3 class="all-writing-heading">All Writing</h3>
 		<section class="blog-timeline" aria-label="Writing eras from 2011 to 2026">
 			<div class="blog-timeline-head">
 				<p class="blog-timeline-kicker">Eras</p>
@@ -1856,6 +1861,7 @@
 	</div>
 	<div class="footer flex-container"></div>
 	<script src="js/blog.js"></script>
+	<script src="js/theme-switcher.js"></script>
 </body>
 
 </html>

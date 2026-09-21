@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /authoring/
-Disallow: /CONTENT_TODO.md
-Allow: /

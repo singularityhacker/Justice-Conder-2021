@@ -67,8 +67,25 @@ def apply(text: str, prefix: str) -> str:
             f'\t<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />',
         )
 
+    if f"{prefix}css/themes.css" not in text and f"{prefix}css/blog.css" in text:
+        text = text.replace(
+            f'<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />',
+            f'<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />\n'
+            f'\t<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />',
+        )
+
+    if "jc-site-theme" not in text and f"{prefix}css/themes.css" in text:
+        text = text.replace(
+            f'<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />',
+            f'<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />\n{THEME_SCRIPT.rstrip()}\n',
+        )
+
     if "fonts.googleapis.com" not in text and "</head>" in text:
         text = text.replace("</head>", f"{FONTS}</head>")
+
+    switcher = f'<script src="{prefix}js/theme-switcher.js"></script>'
+    if "theme-switcher.js" not in text:
+        text = text.replace("</body>", f"\t{switcher}\n</body>")
 
     return text
 
