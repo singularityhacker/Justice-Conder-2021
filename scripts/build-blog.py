@@ -544,6 +544,9 @@ def nav_html(active: str, prefix: str = "") -> str:
 \t\t<div class="navbar-header">
 \t\t\t<a rel="noopener" class="navbar-brand" href="{href("index.html")}">
 \t\t\t\t<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+\t\t\t\t<span class="brand-lockup">
+\t\t\t\t\t<span class="brand-name">Justice Conder</span>
+\t\t\t\t</span>
 \t\t\t</a>
 \t\t</div>
 \t\t<ul class="nav-link title-text flex-container">
@@ -555,6 +558,9 @@ def nav_html(active: str, prefix: str = "") -> str:
 \t\t<div class="navbar-header">
 \t\t\t<a rel="noopener" class="navbar-brand" href="{href("index.html")}">
 \t\t\t\t<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+\t\t\t\t<span class="brand-lockup">
+\t\t\t\t\t<span class="brand-name">Justice Conder</span>
+\t\t\t\t</span>
 \t\t\t</a>
 \t\t</div>
 \t\t<div class="nav-opener">
@@ -603,7 +609,48 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 \t<div class="container blog-wrap">
 {body}
 \t</div>
-\t<div class="footer flex-container"></div>
+\t<footer class="footer site-footer">
+\t\t<div class="site-footer-grid">
+\t\t\t<div class="site-footer-identity">
+\t\t\t\t<p class="site-footer-name">Justice Conder</p>
+\t\t\t\t<p class="site-footer-blurb">Technically capable founder and strategist preparing for forward-deployed engineering and strategy roles at AI companies.</p>
+\t\t\t\t<ul class="site-footer-social">
+\t\t\t\t\t<li>
+\t\t\t\t\t\t<a rel="noopener" href="https://github.com/singularityhacker" target="_blank" aria-label="GitHub">
+\t\t\t\t\t\t\t<i class="fa fa-github"></i>
+\t\t\t\t\t\t</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li>
+\t\t\t\t\t\t<a rel="noopener" href="https://twitter.com/singularityhack" target="_blank" aria-label="Twitter">
+\t\t\t\t\t\t\t<i class="fa fa-twitter"></i>
+\t\t\t\t\t\t</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li>
+\t\t\t\t\t\t<a rel="noopener" href="https://www.linkedin.com/in/justiceconder" target="_blank" aria-label="LinkedIn">
+\t\t\t\t\t\t\t<i class="fa fa-linkedin"></i>
+\t\t\t\t\t\t</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t</div>
+\t\t\t<nav class="site-footer-nav" aria-label="Footer">
+\t\t\t\t<p class="site-footer-heading">Navigation</p>
+\t\t\t\t<ul>
+\t\t\t\t\t<li><a href="{prefix}index.html#about">About</a></li>
+\t\t\t\t\t<li><a href="{prefix}index.html#resume">Experience</a></li>
+\t\t\t\t\t<li><a href="{prefix}index.html#portfolio">Portfolio</a></li>
+\t\t\t\t\t<li><a href="{prefix}blog.html">Writing</a></li>
+\t\t\t\t</ul>
+\t\t\t</nav>
+\t\t\t<div class="site-footer-contact">
+\t\t\t\t<p class="site-footer-heading">Get in Touch</p>
+\t\t\t\t<a class="site-footer-email" href="mailto:hello@justiceconder.com">hello@justiceconder.com</a>
+\t\t\t</div>
+\t\t</div>
+\t\t<div class="site-footer-bar">
+\t\t\t<p>© 2026 Justice Conder. All rights reserved.</p>
+\t\t\t<p>Built with intention.</p>
+\t\t</div>
+\t</footer>
 {extra_js}
 </body>
 
