@@ -803,6 +803,85 @@ body a:hover {
   color: rgba(247, 248, 249, 0.7);
 }
 
+/* Speaking locations map */
+.talks-map-wrap {
+  max-width: 920px;
+  margin: 1.25rem auto 0.25rem;
+  padding: 0 1rem;
+}
+
+.talks-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #282828;
+  border-radius: 8px;
+}
+
+.talks-map-ocean {
+  fill: #282828;
+}
+
+.talks-map-land {
+  fill: #4a4a4a;
+}
+
+.talks-map-pin {
+  fill: #ffde00;
+  stroke: #282828;
+  stroke-width: 1.4;
+}
+
+.talks-map-label {
+  fill: #fffaf0;
+  font-family: "Open Sans", "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: #282828;
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+}
+
+.talks-map-cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 0.9rem;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  color: #2f3742;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.talks-map-cities span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.talks-map-cities span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffde00;
+  box-shadow: 0 0 0 1px #282828;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .talks-map-label {
+    display: none;
+  }
+
+  .talks-map-pin {
+    r: 7;
+  }
+}
+
 /* Speaking Carousel */
 .speaking-carousel-container {
   position: relative;

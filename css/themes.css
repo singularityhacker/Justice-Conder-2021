@@ -716,6 +716,42 @@ html[data-theme]:not([data-theme="classic"]) .footer strong {
   color: var(--text-muted);
 }
 
+html[data-theme]:not([data-theme="classic"]) .talks-map {
+  background: var(--bg-elevated);
+  border-radius: var(--radius);
+}
+
+html[data-theme]:not([data-theme="classic"]) .talks-map-ocean {
+  fill: var(--bg-elevated);
+}
+
+html[data-theme]:not([data-theme="classic"]) .talks-map-land {
+  fill: color-mix(in srgb, var(--heading) 22%, var(--bg-elevated));
+}
+
+html[data-theme]:not([data-theme="classic"]) .talks-map-pin {
+  fill: var(--accent);
+  stroke: var(--bg-elevated);
+}
+
+html[data-theme]:not([data-theme="classic"]) .talks-map-label {
+  fill: var(--heading);
+  stroke: var(--bg-elevated);
+}
+
+html[data-theme]:not([data-theme="classic"]) .talks-map-cities {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) .talks-map-cities span::before {
+  background: var(--accent);
+  box-shadow: 0 0 0 1px var(--card-border);
+}
+
+html[data-theme="terminal"] .talks-map {
+  border-radius: 0;
+}
+
 html[data-theme]:not([data-theme="classic"]) .carousel-item {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
