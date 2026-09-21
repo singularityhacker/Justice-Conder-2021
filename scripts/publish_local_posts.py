@@ -189,6 +189,8 @@ def clean_x_article(raw: str, title: str, status_id: str) -> str:
 
 
 def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> str:
+    switcher = f'\t<script src="{prefix}js/theme-switcher.js"></script>'
+    extra_js = f"{extra_js}\n{switcher}" if extra_js else switcher
     return f"""<!DOCTYPE html>
 <html lang="en">
 
@@ -199,12 +201,27 @@ def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> s
 	<meta name="author" content="justiceconder.com" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>{html.escape(title)}</title>
-	<link rel="icon" href="{prefix}images/icon/cubes-icon.gif" type="image/gif" />
-	<link rel="shortcut icon" href="{prefix}images/icon/cubes-icon.gif" />
+	<link rel="shortcut icon" href="{prefix}images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
 	<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />
 	<link rel="stylesheet" href="{prefix}css/theme-icon.css" type="text/css" />
 	<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />
-	<link rel="stylesheet" href="{prefix}css/consultant.css" type="text/css" />
+	<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />
+	<script>
+	(function () {{
+		try {{
+			var q = new URLSearchParams(location.search).get("theme");
+			var t = q || localStorage.getItem("jc-site-theme");
+			if (t) document.documentElement.setAttribute("data-theme", t);
+		}} catch (e) {{}}
+	}})();
+	</script>
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
 </head>
 
 <body class="blog-page">
@@ -212,7 +229,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> s
 	<nav id="menu" class="navbar navbar-default desktop-only">
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="{prefix}index.html">
-				<img id="logo_img" src="{prefix}images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
+				<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
 			</a>
 		</div>
 		<ul class="nav-link title-text flex-container">
@@ -229,7 +246,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_js: str = "") -> s
 	<nav id="menu" class="navbar navbar-default mobile-only">
 		<div class="navbar-header">
 			<a rel="noopener" class="navbar-brand" href="{prefix}index.html">
-				<img id="logo_img" src="{prefix}images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40">
+				<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
 			</a>
 		</div>
 		<div class="nav-opener">

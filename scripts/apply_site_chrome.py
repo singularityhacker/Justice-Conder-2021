@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Point every HTML page at the cubes icon, consultant CSS, and era labels."""
+"""Restore classic chrome: yellow favicon, logo.webp, themes, look-switcher."""
 
 from __future__ import annotations
 
@@ -8,60 +8,91 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-THEME_SCRIPT = re.compile(
-    r"\s*<script>\s*\(function \(\) \{[\s\S]*?jc-site-theme[\s\S]*?</script>\s*",
+CUBES_FAVICONS = re.compile(
+    r'\s*<link rel="icon" href="(?:\.\./)?images/icon/cubes-icon\.gif"[^>]*>\s*'
+    r'<link rel="shortcut icon" href="(?:\.\./)?images/icon/cubes-icon\.gif"[^>]*>\s*',
     re.I,
 )
-GOOGLE_FONTS = re.compile(
-    r"\s*<link rel=\"preload\"\s+href=\"https://fonts\.googleapis\.com/css\?family=[^\"]+\"[\s\S]*?/>\s*",
+CUBES_SHORTCUT = re.compile(
+    r'<link rel="shortcut icon" href="((?:\.\./)?)images/icon/cubes-icon\.gif"[^>]*>',
     re.I,
 )
-SWITCHER = re.compile(r"\s*<script src=\"(?:\.\./)?js/theme-switcher\.js\"></script>\s*")
-THEMES_CSS = re.compile(r"\s*<link rel=\"stylesheet\" href=\"(?:\.\./)?css/themes\.css\"[^>]*>\s*")
+CONSULTANT = re.compile(
+    r'\s*<link rel="stylesheet" href="(?:\.\./)?css/consultant\.css"[^>]*>\s*',
+    re.I,
+)
+CUBES_LOGO = re.compile(
+    r'src="((?:\.\./)?)images/icon/cubes-icon\.gif"(?:\s+alt="Justice Conder")?(?:\s+height="40")?(?:\s+width="40")?'
+)
 
+THEME_SCRIPT = """\t<script>
+\t(function () {
+\t\ttry {
+\t\t\tvar q = new URLSearchParams(location.search).get("theme");
+\t\t\tvar t = q || localStorage.getItem("jc-site-theme");
+\t\t\tif (t) document.documentElement.setAttribute("data-theme", t);
+\t\t} catch (e) {}
+\t})();
+\t</script>
+"""
 
-def chrome_head(prefix: str) -> str:
-    return (
-        f'\t<link rel="icon" href="{prefix}images/icon/cubes-icon.gif" type="image/gif" />\n'
-        f'\t<link rel="shortcut icon" href="{prefix}images/icon/cubes-icon.gif" />'
-    )
+FONTS = """\t<link rel="preload"
+\t\thref="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+\t\tas="style" onload="this.rel='stylesheet'" />
+\t<link rel="preload"
+\t\thref="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+\t\tas="style" onload="this.rel='stylesheet'" />
+"""
 
 
 def apply(text: str, prefix: str) -> str:
-    text = THEME_SCRIPT.sub("\n", text)
-    text = GOOGLE_FONTS.sub("\n", text)
-    text = SWITCHER.sub("\n", text)
-    text = THEMES_CSS.sub("\n", text)
-    text = text.replace(
+    text = CUBES_FAVICONS.sub(
+        f'\n\t<link rel="shortcut icon" href="{prefix}images/icon/favicon.ico" />\n',
+        text,
+    )
+    text = CUBES_SHORTCUT.sub(
         f'<link rel="shortcut icon" href="{prefix}images/icon/favicon.ico" />',
-        chrome_head(prefix),
+        text,
     )
-    text = text.replace(
-        f'src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy"',
-        f'src="{prefix}images/icon/cubes-icon.gif" alt="Justice Conder" height="40" width="40"',
+    text = CONSULTANT.sub("\n", text)
+    text = CUBES_LOGO.sub(
+        r'src="\1images/logo.webp" alt="" height="40px" width="55px" loading="lazy"',
+        text,
     )
-    text = text.replace(
-        f'src="{prefix}images/logo.webp"',
-        f'src="{prefix}images/icon/cubes-icon.gif"',
-    )
-    if f'css/consultant.css' not in text and f"{prefix}css/blog.css" in text:
+
+    if "bulma.min.css" not in text and f"{prefix}css/style.css" in text:
+        text = text.replace(
+            f'<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />',
+            '<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />\n'
+            f'\t<link rel="stylesheet" href="{prefix}css/style.css" type="text/css" />',
+        )
+
+    if f"{prefix}css/themes.css" not in text and f"{prefix}css/blog.css" in text:
         text = text.replace(
             f'<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />',
             f'<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />\n'
-            f'\t<link rel="stylesheet" href="{prefix}css/consultant.css" type="text/css" />',
+            f'\t<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />',
         )
-    text = text.replace('blog-tag--singularity-hacker">Singularity Hacker<', 'blog-tag--singularity-hacker">Futurism<')
-    text = text.replace('blog-tag--medium">Medium<', 'blog-tag--medium">Project management<')
-    text = text.replace('blog-tag--0xjustice">0xjustice<', 'blog-tag--0xjustice">Crypto<')
+
+    if "jc-site-theme" not in text and f"{prefix}css/themes.css" in text:
+        text = text.replace(
+            f'<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />',
+            f'<link rel="stylesheet" href="{prefix}css/themes.css" type="text/css" />\n{THEME_SCRIPT.rstrip()}\n',
+        )
+
+    if "fonts.googleapis.com" not in text and "</head>" in text:
+        text = text.replace("</head>", f"{FONTS}</head>")
+
+    switcher = f'<script src="{prefix}js/theme-switcher.js"></script>'
+    if "theme-switcher.js" not in text:
+        text = text.replace("</body>", f"\t{switcher}\n</body>")
+
     return text
 
 
 def main() -> int:
     files = [ROOT / "blog.html"]
     files += list((ROOT / "blog").glob("*.html"))
-    extra = ROOT / "resume-print.html"
-    if extra.exists():
-        files.append(extra)
     n = 0
     for path in files:
         prefix = "" if path.parent == ROOT else "../"
@@ -70,7 +101,7 @@ def main() -> int:
         if new != old:
             path.write_text(new, encoding="utf-8")
             n += 1
-    print(f"updated chrome on {n} pages")
+    print(f"restored chrome on {n} pages")
     return 0
 
 
