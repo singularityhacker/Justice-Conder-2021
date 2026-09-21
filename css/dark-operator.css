@@ -292,7 +292,7 @@ body.dark-operator .intro .link-btn:hover {
 }
 
 body.dark-operator .intro .link-btn img {
-  filter: brightness(0);
+  display: none;
 }
 
 /* ── Layout surfaces ── */
@@ -663,5 +663,15 @@ body.dark-operator .blog-prose a {
 @media (max-width: 1024px) {
   body.dark-operator .intro {
     padding-top: 5.5rem;
+  }
+
+  body.dark-operator #about .profile figure {
+    background: var(--do-surface) !important;
+  }
+
+  body.dark-operator .subject-header span {
+    background: none !important;
+    padding: 0 !important;
+    color: var(--do-amber) !important;
   }
 }
