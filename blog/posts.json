@@ -566,7 +566,7 @@
     "canonical": "https://paragraph.com/@0xjustice/all-worlds-end-in-an-ai-singularity",
     "excerpt": "All long-running fictional universes inevitably converge on an AI singularity. If a setting allows for compounding progress and automation, cognition eventually collapses in on itself. It appears to be universal and\u2026",
     "path": "blog/0xjustice-all-worlds-end-in-an-ai-singularity.html",
-    "cover": "blog/media/c591ca2fe1a4-823630b4ab076659622e1107f5efab380c78c55a.jpg",
+    "cover": "blog/media/fff44f247cc1-e4db67ae4359b94ea088be6c487f748e7281cdbd.jpg",
     "tags": [
       "ai",
       "singularity"
@@ -582,7 +582,7 @@
     "canonical": "https://paragraph.com/@0xjustice/the-turing-scale",
     "excerpt": "The original Turing test revolved around convincing humans that a machine was a human. People don't realize it, but the original Eliza app could do this for a while. With this knowledge, we see that the test is less\u2026",
     "path": "blog/0xjustice-the-turing-scale.html",
-    "cover": "blog/media/7e8e9388f7f9-3882d5605470abdca8593d5dce689c8f1c714efc.png",
+    "cover": "blog/media/2e612f389e3b-743252703c5bd2cecd60154c63349ed0d5769228.jpg",
     "tags": [
       "ai",
       "singularity"
@@ -598,7 +598,7 @@
     "canonical": "https://paragraph.com/@0xjustice/ai-as-industrial-scale-induction",
     "excerpt": "Plato has reigned over cyberspace for the last 80 years. We've built the entire computational edifice of the modern world on deduction: formal systems, precise syntax, and formal logic. The realm of inductive reasoning\u2026",
     "path": "blog/0xjustice-ai-as-industrial-scale-induction.html",
-    "cover": "blog/media/293d19cc891c-f930d99dfc9d61a11ab44affb662fac5d774cf8f.jpg",
+    "cover": "blog/media/d237465c5a43-d1bba4eb1896cae7bfc980bea9437671fc8d13ee.jpg",
     "tags": [
       "ai",
       "cyberspace",
@@ -615,7 +615,7 @@
     "canonical": "https://paragraph.com/@0xjustice/the-unreasonable-effectiveness-of-tiny-ai-models",
     "excerpt": "Everyone\u2019s obsessed with LARGE language models. That's understandable, after all, that's what LLM stands for. These are the premier models, requiring massive data centers that consume vast amounts of energy to stay cool\u2026",
     "path": "blog/0xjustice-the-unreasonable-effectiveness-of-tiny-ai-models.html",
-    "cover": "blog/media/f0c4c2009ade-354e2577c18dbfadbc2fca34c5b58f847f76cecc.png",
+    "cover": "blog/media/5488f1640e27-ac2397481f792c7338787145108da919140ad4df.png",
     "tags": [
       "ai"
     ]
@@ -630,7 +630,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-protocol-upgrade-kpi-graduation-graceful-exit",
     "excerpt": "The q/acc protocol just got a significant upgrade, and it\u2019s going to reshape how projects graduate and sunset within our ecosystem. We\u2019re introducing KPI-based token unlocks and a graceful wind-down path for teams who\u2026",
     "path": "blog/qacc-q-acc-protocol-upgrade-kpi-graduation-graceful-exit.html",
-    "cover": "blog/media/9a5293d8d360-eca740292d25921c40959284695ba3bc9815c7df.png",
+    "cover": "blog/media/036cc6bb2de1-4f5cccbb8a49cb6f4364f4ae37fc84d39b07e187.jpg",
     "tags": [
       "tokenization"
     ]
@@ -645,7 +645,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-quantum-leap",
     "excerpt": "We founded the Quadratic Accelerator (q/acc) 18 months ago to drag tokenization out of the dark ages. This may sound odd, but the current approach to tokenization is bespoke, haphazard, and unusable for real startups\u2026",
     "path": "blog/qacc-q-acc-quantum-leap.html",
-    "cover": "blog/media/3ef843928032-bbd9f6300a18b5021bc628e9cf3e58285b5ae09e.jpg",
+    "cover": "blog/media/4185a332873a-bbd9f6300a18b5021bc628e9cf3e58285b5ae09e.jpg",
     "tags": [
       "tokenization"
     ]
@@ -660,7 +660,7 @@
     "canonical": "https://paragraph.com/@0xjustice/web3-growth-primitives",
     "excerpt": "In web3, we face two questions: What to build and how to build it? There are plenty of ideas to answer the first question. All or none of them could work at different times and for various reasons related to\u2026",
     "path": "blog/0xjustice-web3-growth-primitives.html",
-    "cover": "blog/media/f701ddb9832c-0944fd8e8b1dc935bd958cec615ded4ef5e95fec.gif",
+    "cover": "blog/media/bf31a583c53a-5e17dd7e610235fac2c6716109ee7f9ea1b7c853.jpg",
     "tags": [
       "crypto"
     ]
@@ -675,7 +675,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-s2-impact-report",
     "excerpt": "IntroductionThe Quadratic Accelerator (q/acc) continues to redefine fair launch mechanics by combining Quadratic Funding with chain-sponsored Initial Coin Offerings (ICOs). In Season 2, sponsored by Polygon, we further\u2026",
     "path": "blog/qacc-q-acc-s2-impact-report.html",
-    "cover": "blog/media/b9bd2220d0e7-f10e17963b4cf5c24dc6bc2be76a4ed556a7c27e.png",
+    "cover": "blog/media/ec3a111ec9dd-97404d864b7eea7af30abc3549a74a191535b193.png",
     "tags": [
       "crypto",
       "tokenization",
@@ -692,7 +692,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-s1-impact-report",
     "excerpt": "Maiden VoyageSeason 1 of our partnership with Polygon has officially culminated, and we\u2019re proud to share the results. Through the Quadratic Accelerator (q/acc) protocol, we\u2019re pioneering a new mechanism for funding\u2026",
     "path": "blog/qacc-q-acc-s1-impact-report.html",
-    "cover": "blog/media/15f9ad71144f-b7fedeafd103fcf66e7347842ecd724a524b24ee.png",
+    "cover": "blog/media/dd90e8071f05-78232e379a67b7a57d7e172c2d876d68135cdb59.png",
     "tags": [
       "defi",
       "tokenization",
@@ -709,7 +709,7 @@
     "canonical": "https://paragraph.com/@0xjustice/ethereum-the-new-zeitgeist",
     "excerpt": "Ethereum is experiencing a profound identity crisis partially instigated by the controversy surrounding the Ethereum Foundation (EF) and its executive leadership. A recurring theme in this controversy is the accusation\u2026",
     "path": "blog/0xjustice-ethereum-the-new-zeitgeist.html",
-    "cover": "blog/media/b202c53fabb1-f86e6eaed73afd639829a4ff7a749c8d734dcea7.png",
+    "cover": "blog/media/64024121327c-8f0e8eac1c53d6fd044c68b4f893305493146f95.png",
     "tags": [
       "ethereum"
     ]
@@ -724,7 +724,7 @@
     "canonical": "https://paragraph.com/@0xjustice/token-accelerationism-the-story-of-q-acc",
     "excerpt": "I\u2019m thrilled to announce that my team and I have officially launched our first major Web3 product: The Quadratic Accelerator (q/acc). In this post, I\u2019ll share the journey behind its creation and what makes this product\u2026",
     "path": "blog/0xjustice-token-accelerationism-the-story-of-q-acc.html",
-    "cover": "blog/media/0aabe0572da7-a49d641346c97eec856591fbef3120117aa60816.png",
+    "cover": "blog/media/242c3fb2113b-bc77d296533d6acbc279fa74650ecf0924c6227b.png",
     "tags": [
       "crypto",
       "daos",
@@ -741,7 +741,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-ms3",
     "excerpt": "At q/acc, we believe that innovation never sleeps, so neither do we. Two months have flown by since our last builder update, and we have amazing updates to share. Whether you\u2019ve been with us from the start or are just\u2026",
     "path": "blog/qacc-q-acc-ms3.html",
-    "cover": "blog/media/a90786964686-a383a0bcc3b836cac1d16e98b573577b7bb34f80.jpg",
+    "cover": "blog/media/6cd760038e3f-c83ed441e0636a06efb21471de32760c32e7ab44.png",
     "tags": [
       "crypto",
       "tokenization",
@@ -758,7 +758,7 @@
     "canonical": "https://paragraph.com/@qacc/quadratic-accelerator-announces-first-cohort",
     "excerpt": "Quadratic Accelerator Announces First Cohort of Startups and Strategic Partnerships Eight Innovative Projects Across Diverse Web3 Sectors Selected to Pioneer Quadratic Acceleration Exclusively on Polygon zkEVM. October\u2026",
     "path": "blog/qacc-quadratic-accelerator-announces-first-cohort.html",
-    "cover": "blog/media/82338168f691-683a05948abb0b3a2b9d2680004fa02473633573.png",
+    "cover": "blog/media/94da2c514ede-4edb5df57ddc0cc71c453bcabf7b3fd88bdd9dde.png",
     "tags": [
       "crypto",
       "tokenization",
@@ -776,7 +776,7 @@
     "canonical": "https://paragraph.com/@0xjustice/daos-from-first-principles",
     "excerpt": "Most of what you've heard about DAOs is a lie. They don't inherently provide more equitable access or contribution opportunities. If you force them to do so, you ensure they don\u2019t produce anything noteworthy and never\u2026",
     "path": "blog/0xjustice-daos-from-first-principles.html",
-    "cover": "blog/media/d2fec4158f6e-79248819300a80cc3d02d21bef49b6ac52d13500.png",
+    "cover": "blog/media/2aa45dbc8725-42e32756d23813879f5aa278ba486f94558db854.png",
     "tags": [
       "daos"
     ]
@@ -791,7 +791,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-ms2",
     "excerpt": "It's been two months since our last update, and the team has been cooking. The q/acc protocol has met all planned milestone goals and announced its first call for season one applications. If this is your first time\u2026",
     "path": "blog/qacc-q-acc-ms2.html",
-    "cover": "blog/media/9a513e6de91f-f842265e224f7928b5c6dd7d6d9ebbcc1aed72e9.png",
+    "cover": "blog/media/3bd0c84afec5-a94fe9b3238077cdf6046f2cc6f2998e932fd65e.png",
     "tags": [
       "tokenization"
     ]
@@ -806,7 +806,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-call-for-applications",
     "excerpt": "The day has arrived. The q/acc protocol is now accepting applications for our first cohort of projects building on Polygon. This is your chance to fast-track the tokenization of your project with the most bleeding-edge\u2026",
     "path": "blog/qacc-q-acc-call-for-applications.html",
-    "cover": "blog/media/7b49529e6b96-a00026ee1822a245830c9b4f101d2b0fb9aceaa8.png",
+    "cover": "blog/media/83c11a1a50ac-74290cbe0ce22fa6cc83dcd3e0c32593b11212e5.png",
     "tags": [
       "tokenization",
       "ethereum"
@@ -822,7 +822,7 @@
     "canonical": "https://paragraph.com/@0xjustice/the-succubus-of-the-state",
     "excerpt": "A succubus is a mythological demonic entity personified as a female seductress who lures men away with the promise of pleasure while parasitically consuming their powers of reproduction and industry. It's also an\u2026",
     "path": "blog/0xjustice-the-succubus-of-the-state.html",
-    "cover": "blog/media/1dd2cd78b852-44eaa0af49cd27042e8e0b3b50613da08cd0a3e2.png",
+    "cover": "blog/media/f1b5800fbf2a-f4dcc799e544dcdaed3f0887b94b3d5eb9b98727.png",
     "tags": []
   },
   {
@@ -835,7 +835,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-ms1",
     "excerpt": "The Quadratic Accelerator (q/acc) is a groundbreaking growth primitive poised to revolutionize the traditional Web3 grant landscape. Instead of the conventional approach of directly issuing grants to projects, q/acc\u2026",
     "path": "blog/qacc-q-acc-ms1.html",
-    "cover": "blog/media/e25290da0a2b-ece650dff76590304ceca35f2ec74f11d916401c.png",
+    "cover": "blog/media/3eb96cc7f61e-c8f87255d5095f181bebf4108428080b88a7670d.png",
     "tags": [
       "crypto",
       "tokenization",
@@ -852,7 +852,7 @@
     "canonical": "https://paragraph.com/@qacc/q-acc-first-light",
     "excerpt": "Quadratic Acceleration: First LightGiveth is building the next evolution of web3 grants to support builders on Polygon. Many great projects depend on the Web3 grant ecosystem for funding. Still, there is a\u2026",
     "path": "blog/qacc-q-acc-first-light.html",
-    "cover": "blog/media/b4ea70a1c175-cc50f164acfdc34826ff5a538179518e34cdad79.jpg",
+    "cover": "blog/media/6f9da091e855-6df4e4786e7f7ed0bdf72928b048319558e63a4a.jpg",
     "tags": [
       "crypto",
       "tokenization",
@@ -869,7 +869,7 @@
     "canonical": "https://paragraph.com/@0xjustice/everything-you-want-to-hear-the-future-of-ai-relationships",
     "excerpt": "Large Language Models (LLMs) are releasing unimaginable wonders into the world. New, practically magical capabilities are demonstrated seemingly every week. One of the most significant aspects of these developments is\u2026",
     "path": "blog/0xjustice-everything-you-want-to-hear-the-future-of-ai-relationships.html",
-    "cover": "blog/media/4dd316047899-f510bfcc6174c18f3fc7cf644caddf087ad1211c.png",
+    "cover": "blog/media/90582f9c3508-fdae45282dcaf07bfa7e5753fded370ad282ce33.png",
     "tags": [
       "ai"
     ]
@@ -884,7 +884,7 @@
     "canonical": "https://paragraph.com/@0xjustice/the-dao-playbook-v1",
     "excerpt": "There\u2019s a lot of talk about DAOs and what they could be in the future but very little writing about how to actually launch one. This absence is partly because the subject is nascent but also because it's hard to\u2026",
     "path": "blog/0xjustice-the-dao-playbook-v1.html",
-    "cover": "blog/media/738cb907386d-00a5c2ba75df21d603a5b86d4a191fc9a793c6ec.png",
+    "cover": "blog/media/ffee56daf5a5-f833ce7763ed2d192d64f0952b74d50dfd86c6a5.png",
     "tags": [
       "daos",
       "hardware"
@@ -900,7 +900,7 @@
     "canonical": "https://paragraph.com/@0xjustice/new-standards-for-onchain-engagement",
     "excerpt": "DAO tooling is the business infrastructure of the 21st century. This category includes anything that enables collective ownership and management of digital assets. The future of business is onchain. This thesis is why I\u2026",
     "path": "blog/0xjustice-new-standards-for-onchain-engagement.html",
-    "cover": "blog/media/aaa4ac3843ca-c82ee24a0fa2408f791e9b50ee730db2f4735698.jpg",
+    "cover": "blog/media/a0544e4e09c9-2b856df5d9070c5fe2f0e653c61e8cd2c5f18ac2.png",
     "tags": [
       "crypto",
       "daos",
@@ -917,7 +917,7 @@
     "canonical": "https://paragraph.com/@0xjustice/pegged-to-reality-an-approach-to-tokenized-physical-assets",
     "excerpt": "https://mirror.xyz/particledao.eth/n-2lcWmRMfYoWVd84DfO7Z6NzuUhfD3N0YGSz4aeEDY",
     "path": "blog/0xjustice-pegged-to-reality-an-approach-to-tokenized-physical-assets.html",
-    "cover": "blog/media/fb631991227e-595d94021608785b2c3f0bc5a4a7183d4791a81a.jpg",
+    "cover": "blog/media/5fef9cb62cbe-595d94021608785b2c3f0bc5a4a7183d4791a81a.jpg",
     "tags": [
       "tokenization"
     ]
@@ -932,7 +932,7 @@
     "canonical": "https://paragraph.com/@0xjustice/the-last-throes-of-leviathan",
     "excerpt": "Decentralization is about preventing the exploitability of valuable systems. It's about removing single points of failure by eliminating intermediaries. Decentralization is not an end in itself. You can smash a mirror\u2026",
     "path": "blog/0xjustice-the-last-throes-of-leviathan.html",
-    "cover": "blog/media/b76b2ce751bd-70309327907bbf44c11c701e7b23eacb8eeae7b0.png",
+    "cover": "blog/media/c6ff56fab88b-be754b01e09894881e5bdd3aed276f6a2e43de2f.png",
     "tags": []
   },
   {
@@ -945,7 +945,7 @@
     "canonical": "https://paragraph.com/@0xjustice/from-social-daos-to-social-protocols-2",
     "excerpt": "In Protocol-first DAO Strategy, I argued that DAOs should build on value-generating protocols before cultivating broader community engagement. Specifically, I endorsed the advantages of framing DAOs as\u2026",
     "path": "blog/0xjustice-from-social-daos-to-social-protocols-2.html",
-    "cover": "blog/media/dd1bfc6245ae-a861617c3ded0b142ef2197e36b5c369461991ec.jpg",
+    "cover": "blog/media/1ad6f24c6ba7-1630d1612f41368d25ab96829b38d2a97bf9e3e3.png",
     "tags": [
       "daos",
       "tokenization"
@@ -961,7 +961,7 @@
     "canonical": "https://paragraph.com/@0xjustice/dao-data",
     "excerpt": "One of the big promises of DAOs is data transparency - the idea that every person, every decision, and every resource could be crystal clear on an open programmable ledger. This level of visibility is the dream, but\u2026",
     "path": "blog/0xjustice-dao-data.html",
-    "cover": "blog/media/0b6ef5b37f66-c61717566ee0901e56275c5e5f13d8ba37cfdd59.png",
+    "cover": "blog/media/07c55c9f7f16-96a8ed5ac2f787bfcd481669f35b11681e9885fa.png",
     "tags": [
       "daos",
       "ethereum"
@@ -977,7 +977,7 @@
     "canonical": "https://paragraph.com/@0xjustice/efficient-dao-design",
     "excerpt": "https://banklessdao.mirror.xyz/QQA6ZhvHtDefWEAT-SXaHYPYMtHUhshtXX5dY-gv0u8",
     "path": "blog/0xjustice-efficient-dao-design.html",
-    "cover": "blog/media/0fecd94077f6-10bdc7d567c42ea6b2c32265360a1dbd8984adc3.png",
+    "cover": "blog/media/92a1569c9f6c-10bdc7d567c42ea6b2c32265360a1dbd8984adc3.png",
     "tags": [
       "daos"
     ]
@@ -992,7 +992,7 @@
     "canonical": "https://paragraph.com/@0xjustice/a-devops-interpretation-of-daos",
     "excerpt": "How and why DAOs came about will inevitably influence how we think we can and should use them. If they came about exclusively as a response to oppressive and extractive corporations, it's unlikely that we'll envision\u2026",
     "path": "blog/0xjustice-a-devops-interpretation-of-daos.html",
-    "cover": "blog/media/5d86a81056a9-ca90c90d9d83c450bf4134113bce270aee1c1698.png",
+    "cover": "blog/media/4510b0392c19-674d936b2cb5b0a14ceaaabc843a99b94b0a76fd.png",
     "tags": [
       "daos"
     ]
@@ -1007,7 +1007,7 @@
     "canonical": "https://paragraph.com/@0xjustice/daos-dacs-and-on-chain-org-design-a-dac-manifesto",
     "excerpt": "Public goods are excellent, but who funds them? Are all DAOs public goods? How can a DAO be autonomous if its continued existence rests on charitable grants from others? Is profitability \"extractive\" at best and a\u2026",
     "path": "blog/0xjustice-daos-dacs-and-on-chain-org-design-a-dac-manifesto.html",
-    "cover": "blog/media/a52f6d20cebd-1ebf3770787eb12db70090d696a0ff5645fb6451.png",
+    "cover": "blog/media/bcb80e8caf4f-d30d20c44c12fb3b3f750426d3919967c94c0012.png",
     "tags": [
       "crypto",
       "daos"
@@ -1023,7 +1023,7 @@
     "canonical": "https://paragraph.com/@0xjustice/games-over-governance-recentering-daos-on-coordination",
     "excerpt": "The DAO conversation almost exclusively revolves around governance. The entire space effectively speaks of them equivocally. One cause for this is that pooling money pre-product (community-first) makes the collective\u2026",
     "path": "blog/0xjustice-games-over-governance-recentering-daos-on-coordination.html",
-    "cover": "blog/media/cc76d1a5b4c4-8669c941439ea38bb5dddc5a0f9edb8fb0507fc7.png",
+    "cover": "blog/media/ec4bca2fd7f7-28f0f8aa4c9f830aac14dd6da243cc603cf9fcba.png",
     "tags": [
       "daos"
     ]
@@ -1038,7 +1038,7 @@
     "canonical": "https://paragraph.com/@0xjustice/protocol-first-dao-strategy",
     "excerpt": "The unstructured community-first experiment has failed. The truth is that small founding teams create winning products and services. The community-first maxim militates against this, arguing that success correlates to\u2026",
     "path": "blog/0xjustice-protocol-first-dao-strategy.html",
-    "cover": "blog/media/3bfeb3161be4-a3cefa10012ff09d5a74ab8e0434f689940ee7ab.png",
+    "cover": "blog/media/965586214e3b-a850d6617e385722df48bc444151e74285bf3d36.png",
     "tags": [
       "daos"
     ]
@@ -1053,7 +1053,7 @@
     "canonical": "https://paragraph.com/@0xjustice/daos-as-digital-nation-states",
     "excerpt": "If you've worked in the DAO space for any length of time, the question of legal incorporation is bound to arise. It seems the reflex impulse to wrap a newly formed DAO in a legal wrapper to attain increased legitimacy\u2026",
     "path": "blog/0xjustice-daos-as-digital-nation-states.html",
-    "cover": "blog/media/f93fd0a38c72-aba02489eeba6105da091273709540b1f28c9f16.jpg",
+    "cover": "blog/media/1c4f5096b94e-ad3cac2c9eca4c9e34c176249161d4566c76d904.png",
     "tags": [
       "daos"
     ]
@@ -1068,7 +1068,7 @@
     "canonical": "https://paragraph.com/@0xjustice/the-value-of-dao-project-managers",
     "excerpt": "DAOs desperately need skilled project managers. As every skill set required by a project is potentially an entirely different agent or collection of agents, the need for a kind of general contractor to piece together\u2026",
     "path": "blog/0xjustice-the-value-of-dao-project-managers.html",
-    "cover": "blog/media/bc75e9fc837e-b6767a114af72aca156d2d6b9154d386d2637be9.jpg",
+    "cover": "blog/media/df8f216230ec-b6767a114af72aca156d2d6b9154d386d2637be9.jpg",
     "tags": [
       "crypto",
       "daos"
@@ -1084,7 +1084,7 @@
     "canonical": "https://paragraph.com/@0xjustice/rethinking-the-dao-contributor-funnel",
     "excerpt": "Not everyone who joins your Discord server is a member of your DAO, and neither should they be. Different levels of community engagement have different privileges and expectations, and to conflate them is a disservice\u2026",
     "path": "blog/0xjustice-rethinking-the-dao-contributor-funnel.html",
-    "cover": "blog/media/2581758627ea-f09996782aa0cefc1aee13337861da9a88db2e52.jpg",
+    "cover": "blog/media/ec4c5d2e00f2-53cec5c5c45a99855d4d05c33e94be340963a444.png",
     "tags": [
       "daos"
     ]
@@ -1145,7 +1145,7 @@
     "canonical": "https://paragraph.com/@0xjustice/optimizing-dao-delivery",
     "excerpt": "Decentralized Autonomous Organizations (DAOs) are the next evolution in human organization. They are enabled by the Internet and will, most assuredly, have an impact just as large. While their present state is one of\u2026",
     "path": "blog/0xjustice-optimizing-dao-delivery.html",
-    "cover": "blog/media/715dc972421c-57a6fd6572ae8f101b7a90eb5bb80c1163c6e4b4.jpg",
+    "cover": "blog/media/17c6d5949777-57a6fd6572ae8f101b7a90eb5bb80c1163c6e4b4.jpg",
     "tags": [
       "crypto",
       "daos"
