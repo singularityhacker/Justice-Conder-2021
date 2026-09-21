@@ -637,6 +637,21 @@
     ]
   },
   {
+    "slug": "0xjustice-introducing-vypr-pad",
+    "title": "Introducing Vypr Pad",
+    "date": "2026-01-10",
+    "date_display": "January 10, 2026",
+    "project": "0xjustice",
+    "project_label": "Crypto",
+    "canonical": "https://vyprpad.xyz/blog",
+    "excerpt": "Introduction Requiring users to connect their wallets as soon as they open your app, then approving you to pull money from their wallets, has a chilling effect on crypto. The absolute best people I know in crypto have\u2026",
+    "path": "blog/0xjustice-introducing-vypr-pad.html",
+    "cover": "blog/media/908f01f8faf6-vypr-pad-cover.png",
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
     "slug": "0xjustice-all-worlds-end-in-an-ai-singularity",
     "title": "All Worlds End in an AI Singularity",
     "date": "2026-01-06",
