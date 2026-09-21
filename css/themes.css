@@ -655,16 +655,24 @@ html[data-theme]:not([data-theme="classic"]) #resume .experience .desc.certifica
 }
 
 html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item {
+  background: var(--bg-elevated);
+  border-color: var(--card-border);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item .info {
-  background: var(--heading);
-  color: var(--bg);
+  color: var(--heading);
 }
 
-html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item .info footer {
-  color: var(--accent);
+html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item .info p,
+html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-note {
+  color: var(--text-muted);
+}
+
+html[data-theme]:not([data-theme="classic"]) #portfolio .portfolio-item .info footer a {
+  background: var(--accent);
+  color: var(--bg);
 }
 
 html[data-theme]:not([data-theme="classic"]) #skill ul li i {
