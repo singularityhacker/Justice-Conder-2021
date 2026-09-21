@@ -177,8 +177,10 @@ body.dark-operator .intro {
   margin: 0 auto;
 }
 
+body.dark-operator .intro,
 body.dark-operator .intro * {
   text-align: left;
+  text-transform: none;
 }
 
 body.dark-operator .hero-tagline {
@@ -189,6 +191,7 @@ body.dark-operator .hero-tagline {
   line-height: 0.96;
   color: var(--do-text);
   margin: 0 0 3rem;
+  text-transform: none;
 }
 
 body.dark-operator .hero-tagline .hero-line {
@@ -582,7 +585,15 @@ body.dark-operator .site-footer-email:hover {
   color: var(--do-text);
 }
 
+body.dark-operator .site-footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
 body.dark-operator .site-footer-email {
+  display: inline-block;
   color: var(--do-amber);
 }
 
