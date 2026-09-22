@@ -643,7 +643,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 \t\t\t</nav>
 \t\t\t<div class="site-footer-contact">
 \t\t\t\t<p class="site-footer-heading">Get in Touch</p>
-\t\t\t\t<a class="site-footer-email" href="mailto:hello@justiceconder.com">hello@justiceconder.com</a>
+\t\t\t\t<a class="site-footer-email" href="mailto:justiceconder@gmail.com">justiceconder@gmail.com</a>
 \t\t\t</div>
 \t\t</div>
 \t\t<div class="site-footer-bar">
