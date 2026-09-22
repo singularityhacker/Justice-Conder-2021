@@ -783,8 +783,36 @@ body.dark-operator .blog-article {
   color: var(--do-text-2);
 }
 
+body.dark-operator .blog-article h1,
+body.dark-operator .blog-article h2,
+body.dark-operator .blog-article h3,
+body.dark-operator .blog-prose h1,
+body.dark-operator .blog-prose h2,
+body.dark-operator .blog-prose h3,
+body.dark-operator .blog-prose h4,
+body.dark-operator .blog-prose h5,
+body.dark-operator .blog-prose h6 {
+  color: var(--do-text);
+}
+
+body.dark-operator .blog-crumb a,
+body.dark-operator .blog-source a,
 body.dark-operator .blog-prose a {
   color: var(--do-amber);
+}
+
+body.dark-operator .blog-prose blockquote {
+  color: var(--do-muted);
+}
+
+body.dark-operator .blog-prose strong,
+body.dark-operator .blog-prose b {
+  color: var(--do-text);
+}
+
+body.dark-operator .blog-prose :not(pre) > code {
+  background: var(--do-raised);
+  color: var(--do-text-2);
 }
 
 /* Hide leftover look switcher if a cached script injects it */
