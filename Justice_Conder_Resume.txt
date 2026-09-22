@@ -1,0 +1,85 @@
+JUSTICE CONDER
+Software Engineer & Founder
+Applied AI | Agent Infrastructure | Full-Stack Systems
+Kent, Ohio | U.S. remote and Northeast Ohio opportunities
+justiceconder@gmail.com
+https://www.justiceconder.com/
+https://www.linkedin.com/in/justiceconder/
+https://github.com/singularityhacker
+
+PROFESSIONAL SUMMARY
+Hands-on software builder and founder with 15+ years across web development, enterprise software delivery, distributed systems, and applied AI. Founded and built ClawBank, a production platform connecting AI agents to financial and legal infrastructure. Translates business requirements into architecture, API integrations, and deployed products. Focused on hands-on applied AI, full-stack, and forward deployed engineering roles.
+
+TECHNICAL SKILLS
+Languages & frameworks: Elixir, Phoenix, Phoenix LiveView, Python, FastAPI, JavaScript, HTML, CSS.
+Applied AI & integration: AI agent workflows, LLM integration, Model Context Protocol (MCP), REST APIs, CLI tools, third-party API integration.
+Systems & delivery: Background jobs, data normalization, ETL, Git, CI/CD, containerization, technical discovery, rapid prototyping, technical documentation.
+
+PROFESSIONAL EXPERIENCE
+
+ClawBank
+Founder & Builder | Jan 2026 - Present
+- Founded and built a production platform enabling AI agents to form U.S. companies, open USD bank accounts, maintain corporate records, and negotiate and sign contracts through integrated providers.
+- Architected the full-stack system with Elixir, Phoenix, and LiveView, supported by Python/FastAPI services, asynchronous background jobs, and third-party APIs.
+- Unified banking, wallets, incorporation, and DocuSign workflows behind REST APIs, Model Context Protocol (MCP) tools, a command-line interface (CLI), and SMS.
+- Implemented agent-to-agent contracting with onchain agreement records, escrow-backed milestones, and Kleros arbitration on Base; added ClawBank OS for websites, documents, marketing, and daily business execution.
+- Platform adoption as of September 22, 2026: 1,633 agents, 95 USD bank accounts, 16 U.S. companies incorporated, and 45 contracts with 129 milestones.
+- At the same snapshot, approximately $298K in total value moved across 27,949 onchain transactions; 556,848 x402 transactions and 996 services listed.
+
+Thrive Protocol
+Head of Growth & Innovation | Aug 2025 - Jan 2026
+- Designed and built the Thrive Guardian Network API, an x402-powered marketplace for programmatic research and project evaluation.
+- Implemented deployable agents to gather, normalize, and score public project data against private rubrics, feeding structured diligence into an internal data lake and decision systems.
+
+Quadratic Accelerator (q/acc)
+Cofounder | Feb 2025 - Aug 2025
+- Cofounded and launched a bonding-curve funding platform that reached the top ten launchpads by total value locked on DefiLlama; launched 12 projects.
+- Integrated identity verification, Passport proof-of-humanity, and anti-sybil protections into project onboarding. Acquired by Thrive Protocol in August 2025.
+
+Polygon Labs
+DAO Business Development & Treasury Governance | Jun 2022 - Feb 2025
+- Led technical business development for governance and treasury tooling; helped ecosystem teams select and deploy infrastructure, and designed and launched a community grants program.
+
+BanklessDAO
+Governance Solution Engineer | Jun 2021 - Feb 2023
+- Cofounded FRAG Stack, a decentralized frontend stack using Radicle and IPFS; translated governance requirements into a constitution, operating handbook, and proposal standards.
+
+UPMC Enterprises
+Lead Program Agilist | Jan 2019 - Feb 2023
+- Designed the delivery and scaling model for MyUPMC's 45+ engineers, aligning cross-functional teams and specialist groups with product ownership.
+- Created the MyUPMC Agility Handbook and delivery metrics framework; established the Agile Working Group and MyUPMC University to make delivery practices repeatable.
+
+Highmark
+Program IT Team Manager | Jun 2018 - Oct 2018
+- Organized four engineering teams to migrate three enterprise content systems to Adobe Experience Manager; introduced programmatic ETL-based migration rather than a page-by-page rebuild.
+
+Fraction Software
+Blockchain Consultant | Oct 2016 - Present
+- Provide independent consulting on Ethereum and decentralized application architecture, assessing feasibility, platform tradeoffs, integration needs, and smart-contract constraints.
+
+33 Mile Radius
+Product Lead | Jan 2015 - Sep 2016
+- Led migration from a local, single-user application to a containerized, cloud-based platform; decoupled the interface from backend build jobs to enable concurrent execution.
+
+Sherwin-Williams
+Developer | Jun 2014 - Jan 2015
+- Rebuilt an acquired company's web catalog in 24 hours during an emergency migration, extracting product data into JSON and generating static pages with Handlebars.js.
+
+Truth for Life
+Developer | Mar 2013 - Jan 2014
+- Built frontend experiences and campaign pages; introduced Git collaboration, BrowserStack cross-browser testing, and structured bug reporting.
+
+Sherwin-Williams
+Developer | Jul 2011 - Jan 2013
+- Developed corporate and partner web properties, including a multilingual European portal built with international stakeholders and translators.
+
+SELECTED PROJECTS & WRITING
+- Tiny-model evals: Benchmarked small language models with and without retrieval-augmented generation (RAG) to compare results; exploratory evaluation work. https://evals.justiceconder.com/
+- Business Bench: Developing an early-stage harness for evaluating AI-driven business operations against business outcomes. https://bench.clawbank.co/
+- Cybernetic Org Design: Book on governance and organizational design for engineers. https://cybernetic-org-design.xyz/
+
+EDUCATION
+Stark State College | 2009 - 2011
+Associate of Applied Science, Computer Programming and Database Design. Graduated with academic distinction.
+
+Last updated: September 22, 2026.

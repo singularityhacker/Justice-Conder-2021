@@ -1,0 +1,11 @@
+# Retired résumé and CV URLs. The files are gone; these paths must not keep serving old copies.
+/Justice_Conder_CV.txt   /Justice_Conder_Resume.pdf   301
+/resume-print.html       /Justice_Conder_Resume.pdf   301
+/resume-print            /Justice_Conder_Resume.pdf   301
+/Justice-Conder.pdf      /Justice_Conder_Resume.pdf   301
+/Justice_Conder.pdf      /Justice_Conder_Resume.pdf   301
+/files/cv.pdf            /Justice_Conder_Resume.pdf   301
+/files/cv.docx           /Justice_Conder_Resume.pdf   301
+/files/cv-old.pdf        /Justice_Conder_Resume.pdf   301
+/resume.md               /Justice_Conder_Resume.pdf   301
+/resume                  /resume.html                 200
