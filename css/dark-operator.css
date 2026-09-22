@@ -169,11 +169,8 @@ body.dark-operator .subject-header .bg-text strong {
 /* ── Hero ── */
 
 body.dark-operator .intro {
-  background:
-    radial-gradient(ellipse 70% 80% at 12% 20%, rgba(251, 191, 36, 0.12), transparent 58%),
-    var(--do-bg) !important;
-  background-image:
-    radial-gradient(ellipse 70% 80% at 12% 20%, rgba(251, 191, 36, 0.12), transparent 58%) !important;
+  background: var(--do-bg) !important;
+  background-image: none !important;
   align-items: stretch;
   padding: 5.25rem 1.5rem 3.5rem;
   max-width: 1160px;
@@ -291,10 +288,10 @@ body.dark-operator .hero-cta-ghost:hover {
 body.dark-operator .hero-portrait figure {
   margin: 0;
   background: #111;
-  border: 1px solid rgba(251, 191, 36, 0.38);
+  border: 1px solid var(--do-border);
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 0 0 1px rgba(251, 191, 36, 0.08), 0 24px 50px -24px rgba(251, 191, 36, 0.28);
+  box-shadow: none;
 }
 
 body.dark-operator .hero-portrait img {
@@ -306,7 +303,7 @@ body.dark-operator .hero-portrait img {
 
 body.dark-operator .hero-portrait .social-badge {
   background: #0d0e12 !important;
-  border-top: 1px solid rgba(251, 191, 36, 0.22);
+  border-top: 1px solid var(--do-border);
 }
 
 /* ── Layout surfaces ── */
