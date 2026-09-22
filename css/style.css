@@ -832,7 +832,7 @@ body a:hover {
 /* Speaking locations map */
 .talks-map-wrap {
   max-width: 520px;
-  margin: 0.35rem auto 0.15rem;
+  margin: 1.5rem auto 0.25rem;
   padding: 0;
 }
 
@@ -919,7 +919,7 @@ body a:hover {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  margin: 1.25rem 0 0;
+  margin: 0;
 }
 
 .speaking-card {
