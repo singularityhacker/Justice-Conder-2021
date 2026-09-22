@@ -1,8 +1,6 @@
 (function () {
   var eraButtons = Array.prototype.slice.call(document.querySelectorAll(".blog-filter"));
   var tagButtons = Array.prototype.slice.call(document.querySelectorAll(".blog-tag-filter"));
-  var eraRows = Array.prototype.slice.call(document.querySelectorAll(".blog-era-row"));
-  var blurbs = Array.prototype.slice.call(document.querySelectorAll(".blog-era-blurb"));
   var cards = Array.prototype.slice.call(document.querySelectorAll(".blog-card"));
   var empty = document.getElementById("blog-empty");
   var count = document.getElementById("blog-count");
@@ -43,18 +41,8 @@
     eraButtons.forEach(function (btn) {
       btn.classList.toggle("is-active", btn.getAttribute("data-filter") === era);
     });
-    eraRows.forEach(function (row) {
-      var on = row.getAttribute("data-filter") === era;
-      row.classList.toggle("is-active", on);
-      row.setAttribute("aria-pressed", on ? "true" : "false");
-    });
     tagButtons.forEach(function (btn) {
       btn.classList.toggle("is-active", btn.getAttribute("data-tag") === tag);
-    });
-    blurbs.forEach(function (el) {
-      var show = el.getAttribute("data-era") === era;
-      el.hidden = !show;
-      el.classList.toggle("is-active", show);
     });
 
     if (push) {
@@ -79,13 +67,6 @@
   eraButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       applyFilters(btn.getAttribute("data-filter"), current().tag, true);
-    });
-  });
-  eraRows.forEach(function (row) {
-    row.addEventListener("click", function () {
-      var era = row.getAttribute("data-filter");
-      var next = current().era === era ? "all" : era;
-      applyFilters(next, current().tag, true);
     });
   });
   tagButtons.forEach(function (btn) {

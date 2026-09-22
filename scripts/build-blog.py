@@ -692,8 +692,7 @@ def write_listing(posts: list[dict]) -> None:
 \t\t\t<h2>Writing</h2>
 \t\t\t<div class="bg-text unselectable"><strong>Writings</strong></div>
 \t\t</div>
-\t\t<p class="blog-lede">Collected posts from 0xjustice, Singularity Hacker, q/acc, and ClawBank — original wording, with dates and source links preserved.</p>
-\t\t<p class="blog-cite">My writing has been cited by ZDNet, Daring Fireball, OSNews, Forefront, TalentDAO, and many other DAO newsletters and thought leaders across the ecosystem and translated into other languages.</p>
+\t\t<p class="blog-lede">Writing since 2011 — 15 years — across futurism, technical project management, token engineering, governance, and AI. Cited by ZDNet, Daring Fireball, OSNews, Forefront, TalentDAO, and other DAO newsletters and thought leaders, and translated into other languages.</p>
 \t\t<div class="blog-filters" role="group" aria-label="Filter writings by project">
 {filter_btns}
 \t\t</div>
