@@ -40,50 +40,6 @@ body.dark-operator {
   font-family: var(--do-font-sans);
 }
 
-/* Quiet topo + dot field. Homepage only; no color wash. */
-body.dark-operator:not(.blog-page) {
-  isolation: isolate;
-}
-
-body.dark-operator:not(.blog-page)::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: min(1040px, 115vh);
-  pointer-events: none;
-  z-index: -1;
-  background-image:
-    url("../images/topo-quiet.svg"),
-    radial-gradient(circle, rgba(255, 255, 255, 0.22) 0.55px, transparent 0.7px);
-  background-size: min(1360px, 100vw) auto, 16px 16px;
-  background-position: center -28px, 0 0;
-  background-repeat: no-repeat, repeat;
-  opacity: 0.26;
-}
-
-body.dark-operator #resume,
-body.dark-operator #portfolio,
-body.dark-operator #talks {
-  position: relative;
-}
-
-body.dark-operator #resume::before,
-body.dark-operator #portfolio::before,
-body.dark-operator #talks::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 100vw;
-  margin-left: -50vw;
-  top: -6px;
-  height: 72px;
-  pointer-events: none;
-  z-index: 0;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0.5px, transparent 0.65px);
-  background-size: 15px 15px;
-  opacity: 0.2;
-}
-
 body.dark-operator a {
   color: var(--do-amber);
 }
@@ -237,12 +193,28 @@ body.dark-operator .subject-header .bg-text strong {
 /* ── Hero ── */
 
 body.dark-operator .intro {
+  position: relative;
+  isolation: isolate;
   background: transparent !important;
   background-image: none !important;
   align-items: stretch;
   padding: 5.25rem 1.5rem 3.5rem;
   max-width: 1160px;
   margin: 0 auto;
+}
+
+body.dark-operator .intro::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  top: -64px;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url("../images/topo-header.webp") center / cover no-repeat;
+  opacity: 0.34;
 }
 
 body.dark-operator .intro,
