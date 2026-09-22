@@ -1,5 +1,7 @@
 /* Dark operator look — branch-only restyle of existing content. */
 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&display=swap");
+
 :root {
   --do-bg: #0a0c10;
   --do-surface: #09090b;
@@ -83,11 +85,27 @@ body.dark-operator .brand-lockup {
 }
 
 body.dark-operator .brand-name {
-  font-family: var(--do-font-display);
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: "IBM Plex Mono", var(--do-font-mono);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   color: var(--do-text);
+}
+
+body.dark-operator .brand-zero {
+  position: relative;
+  display: inline-block;
+}
+
+body.dark-operator .brand-zero::after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  top: 51%;
+  height: 1.5px;
+  background: currentColor;
+  pointer-events: none;
 }
 
 body.dark-operator .brand-dot,

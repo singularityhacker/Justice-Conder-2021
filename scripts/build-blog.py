@@ -545,7 +545,7 @@ def nav_html(active: str, prefix: str = "") -> str:
 \t\t\t<a rel="noopener" class="navbar-brand" href="{href("index.html")}">
 \t\t\t\t<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
 \t\t\t\t<span class="brand-lockup">
-\t\t\t\t\t<span class="brand-name">Justice Conder</span>
+\t\t\t\t\t<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
 \t\t\t\t</span>
 \t\t\t</a>
 \t\t</div>
@@ -559,7 +559,7 @@ def nav_html(active: str, prefix: str = "") -> str:
 \t\t\t<a rel="noopener" class="navbar-brand" href="{href("index.html")}">
 \t\t\t\t<img id="logo_img" src="{prefix}images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
 \t\t\t\t<span class="brand-lockup">
-\t\t\t\t\t<span class="brand-name">Justice Conder</span>
+\t\t\t\t\t<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
 \t\t\t\t</span>
 \t\t\t</a>
 \t\t</div>
@@ -593,7 +593,7 @@ def page_shell(title: str, body: str, prefix: str = "", extra_head: str = "", ex
 \t<link rel="stylesheet" href="{prefix}css/theme-icon.css" type="text/css" />
 \t<link rel="stylesheet" href="{prefix}css/blog.css" type="text/css" />
 \t<link rel="stylesheet" href="{prefix}css/dark-operator.css" type="text/css" />
-\t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
+\t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
 \t<link rel="preload"
 \t\thref="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
 \t\tas="style" onload="this.rel='stylesheet'" />
