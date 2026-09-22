@@ -305,7 +305,7 @@ body.dark-operator .hero-portrait img {
 }
 
 body.dark-operator .hero-portrait .social-badge {
-  background: #0d0e12;
+  background: #0d0e12 !important;
   border-top: 1px solid rgba(251, 191, 36, 0.22);
 }
 
