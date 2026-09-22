@@ -12,11 +12,58 @@
 	<link rel="shortcut icon" href="images/icon/favicon.ico" />
 	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="css/themes.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark-operator.css" type="text/css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
 </head>
 
 <body class="dark-operator">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="index.html">
+				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<span class="brand-lockup">
+					<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
+				</span>
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="index.html#about">About</a></li>
+			<li><a href="index.html#resume">Experience</a></li>
+			<li><a href="index.html#education">Education</a></li>
+			<li><a href="index.html#portfolio">Portfolio</a></li>
+			<li><a href="blog.html">Writing</a></li>
+			<li><a href="index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="index.html">
+				<img id="logo_img" src="images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<span class="brand-lockup">
+					<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
+				</span>
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="index.html#about">About</a></li>
+			<li><a href="index.html#resume">Experience</a></li>
+			<li><a href="index.html#education">Education</a></li>
+			<li><a href="index.html#portfolio">Portfolio</a></li>
+			<li><a href="blog.html">Writing</a></li>
+			<li><a href="index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
 	<main class="resume-page">
 		<p class="resume-page-kicker"><a href="/">Justice Conder</a></p>
 		<h1>Résumé</h1>
