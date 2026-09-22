@@ -856,6 +856,11 @@ body.dark-operator .resume-downloads a {
   color: var(--do-amber);
 }
 
+body.dark-operator .intro .resume-downloads a.resume-download-primary {
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
 body.dark-operator .resume-downloads a.resume-download-primary {
   background: var(--do-amber);
   color: #111;
