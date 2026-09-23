@@ -956,3 +956,33 @@ body.dark-operator .resume-url-list a {
     color: var(--do-amber) !important;
   }
 }
+
+@media (max-width: 430px) {
+  body.dark-operator .hero-name {
+    font-size: 2.15rem;
+    letter-spacing: -0.04em;
+    white-space: nowrap;
+  }
+
+  body.dark-operator .hero-chip {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+
+  body.dark-operator #resume .experience {
+    grid-template-columns: 36px minmax(0, 1fr);
+  }
+
+  body.dark-operator #resume .experience i {
+    font-size: 18px;
+  }
+
+  body.dark-operator #resume .experience .title-text {
+    font-size: 1.5rem;
+  }
+
+  body.dark-operator .resume-url-list,
+  body.dark-operator .resume-url-list a {
+    overflow-wrap: anywhere;
+  }
+}
