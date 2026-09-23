@@ -7,7 +7,7 @@ By [Quadratic Accelerator](https://paragraph.com/@qacc) · 2025-04-07
 Maiden Voyage
 -------------
 
-Season 1 of our partnership with Polygon has officially culminated, and we’re proud to share the results. Through the [Quadratic Accelerator](https://qacc.giveth.io/) (q/acc) protocol, we’re pioneering a new mechanism for funding token economies that prioritizes sustainability, Defi-nativity, and stakeholder alignment.
+Season 1 of our partnership with Polygon has officially culminated, and we’re proud to share the results. Through the [Quadratic Accelerator](https://qacc.xyz/) (q/acc) protocol, we’re pioneering a new mechanism for funding token economies that prioritizes sustainability, Defi-nativity, and stakeholder alignment.
 
 With eight new token economies launched, the seeds of long-term growth have been sown. These projects are now equipped to scale, and we expect their impact to grow in compounding waves over the coming months and years.
 

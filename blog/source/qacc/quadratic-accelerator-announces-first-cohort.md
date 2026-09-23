@@ -54,7 +54,7 @@ Serious People, CoUnity, and MIDAO each bring unique expertise to the Accelerato
 
 The Quadratic Accelerator is incubated at [Giveth](https://giveth.io/) and has built the q/acc protocol on [Polygon](https://polygon.technology/). It is powered by the teams and talent behind [Commons Stack](https://www.commonsstack.org/), [Inverter Network](https://www.inverter.network/), and [General Magic](https://www.generalmagic.io/).
 
-For more information on Quadratic Accelerator or to stay updated on the progress of our first cohort, visit [qacc.giveth.io](https://qacc.giveth.io/) and follow us on [X](https://x.com/theqacc) and [Farcaster](https://warpcast.com/theqacc).
+For more information on Quadratic Accelerator or to stay updated on the progress of our first cohort, visit [qacc.xyz](https://qacc.xyz/) and follow us on [X](https://x.com/theqacc) and [Farcaster](https://warpcast.com/theqacc).
 
 ---
 

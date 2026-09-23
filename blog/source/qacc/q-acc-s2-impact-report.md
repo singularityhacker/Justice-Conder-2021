@@ -7,7 +7,7 @@ By [Quadratic Accelerator](https://paragraph.com/@qacc) · 2025-06-06
 Introduction
 ------------
 
-The [Quadratic Accelerator](https://qacc.giveth.io/) (q/acc) continues to redefine fair launch mechanics by combining Quadratic Funding with chain-sponsored Initial Coin Offerings (ICOs). In Season 2, sponsored by Polygon, we further refined our approach to ecosystem growth through protocol-sponsored tokenization (PST).
+The [Quadratic Accelerator](https://qacc.xyz/) (q/acc) continues to redefine fair launch mechanics by combining Quadratic Funding with chain-sponsored Initial Coin Offerings (ICOs). In Season 2, sponsored by Polygon, we further refined our approach to ecosystem growth through protocol-sponsored tokenization (PST).
 
 This report summarizes the S2 outcomes, highlights the performance of participating projects, and showcases how q/acc delivers compounding value to chains, builders, and token holders. See the results from S1 to get up to speed:
 

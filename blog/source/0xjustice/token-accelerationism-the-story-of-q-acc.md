@@ -4,7 +4,7 @@ By [0xJustice.eth](https://paragraph.com/@0xjustice) · 2024-12-10
 
 ---
 
-I’m thrilled to announce that my team and I have officially launched our first major Web3 product: [The Quadratic Accelerator (q/acc)](https://qacc.giveth.io/). In this post, I’ll share the journey behind its creation and what makes this product truly unique.
+I’m thrilled to announce that my team and I have officially launched our first major Web3 product: [The Quadratic Accelerator (q/acc)](https://qacc.xyz/). In this post, I’ll share the journey behind its creation and what makes this product truly unique.
 
 Over the past three years, I've almost exclusively written about DAOs, but I’ve arrived at a few conclusions that have taken my interest away from DAOs and towards tokenization.
 

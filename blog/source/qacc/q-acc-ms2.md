@@ -75,11 +75,11 @@ While q/acc is being incubated under Giveth, the plan has always been to disting
 
 ### Website
 
-Naturally, the first thing we did without the new brand was put it to work. Check out our new website! It’s bold, audacious, and straight to the point. It's fairly barebones for now, but that will change. We’re working on a video explainer and an official technical paper to cover all the bases. Visit the website, read the Q&As, and sign up to get notified of updates. Do not miss the action: [https://qacc.giveth.io/](https://qacc.giveth.io/)
+Naturally, the first thing we did without the new brand was put it to work. Check out our new website! It’s bold, audacious, and straight to the point. It's fairly barebones for now, but that will change. We’re working on a video explainer and an official technical paper to cover all the bases. Visit the website, read the Q&As, and sign up to get notified of updates. Do not miss the action: [https://qacc.xyz/](https://qacc.xyz/)
 
-![https://qacc.giveth.io/](https://storage.googleapis.com/papyrus_images/ed69373c1047e68a05a6be9d6bb0af225ad6c1e4a4a7508b182e0c156275ce3f.png)
+![https://qacc.xyz/](https://storage.googleapis.com/papyrus_images/ed69373c1047e68a05a6be9d6bb0af225ad6c1e4a4a7508b182e0c156275ce3f.png)
 
-https://qacc.giveth.io/
+https://qacc.xyz/
 
 ### Dapp
 

@@ -13,7 +13,7 @@ The day has arrived. The q/acc protocol is now accepting applications for our fi
 *   The first cohort will be selected and onboarded in **September**
     
 
-Don’t delay, [apply today](https://qacc.giveth.io/).
+Don’t delay, [apply today](https://qacc.xyz/).
 
 [https://x.com/0xPolygon/status/1824064749052780987](https://x.com/0xPolygon/status/1824064749052780987)
 
