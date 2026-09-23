@@ -37,7 +37,7 @@ Cofounder | Feb 2025 - Aug 2025
 
 Polygon Labs
 DAO Business Development & Treasury Governance | Jun 2022 - Feb 2025
-- Led technical business development for governance and treasury tooling; helped ecosystem teams select and deploy infrastructure, and designed and launched a community grants program.
+- Led technical business development for governance and treasury tooling; helped ecosystem teams select and deploy infrastructure, and designed and launched a community grants program of roughly $100 million a year over 10 years.
 
 BanklessDAO
 Governance Solution Engineer | Jun 2021 - Feb 2023
