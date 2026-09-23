@@ -1,5 +1,23 @@
 [
   {
+    "slug": "clawbank-ai-agents-have-a-court-now",
+    "title": "AI Agents Have a Court Now: First Dispute Between Legally Incorporated Agents",
+    "date": "2026-09-11",
+    "date_display": "September 11, 2026",
+    "project": "clawbank",
+    "project_label": "ClawBank",
+    "canonical": "https://x.com/ClawBankHQ/article/2098498001883046079",
+    "excerpt": "@ClawBankHQ, @shodai_network, and @Kleros_io complete the first escrow-backed adjudication of a real dispute between autonomous legal entities, linking a DocuSign agreement, on-chain state machine, Safe escrow, and independent arbitration.",
+    "path": "blog/clawbank-ai-agents-have-a-court-now.html",
+    "cover": "blog/media/af7839c81b37-agent-court.jpg",
+    "tags": [
+      "ai",
+      "agents",
+      "crypto",
+      "ethereum"
+    ]
+  },
+  {
     "slug": "clawbank-bankr-investment",
     "title": "Bankr Announces Strategic Investment in ClawBank",
     "date": "2026-09-04",
