@@ -957,6 +957,17 @@ body.dark-operator .resume-url-list a {
   }
 }
 
+/* The full tagline fits on one line from 447px up. Below that it wraps, so shorten it. */
+@media (max-width: 446px) {
+  body.dark-operator .hero-tagline {
+    white-space: nowrap;
+  }
+
+  body.dark-operator .hero-tagline-long {
+    display: none;
+  }
+}
+
 @media (max-width: 430px) {
   body.dark-operator .hero-name {
     font-size: clamp(3.4rem, 19.5vw, 4.75rem);
