@@ -437,6 +437,12 @@ body a:hover {
 #about .profile .social-badge .social-item a:hover img {
   filter: brightness(0) invert(1);
 }
+#about .profile .social-badge .social-item a svg.cursor-mark {
+  width: 16px;
+  height: 16px;
+  display: block;
+  pointer-events: none;
+}
 
 /*.fa-github {
   background: url("github.png");
