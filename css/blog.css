@@ -424,7 +424,21 @@
 }
 
 .blog-cover img {
-  margin: 0;
+  width: auto;
+  max-height: 32rem;
+  margin: 0 auto;
+}
+
+.blog-prose img.blog-decor {
+  max-width: 18rem;
+  max-height: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-prose img.blog-decor-wide {
+  max-width: 100%;
+  max-height: none;
 }
 
 .blog-prose a {

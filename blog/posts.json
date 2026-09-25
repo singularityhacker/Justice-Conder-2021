@@ -1,5 +1,20 @@
 [
   {
+    "slug": "sh-theological-futurism",
+    "title": "Theological Futurism",
+    "date": "2026-09-24",
+    "date_display": "September 24, 2026",
+    "project": "singularity-hacker",
+    "project_label": "Futurism",
+    "canonical": "https://www.justiceconder.com/blog/sh-theological-futurism.html",
+    "excerpt": "Human beings are driven to put their mark on eternity. We build monuments and carve images into stone. I think the same impulse drove much of what pulled us toward blockchains: a ledger you can write history into, and a\u2026",
+    "path": "blog/sh-theological-futurism.html",
+    "cover": "blog/media/cdfcefd996f6-theological-futurism.gif",
+    "tags": [
+      "ai"
+    ]
+  },
+  {
     "slug": "clawbank-ai-agents-have-a-court-now",
     "title": "AI Agents Have a Court Now: First Dispute Between Legally Incorporated Agents",
     "date": "2026-09-11",
