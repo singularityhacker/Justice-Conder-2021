@@ -1,0 +1,415 @@
+/*
+ * Print stylesheet for Justice_Conder_Resume.pdf.
+ * Rendered with headless Chrome by scripts/build-resume.sh.
+ * Palette and type mirror css/dark-operator.css so the PDF matches the site.
+ */
+
+:root {
+  --ink: #0a0c10;
+  --text: #27272a;
+  --text-2: #3f3f46;
+  --muted: #71717a;
+  --muted-2: #a1a1aa;
+  --hairline: #e4e4e7;
+  --chip-bg: #f4f4f5;
+  --card: #0a0c10;
+  --card-text: #ffffff;
+  --card-text-2: #d4d4d8;
+  --card-muted: #a1a1aa;
+  --amber: #fbbf24;
+  --amber-ink: #b45309;
+  --font-display: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --radius: 8px;
+}
+
+@page {
+  size: letter;
+  margin: 0.5in 0.55in 0.5in;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 9.4pt;
+  line-height: 1.4;
+  color: var(--text);
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  orphans: 2;
+  widows: 2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+ul,
+dl {
+  margin: 0;
+}
+
+/* ── Masthead ───────────────────────────────────────── */
+
+.masthead {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 0.3in;
+  padding: 0.24in 0.34in;
+  background: var(--card);
+  color: var(--card-text);
+  border-radius: var(--radius);
+  break-inside: avoid;
+}
+
+.photo {
+  display: block;
+  width: 1.15in;
+  height: 1.15in;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.5px solid var(--amber);
+  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.14);
+}
+
+.identity h1 {
+  margin: 0 0 2pt;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 28pt;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+  color: var(--card-text);
+}
+
+.identity .title {
+  font-weight: 500;
+  font-size: 11.5pt;
+  line-height: 1.25;
+  color: var(--amber);
+}
+
+.identity .tagline {
+  margin-top: 3pt;
+  font-family: var(--font-mono);
+  font-size: 7.2pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--card-muted);
+}
+
+.identity .tagline .sep {
+  color: var(--amber);
+  padding: 0 0.15em;
+}
+
+.contact {
+  list-style: none;
+  margin-top: 8pt;
+  padding: 8pt 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  grid-template-columns: 2.35in 1fr;
+  gap: 4pt 12pt;
+  font-family: var(--font-mono);
+  font-size: 7.8pt;
+  letter-spacing: -0.005em;
+  color: var(--card-text-2);
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 5.5pt;
+  white-space: nowrap;
+}
+
+.contact svg {
+  width: 9pt;
+  height: 9pt;
+  flex: none;
+  fill: var(--amber);
+}
+
+/* ── Sections ───────────────────────────────────────── */
+
+section {
+  margin-top: 0.17in;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 8pt;
+  margin: 0 0 7pt;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 7.8pt;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink);
+  break-after: avoid;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  width: 10pt;
+  height: 3pt;
+  background: var(--amber);
+  border-radius: 1px;
+}
+
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--hairline);
+}
+
+.summary {
+  font-size: 9.6pt;
+  line-height: 1.46;
+  color: var(--text-2);
+}
+
+/* ── Skills ─────────────────────────────────────────── */
+
+.skills {
+  display: grid;
+  grid-template-columns: 1.35in 1fr;
+  row-gap: 4.5pt;
+  column-gap: 10pt;
+  align-items: start;
+}
+
+.skills dt {
+  padding-top: 2.2pt;
+  font-family: var(--font-mono);
+  font-size: 7.2pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.skills dd {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5pt 4pt;
+}
+
+.skills dd span {
+  display: inline-block;
+  padding: 1.2pt 5.5pt 1.4pt;
+  border: 1px solid var(--hairline);
+  background: var(--chip-bg);
+  border-radius: 4px;
+  font-size: 8.3pt;
+  line-height: 1.25;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* ── Experience entries ─────────────────────────────── */
+
+.entry {
+  break-inside: avoid;
+}
+
+.entry + .entry {
+  margin-top: 8pt;
+}
+
+.entry header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12pt;
+  margin-bottom: 2.5pt;
+}
+
+.entry h3 {
+  margin: 0;
+  font-size: 10.4pt;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.entry .org {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.entry .role {
+  color: var(--text-2);
+  font-weight: 500;
+}
+
+.entry .role::before {
+  content: "—";
+  color: var(--muted-2);
+  padding: 0 4pt 0 2pt;
+}
+
+.entry .dates {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 8pt;
+  color: var(--muted);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  padding-top: 1pt;
+}
+
+.entry ul {
+  padding-left: 0.16in;
+}
+
+.entry li {
+  padding-left: 1pt;
+  margin-top: 1.6pt;
+}
+
+.entry li::marker {
+  color: var(--amber);
+  font-size: 9pt;
+}
+
+.entry .note {
+  color: var(--text-2);
+}
+
+/* ── Page two ───────────────────────────────────────── */
+
+.page-break {
+  break-before: page;
+}
+
+.continued {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 5pt;
+  border-bottom: 1px solid var(--hairline);
+  font-family: var(--font-mono);
+  font-size: 7.4pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.continued span:first-child {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.continued-section {
+  margin-top: 0.14in;
+}
+
+/* ── Projects ───────────────────────────────────────── */
+
+.projects {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  row-gap: 5pt;
+}
+
+.projects li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14pt;
+  break-inside: avoid;
+}
+
+.projects strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.projects strong::after {
+  content: "—";
+  color: var(--muted-2);
+  font-weight: 400;
+  padding: 0 4pt 0 5pt;
+}
+
+.projects a {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 7.9pt;
+  color: var(--amber-ink);
+  white-space: nowrap;
+}
+
+/* ── Colophon ───────────────────────────────────────── */
+
+.colophon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.24in;
+  padding-top: 6pt;
+  border-top: 1px solid var(--hairline);
+  font-family: var(--font-mono);
+  font-size: 7.2pt;
+  letter-spacing: 0.02em;
+  color: var(--muted-2);
+}
+
+.colophon a {
+  color: var(--muted);
+}
+
+/* ── Optional: build without the photo (NO_PHOTO=1) ── */
+
+html.no-photo .photo {
+  display: none;
+}
+
+html.no-photo .masthead {
+  grid-template-columns: 1fr;
+}
+
+/* ── Screen preview only ────────────────────────────── */
+
+@media screen {
+  html {
+    background: #3f3f46;
+  }
+
+  body {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0.4in auto;
+    padding: 0.5in 0.55in;
+    background: #fff;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .page-break {
+    height: 0;
+    margin: 0.5in -0.55in;
+    border-top: 0.4in solid #3f3f46;
+  }
+}

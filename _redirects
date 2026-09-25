@@ -9,3 +9,6 @@
 /files/cv-old.pdf        /Justice_Conder_Resume.pdf   301
 /resume.md               /Justice_Conder_Resume.pdf   301
 /resume                  /resume.html                 200
+
+# resume-src/ is the HTML source the PDF is built from (scripts/build-resume.sh). Do not serve it as a page.
+/resume-src/*            /Justice_Conder_Resume.pdf   301
