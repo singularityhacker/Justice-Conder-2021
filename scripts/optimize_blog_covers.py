@@ -4,15 +4,17 @@
 The listing (blog.html) and every post page reference the original uploads in
 blog/media, which are often multi-megabyte PNGs and animated GIFs. This step:
 
-  * writes 21:9 card thumbnails at 480w and 960w for every card on blog.html
-    (animated GIFs become a static first frame there),
-  * writes a 1600w hero for each post page's cover (GIFs are left animated),
+  * writes 21:9 card thumbnails at 480w and 960w for every card on blog.html,
+  * writes a 1600w hero for each post page's cover,
+  * keeps animated GIFs animated by encoding them as animated WebP with ffmpeg
+    (fps capped at ANIM_FPS); they are still an order of magnitude smaller,
   * rewrites the <img> tags with src/srcset/sizes/width/height,
   * removes thumbnails that are no longer referenced.
 
 Thumbnail names include a content hash so they can be cached as immutable.
 Safe to re-run; it only regenerates missing files. Requires ImageMagick 7
-(`magick`) on PATH. Runs automatically at the end of build-blog.py and
+(`magick`) on PATH; ffmpeg for animated covers (falls back to a static first
+frame without it). Runs automatically at the end of build-blog.py and
 publish_local_posts.py; run directly after any manual edit to blog.html.
 """
 
@@ -33,12 +35,16 @@ THUMB_DIR = MEDIA_DIR / "thumbs"
 LISTING = ROOT / "blog.html"
 
 CARD_WIDTHS = (480, 960)
+ANIM_CARD_WIDTHS = (480, 720)  # cards render ~380px wide; 720w covers 2x displays at much lower cost
 CARD_RATIO = 21 / 9  # matches .blog-card-cover { aspect-ratio: 21 / 9 }
 CARD_SIZES = "(max-width: 600px) 100vw, (max-width: 960px) 50vw, 380px"
 HERO_WIDTH = 1600
 EAGER_CARDS = 3  # first row loads immediately; the rest stay lazy
 WEBP_QUALITY = "78"
+ANIM_QUALITY = "70"
+ANIM_FPS = 12
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"}
+HAVE_FFMPEG = bool(shutil.which("ffmpeg"))
 
 CARD_IMG_RE = re.compile(
     r'(?P<open><div class="blog-card-cover">\s*)<img (?P<attrs>[^>]*?)\s*/?>',
@@ -103,13 +109,54 @@ def make_hero(src: Path, dest: Path, width: int) -> None:
     )
 
 
+def ffmpeg_anim(src: Path, dest: Path, vf: str) -> None:
+    subprocess.run(
+        [
+            "ffmpeg", "-v", "error", "-y", "-i", str(src),
+            "-vf", vf, "-loop", "0", "-an",
+            "-c:v", "libwebp_anim", "-quality", ANIM_QUALITY,
+            "-compression_level", "6", "-preset", "picture",
+            str(dest),
+        ],
+        check=True, capture_output=True,
+    )
+
+
+def make_card_anim(src: Path, dest: Path, width: int) -> None:
+    height = card_height(width)
+    ffmpeg_anim(
+        src, dest,
+        f"fps={ANIM_FPS},scale={width}:{height}:force_original_aspect_ratio=increase:flags=lanczos,"
+        f"crop={width}:{height}",
+    )
+
+
+def make_hero_anim(src: Path, dest: Path, width: int, height: int) -> None:
+    ffmpeg_anim(src, dest, f"fps={ANIM_FPS},scale={width}:{height}:flags=lanczos")
+
+
+def is_animated(path: Path) -> bool:
+    if path.suffix.lower() != ".gif":
+        return False
+    try:
+        out = subprocess.run(
+            ["magick", "identify", "-format", "%n\n", str(path)],
+            check=True, capture_output=True, text=True,
+        ).stdout.split()
+        return bool(out) and int(out[0]) > 1
+    except (subprocess.CalledProcessError, ValueError):
+        return False
+
+
 class Job:
     """One source image and the derivatives it needs."""
 
     def __init__(self, src: Path) -> None:
         self.src = src
         self.hash = file_hash(src)
-        self.stem = f"{src.stem}-{self.hash}"
+        self.animated = HAVE_FFMPEG and is_animated(src)
+        # A different stem for animated output so old static thumbs are replaced, not reused.
+        self.stem = f"{src.stem}-{self.hash}" + ("-anim" if self.animated else "")
         self.dims = identify(src)
         self.card_files: dict[int, Path] = {}
         self.hero_file: Path | None = None
@@ -119,8 +166,9 @@ class Job:
         if not self.dims:
             return []
         src_w = self.dims[0]
-        widths = [w for w in CARD_WIDTHS if w <= src_w]
-        return widths or [min(src_w, CARD_WIDTHS[0])]
+        candidates = ANIM_CARD_WIDTHS if self.animated else CARD_WIDTHS
+        widths = [w for w in candidates if w <= src_w]
+        return widths or [min(src_w, candidates[0])]
 
     def plan_cards(self) -> None:
         for w in self.card_widths():
@@ -140,10 +188,13 @@ class Job:
         made = []
         for w, dest in self.card_files.items():
             if not dest.exists():
-                make_card_thumb(self.src, dest, w)
+                (make_card_anim if self.animated else make_card_thumb)(self.src, dest, w)
                 made.append(dest.name)
         if self.hero_file and not self.hero_file.exists():
-            make_hero(self.src, self.hero_file, HERO_WIDTH)
+            if self.animated and self.hero_dims:
+                make_hero_anim(self.src, self.hero_file, *self.hero_dims)
+            else:
+                make_hero(self.src, self.hero_file, HERO_WIDTH)
             made.append(self.hero_file.name)
         return made
 
@@ -213,13 +264,16 @@ def main() -> int:
         job.plan_cards()
         card_plan.append((match, job))
 
-    # Post-page heroes (GIFs stay animated, so they are not converted)
+    # Post-page heroes. Animated GIFs become animated WebP when ffmpeg is present;
+    # without it they are left as the original GIF rather than frozen.
     hero_plan: dict[Path, list[tuple[re.Match, Job]]] = {}
     for page in sorted(BLOG_DIR.glob("*.html")):
         html = page.read_text(encoding="utf-8")
         for match in HERO_IMG_RE.finditer(html):
             src = original_from_attrs(attrs_of(match.group("attrs")), BLOG_DIR)
-            if not src or src.suffix.lower() == ".gif":
+            if not src:
+                continue
+            if src.suffix.lower() == ".gif" and not HAVE_FFMPEG:
                 continue
             job = job_for(src)
             job.plan_hero()

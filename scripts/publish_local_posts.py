@@ -346,7 +346,8 @@ def localize_md_images(md: str, extra: dict[str, str] | None = None) -> str:
         suffix = Path(url.split("?")[0]).suffix or ".jpg"
         if suffix not in {".jpg", ".jpeg", ".png", ".gif", ".webp"}:
             suffix = ".jpg"
-        local = "../" + save_media(data, Path(url).stem, suffix)
+        # Post pages live in blog/, so media/<name> is already the right relative path.
+        local = save_media(data, Path(url).stem, suffix)
         mapping[url] = local
         return f"![{alt}]({local})"
 
@@ -378,7 +379,7 @@ def publish_dao() -> dict:
         if name == "cover":
             continue
         data = fetch(url)
-        local = "../" + save_media(data, name, Path(name).suffix)
+        local = save_media(data, name, Path(name).suffix)
         image_map[url] = local
         image_map[f"https://img.paragraph.com/cdn-cgi/image/format=auto,width=3840,quality=85/{url}"] = local
 
