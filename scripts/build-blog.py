@@ -822,8 +822,17 @@ def main() -> int:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import localize_blog_media
     localize_blog_media.main()
+    # Paragraph flattens tweet embeds into bare paragraphs; rebuild them as quote blocks.
+    import fix_tweet_embeds
+    fix_tweet_embeds.main()
     import apply_blog_filters
     apply_blog_filters.main()
+    # Cards and post heroes must not ship the multi-megabyte originals.
+    import optimize_blog_covers
+    optimize_blog_covers.main()
+    # Drop downloaded assets (og cards, superseded images) that no page uses.
+    import prune_blog_media
+    prune_blog_media.main([])
     return 0 if filled else 1
 
 

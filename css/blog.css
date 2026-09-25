@@ -452,6 +452,107 @@
   color: #4a5563;
 }
 
+/* Quote-tweet blocks rebuilt by scripts/fix_tweet_embeds.py */
+.blog-prose .tweet-embed {
+  border: 1px solid #d5d8de;
+  border-left-width: 1px;
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem 0.8rem;
+  margin: 1.4rem 0;
+  background: #fff;
+  color: #2f3742;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.blog-prose .tweet-embed-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.55rem;
+}
+
+.blog-prose .tweet-embed a.tweet-embed-author {
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-prose .tweet-embed-author strong {
+  font-weight: 700;
+  color: #111;
+}
+
+.blog-prose .tweet-embed-author span {
+  color: #6b7280;
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
+.blog-prose .tweet-embed-author:hover strong {
+  text-decoration: underline;
+}
+
+.blog-prose .tweet-embed a.tweet-embed-x {
+  flex: none;
+  display: inline-flex;
+  color: #111;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.blog-prose .tweet-embed-body p {
+  margin: 0 0 0.6rem;
+}
+
+.blog-prose .tweet-embed-body p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-prose .tweet-embed-body a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.blog-prose .tweet-embed-body a:hover {
+  text-decoration: underline;
+}
+
+.blog-prose .tweet-embed-body img {
+  margin: 0.7rem 0 0;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.blog-prose .tweet-embed-meta {
+  margin: 0.7rem 0 0;
+  font-size: 13.5px;
+}
+
+.blog-prose .tweet-embed-meta a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.blog-prose .tweet-embed-meta a:hover {
+  text-decoration: underline;
+}
+
+.blog-prose .tweet-embed--quoted {
+  margin: 0.8rem 0 0;
+  padding: 0.7rem 0.9rem 0.65rem;
+  font-size: 15px;
+  background: #f8f9fa;
+}
+
+.blog-prose .tweet-embed--quoted .tweet-embed-head {
+  margin-bottom: 0.4rem;
+}
+
 .blog-prose pre,
 .blog-prose code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;

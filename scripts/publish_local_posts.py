@@ -616,6 +616,10 @@ def main() -> int:
     rewrite_listing(merged)
     import apply_blog_filters
     apply_blog_filters.main()
+    import optimize_blog_covers
+    optimize_blog_covers.main()
+    import prune_blog_media
+    prune_blog_media.main([])
     print(f"published {len(posts)} local posts; catalog is {len(merged)}")
     return 0
 
