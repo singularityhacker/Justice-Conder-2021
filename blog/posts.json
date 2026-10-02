@@ -1,5 +1,21 @@
 [
   {
+    "slug": "clawbank-the-clawbank-software-factory",
+    "title": "The ClawBank Software Factory",
+    "date": "2026-10-02",
+    "date_display": "October 2, 2026",
+    "project": "clawbank",
+    "project_label": "ClawBank",
+    "canonical": "https://clawbank.co/blog/the-clawbank-software-factory/",
+    "excerpt": "For the last 2 weeks I stopped working on ClawBank's features and built the thing that builds them. The engineer's job is designing the floor.",
+    "path": "blog/clawbank-the-clawbank-software-factory.html",
+    "cover": "blog/media/76f4f0b92c0c-living-software-systems.gif",
+    "tags": [
+      "agents",
+      "software"
+    ]
+  },
+  {
     "slug": "sh-theological-futurism",
     "title": "Theological Futurism",
     "date": "2026-09-24",
