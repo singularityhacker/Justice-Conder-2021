@@ -96,29 +96,9 @@
 <p>The phenomenon he&#x27;s referring to has been going on for a while, but three skill packs have been at the center of the conversation recently.</p>
 <p><a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">Gstack</a> from Garry Tan started the trend. <a href="https://github.com/cursor/plugins/tree/main/pstack" target="_blank" rel="noopener">Pstack</a> comes from Lauren Tan, aka Poteto, ex React core dev and engineer now at Cursor. And <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">one</a> from Matt Pocock, a popular educator and podcaster.</p>
 <p>Poteto went on Matt&#x27;s podcast, and they mentioned using each other&#x27;s packs, and that got more people talking about the dev skill pack phenomenon. </p>
-<blockquote class="tweet-embed">
-<div class="tweet-embed-head">
-<a class="tweet-embed-author" href="https://x.com/MaiYangAI" target="_blank" rel="noopener"><strong>Mai Yang</strong> <span>@MaiYangAI</span></a>
-<a class="tweet-embed-x" href="https://x.com/MaiYangAI/status/2106256004346441909" target="_blank" rel="noopener" aria-label="View post on X"><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-</div>
-<div class="tweet-embed-body">
-<p>Lauren Tan（<a href="https://x.com/poteto" target="_blank" rel="noopener">@poteto</a>）跟 Matt Pocock 聊她在 SpaceX 用 pstack 做事。这集的题目就是每个月上千条 PR。</p>
-<p>她说代理已经可以自己合 pull request，她先睡，回头再看已经合进去的。她相当于有超过十个参谋长，各管一块。pstack 里开 autopilot 之后，每条 PR 会起验证代理，把应用真的跑起来，像人一样去点，找回归。</p>
-<p>中英硬字幕，66 分钟。</p>
-</div>
-<p class="tweet-embed-meta"><a href="https://x.com/MaiYangAI/status/2106256004346441909" target="_blank" rel="noopener">5:32 AM • Oct 3, 2026</a></p>
-</blockquote>
+<p><a href="https://x.com/MaiYangAI/status/2106256004346441909" target="_blank" rel="noopener">Watch Mai Yang’s video on X (@MaiYangAI)</a></p>
 <p>One of my favorite AI commentators, Mo, followed up with a video calling it out. &quot;The Markdown thing is getting out of hand.&quot;</p>
-<blockquote class="tweet-embed">
-<div class="tweet-embed-head">
-<a class="tweet-embed-author" href="https://x.com/atmoio" target="_blank" rel="noopener"><strong>Mo</strong> <span>@atmoio</span></a>
-<a class="tweet-embed-x" href="https://x.com/atmoio/status/2107524414682141055" target="_blank" rel="noopener" aria-label="View post on X"><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-</div>
-<div class="tweet-embed-body">
-<p>The Markdown thing is getting out of hand</p>
-</div>
-<p class="tweet-embed-meta"><a href="https://x.com/atmoio/status/2107524414682141055" target="_blank" rel="noopener">5:32 PM • Oct 6, 2026</a></p>
-</blockquote>
+<p><a href="https://x.com/atmoio/status/2107524414682141055" target="_blank" rel="noopener">Watch Mo’s video on X (@atmoio)</a></p>
 <p>At first I felt the same way, but it got me thinking more deeply about what a prompt actually does. A language model is a giant vector space. Your context determines where in that space the model starts generating from. A skill file drops you deep in the neighborhood you want answers from, instead of wherever your casual phrasing lands.</p>
 <p>There&#x27;s also a real question about whether &quot;skills&quot; matter for code specifically. Good prompts obviously help in domains without an objective success state. Conversational prose quality is subjective, and there&#x27;s no compiler to tell you which is better, so a skill file that gets you closer to the output you want is clearly earning its keep. Code is different. It either runs or it doesn&#x27;t, so maybe an agent can just churn for a bit against that feedback and still produce something that works, no skill context required.</p>
 <p>So I came up with a really simple experiment: ask an agent without any prompt context how to build something, then ask it again with each of those three packs loaded, and see what kind of answer I get. </p>
