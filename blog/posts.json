@@ -1,5 +1,20 @@
 [
   {
+    "slug": "sh-agent-engineering-skill-stack-efficacy",
+    "title": "Agent Engineering Skill Stack Efficacy: A Gstack, Pstack, & Pocock Teardown",
+    "date": "2026-10-10",
+    "date_display": "October 10, 2026",
+    "project": "singularity-hacker",
+    "project_label": "Futurism",
+    "canonical": "https://x.com/singularityhack/article/2108918744265207808",
+    "excerpt": "Last week, Markus Eisele dropped a banger that drew attention: The phenomenon he's referring to has been going on for a while, but three skill packs have been at the center of the conversation recently.",
+    "path": "blog/sh-agent-engineering-skill-stack-efficacy.html",
+    "cover": "blog/media/a4b6874c37b8-HURilq9XIAAZgjb.jpg",
+    "tags": [
+      "ai"
+    ]
+  },
+  {
     "slug": "clawbank-the-clawbank-software-factory",
     "title": "The ClawBank Software Factory",
     "date": "2026-10-02",

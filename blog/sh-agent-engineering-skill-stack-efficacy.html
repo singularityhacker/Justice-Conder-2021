@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Agent Engineering Skill Stack Efficacy: A Gstack, Pstack, &amp; Pocock Teardown — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Agent Engineering Skill Stack Efficacy: A Gstack, Pstack, &amp; Pocock Teardown — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="../css/themes.css" type="text/css" />
+	<link rel="stylesheet" href="../css/dark-operator.css" type="text/css" />
+
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
+</head>
+
+<body class="blog-page dark-operator">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<span class="brand-lockup">
+					<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
+				</span>
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../blog.html" class="is-current">Writing</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<span class="brand-lockup">
+					<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
+				</span>
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../blog.html" class="is-current">Writing</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
+				<time datetime="2026-10-10">October 10, 2026</time>
+			</div>
+			<h1>Agent Engineering Skill Stack Efficacy: A Gstack, Pstack, &amp; Pocock Teardown</h1>
+			<p class="blog-source">Originally published at <a href="https://x.com/singularityhack/article/2108918744265207808" target="_blank" rel="noopener">https://x.com/singularityhack/article/2108918744265207808</a></p>
+						<p class="blog-cover"><img src="media/thumbs/a4b6874c37b8-HURilq9XIAAZgjb-7ac1b62d-hero.webp" width="1600" height="640" alt="" decoding="async" data-original="media/a4b6874c37b8-HURilq9XIAAZgjb.jpg"></p>
+			<div class="blog-prose">
+<p>Last week, Markus Eisele dropped a banger that drew attention:</p>
+<blockquote class="tweet-embed">
+<div class="tweet-embed-head">
+<a class="tweet-embed-author" href="https://x.com/myfear" target="_blank" rel="noopener"><strong>Markus Eisele</strong> <span>@myfear</span></a>
+<a class="tweet-embed-x" href="https://x.com/myfear/status/2107050182206456159" target="_blank" rel="noopener" aria-label="View post on X"><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+</div>
+<div class="tweet-embed-body">
+<p>I still can’t wrap my head around the fact that people get famous for writing markdown files, calling them engineering skills and putting them on GitHub 🤣</p>
+</div>
+<p class="tweet-embed-meta"><a href="https://x.com/myfear/status/2107050182206456159" target="_blank" rel="noopener">10:08 AM • Oct 5, 2026</a></p>
+</blockquote>
+<p>The phenomenon he&#x27;s referring to has been going on for a while, but three skill packs have been at the center of the conversation recently.</p>
+<p><a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">Gstack</a> from Garry Tan started the trend. <a href="https://github.com/cursor/plugins/tree/main/pstack" target="_blank" rel="noopener">Pstack</a> comes from Lauren Tan, aka Poteto, ex React core dev and engineer now at Cursor. And <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">one</a> from Matt Pocock, a popular educator and podcaster.</p>
+<p>Poteto went on Matt&#x27;s podcast, and they mentioned using each other&#x27;s packs, and that got more people talking about the dev skill pack phenomenon. </p>
+<blockquote class="tweet-embed">
+<div class="tweet-embed-head">
+<a class="tweet-embed-author" href="https://x.com/MaiYangAI" target="_blank" rel="noopener"><strong>Mai Yang</strong> <span>@MaiYangAI</span></a>
+<a class="tweet-embed-x" href="https://x.com/MaiYangAI/status/2106256004346441909" target="_blank" rel="noopener" aria-label="View post on X"><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+</div>
+<div class="tweet-embed-body">
+<p>Lauren Tan（<a href="https://x.com/poteto" target="_blank" rel="noopener">@poteto</a>）跟 Matt Pocock 聊她在 SpaceX 用 pstack 做事。这集的题目就是每个月上千条 PR。</p>
+<p>她说代理已经可以自己合 pull request，她先睡，回头再看已经合进去的。她相当于有超过十个参谋长，各管一块。pstack 里开 autopilot 之后，每条 PR 会起验证代理，把应用真的跑起来，像人一样去点，找回归。</p>
+<p>中英硬字幕，66 分钟。</p>
+</div>
+<p class="tweet-embed-meta"><a href="https://x.com/MaiYangAI/status/2106256004346441909" target="_blank" rel="noopener">5:32 AM • Oct 3, 2026</a></p>
+</blockquote>
+<p>One of my favorite AI commentators, Mo, followed up with a video calling it out. &quot;The Markdown thing is getting out of hand.&quot;</p>
+<blockquote class="tweet-embed">
+<div class="tweet-embed-head">
+<a class="tweet-embed-author" href="https://x.com/atmoio" target="_blank" rel="noopener"><strong>Mo</strong> <span>@atmoio</span></a>
+<a class="tweet-embed-x" href="https://x.com/atmoio/status/2107524414682141055" target="_blank" rel="noopener" aria-label="View post on X"><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+</div>
+<div class="tweet-embed-body">
+<p>The Markdown thing is getting out of hand</p>
+</div>
+<p class="tweet-embed-meta"><a href="https://x.com/atmoio/status/2107524414682141055" target="_blank" rel="noopener">5:32 PM • Oct 6, 2026</a></p>
+</blockquote>
+<p>At first I felt the same way, but it got me thinking more deeply about what a prompt actually does. A language model is a giant vector space. Your context determines where in that space the model starts generating from. A skill file drops you deep in the neighborhood you want answers from, instead of wherever your casual phrasing lands.</p>
+<p>There&#x27;s also a real question about whether &quot;skills&quot; matter for code specifically. Good prompts obviously help in domains without an objective success state. Conversational prose quality is subjective, and there&#x27;s no compiler to tell you which is better, so a skill file that gets you closer to the output you want is clearly earning its keep. Code is different. It either runs or it doesn&#x27;t, so maybe an agent can just churn for a bit against that feedback and still produce something that works, no skill context required.</p>
+<p>So I came up with a really simple experiment: ask an agent without any prompt context how to build something, then ask it again with each of those three packs loaded, and see what kind of answer I get. </p>
+<h2>Skill Pack Mechanics</h2>
+<p>Before the teardown, one framing deserves correction, because the &quot;just markdown&quot; framing doesn&#x27;t capture what these skill stacks offer. These packs provide invokable slash commands. When you see /tdd or /ship, that is a literal command you type into your harness. The agent loads that skill&#x27;s instructions into its context window on demand and follows them as a structured workflow.</p>
+<p>Across all three packs, skills fire in two modes. You can invoke one yourself: type /ship, and the agent loads the skill and follows it. This is the mode for high-stakes workflows where human intent matters. Or the agent invokes one on its own, when the task matches trigger phrases in the skill&#x27;s metadata: you start debugging, and the agent fires /diagnosing-bugs without being asked. </p>
+<p>Memorizing dozens of slash commands is not realistic, so each pack ships a router. Gstack has a root router that pattern-matches natural language: describe what you want, and it routes you. Pstack has /poteto-help. &quot;Stuck? Ask me.&quot; Matt&#x27;s has /ask-matt, a hand-maintained router mapping situations to skills.</p>
+<p>None of these packs dump all their skills into the agent&#x27;s context at once. That would blow the token budget immediately. Skills load on demand when invoked, one at a time, and the router or plugin system handles dispatch.</p>
+<h2>To Skill or Not to Skill</h2>
+<p>I ran the same prompt through the same model four times: once cold, once with each skill pack&#x27;s philosophy and key files pre-loaded. The prompt was <strong>&quot;I want to build a to-do app. What would you set up for me?&quot;</strong></p>
+<p>The cold model gave a competent, generic senior engineer answer: a React, Express, Postgres, and Prisma monorepo, working CI/CD YAML, sensible architecture decisions, and a reasonable &quot;what to leave out&quot; section. But it assumed features without asking; auth, priorities, drag-and-drop, and the monorepo itself were all decided for me. It listed testing frameworks without a testing philosophy (&quot;use Vitest&quot; is not a testing strategy). It had no code review process and no PR structure. It chose Postgres without justification, and the lifecycle stopped at deploy.</p>
+<p>Every skill-informed response changed the answer in the same three ways.</p>
+<p>The first change was requirements discovery. All three questioned the premise instead of assuming features. Matt&#x27;s agent listed six unresolved branches: &quot;Do items have due dates? Is this multi-user? What does &#x27;complete&#x27; mean?&quot; Pstack pushed back entirely: &quot;The question is backward. Plan after the design settles.&quot; Gstack structured a process for resolving the ambiguity through its spec and autoplan pipeline.</p>
+<p>The second was principles over tools. The cold model said, &quot;use Vitest.&quot; The skill-informed models said, &quot;test behavior at pre-agreed seams, never mock your own modules, ban three anti-patterns.&quot; The cold model listed frameworks; the skill packs gave philosophy.</p>
+<p>The third was the full lifecycle. The cold model&#x27;s lifecycle was scaffold, implement, deploy. Every skill pack extended it in both directions: grilling, interviewing, and spec writing before code, then code review, PR structure, retrospectives, and (in Gstack&#x27;s case) canary monitoring after deploy.</p>
+<h2>Comparing Stacks</h2>
+<p>Gstack: Brainstorm to Canary</p>
+<p>Gstack (from Garry Tan) takes a maximalist approach. It covers every phase of software development, from &quot;is this idea worth building?&quot; to &quot;is production healthy after deploy?&quot; Here are the headline skills:</p>
+<ul>
+<li>/office-hours: YC-style product brainstorming. Reframes your idea before you write code.</li>
+<li>/autoplan: Runs CEO, design, DX, and engineering reviews sequentially with auto-decisions. One command, fully reviewed plan.</li>
+<li>/spec: Turns vague intent into a precise spec in five phases. Files a GitHub issue.</li>
+<li>/review: Pre-landing PR review. Checks for SQL injection, LLM trust boundary violations, conditional side effects.</li>
+<li>/qa: Full QA across browser, API, CLI, job, worker, and webhook surfaces. Three tiers: Quick, Standard, Exhaustive.</li>
+<li>/ship: Version bump, changelog, PR creation with a workspace-aware version queue.</li>
+<li>/land-and-deploy: Merges, waits for CI, deploys, verifies production health.</li>
+<li>/canary: Post-deploy monitoring loop with periodic screenshots and anomaly detection.</li>
+<li>/ios-qa: Live-device iOS QA via USB. Vision-driven agent loop on a real iPhone.</li>
+<li>/cso: OWASP-scoped security audit with PII/secrets redaction.</li>
+</ul>
+<p>What sets Gstack apart is the set of capabilities no other pack has: real browser testing (it drives your actual browser with real cookies via Aside on macOS), iOS QA on physical hardware, a cross-session decision store that remembers what you decided and resurfaces it before re-deciding, developer psychographic profiling that learns which questions to stop asking you, and post-deploy canary monitoring.</p>
+<p>Pstack: Anti-Slop Philosophy</p>
+<p>Pstack (from Lauren Tan, aka Poteto) is the anti-slop pack. Where Gstack says &quot;do more,&quot; Pstack says &quot;do less, but better.&quot; The laziness protocol biases toward deletion. &quot;Minimize the diff.&quot; &quot;If a human developer would find the code exhausting to maintain, it is a bad solution.&quot;</p>
+<p>Its codified engineering principles are first-class skills that agents must cite when they apply them. This is the most philosophically rigorous pack, and the headline skills show it:</p>
+<ul>
+<li>/poteto-mode: The central router. Matches your task to a playbook.</li>
+<li>/interrogate: Multi-model adversarial code review. Spawns reviewers on different models, synthesizes into Act / Consider / Noted / Dismissed buckets.</li>
+<li>/arena: Fans out N parallel candidates at the same task, picks a base, grafts the best parts from the losers.</li>
+<li>/unslop: Removes AI tells from writing. Cataloged patterns include em dashes, hedging, filler, abstract metaphors, chatbot phrases.</li>
+<li>/tdd: Test-driven bug fix. Failing test first, then the fix. Pragmatically skips when tests would be impractical.</li>
+<li>/correct: Mines history for mistakes agents keep repeating and fixes each at the highest level that works (architecture &gt; types &gt; lint &gt; tests &gt; docs).</li>
+<li>/automate-me: Mines your chat history to generate a personal workflow skill.</li>
+<li><strong>Comment Sicko</strong>: A deliberately extreme anti-comment reviewer persona shipped as its own subagent.</li>
+</ul>
+<p>Matt Pocock&#x27;s Skills: Composable Fundamentals</p>
+<p>Matt Pocock (from <a href="http://aihero.dev/" target="_blank" rel="noopener">aihero.dev</a>) positions his pack against monolithic AI workflow frameworks that &quot;own the process.&quot; Each skill does one thing. They compose into chains but don&#x27;t require each other. The intellectual foundation is explicit and named: Ousterhout&#x27;s deep modules, Feathers&#x27; seams, Beck&#x27;s red-green, Fowler&#x27;s code smells, Evans&#x27; ubiquitous language, Hunt and Thomas&#x27; tracer bullets. Here are the headline skills:</p>
+<ul>
+<li>/grill-with-docs: Interviews you about a plan while writing resolved terms to GLOSSARY.md and decisions to ADRs in real time. The head of the main build chain.</li>
+<li>/to-tickets: Breaks a plan into tracer-bullet vertical-slice tickets with explicit blocking edges. No horizontal &quot;build all the DB first.&quot;</li>
+<li>/implement: TDD at pre-agreed seams, typecheck, full suite, code review, commit. One ticket per invocation.</li>
+<li>/code-review: Two-axis review: standards (Fowler&#x27;s 12 code smells) and spec compliance. Each axis runs in its own sub-agent to prevent cross-contamination.</li>
+<li>/pr: PR body structure: Summary (a visual, not prose), Evidence (before/after), Merge Danger (one-way vs two-way door plus blast radius).</li>
+<li>/diagnosing-bugs: Six-phase disciplined diagnosis loop. Will not let the agent theorize without a test that goes red on the bug.</li>
+<li>/teach: Stateful learning workspace for any subject, not just code. Users learn Korean, piano, guitar, board game design.</li>
+<li>/wait-what: Three lines. The entire skill says &quot;wait, you lost me&quot; to trigger re-explanation. A 400-line concision skill still leaves the model verbose.</li>
+</ul>
+<p>What sets Matt&#x27;s apart: the grilling primitive (frontier-based interview rounds), GLOSSARY.md with <em>Avoid</em> synonyms as the ubiquitous language artifact, tracer-bullet ticket decomposition, prototype preservation on named branches, and exceptional transparency about known bugs.</p>
+<h2>The Consensus and the Gaps</h2>
+<p>Nine capabilities appear across all three packs, and together they might be converging on a consensus for what agents need to be told:</p>
+<ol>
+<li><strong>TDD / test-first development</strong></li>
+<li><strong>Code review as a defined process</strong> (not &quot;look at the code&quot;)</li>
+<li><strong>Anti-slop rules</strong> (banned vocabulary, style enforcement)</li>
+<li><strong>Git/PR discipline</strong> (atomic commits, structured PR bodies)</li>
+<li><strong>Planning before code</strong> (spec, interview, playbook)</li>
+<li><strong>Bug investigation before fixing</strong> (reproduce first, no guessing)</li>
+<li><strong>Context handoff</strong> between sessions</li>
+<li><strong>Retrospective / learning loops</strong></li>
+<li><strong>Documentation standards</strong></li>
+</ol>
+<p>Three independently developed packs converging on the same nine capabilities strongly suggests these instructions matter. These are the things a raw model consistently skips, which is why three separate authors all arrived at them.</p>
+<p>The packs also share the same blind spots:</p>
+<ul>
+<li><strong>No database/migration skills.</strong> Schema design, data migrations, database-specific tooling.</li>
+<li><strong>No accessibility audit.</strong> No dedicated WCAG/a11y skill.</li>
+<li><strong>No CI/CD authoring.</strong> Deploy detection exists, but writing CI pipelines is not covered.</li>
+<li><strong>No infrastructure-as-code.</strong> Terraform, Kubernetes, Docker, etc.</li>
+<li><strong>No non-TypeScript language skills.</strong> Process skills are language-agnostic. Code-level skills assume TypeScript.</li>
+<li><strong>No cost monitoring.</strong> Cloud spend tracking is absent everywhere.</li>
+</ul>
+<h2>The Verdict</h2>
+<p><strong>The &quot;just markdown&quot; framing is incorrect.</strong> Even the lightest pack is an invokable slash command system with routing, model-invocation triggers, and cross-agent plugin manifests. The heaviest is a full software product with compiled binaries, a browser engine, and a build system. Calling these &quot;markdown files&quot; is like calling a recipe &quot;just ink on paper.&quot;</p>
+<p>A raw model gives you a competent but generic answer. A skill-informed model questions your requirements, gives you engineering principles instead of tool recommendations, and extends the development lifecycle in both directions. The delta was consistent across all three packs. The skill file leaves the model exactly as smart as it was; it adds <strong>discipline</strong>, and discipline is what AI-assisted development still requires.</p>
+<p>Are they worth the hype? Yes, with caveats. They work best when you use the process, not just install the files; a skill pack sitting in your repo doing nothing is, in fact, just Markdown. The value scales with complexity, so a toy app won&#x27;t show the difference, but a production app with tests, deploys, and multiple contributors will. Pick the philosophy that matches how you think: Gstack if you want to boil the ocean, Pstack if you want to go deep first, Matt&#x27;s if you want composable fundamentals.</p>
+<p>This analysis inspired me to turn nine months of building <a href="https://clawbank.co/" target="_blank" rel="noopener">ClawBank</a> into something other developers could use: <a href="https://github.com/singularityhacker/Estack" target="_blank" rel="noopener">Estack</a>, an Elixir/Phoenix skill stack for coding agents. It brings together the architectural patterns, testing practices, and hard-earned lessons I want to bootstrap every new project with.</p>
+<p><a href="https://github.com/singularityhacker/Estack" target="_blank" rel="noopener"><img alt="Estack: an opinionated agent stack for Elixir and Phoenix" src="media/50a76c7bd25c-HURmndtXAAEvASp.jpg" width="2416" height="794"></a></p>
+<p><a href="https://github.com/singularityhacker/Estack" target="_blank" rel="noopener">https://github.com/singularityhacker/Estack</a></p>
+<p>Building <a href="https://x.com/ClawBankHQ" target="_blank" rel="noopener">@ClawBankHQ</a> has convinced me that Elixir/Phoenix has uniquely magical properties for agentic development. But more on that in a future article.</p>
+			</div>
+		</article>
+	</div>
+	<footer class="footer site-footer">
+		<div class="site-footer-grid">
+			<div class="site-footer-identity">
+				<p class="site-footer-name">Justice Conder</p>
+				<p class="site-footer-blurb">Technically capable founder and strategist preparing for forward-deployed engineering and strategy roles at AI companies.</p>
+				<ul class="site-footer-social">
+					<li>
+						<a rel="noopener" href="https://github.com/singularityhacker" target="_blank" aria-label="GitHub">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a rel="noopener" href="https://twitter.com/singularityhack" target="_blank" aria-label="Twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a rel="noopener" href="https://www.linkedin.com/in/justiceconder" target="_blank" aria-label="LinkedIn">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<nav class="site-footer-nav" aria-label="Footer">
+				<p class="site-footer-heading">Navigation</p>
+				<ul>
+					<li><a href="../index.html#about">About</a></li>
+					<li><a href="../index.html#resume">Experience</a></li>
+					<li><a href="../index.html#portfolio">Portfolio</a></li>
+					<li><a href="../blog.html">Writing</a></li>
+				</ul>
+			</nav>
+			<div class="site-footer-contact">
+				<p class="site-footer-heading">Get in Touch</p>
+				<a class="site-footer-email" href="mailto:justiceconder@gmail.com">justiceconder@gmail.com</a>
+			</div>
+		</div>
+		<div class="site-footer-bar">
+			<p>© 2026 Justice Conder. All rights reserved.</p>
+			<p>Built with intention.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
