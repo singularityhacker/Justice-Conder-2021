@@ -1,5 +1,20 @@
 [
   {
+    "slug": "sh-the-era-of-provable-software-is-just-beginning",
+    "title": "The Era of Provable Software is Just Beginning",
+    "date": "2026-10-14",
+    "date_display": "October 14, 2026",
+    "project": "singularity-hacker",
+    "project_label": "Futurism",
+    "canonical": "https://x.com/singularityhack/article/2110371374858485760",
+    "excerpt": "The world was shaken last week when OpenAI pointed an unreleased internal model at roughly 4,000 open math problems and claimed to have solved problems that had stood open for decades. Some came with proofs written in a…",
+    "path": "blog/sh-the-era-of-provable-software-is-just-beginning.html",
+    "cover": "blog/media/986f9c87bc1b-HUmLrnXXIAAPQ8H.jpg",
+    "tags": [
+      "ai"
+    ]
+  },
+  {
     "slug": "sh-agent-engineering-skill-stack-efficacy",
     "title": "Agent Engineering Skill Stack Efficacy: A Gstack, Pstack, & Pocock Teardown",
     "date": "2026-10-10",
