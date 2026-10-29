@@ -11,7 +11,8 @@
     "path": "blog/sh-the-era-of-provable-software-is-just-beginning.html",
     "cover": "blog/media/986f9c87bc1b-HUmLrnXXIAAPQ8H.jpg",
     "tags": [
-      "ai"
+      "ai",
+      "software"
     ]
   },
   {
@@ -26,7 +27,9 @@
     "path": "blog/sh-agent-engineering-skill-stack-efficacy.html",
     "cover": "blog/media/a4b6874c37b8-HURilq9XIAAZgjb.jpg",
     "tags": [
-      "ai"
+      "ai",
+      "agents",
+      "software"
     ]
   },
   {

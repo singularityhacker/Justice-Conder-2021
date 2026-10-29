@@ -794,6 +794,22 @@ body.dark-operator .blog-era-row.is-active .blog-era-name {
   color: var(--do-amber);
 }
 
+body.dark-operator .blog-sort-label,
+body.dark-operator .blog-sort-btn {
+  font-family: var(--do-font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--do-muted);
+  background: transparent;
+}
+
+body.dark-operator .blog-sort-btn:hover,
+body.dark-operator .blog-sort-btn:focus,
+body.dark-operator .blog-sort-btn.is-active {
+  color: var(--do-amber);
+  border-bottom-color: var(--do-amber);
+}
+
 body.dark-operator .blog-prose,
 body.dark-operator .blog-article {
   color: var(--do-text-2);

@@ -868,6 +868,19 @@ html[data-theme]:not([data-theme="classic"]) .blog-tag-filter.is-active {
   color: var(--bg);
 }
 
+html[data-theme]:not([data-theme="classic"]) .blog-sort-label,
+html[data-theme]:not([data-theme="classic"]) .blog-sort-btn {
+  color: var(--text-muted);
+  background: transparent;
+}
+
+html[data-theme]:not([data-theme="classic"]) .blog-sort-btn:hover,
+html[data-theme]:not([data-theme="classic"]) .blog-sort-btn:focus,
+html[data-theme]:not([data-theme="classic"]) .blog-sort-btn.is-active {
+  color: var(--heading);
+  border-bottom-color: var(--accent);
+}
+
 html[data-theme]:not([data-theme="classic"]) .blog-empty {
   border-color: var(--card-border);
 }
@@ -936,6 +949,7 @@ html[data-theme="terminal"] .blog-article h1 {
 
 html[data-theme="terminal"] .blog-filter,
 html[data-theme="terminal"] .blog-tag-filter,
+html[data-theme="terminal"] .blog-sort-btn,
 html[data-theme="terminal"] .blog-card,
 html[data-theme="terminal"] .blog-timeline {
   border-radius: 0;
