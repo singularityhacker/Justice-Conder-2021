@@ -1,5 +1,22 @@
 [
   {
+    "slug": "sh-the-enterprise-ai-propagation-delay",
+    "title": "The Enterprise AI Propagation Delay",
+    "date": "2026-10-29",
+    "date_display": "October 29, 2026",
+    "project": "singularity-hacker",
+    "project_label": "Futurism",
+    "canonical": "https://www.linkedin.com/pulse/enterprise-ai-propagation-delay-justice-conder-eowje/",
+    "excerpt": "You can't make decisions without a world model. The world model for software devs is being completely upended by agentic coding. What follows is my map of what's happening and my prediction on the best course of action for…",
+    "path": "blog/sh-the-enterprise-ai-propagation-delay.html",
+    "cover": "blog/media/fbaf35d8bea9-enterprise-ai-propagation-delay.png",
+    "tags": [
+      "ai",
+      "agents",
+      "software"
+    ]
+  },
+  {
     "slug": "sh-the-era-of-provable-software-is-just-beginning",
     "title": "The Era of Provable Software is Just Beginning",
     "date": "2026-10-14",
