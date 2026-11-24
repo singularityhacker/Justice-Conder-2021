@@ -1,5 +1,21 @@
 [
   {
+    "slug": "sh-avas-brain-creating-a-physical-photonic-llm",
+    "title": "Ava's Brain: Creating a Physical Photonic LLM",
+    "date": "2026-11-24",
+    "date_display": "November 24, 2026",
+    "project": "singularity-hacker",
+    "project_label": "Futurism",
+    "canonical": "https://x.com/singularityhack/article/2125304517742804992",
+    "excerpt": "In the movie Ex Machina (2014) a scientist named Nathan shows a translucent, glowing sphere representing a new kind of AI mind designed for a female AI named Ava. He describes it as a structured gel that can rearrange itself at…",
+    "path": "blog/sh-avas-brain-creating-a-physical-photonic-llm.html",
+    "cover": "blog/media/5133eb33817c-HX6d4vIXoAA1ru0.jpg",
+    "tags": [
+      "ai",
+      "hardware"
+    ]
+  },
+  {
     "slug": "sh-the-enterprise-ai-propagation-delay",
     "title": "The Enterprise AI Propagation Delay",
     "date": "2026-10-29",

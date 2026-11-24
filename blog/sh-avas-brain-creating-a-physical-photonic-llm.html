@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Ava&#x27;s Brain: Creating a Physical Photonic LLM — Justice Conder" />
+	<meta name="author" content="justiceconder.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ava&#x27;s Brain: Creating a Physical Photonic LLM — Justice Conder</title>
+	<link rel="shortcut icon" href="../images/icon/favicon.ico" />
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/theme-icon.css" type="text/css" />
+	<link rel="stylesheet" href="../css/blog.css" type="text/css" />
+	<link rel="stylesheet" href="../css/themes.css" type="text/css" />
+	<link rel="stylesheet" href="../css/dark-operator.css" type="text/css" />
+
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic&display=swap"
+		as="style" onload="this.rel='stylesheet'" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" />
+</head>
+
+<body class="blog-page dark-operator">
+	<header class="header" id="home"></header>
+	<nav id="menu" class="navbar navbar-default desktop-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<span class="brand-lockup">
+					<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
+				</span>
+			</a>
+		</div>
+		<ul class="nav-link title-text flex-container">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../blog.html" class="is-current">Writing</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<nav id="menu" class="navbar navbar-default mobile-only">
+		<div class="navbar-header">
+			<a rel="noopener" class="navbar-brand" href="../index.html">
+				<img id="logo_img" src="../images/logo.webp" alt="" height="40px" width="55px" loading="lazy">
+				<span class="brand-lockup">
+					<span class="brand-name"><span class="brand-zero">0</span>xJustice</span>
+				</span>
+			</a>
+		</div>
+		<div class="nav-opener">
+			<div class="unselectable hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="nav-link flex-container title-text">
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#resume">Experience</a></li>
+			<li><a href="../index.html#education">Education</a></li>
+			<li><a href="../index.html#portfolio">Portfolio</a></li>
+			<li><a href="../blog.html" class="is-current">Writing</a></li>
+			<li><a href="../index.html#testimonials">Testimonials</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container blog-wrap">
+		<p class="blog-crumb"><a href="../blog.html">← All writings</a></p>
+		<article class="blog-article">
+			<div class="blog-card-meta">
+				<span class="blog-tag blog-tag--singularity-hacker">Futurism</span>
+				<time datetime="2026-11-24">November 24, 2026</time>
+			</div>
+			<h1>Ava&#x27;s Brain: Creating a Physical Photonic LLM</h1>
+			<p class="blog-source">Originally published at <a href="https://x.com/singularityhack/article/2125304517742804992" target="_blank" rel="noopener">https://x.com/singularityhack/article/2125304517742804992</a></p>
+						<p class="blog-cover"><img src="media/thumbs/5133eb33817c-HX6d4vIXoAA1ru0-d0c9341e-hero.webp" width="1600" height="640" alt="" decoding="async" data-original="media/5133eb33817c-HX6d4vIXoAA1ru0.jpg"></p>
+			<div class="blog-prose">
+<p>In the movie <a href="https://www.imdb.com/title/tt0470752/" target="_blank" rel="noopener">Ex Machina (2014)</a> a scientist named Nathan shows a translucent, glowing sphere representing a new kind of AI mind designed for a female AI named Ava. He describes it as a structured gel that can rearrange itself at the molecular level to form new memories while holding onto old ones.</p>
+<p>Until very recently, this scene was pure movie magic. Today, three separate breakthroughs in hardware physics are converging on the exact architecture Nathan described:</p>
+<ol>
+<li>Physical Neural Networks: Etching model weights directly into matter instead of shuttling them from memory (pioneered in silicon by <a href="https://taalas.com/" target="_blank" rel="noopener">Taalas</a>).</li>
+<li>Photonic Computing: Using light to execute matrix math at the speed of propagation.</li>
+<li>Volumetric 3D Fabrication: Escaping flat, 2D semiconductor wafers to compute inside the three-dimensional volume of glass and polymers.</li>
+</ol>
+<p>Storing a frontier-shattering model in a brain-sized volume may not be science fiction after all.</p>
+<h2>Making Matter Execute the Model</h2>
+<p>Today’s AI runs on a bottleneck. Even on the fastest GPU clusters, weights sit in high-bandwidth memory and are constantly shuttled to arithmetic cores. That data movement eats up most of the energy and time in every forward pass. Physical neural networks flip this construction on its head by using the material itself to do computation.</p>
+<p>We are already seeing this happen across two different substrates:</p>
+<ul>
+<li>Hardwired Silicon (<a href="https://taalas.com/" target="_blank" rel="noopener">Taalas</a>): Rather than running an LLM as software on a general-purpose processor, <a href="https://taalas.com/" target="_blank" rel="noopener">Taalas</a> compiles a trained model directly into the physical metal layers of a custom chip (their <a href="https://taalas.com/products/" target="_blank" rel="noopener">HC1 architecture</a>). Storage and computation collapse into the same physical transistors. You trade away reprogrammability, and in return, you obliterate the memory wall.</li>
+<li>Computing with Light (3D Photonics): What happens if you replace electrons in flat silicon with photons in 3D glass? When a pattern of light enters a transparent medium filled with microscopic phase-shifters and waveguides, wave interference naturally performs linear transformations, effectively executing matrix multiplication as light passes through.</li>
+</ul>
+<p><img class="blog-decor-wide" src="media/89fd89ac2978-tgBU7cAhi5YyNwRp.jpg" width="640" height="358" alt="Still from the article video: Ava holding a glowing sphere in Ex Machina"></p>
+<p><a href="https://x.com/singularityhack/article/2125304517742804992" target="_blank" rel="noopener">Watch the video on X</a></p>
+<p>This year, researchers demonstrated a <a href="https://www.nature.com/articles/s41467-026-72316-9" target="_blank" rel="noopener">programmable 3D photonic neural network chip</a> fabricated by writing waveguides directly into glass with a femtosecond laser (<a href="https://www.nature.com/articles/s41467-026-72316-9" target="_blank" rel="noopener">Nature Communications, 2026</a>). Using an 8-layer volumetric architecture, the device hit 6,554 TOPS of throughput while processing 2D inputs directly. Paired with demonstrations of <a href="https://www.remio.ai/post/inspire-photonic-training-moves-ai-learning-onto-the-chip" target="_blank" rel="noopener">integrated optical backpropagation</a> and optical processors running transformer workloads like <a href="https://lightmatter.com/blog/a-new-kind-of-computer/" target="_blank" rel="noopener">BERT</a>, the building blocks of light-based inference are no longer theoretical.</p>
+<h2>How Many Parameters Fit Inside a Human Brain?</h2>
+<p>Once you start writing optical structures into 3D glass, an obvious question follows: How big of a model could you pack into a human brain&#x27;s volume? Microsoft’s <a href="https://www.microsoft.com/en-us/research/blog/project-silicas-advances-in-glass-storage-technology/" target="_blank" rel="noopener">Project Silica</a> team published a landmark paper in <a href="https://www.nature.com/articles/s41586-025-10042-w" target="_blank" rel="noopener">Nature (2026)</a> demonstrating volumetric laser writing in glass at a density of 1.59 gigabits per cubic millimeter.</p>
+<p><img class="blog-decor-wide" src="media/a4155b695f04-HX6a-k1WkAAiEi8.jpg" width="739" height="415" alt="Femtosecond-laser-written glass photonic circuit on a wafer"></p>
+<p>If you take that demonstrated density and extrapolate it across 1.3 liters (the volume of an adult human brain) you get the following potential storage density:</p>
+<ul>
+<li>Total Raw Capacity: ~2.067 quadrillion bits (258 terabytes)</li>
+<li>Equivalent 4-Bit Model Weights: ~517 trillion parameters</li>
+</ul>
+<p>Let’s put 517 trillion parameters into perspective against the models we actually run today:</p>
+<table><thead><tr><th>Model Scale</th><th>4-Bit Weight Storage</th><th>Scale vs. Brain-Sized Glass</th></tr></thead><tbody><tr><td>8B (Edge / Local)</td><td>~4 GB</td><td>~129,000x smaller</td></tr><tr><td>70B (Workhorse Open Model)</td><td>~35 GB</td><td>~14,700x smaller</td></tr><tr><td>2.8T (e.g., <a href="https://www.kimi.ai/blog/kimi-k3" target="_blank" rel="noopener">Kimi K3</a> total params)</td><td>~1.4 TB</td><td>~185x smaller</td></tr><tr><td>100T (Hypothetical Mega-Cluster)</td><td>~50 TB</td><td>~5x smaller</td></tr><tr><td>517T (1.3L Silica Glass Extrapolation)</td><td>~258 TB</td><td>1x (Theoretical Ceiling)</td></tr></tbody></table>
+<p>To be clear, this leaves zero room for optical routing, laser sources, detectors, cooling, or runtime KV caches. You cannot simply load a 500T model into a glass paperweight and boot it up. Still, the takeaway is that physical weight density is not the fundamental barrier. A sphere the size of a human head has more than enough physical volume to hold a 500-trillion-parameter model.</p>
+<h2>What Could a 500-Trillion-Parameter LLM Do?</h2>
+<p>If we ever solved the compute and routing bottlenecks to actually run a 500T-parameter model inside that volume, what would change? Would it just know more trivia? Probably not. The real leap wouldn’t be prettier single-turn answers but long-horizon reliability.</p>
+<p>Consider the math of autonomous agents. Suppose an agent has to execute 1,000 sequential steps to build, test, and deploy a complex software system, and a single uncorrected mistake derails the run:</p>
+<ul>
+<li>99.0% per-step accuracy -&gt; 0.0043% chance of finishing (effectively zero)</li>
+<li>99.9% per-step accuracy -&gt; 36.8% chance of finishing</li>
+<li>99.99% per-step accuracy -&gt; 90.5% chance of finishing</li>
+</ul>
+<p>A tiny, sub-1% gain in single-step reliability produces a massive phase transition in what an AI can accomplish over weeks of independent work. Research like the ICLR 2026 paper <a href="https://arxiv.org/abs/2509.09677" target="_blank" rel="noopener">&quot;The Illusion of Diminishing Returns&quot;</a> and <a href="https://metr.org/time-horizons/" target="_blank" rel="noopener">METR’s task-horizon benchmarks</a> highlight this exact compounding effect: when step-level error rates drop toward zero, an AI stops acting like a brilliant intern who needs constant supervision and starts acting like a senior engineer who catches its own mistakes before they cascade.</p>
+<p>At 500T parameters, especially if structured as a massive Mixture-of-Experts (MoE) rather than a brute-force dense network, you get deep, cross-domain synthesis across physics, math, code, and biology without the context degradation that plagues smaller models.</p>
+<h2>What’s Still Missing: Wetware, Heat, and the Data Wall</h2>
+<p>So why don&#x27;t we have Ava’s brain sitting on a lab bench? Because three massive engineering walls stand between a glass storage block and a thinking machine:</p>
+<ol>
+<li>Static Glass vs. Plastic &quot;Wetware&quot;: Laser-written silica glass is mostly static, and optical systems excel at linear math while struggling with the nonlinear activations, dynamic attention, and fast state updates modern transformers require. Interestingly, soft-matter research hints at a bridge: in 2024, <a href="https://www.sciencedaily.com/releases/2024/08/240822125903.htm" target="_blank" rel="noopener">University of Reading researchers showed that an electroactive hydrogel could retain history-dependent ionic states while playing a simplified game of Pong</a>. A real artificial brain must be a hybrid combining rigid 3D photonic pathways for long-term weights with reconfigurable electronic or ionic elements for short-term plasticity.</li>
+<li>The 20-Watt Thermal Ceiling: The human brain runs on roughly 20 watts. Packing 500 trillion active parameters into 1.3 liters without biological energy efficiency would produce unacceptable heat levels.</li>
+<li>The Training Bottleneck: Even if you could manufacture the hardware tomorrow, how do you train it? Under classic <a href="https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf" target="_blank" rel="noopener">Stanford’s 2026 AI IndexChinchilla scaling (~20 tokens per parameter), a dense 500T model would demand roughly 10^16 (10 quadrillion) training tokens and ~3 x 10^31 FLOPs. As Stanford’s 2026 AI Index</a> underscores, high-quality human data is finite, forcing future frontier systems to rely heavily on synthetic data loops, sparse MoE routing, and test-time compute.</li>
+</ol>
+<h2>The Philosophical Inversion</h2>
+<p>Even if the first real versions look like hybrid optical-electronic modules rather than glowing spheres of gel, the trajectory points toward a profound shift in how we could build future intelligence. For the entire history of computing, software has been a ghost haunting general-purpose hardware. It&#x27;s been mathematical instructions simulated on chips that know nothing about what they are running.</p>
+<p><img class="blog-decor-wide" src="media/2e0580331c32-HX6cPIWXQAAGPlA.jpg" width="1024" height="512" alt="Project Silica glass storage platter with a square fused-silica core"></p>
+<p>Physical neural networks erase that boundary. Whether etched into Taalas’s silicon layers or written by femtosecond lasers into 3D glass, weights stop being numbers stored in a file and become the physical geometry of an object. It won’t automatically give a machine consciousness. But it turns intelligence from something a computer runs into something physically embodied within matter and locally present within an individual machine.</p>
+<p>My other writings: <a href="https://www.justiceconder.com/blog" target="_blank" rel="noopener">https://www.justiceconder.com/blog</a></p>
+			</div>
+		</article>
+	</div>
+	<footer class="footer site-footer">
+		<div class="site-footer-grid">
+			<div class="site-footer-identity">
+				<p class="site-footer-name">Justice Conder</p>
+				<p class="site-footer-blurb">Technically capable founder and strategist preparing for forward-deployed engineering and strategy roles at AI companies.</p>
+				<ul class="site-footer-social">
+					<li>
+						<a rel="noopener" href="https://github.com/singularityhacker" target="_blank" aria-label="GitHub">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a rel="noopener" href="https://twitter.com/singularityhack" target="_blank" aria-label="Twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a rel="noopener" href="https://www.linkedin.com/in/justiceconder" target="_blank" aria-label="LinkedIn">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<nav class="site-footer-nav" aria-label="Footer">
+				<p class="site-footer-heading">Navigation</p>
+				<ul>
+					<li><a href="../index.html#about">About</a></li>
+					<li><a href="../index.html#resume">Experience</a></li>
+					<li><a href="../index.html#portfolio">Portfolio</a></li>
+					<li><a href="../blog.html">Writing</a></li>
+				</ul>
+			</nav>
+			<div class="site-footer-contact">
+				<p class="site-footer-heading">Get in Touch</p>
+				<a class="site-footer-email" href="mailto:justiceconder@gmail.com">justiceconder@gmail.com</a>
+			</div>
+		</div>
+		<div class="site-footer-bar">
+			<p>© 2026 Justice Conder. All rights reserved.</p>
+			<p>Built with intention.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
